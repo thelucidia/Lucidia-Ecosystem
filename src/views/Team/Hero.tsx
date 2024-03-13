@@ -5,7 +5,7 @@ const Hero = () => {
     const members = [
         {
             name: 'Adel Khatib',
-            position: 'CHIEF EXECUTIVE OFFICER',
+            position: 'COO',
             link: 'https://www.linkedin.com/in/adel-khatib-b2b136180/',
             desc: [
                 'Samsung Mena Partner (6 yrs)',
@@ -16,7 +16,7 @@ const Hero = () => {
         },
         {
             name: 'Feras Nimer',
-            position: 'CHIEF OPERATION OFFICER',
+            position: 'CFO',
             link: 'https://www.linkedin.com/in/feras-nimer-691a3258/',
             desc: [
                 'Business transformation at EY (5 yrs)',
@@ -27,7 +27,7 @@ const Hero = () => {
         },
         {
             name: 'Ahmad Assaf',
-            position: 'CHIEF TECHNOLOGY OFFICER',
+            position: 'CTO',
             link: 'https://www.linkedin.com/in/ahmadassaf/',
             desc: [
                 'AI & data expert (14 yrs)',
@@ -37,96 +37,126 @@ const Hero = () => {
             ]
         },
         {
-            name: 'Den Smolonski',
-            position: 'SENIOR BLOCKCHAIN DEVELOPER',
-            link: 'https://www.linkedin.com/in/den-smolonski-648051100/',
+            name: 'Al Rizqi',
+            position: 'CMO',
+            link: "https://www.linkedin.com/in/al-rizqi/",
             desc: [
-                'Full Stack Developer (8 yrs)',
-                'DeFi Developer',
-                'GameFi Developer',
-                'Blockchain industry (4 yrs)'
-            ]
-        },
-        {
-            name: 'Jahongir Erkinov',
-            position: 'CHIEF METAVERSE OFFICER',
-            link: 'https://www.linkedin.com/in/jakhongirerkinov/',
-            desc: [
-                'Unreal Engine developer (6 yrs)',
-                'Unity Engine developer (4 yrs)',
-                'Mobile/PC/VR game dev (4 yrs)',
-                'Gamer (10 yrs)'
-            ]
-        },
-        {
-            name: 'Matsushima Goro',
-            position: 'BLOCKCHAIN DEVELOPER',
-            link: 'https://www.linkedin.com/in/matsushima-goro-bb6b2326b/',
-            desc: [
-                'Blockchain expert (4 yrs)',
-                'Rust specialist (2 yrs)',
-                'Solidity proficient (4 yrs)',
-                'Frontend developer (6 yrs)'
+                "Marketing and Business Development: 5 Years",
+                "Community Building: 3 Years",
+                "Recruiter: 3 Years",
+                "Teacher: 10+ Years"
             ]
         },
         {
             name: 'Oskar Krzak',
-            position: 'BUSINESS DEVELOPMENT MANAGER',
+            position: "CPO",
             link: 'https://www.linkedin.com/in/krzakoskar/',
             desc: [
-                'Product Manager (7 yrs)',
-                'Blockchain industry (6 yrs)',
-                'Gamer (15  yrs)'
+                "Web3 Gaming Innovation (2+ years)",
+                "Strategic Market Expansion (3+ years)",
+                "Leadership in Operations (4+ years)",
+                "Strategic Product Management (3+ years)"
             ]
         },
         {
-            name: 'Marius Dommersnes',
-            position: 'CHIEF MARKETING OFFICER',
-            link: 'https://www.linkedin.com/in/marius-dommersnes-455a30177/',
+            name: 'Jahongir Erkinov',
+            position: "Head of Game Dev",
+            link: 'https://www.linkedin.com/in/jakhongirerkinov/',
             desc: [
-                'Blockchain industry (3 yrs)',
-                'Presales & IDO (2 yrs)',
-                'Web3 marketing (2 yrs)'
+                "Game Developer (7 years)", "Lead Game Designer (3 years)"
             ]
         },
         {
-            name: 'Victoria Iskiyaeva',
-            position: 'CHIEF MARKETING OFFICER',
-            link: 'https://www.linkedin.com/in/victoria-iskiyaeva-851359213/',
+            name: 'Andrii Seliuk',
+            position: 'Lead Web Developer',
+            link: "https://www.linkedin.com/in/andrii-seliuk-ab6213284/",
             desc: [
-                'Web3 Marketing (3 yrs)',
-                'Social Media Management (4 yrs)',
-                'Digital Marketing (4 yrs)'
-            ],
+                "Game Developer (4 years)",
+                "Flutter Engineer (1 year)",
+                "Unreal Engine 5.3 Developer (2 years)",
+                "Front-end Developer (4 years)",
+                "Back-end Developer (4 years)"
+            ]
+        },
+        {
+            name: 'Malek Sharabi',
+            position: 'Head of Developers',
+            link: 'https://www.linkedin.com/in/malek-sharabi-016862118/',
+            desc: [
+                "Game Developer (6 years)",
+                "Smart Contracts Developer (1 year)",
+                "Front-end Developer (1 year)",
+                "SEO Specialist (2 years)"
+            ]
         },
         {
             name: 'Rula Madi',
             position: 'HEAD OF LEGAL',
             link: 'https://www.linkedin.com/in/rolamadi/',
             desc: [
-                'Corporate & tech/IP law (20 yrs)',
-                'Senior management adviser',
-                'Legal associations member'
+                "Corporate & tech/IP law (20 yrs)", "Senior management Adviser", "Legal associations Member"
+            ]
+        },
+        {
+            name: 'Aryan Ratu Langie',
+            position: 'Community Manager',
+            link: 'https://www.linkedin.com/in/aryanratulangie/',
+            desc: [
+                "Community Management (3 years)",
+                "Client Relations (5 years)",
+                "Teacher/Lecture (5 years)",
+                "E-Sports Project Manager (10+ years)"
             ],
         },
         {
-            name: 'Al Rizqi',
-            position: 'ASIA & CIS COMMUNITY MANAGER',
-            link: 'https://www.linkedin.com/in/al-rizqi/',
+            name: 'El Ardyan',
+            position: 'UI/UX Designer',
+            link: 'https://www.linkedin.com/in/ell-ardyan-7a1b7a192',
             desc: [
-                'Community Manager (2 yrs)',
-                'Project Management (3 yrs)',
-                'Marketing (5 yrs)'
+                "UI/UX Designer (2 years)", "Teacher (1+ years)"
             ],
         },
         {
-            name: 'Sander Kloet',
-            position: 'EMEA & NA COMMUNITY MANAGER',
-            link: 'https://www.linkedin.com/in/sander-kloet-278b68278/',
+            name: 'Sania Aliya',
+            position: 'UI/UX Designer',
+            link: 'https://www.linkedin.com/in/chacaliyaa/',
             desc: [
-                'Community Manager (4 yrs)',
-                'Social Media Manager (4 yrs)',
-                'Digital Marketing (3 yrs)'
+                "Content Writer & Producer (2.5 years)", "UI/UX Designer (2 years)"
+            ],
+        },
+        {
+            name: 'Miroslav Pesic',
+            position: 'Full Stack Developer',
+            link: 'https://www.linkedin.com/in/miroslav-pesic-b255a92a9/',
+            desc: [
+                "Front-end Developer (5 years)", "Back-end Developer (4 years)"
+            ],
+        },
+        {
+            name: 'Ola Hladka',
+            position: 'Graphic Designer',
+            link: 'https://www.linkedin.com/in/ola-h-bb5a7b218?trk=contact-info',
+            desc: [
+                "Graphic Designer (3 years)", "Web Designer (1 years)"
+            ],
+        },
+        {
+            name: 'Evdokia Bobrova',
+            position: 'Head of External Relations',
+            link: 'https://www.linkedin.com/in/evdokia-bobrova/',
+            desc: [
+                "Sales & Marketing (5 years)", "Client Advisory (3 years)"
+            ],
+        },
+        {
+            name: 'Sara Gómez',
+            position: 'Lead UI/UX Designer',
+            link: 'https://www.linkedin.com/in/sara-g-44a723b6/',
+            desc: [
+                "UI/UX Designer (5 years)",
+                "UX Research (3 years)",
+                "Marketing and Design (2 years)",
+                "Motion Graphics Designer (2 years)"
             ],
         },
     ]
@@ -156,14 +186,14 @@ const Hero = () => {
                 {members.map((items, i) => {
                     return (
 
-                        <div className="w-[23rem] h-[30.9rem] hover:from-prpl hover:via-prpl hover:to-prpl bg-gradient-to-b from-gry via-gry to-prpl clipped2 scale-x-[-1] relative" key={i}>
+                        <div className="w-[19rem] h-[30.9rem] hover:from-prpl hover:via-prpl hover:to-prpl bg-gradient-to-b from-gry via-gry to-prpl clipped2 scale-x-[-1] relative" key={i}>
                             <div className="w-[99.5%] bg-black h-[99.5%] absolute clipped2  m-auto top-0 bottom-0 left-0 right-0 shadow-teamShadow">
                                 <div className="w-full h-full scale-x-[-1] relative z-10">
                                     <a href={items.link} target="_blank" rel="noreferrer noopener" className="">
                                         <BsLinkedin className="top-5 left-5 absolute z-10 text-2xl text-prpl" />
                                     </a>
 
-                                    <img src={`/team/${i}.webp`} alt={items.name} className="absolute w-full h-full top-0 left-0 object-cover" />
+                                    <img src={`/team/${i}.png`} alt={items.name} className="absolute w-full h-full top-0 left-0 object-cover" />
 
 
                                     <div className="w-full h-28 bg-[#4a069c] bottom-0 left-0 absolute blur-[4rem] z-0"></div>
