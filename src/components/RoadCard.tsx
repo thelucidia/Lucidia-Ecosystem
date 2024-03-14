@@ -77,35 +77,34 @@ const RoadCard = () => {
   return (
     <section>
       <div className="mt-[331px] flex items-center justify-end mr-[20px] md:justify-center mb-[287px] mr-[30px]">
-        <h1 className="text-blue-400 font-semibold font-['Bai Jamjuree'] text-[45px] md:text-[72px] uppercase relative">
+        <h1 className="text-blue-400 font-semibold font-['Bai Jamjuree'] text-[45px] md:text-[72px] uppercase relative font-secondary">
           RoadMap
         </h1>
       </div>
-      <div className="w-[90%] w-fit mx-auto flex flex-col relative mb-[151px]">
+      <div className="w-[90%] w-fit mx-auto flex flex-col relative pb-[151px]">
         <div className="grid gap-x-5 2 gap-y-8 justify-items-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
-          {mapcard.map((items) => {
+          {mapcard.map((items, i) => {
             return (
               <div
-                className="max-w-[459px] border border-[2px] border-solid border-[#5511A6] rounded-[10px]"
+                key={`card-${i}`}
+                className="max-w-[459px] rounded-[10px] border-[2px] border-[#401675] relative"
                 style={{
                   backgroundImage: 'linear-gradient(0deg, rgba(85, 17, 166, 0.79) 22.91%, rgba(0, 0, 0, 0.00) 78.01%)',
-                  strokeWidth: '2px',
-                  stroke: '#401675',
                 }}
               >
-                <div className="flex flex-row justify-between gap-[10px] mt-[63px]">
-                  <div className="text-white font-bold font-clash-grotesk text-normal uppercase ml-[46px]">
+                <div className="flex flex-row justify-between gap-[10px] pt-[63px] px-11">
+                  <div className="text-white font-bold font-clash-grotesk text-[26px] uppercase font-primary">
                     {items.year}
                   </div>
-                  <div className="text-white font-bold font-clash-grotesk text-normal uppercase mr-[46px]">
+                  <div className="text-white font-bold font-clash-grotesk text-[26px] uppercase font-primary">
                     {items.road}
                   </div>
                 </div>
                 <div className="text-white font-semibold font-clash-grotesk text-base leading-relaxed mb-[98px]">
-                  <ul className="max-w-[399px] list-disc mt-[74px] mr-[60px] ml-[76px]">
+                  <ul className="max-w-[399px] list-disc pt-[74px] mr-[60px] ml-[76px]">
                     {items.desc.map((items, i) => {
                       return (
-                        <li className="" key={i}>
+                        <li className="font-primary" key={`item-${i}`}>
                           {items}
                         </li>
                       );

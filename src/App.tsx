@@ -1,7 +1,9 @@
 import Landing from './pages/Landing';
 import { Route, Routes } from 'react-router-dom';
 import Team from './pages/Team';
-import RoadMap from './pages/RoadMap';
+import { lazy } from 'react';
+// import RoadMap from './pages/RoadMap';
+const RoadMap = lazy(() => import('./pages/RoadMap'));
 
 const App = () => {
   return (

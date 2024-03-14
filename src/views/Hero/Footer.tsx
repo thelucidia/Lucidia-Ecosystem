@@ -181,7 +181,7 @@ const Footer = () => {
               placeholder="Discord"
             />
           </div>
-          <button className="w-full clipped scale-x-[-1] rounded-[5px] bg-cyan font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black">
+          <button className="w-full clipped scale-x-[-1] rounded-[5px] bg-cyan font-secondary font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black">
             <h4 className="scale-x-[-1]">subscribe</h4>
           </button>
           {/* <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
