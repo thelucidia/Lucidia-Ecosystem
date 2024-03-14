@@ -15,10 +15,24 @@ const Nav = () => {
     //     link: 'https://drive.google.com/file/d/1n1ddGOA5tTXVhK6zu7962QLSJBUev0aA/view'
     // },
     {
+      name: 'home',
+      slug: '/',
+      type: 'internal',
+    },
+    {
       name: 'roadmap',
       slug: 'roadmap',
-      type: 'external',
-      link: 'https://drive.google.com/file/d/1j_jqFpZlgmppz9CElg4KeSnmoR4uneqp/view',
+      type: 'internal',
+    },
+    {
+      name: 'our product',
+      slug: 'our-product',
+      type: 'internal',
+    },
+    {
+      name: 'careers',
+      slug: 'careers',
+      type: 'internal',
     },
     {
       name: 'our team',
@@ -41,21 +55,35 @@ const Nav = () => {
     //   link: 'https://drive.google.com/file/d/1n1ddGOA5tTXVhK6zu7962QLSJBUev0aA/view',
     // },
     {
+      name: 'home',
+      slug: '/',
+      type: 'internal',
+    },
+    {
       name: 'roadmap',
       slug: 'roadmap',
-      type: 'external',
-      link: 'https://drive.google.com/file/d/1j_jqFpZlgmppz9CElg4KeSnmoR4uneqp/view',
+      type: 'internal',
+    },
+    {
+      name: 'our product',
+      slug: 'our-product',
+      type: 'internal',
+    },
+    {
+      name: 'careers',
+      slug: 'careers',
+      type: 'internal',
     },
     {
       name: 'our team',
       slug: 'team',
       type: 'internal',
     },
-    {
-      name: 'whitepaper',
-      slug: 'whitepaper',
-      type: 'external',
-    },
+    // {
+    //   name: 'whitepaper',
+    //   slug: 'whitepaper',
+    //   type: 'external',
+    // },
     // {
     //   name: 'audit',
     //   slug: 'audit',
@@ -74,17 +102,17 @@ const Nav = () => {
     //     },
     //   ],
     // },
-    {
-      name: 'gameplay',
-      slug: 'gameplay',
-      type: 'external',
-      link: 'https://share.arcware.cloud/33034e19-bac7-4d3b-910b-e2c45c2eccd8',
-    },
-    {
-      name: 'faq',
-      slug: 'faq',
-      type: 'internal',
-    },
+    // {
+    //   name: 'gameplay',
+    //   slug: 'gameplay',
+    //   type: 'external',
+    //   link: 'https://share.arcware.cloud/33034e19-bac7-4d3b-910b-e2c45c2eccd8',
+    // },
+    // {
+    //   name: 'faq',
+    //   slug: 'faq',
+    //   type: 'internal',
+    // },
   ];
 
   const icons = [
@@ -147,7 +175,7 @@ const Nav = () => {
   return (
     <>
       <nav
-        className={`-full sm:w-[25rem] h-screen right-0 top-0 bottom-0 bg-black z-30 fixed transition-all  ease-in-out duration-500 ${navActive ? 'translate-x-0 md:translate-x-full' : 'translate-x-full'}`}
+        className={`-full sm:w-[25rem] h-screen right-0 top-0 bottom-0 bg-black z-30 fixed transition-all  ease-in-out duration-500 ${navActive ? 'translate-x-0 xl:translate-x-full' : 'translate-x-full'}`}
       >
         <div className="w-full h-[5rem] bg-prpl flex items-center justify-between px-4">
           <img src="/hero/logo.png" alt="Logo" className="w-52 -ml-5" />
@@ -158,7 +186,7 @@ const Nav = () => {
           <ul className="text-white font-secondary font-semibold uppercase px-7 w-full py-12 text-sm">
             {navMobile.map((items, i) => {
               return items.type === 'external' ? (
-                <a href={items.link} target="_blank" rel="noopener noreferrer" className="w-full h-full" key={i}>
+                <a href={items.slug} target="_blank" rel="noopener noreferrer" className="w-full h-full" key={i}>
                   <motion.li
                     initial={{ x: 100, opacity: 0 }}
                     animate={navActive ? { x: 0, opacity: 1 } : {}}
@@ -250,7 +278,7 @@ const Nav = () => {
           <ul className="font-secondary font-semibold text-sm uppercase items-center gap-x-12 text-white xl:flex hidden">
             {navList.map((items, i) => {
               return items.type === 'external' ? (
-                <a href={items.link} target="_blank" rel="noopener noreferrer" className="" key={i}>
+                <a href={items.slug} target="_blank" rel="noopener noreferrer" className="" key={i}>
                   <li className="cursor-pointer" key={i}>
                     {items.name}
                   </li>
@@ -266,13 +294,13 @@ const Nav = () => {
           </ul>
 
           <div className="flex items-center gap-x-8 relative">
-            <button className="flex-col items-end gap-y-3 md:hidden flex" onClick={handleNav}>
+            <button className="flex-col items-end gap-y-3 xl:hidden flex" onClick={handleNav}>
               <div className="w-8 h-[3px] bg-white"></div>
               <div className="w-6 h-[3px] bg-white"></div>
             </button>
 
             <button
-              className={` flex-col items-end gap-y-3 md:flex hidden transition-all ease-in-out duration-300 ${navDesktopActive ? 'rotate-[360deg]' : 'rotate-0'}`}
+              className={` flex-col items-end gap-y-3 xl:flex hidden transition-all ease-in-out duration-300 ${navDesktopActive ? 'rotate-[360deg]' : 'rotate-0'}`}
               onClick={handleNavDesktop}
             >
               <div
@@ -292,7 +320,7 @@ const Nav = () => {
                     {navMobile.slice(3, 9).map((items, i) => {
                       return items.type === 'external' ? (
                         <a
-                          href={items.link}
+                          href={items.slug}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-full h-full"

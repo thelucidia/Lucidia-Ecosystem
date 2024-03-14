@@ -65,21 +65,13 @@ const Hero = () => {
       {/* <img src="/hero/herobg.webp" alt="Herobg" className="w-full h-full object-cover absolute top-0 left-0" /> */}
 
       <div className="max-w-[1400px] w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row">
-        <div className="w-full">
+        <div className="w-full flex flex-col gap-y-[10px]">
           <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[40rem] 2xl:leading-[5.5rem] font-semibold md:block hidden">
-            AI DRIVEN GAMEFI GOVERNED BY YOU
+            Elevating gaming through web3 solutions
           </h1>
 
           <div className=" max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm">
-            <p className="">
-              We are not looking to reinvent the wheel of Gamification and game plots - just to give you the power and
-              ownership over what you have already been doing for years.
-            </p>
-
-            <p className="">
-              Our goal is to put fun back into GameFi and make the Metaverse experience accessible to any user with a
-              mobile device from any corner of the world.
-            </p>
+            Introducing the first comprehensive web3 gaming ecosystem in the Middle East
           </div>
 
           <div className="flex gap-x-3 mt-10 md:flex-row flex-col gap-y-5">

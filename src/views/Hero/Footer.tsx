@@ -1,7 +1,7 @@
 import { LiaTelegramPlane } from 'react-icons/lia';
 import { TfiTwitter } from 'react-icons/tfi';
-import { AiOutlineYoutube, AiOutlineMail } from 'react-icons/ai';
-import { FaRedditAlien, FaInstagram, FaMobileAlt } from 'react-icons/fa';
+import { AiOutlineYoutube } from 'react-icons/ai';
+import { FaRedditAlien, FaInstagram } from 'react-icons/fa';
 import { RiTiktokLine } from 'react-icons/ri';
 import { RxDiscordLogo } from 'react-icons/rx';
 
@@ -102,29 +102,8 @@ const Footer = () => {
         className="sm:mt-28 mx-auto w-full object-cover relative left-0 right-0 opacity-70 sm:block hidden"
       />
 
-      <div className="max-w-[1400px] mx-auto w-full text-white sm:mt-28 flex justify-between px-5 lg:pr-12 gap-x-10 lg:flex-row flex-col sm:border-t-0 border-t-[1.5px] mt-10 border-white/20">
-        <div className="mt-10 sm:mt-0">
-          <img src="/hero/logo.webp" alt="Logo" className="" />
-          <p className="font-primary font-medium max-w-[33rem] mt-7">
-            YOUR JURISDICTION MAY NOT REGULATE CRYPTOCURRENCIES. THE VALUE OF CRYPTOCURRENCIES MAY RISE AND FALL.
-            PROFITS MAY BE SUBJECT TO CAPITAL GAINS TAXES OR OTHER LOCAL TAXES.
-          </p>
-          <div className="text-footergry flex items-center gap-x-7 sm:gap-x-16 mt-5">
-            <div className="flex items-center gap-x-[5px]">
-              <AiOutlineMail className="text-white text-2xl" />
-              <a href="mailto:hello@lucidia.io" className="font-medium font-primary">
-                hello@lucidia.io
-              </a>
-            </div>
-
-            <div className="flex items-center gap-x-[5px]">
-              <FaMobileAlt className="text-white text-xl" />
-              <p className="font-medium font-primary">347-519-5430</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="font-primary flex gap-x-20 lg:flex-row flex-col gap-y-8 mt-11 lg:mt-0">
+      <div className="max-w-[1400px] mx-auto w-full text-white sm:mt-28 grid lg:grid-cols-2 md:grid-cols-1 gap-x-28 gap-y-10 sm:border-t-0 border-t-[1.5px] mt-10 border-white/20">
+        <div className="font-primary flex gap-x-20 sm:flex-row flex-col gap-y-8 mt-11 lg:mt-0 sm:items-center items-start">
           <div className="">
             <h2 className="font-semibold text-[22px]">GENERAL</h2>
             <ul className="flex flex-col gap-y-2 mt-8">
@@ -175,6 +154,35 @@ const Footer = () => {
               })}
             </ul>
           </div>
+        </div>
+        <div className="flex flex-col gap-y-5 max-w-[540px] font-primary">
+          <h3 className="uppercase text-[22px] font-semibold pb-5">join the community</h3>
+          <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
+            <input
+              type="text"
+              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-3 outline-none"
+              placeholder="Full name"
+            />
+          </div>
+          <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
+            <input
+              type="text"
+              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-3 outline-none"
+              placeholder="E-mail"
+            />
+          </div>
+          <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
+            <input
+              type="text"
+              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-3 outline-none"
+              placeholder="Discord"
+            />
+          </div>
+          <input
+            type="button"
+            className="w-full bg-[url(/assets/images/footer/subscribe.svg)] font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black"
+            value="subscribe"
+          />
         </div>
       </div>
 
