@@ -76,10 +76,12 @@ const RoadCard = () => {
   ];
   return (
     <section>
-      <div className="mt-[331px] flex items-center justify-center mb-[287px]">
-        <h1 className="text-blue-400 font-semibold font-['Bai Jamjuree'] text-[72px] uppercase relative">RoadMap</h1>
+      <div className="mt-[331px] flex items-center justify-end mr-[20px] md:justify-center mb-[287px] mr-[30px]">
+        <h1 className="text-blue-400 font-semibold font-['Bai Jamjuree'] text-[45px] md:text-[72px] uppercase relative">
+          RoadMap
+        </h1>
       </div>
-      <div className="md:w-[82%] w-fit mx-auto flex flex-col relative mb-[151px]">
+      <div className="w-[90%] w-fit mx-auto flex flex-col relative mb-[151px]">
         <div className="grid gap-x-5 2 gap-y-8 justify-items-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
           {mapcard.map((items) => {
             return (
