@@ -1,5 +1,5 @@
 const Partners = () => {
-  const partners = ['unreal', 'play', 'g2', 'rebel', 'elephant', 'uni', 'hit', 'pancake', 'epic', 'arc'];
+  const partners = ['esports', 'play', 'goshen', 'unreal', 'sdcons', 'seman', 'rzm', 'sphereone', 'epic', 'arc'];
 
   return (
     <section className="bg-bg-w-full h-auto py-10 sm:px-5 overflow-hidden">
