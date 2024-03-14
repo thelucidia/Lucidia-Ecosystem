@@ -124,7 +124,7 @@ const Hero = () => {
                 })}
               </ul>
             </div>
-            <div className="h-16 w-[1px] bg-white/10 md:block hidden"></div>
+            {/* <div className="h-16 w-[1px] bg-white/10 md:block hidden"></div> */}
             {/* <div className="">
               <h1 className="font-primary font-medium">Audited by:</h1>
               <ul className="flex items-center gap-x-7 text-2xl mt-4">

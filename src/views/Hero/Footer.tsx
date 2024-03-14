@@ -157,7 +157,34 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-y-5 max-w-[540px] font-primary">
           <h3 className="uppercase text-[22px] font-semibold pb-5">join the community</h3>
-          <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
+          <div className="w-full h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] to-[#FFFFFF] relative flex items-center scale-x-[-1]">
+            <div className="absolute bg-black w-[99%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
+            <input
+              type="text"
+              className="px-10 font-primary w-full relative z-10 text-[14px] scale-x-[-1] bg-transparent outline-none"
+              placeholder="Full name"
+            />
+          </div>
+          <div className="w-full h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] to-[#FFFFFF] relative flex items-center scale-x-[-1]">
+            <div className="absolute bg-black w-[99%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
+            <input
+              type="text"
+              className="px-10 font-primary w-full relative z-10 text-[14px] scale-x-[-1] bg-transparent outline-none"
+              placeholder="E-mail"
+            />
+          </div>
+          <div className="w-full h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] to-[#FFFFFF] relative flex items-center scale-x-[-1]">
+            <div className="absolute bg-black w-[99%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
+            <input
+              type="text"
+              className="px-10 font-primary w-full relative z-10 text-[14px] scale-x-[-1] bg-transparent outline-none"
+              placeholder="Discord"
+            />
+          </div>
+          <button className="w-full clipped scale-x-[-1] rounded-[5px] bg-cyan font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black">
+            <h4 className="scale-x-[-1]">subscribe</h4>
+          </button>
+          {/* <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
             <input
               type="text"
               className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-10 outline-none"
@@ -177,10 +204,7 @@ const Footer = () => {
               className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-10 outline-none"
               placeholder="Discord"
             />
-          </div>
-          <button className="w-full clipped scale-x-[-1] rounded-[5px] bg-cyan font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black">
-            <h4 className="scale-x-[-1]">subscribe</h4>
-          </button>
+          </div> */}
           {/* <input
             type="button"
             className="w-full bg-[url(/assets/images/footer/subscribe.svg)] font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black"

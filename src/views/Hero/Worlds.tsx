@@ -1,38 +1,46 @@
 const Worlds = () => {
   const worldList = [
     {
-      title: 'zombie outbreak',
+      title: 'curse of the pharaoh',
       desc: 'Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.',
       image: 'zombie',
     },
     {
-      title: 'lucidcraft',
+      title: 'cryptocraft',
       desc: 'Shape limitless worlds, earn $LUCID Tokens, unleash creativity, adventure awaits!',
       image: 'minecraft',
     },
     {
-      title: 'cybercity',
+      title: 'sandstorm racers',
       desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
       image: 'cyber',
     },
     {
-      title: 'lucidia fps',
+      title: 'desert warriors',
       desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
       image: 'fps',
     },
+    // {
+    //   title: 'embryo lab',
+    //   desc: 'Use the power of AI to grow your unique NFT Lucidia Embryo.',
+    //   image: 'lab',
+    // },
+    // {
+    //   title: 'Eco city',
+    //   desc: 'Roam through the city, go shopping for your avatar or just hang in your virtual property',
+    //   image: 'eco',
+    // },
+  ];
+
+  const comingsoon = [
     {
       title: 'embryo lab',
-      desc: 'Use the power of AI to grow your unique NFT Lucidia Embryo.',
       image: 'lab',
     },
     {
       title: 'Eco city',
-      desc: 'Roam through the city, go shopping for your avatar or just hang in your virtual property',
       image: 'eco',
     },
-  ];
-
-  const comingsoon = [
     {
       title: 'tekcida',
       image: 'tekcida',
@@ -108,19 +116,19 @@ const Worlds = () => {
                     key={i}
                     className="w-[21rem] h-[26rem] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
                   >
-                    <div className="scale-x-[-1] relative w-full h-full group">
+                    <div className="scale-x-[-1] relative w-full h-full group ">
                       <img
                         src={`/worlds/${items.image}.webp`}
                         alt={items.title}
                         className="object-cover absolute w-full h-full"
                       />
 
+                      <div className="bg-black bg-opacity-95 backdrop-filter backdrop-blur-9.5 w-full h-full top-0 left-0 absolute z-10"></div>
                       <img
                         src="/worlds/coming.webp"
                         alt="Coming soon"
-                        className="absolute top-0 left-0 right-0 bottom-10 m-auto w-[8rem]"
+                        className="absolute top-0 left-0 right-0 bottom-10 m-auto w-[8rem] z-10"
                       />
-
                       <div className="absolute bottom-4 left-4 z-10 p-3 text-white/40">
                         <h1 className="uppercase font-primary text-2xl tracking-wide">{items.title}</h1>
                       </div>
