@@ -6,7 +6,6 @@ import Partners from '../views/Hero/Partners';
 import PartnersLower from '../views/Hero/PartnersLower';
 import PartnersUpper from '../views/Hero/PartnersUpper';
 import Tokens from '../views/Hero/Tokens';
-// import Tokens from "../views/Hero/Tokens";
 import Worlds from '../views/Hero/Worlds';
 
 const Landing = () => {

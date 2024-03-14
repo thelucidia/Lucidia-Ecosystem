@@ -160,29 +160,32 @@ const Footer = () => {
           <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
             <input
               type="text"
-              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-3 outline-none"
+              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-10 outline-none"
               placeholder="Full name"
             />
           </div>
           <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
             <input
               type="text"
-              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-3 outline-none"
+              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-10 outline-none"
               placeholder="E-mail"
             />
           </div>
           <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
             <input
               type="text"
-              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-3 outline-none"
+              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-10 outline-none"
               placeholder="Discord"
             />
           </div>
-          <input
+          <button className="w-full clipped scale-x-[-1] rounded-[5px] bg-cyan font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black">
+            <h4 className="scale-x-[-1]">subscribe</h4>
+          </button>
+          {/* <input
             type="button"
             className="w-full bg-[url(/assets/images/footer/subscribe.svg)] font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black"
             value="subscribe"
-          />
+          /> */}
         </div>
       </div>
 

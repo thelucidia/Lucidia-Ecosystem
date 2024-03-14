@@ -133,7 +133,7 @@ const Worlds = () => {
         </div>
       </div>
 
-      <div className="w-full h-auto bg-[#7700FF] py-14 mt-24 font-secondary">
+      <div className="w-full h-auto bg-prpl py-14 mt-24 font-secondary">
         <div className="flex mx-auto w-fit sm:gap-x-24 flex-wrap justify-between sm:justify-center px-3 gap-y-10 md:text-left text-center">
           {stats.map((items, i) => {
             return (

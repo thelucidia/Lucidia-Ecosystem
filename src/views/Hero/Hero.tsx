@@ -66,7 +66,7 @@ const Hero = () => {
 
       <div className="max-w-[1400px] w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row">
         <div className="w-full flex flex-col gap-y-[10px]">
-          <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[40rem] 2xl:leading-[5.5rem] font-semibold md:block hidden">
+          <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[40rem] 2xl:leading-[5.5rem] font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]">
             Elevating gaming through web3 solutions
           </h1>
 
@@ -77,7 +77,7 @@ const Hero = () => {
           <div className="flex gap-x-3 mt-10 md:flex-row flex-col gap-y-5">
             <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
               <button className=" w-full md:w-[9rem] h-14 clipped2  relative  font-bold flex items-center justify-center scale-x-[-1]">
-                <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 bg-gradient-to-bl from-white to-[#0ED4FF]"></div>
+                <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
                 <h1 className="font-secondary relative z-10 text-black font-[700] text-[12px] scale-x-[-1]">
                   BUY $LUCID
                 </h1>
@@ -141,11 +141,11 @@ const Hero = () => {
         </div>
 
         <div className="w-full relative flex">
-          <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[40rem] 2xl:leading-[5.5rem] font-semibold md:hidden block">
-            AI DRIVEN GAMEFI GOVERNED BY YOU
+          <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[40rem] 2xl:leading-[5.5rem] font-semibold md:hidden block text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]">
+            Elevating gaming through web3 solutions
           </h1>
           <img
-            src="/hero/hero.webp"
+            src="/hero/hero.svg"
             alt="Hero"
             className="object-cover top-0 md:w-auto h-[30vh] sm:h-[35vh] -mt-4 md:h-[70vh] mx-auto "
           />

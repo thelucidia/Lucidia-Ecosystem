@@ -387,9 +387,15 @@ const Nav = () => {
             </div>
 
             <a href="https://t.me/Lucidia_io" target="_blank" rel="noopener noreferrer" className="">
-              <button className="w-[13rem] h-9 clipped bg-bl relative  font-bold items-center justify-center md:flex hidden group">
+              {/* <button className="w-[13rem] h-9 clipped bg-bl relative font-bold items-center justify-center md:flex hidden group">
                 <div className="absolute bg-[#5e38b2] w-[98%] h-[91%] left-0 top-0 right-0 bottom-0 m-auto clipped group-hover:bg-bl transition-bg ease-in-out duration-300"></div>
-                <h1 className="font-secondary relative z-10 text-bl text-[12px] group-hover:text-black transition-color ease-in-out duration-300">
+                <h1 className="font-secondary relative z-10 text-bl text-[12px] group-hover:text-black transition-color ease-in-out duration-300 text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF]">
+                  Launch App
+                </h1>
+              </button> */}
+              <button className="w-full lg:w-[15rem] h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF] relative group font-bold flex items-center justify-center scale-x-[-1] md:flex hidden group">
+                <div className="absolute bg-[#5e38b2] w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
+                <h1 className="font-secondary relative z-10 font-[700] text-[14px] scale-x-[-1] text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF]">
                   Launch App
                 </h1>
               </button>
