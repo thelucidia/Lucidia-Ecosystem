@@ -103,7 +103,7 @@ const Footer = () => {
       />
 
       <div className="max-w-[1400px] mx-auto w-full text-white sm:mt-28 grid lg:grid-cols-2 md:grid-cols-1 gap-x-28 gap-y-10 sm:border-t-0 border-t-[1.5px] mt-10 border-white/20">
-        <div className="font-primary flex gap-x-20 sm:flex-row flex-col gap-y-8 mt-11 lg:mt-0 sm:items-center items-start">
+        <div className="font-primary flex gap-x-20 sm:flex-row flex-col gap-y-8 mt-11 lg:mt-0 sm:items-center items-start lg:order-first md:order-last order-last">
           <div className="">
             <h2 className="font-semibold text-[22px]">GENERAL</h2>
             <ul className="flex flex-col gap-y-2 mt-8">
@@ -155,7 +155,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col gap-y-5 max-w-[540px] font-primary">
+        <div className="flex flex-col gap-y-5 max-w-[540px] font-primary sm:pt-0 pt-20">
           <h3 className="uppercase text-[22px] font-semibold pb-5">join the community</h3>
           <div className="w-full h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] to-[#FFFFFF] relative flex items-center scale-x-[-1]">
             <div className="absolute bg-black w-[99%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
