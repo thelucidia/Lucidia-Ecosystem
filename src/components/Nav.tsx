@@ -392,12 +392,22 @@ const Nav = () => {
                   Launch App
                 </h1>
               </button> */}
-              <button className="w-full lg:w-[15rem] h-9 clipped2 bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF] relative group font-bold flex items-center justify-center scale-x-[-1] md:flex hidden group">
+              {/* <button className="w-full lg:w-[15rem] h-9 clipped2 bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF] relative group font-bold flex items-center justify-center scale-x-[-1] md:flex hidden group">
                 <div className="absolute bg-[#5e38b2] w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-bl"></div>
                 <h1 className="font-secondary relative z-10 font-[700] text-[14px] scale-x-[-1] text-transparent group-hover:text-black bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF]">
                   Launch App
                 </h1>
-              </button>
+              </button> */}
+              <div className="w-full lg:w-[15rem] relative lg:block hidden">
+                <div className="py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF]">
+                  Launch App
+                </div>
+                <img src="/assets/images/launch_app.svg" alt="LaunchApp" />
+                {/* <div className="absolute bg-[#5e38b2] w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-bl"></div>
+                <h1 className="font-secondary relative z-10 font-[700] text-[14px] scale-x-[-1] text-transparent group-hover:text-black bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF]">
+                  Launch App
+                </h1> */}
+              </div>
             </a>
           </div>
         </div>
