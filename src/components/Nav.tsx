@@ -20,6 +20,11 @@ const Nav = () => {
       type: 'internal',
     },
     {
+      name: 'gameplay',
+      slug: 'gameplay',
+      type: 'internal',
+    },
+    {
       name: 'roadmap',
       slug: 'roadmap',
       type: 'internal',
@@ -39,12 +44,6 @@ const Nav = () => {
       slug: 'team',
       type: 'internal',
     },
-    // {
-    //   name: 'gameplay',
-    //   slug: 'gameplay',
-    //   type: 'external',
-    //   link: 'https://share.arcware.cloud/33034e19-bac7-4d3b-910b-e2c45c2eccd8',
-    // },
   ];
 
   const navMobile = [
@@ -57,6 +56,11 @@ const Nav = () => {
     {
       name: 'home',
       slug: '/',
+      type: 'internal',
+    },
+    {
+      name: 'gameplay',
+      slug: 'gameplay',
       type: 'internal',
     },
     {
@@ -103,11 +107,6 @@ const Nav = () => {
     //   ],
     // },
     // {
-    //   name: 'gameplay',
-    //   slug: 'gameplay',
-    //   type: 'external',
-    //   link: 'https://share.arcware.cloud/33034e19-bac7-4d3b-910b-e2c45c2eccd8',
-    // },
     // {
     //   name: 'faq',
     //   slug: 'faq',
@@ -285,7 +284,7 @@ const Nav = () => {
                 </a>
               ) : (
                 <a href={items.slug} className="" key={i}>
-                  <li className="cursor-pointer" key={i}>
+                  <li className="cursor-pointer hover:text-[#0ED4FF]" key={i}>
                     {items.name}
                   </li>
                 </a>

@@ -1,5 +1,5 @@
 import Nav from '../components/Nav';
-import Footer from '../views/Hero/Footer';
+import Footer from '../components/Footer';
 import PartnersLower from '../views/Hero/PartnersLower';
 import Hero from '../views/Team/Hero';
 import Join from '../views/Team/Join';

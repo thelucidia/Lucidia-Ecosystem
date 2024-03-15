@@ -1,6 +1,6 @@
 import Nav from '../components/Nav';
 import RoadCard from '../components/RoadCard';
-import Footer from '../views/Hero/Footer';
+import Footer from '../components/Footer';
 import PartnersLower from '../views/Hero/PartnersLower';
 
 const RoadMap = () => {

@@ -1,5 +1,5 @@
 import Nav from '../components/Nav';
-import Footer from '../views/Hero/Footer';
+import Footer from '../components/Footer';
 import Hero from '../views/Hero/Hero';
 import How from '../views/Hero/How';
 import Partners from '../views/Hero/Partners';
