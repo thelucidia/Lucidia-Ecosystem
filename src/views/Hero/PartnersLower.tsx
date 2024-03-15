@@ -3,7 +3,7 @@ const PartnersLower = () => {
 
   return (
     <section className="w-full h-auto p-5 bg-[#0ED4FF] relative">
-      <div className="w-full max-w-[1400px] mx-auto flex flex-wrap items-center gap-x-9 md:gap-x-14 gap-y-7 justify-center h-auto">
+      <div className="w-full container mx-auto flex flex-wrap items-center gap-x-9 md:gap-x-14 gap-y-7 justify-center h-auto">
         {partners.map((items, i) => {
           return <img src={`/partners2/${items}.webp`} key={i} alt={items} className="md:w-auto w-20 invert" />;
         })}

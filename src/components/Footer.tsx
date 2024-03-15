@@ -73,7 +73,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full h-auto min-h-screen relative pb-16">
-      <div className="max-w-[1400px] mx-auto w-full text-white sm:mt-28 mt-10 px-5 text-left sm:text-center">
+      <div className="container mx-auto w-full text-white sm:mt-28 mt-10 px-5 text-left sm:text-center">
         <div className="mt-10">
           <h1 className="sm:text-[46px] text-[32px] font-bold leading-tight font-primary bg-clip-text bg-gradient-to-r w-fit sm:mx-auto  from-white via-white to-[#c4f4fe] text-transparent">
             Join community of 100k+ Lucidians
@@ -102,7 +102,7 @@ const Footer = () => {
         className="sm:mt-28 mx-auto w-full object-cover relative left-0 right-0 opacity-70 sm:block hidden"
       />
 
-      <div className="max-w-[1400px] mx-auto w-full text-white sm:mt-28 grid lg:grid-cols-2 md:grid-cols-1 gap-x-28 gap-y-10 sm:border-t-0 border-t-[1.5px] mt-10 border-white/20">
+      <div className="container mx-auto w-full text-white sm:mt-28 grid lg:grid-cols-2 md:grid-cols-1 gap-x-28 gap-y-10 sm:border-t-0 border-t-[1.5px] mt-10 border-white/20">
         <div className="font-primary flex gap-x-20 sm:flex-row flex-col gap-y-8 mt-11 lg:mt-0 sm:items-center items-start lg:order-first md:order-last order-last">
           <div className="">
             <h2 className="font-semibold text-[22px]">GENERAL</h2>
@@ -219,7 +219,7 @@ const Footer = () => {
         className="mt-10 mx-auto w-full object-cover relative left-0 right-0 opacity-70 sm:block hidden"
       />
 
-      <div className="max-w-[1400px] mx-auto w-full text-white sm:mt-16 flex justify-between items-center px-5 sm:border-t-0 border-t-[1.5px] mt-20 pt-12 sm:pt-0 border-white/20">
+      <div className="container mx-auto w-full text-white sm:mt-16 flex justify-between items-center px-5 sm:border-t-0 border-t-[1.5px] mt-20 pt-12 sm:pt-0 border-white/20">
         <div className="">
           <h3 className="font-secondary text-sm font-semibold uppercase">© Lucidia 2024 | All rights reserved.</h3>
           <p className="text-[12px] text-footergry font-secondary mt-2">
