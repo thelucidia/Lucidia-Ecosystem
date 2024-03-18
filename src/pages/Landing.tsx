@@ -14,7 +14,7 @@ const Landing = () => {
       <Nav />
       <Hero id={'landing'} />
       <PartnersUpper />
-      <Worlds />
+      <Worlds id={'landing'} />
       <How />
       <Partners />
       <Tokens id={'landing'} />

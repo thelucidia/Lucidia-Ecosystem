@@ -4,6 +4,7 @@ import Team from './pages/Team';
 import { lazy } from 'react';
 import Careers from './pages/Careers';
 import OurProducts from './pages/OurProducts';
+import GamePlay from './pages/GamePlay';
 // import RoadMap from './pages/RoadMap';
 const RoadMap = lazy(() => import('./pages/RoadMap'));
 
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/our-products" element={<OurProducts />} />
         <Route path="/roadmap" element={<RoadMap />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/gameplay" element={<GamePlay />} />
       </Routes>
     </section>
   );
