@@ -12,12 +12,12 @@ const Landing = () => {
   return (
     <section className="w-full h-auto bg-black relative">
       <Nav />
-      <Hero id={'hero'} />
+      <Hero id={'landing'} />
       <PartnersUpper />
       <Worlds />
       <How />
       <Partners />
-      <Tokens />
+      <Tokens id={'landing'} />
       <PartnersLower />
       <Footer />
     </section>

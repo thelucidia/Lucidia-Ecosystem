@@ -29,7 +29,7 @@ const Landing = () => {
       <Nav />
       <Hero id={'our-products'} />
       <PartnersUpper />
-      <Tokens />
+      <Tokens id={'our-products'} />
       <div className="w-full h-auto bg-prpl py-14 mt-24 font-secondary">
         <div className="flex mx-auto w-fit sm:gap-x-24 flex-wrap justify-between sm:justify-center px-3 gap-y-10 md:text-left text-center">
           {stats.map((items, i) => {
@@ -65,8 +65,8 @@ const Landing = () => {
               <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">
                 <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-prpl rounded-md">
                   <p className="lg:py-[112px] md:py-[72px] py-[52px] lg:pl-[83px] md:pl-[40px] pl-[25px] pr-[13px] text-[24px] font-primary leading-[36px]">
-                    Ready to transform your gaming experience? Connect, create, and Trade in the Middle East's premier
-                    gaming ecosystem.
+                    Ready to transform your gaming experience? <span className="text-prpl">Connect, create,</span> and
+                    <span className="text-prpl"> Trade</span> in the Middle East's premier gaming ecosystem.
                   </p>
                 </div>
               </div>

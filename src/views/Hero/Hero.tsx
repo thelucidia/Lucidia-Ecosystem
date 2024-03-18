@@ -4,12 +4,12 @@ import { SiTwitter } from 'react-icons/si';
 import MainVideo from '../../../videos/hero.mp4';
 import { useState } from 'react';
 
-interface HeroProps {
+interface IHero {
   id: string;
 }
 
-interface Data {
-  hero: {
+interface IData {
+  landing: {
     image: string;
     title: string;
     desc: string;
@@ -28,8 +28,8 @@ interface Data {
     buttons: boolean;
   };
 }
-const data: Data = {
-  hero: {
+const data: IData = {
+  landing: {
     image: '/hero/hero.svg',
     title: 'Elevating gaming through web3 solutions',
     desc: 'Introducing the first comprehensive web3 gaming ecosystem in the Middle East',
@@ -43,7 +43,7 @@ const data: Data = {
   },
 };
 
-const Hero = ({ id }: HeroProps) => {
+const Hero = ({ id }: IHero) => {
   const community = [
     {
       link: 'https://t.me/Lucidia_io',
@@ -58,7 +58,6 @@ const Hero = ({ id }: HeroProps) => {
       icon: <SiTwitter />,
     },
   ];
-  console.log(data[id]);
   const item = data[id];
   //   const audited = [
   //     {
@@ -104,82 +103,86 @@ const Hero = ({ id }: HeroProps) => {
 
       {/* <img src="/hero/herobg.webp" alt="Herobg" className="w-full h-full object-cover absolute top-0 left-0" /> */}
 
-      <div className="container w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row">
+      <div className="container w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row md:flex-grow">
         <div className="w-full flex flex-col gap-y-[10px]">
-          <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[40rem] 2xl:leading-[5.5rem] font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]">
+          <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[800px] 2xl:leading-[5.5rem] font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]">
             {item.title}
           </h1>
           <div className=" max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm">
             {item.desc}
           </div>
-          <div className="flex gap-x-3 mt-10 md:flex-row flex-col gap-y-5">
-            <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
-              <button className=" w-full md:w-[9rem] h-14 clipped2  relative  font-bold flex items-center justify-center scale-x-[-1]">
-                <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
-                <h1 className="font-secondary relative z-10 text-black font-[700] text-[12px] scale-x-[-1]">
-                  BUY $LUCID
-                </h1>
-              </button>
-            </a>
+          {item.buttons && (
+            <>
+              <div className="flex gap-x-3 mt-10 md:flex-row flex-col gap-y-5">
+                <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
+                  <button className=" w-full md:w-[9rem] h-14 clipped2  relative  font-bold flex items-center justify-center scale-x-[-1]">
+                    <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
+                    <h1 className="font-secondary relative z-10 text-black font-[700] text-[12px] scale-x-[-1]">
+                      BUY $LUCID
+                    </h1>
+                  </button>
+                </a>
 
-            <a
-              href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=""
-            >
-              <button className=" w-full md:w-[13rem] h-14 clipped2 bg-white relative  font-bold flex items-center justify-center scale-x-[-1] group">
-                <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300">
-                  <img
-                    src="/hero/trans.webp"
-                    alt="Herobg"
-                    className="w-full h-full object-cover absolute top-0 left-0 group-hover:opacity-0 transition-opacity ease-in-out duration-300"
-                  />
+                <a
+                  href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <button className=" w-full md:w-[13rem] h-14 clipped2 bg-white relative  font-bold flex items-center justify-center scale-x-[-1] group">
+                    <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300">
+                      <img
+                        src="/hero/trans.webp"
+                        alt="Herobg"
+                        className="w-full h-full object-cover absolute top-0 left-0 group-hover:opacity-0 transition-opacity ease-in-out duration-300"
+                      />
+                    </div>
+                    <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300">
+                      TOKEN ALLOCATION
+                    </h1>
+                  </button>
+                </a>
+              </div>
+              <div className="mt-20 flex md:items-start gap-x-8 md:flex-row flex-col gap-y-9">
+                <div className="">
+                  <h1 className="font-primary font-medium">Join community of 100k+ Lucidians</h1>
+                  <ul className="flex items-center gap-x-4 text-2xl mt-4">
+                    {community.map((items, i) => {
+                      return (
+                        <a
+                          href={items.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="sm:opacity-40 hover:opacity-100"
+                          key={i}
+                        >
+                          {items.icon}
+                        </a>
+                      );
+                    })}
+                  </ul>
                 </div>
-                <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300">
-                  TOKEN ALLOCATION
-                </h1>
-              </button>
+                {/* <div className="h-16 w-[1px] bg-white/10 md:block hidden"></div> */}
+                {/* <div className="">
+      <h1 className="font-primary font-medium">Audited by:</h1>
+      <ul className="flex items-center gap-x-7 text-2xl mt-4">
+        {audited.map((items, i) => {
+          return (
+            <a href={items.link} target="_blank" rel="noopener noreferrer" className="" key={i}>
+              <img src={`/hero/${items.name}.webp`} alt={items.name} className="" key={i} />
             </a>
-          </div>
-          <div className="mt-20 flex md:items-start gap-x-8 md:flex-row flex-col gap-y-9">
-            <div className="">
-              <h1 className="font-primary font-medium">Join community of 100k+ Lucidians</h1>
-              <ul className="flex items-center gap-x-4 text-2xl mt-4">
-                {community.map((items, i) => {
-                  return (
-                    <a
-                      href={items.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="sm:opacity-40 hover:opacity-100"
-                      key={i}
-                    >
-                      {items.icon}
-                    </a>
-                  );
-                })}
-              </ul>
-            </div>
-            {/* <div className="h-16 w-[1px] bg-white/10 md:block hidden"></div> */}
-            {/* <div className="">
-              <h1 className="font-primary font-medium">Audited by:</h1>
-              <ul className="flex items-center gap-x-7 text-2xl mt-4">
-                {audited.map((items, i) => {
-                  return (
-                    <a href={items.link} target="_blank" rel="noopener noreferrer" className="" key={i}>
-                      <img src={`/hero/${items.name}.webp`} alt={items.name} className="" key={i} />
-                    </a>
-                  );
-                })}
-              </ul>
-            </div> */}
-          </div>
+          );
+        })}
+      </ul>
+    </div> */}
+              </div>
+            </>
+          )}
         </div>
 
         <div className="w-full relative flex">
           <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[40rem] 2xl:leading-[5.5rem] font-semibold md:hidden block text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]">
-            Elevating gaming through web3 solutions
+            {item.title}
           </h1>
           <img
             src={`${item.image}`}
