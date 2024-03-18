@@ -142,9 +142,9 @@ const Nav = () => {
     setNav((curr) => !curr);
   };
 
-  const handleNavDesktop = () => {
-    setNavDesktop((curr) => !curr);
-  };
+  // const handleNavDesktop = () => {
+  //   setNavDesktop((curr) => !curr);
+  // };
 
   const [screenSize, setScreenSize] = useState(getCurrentDimension());
 
@@ -298,7 +298,7 @@ const Nav = () => {
               <div className="w-6 h-[3px] bg-white"></div>
             </button>
 
-            <button
+            {/* <button
               className={` flex-col items-end gap-y-3 xl:flex hidden transition-all ease-in-out duration-300 ${navDesktopActive ? 'rotate-[360deg]' : 'rotate-0'}`}
               onClick={handleNavDesktop}
             >
@@ -308,7 +308,7 @@ const Nav = () => {
               <div
                 className={` transition-all ease-in-out duration-300  ${navDesktopActive ? 'bg-cyan rotate-[45deg] w-8 h-[3px] -translate-y-[6px]' : 'w-6 h-[3px] bg-white'}`}
               ></div>
-            </button>
+            </button> */}
 
             <div
               className={`w-[16rem] h-[23rem] clipped bg-bl absolute z-10 top-[3.2rem] transition-height ease-in-out duration-300  -left-[14rem] ${navDesktopActive ? 'md:max-h-[23rem] max-h-[0rem]' : 'max-h-0'}`}
