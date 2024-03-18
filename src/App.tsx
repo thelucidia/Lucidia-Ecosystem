@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Team from './pages/Team';
 import { lazy } from 'react';
 import Careers from './pages/Careers';
+import OurProducts from './pages/OurProducts';
 // import RoadMap from './pages/RoadMap';
 const RoadMap = lazy(() => import('./pages/RoadMap'));
 
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/our-products" element={<OurProducts />} />
         <Route path="/roadmap" element={<RoadMap />} />
         <Route path="/careers" element={<Careers />} />
       </Routes>
