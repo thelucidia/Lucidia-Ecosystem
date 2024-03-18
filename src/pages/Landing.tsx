@@ -12,7 +12,7 @@ const Landing = () => {
   return (
     <section className="w-full h-auto bg-black relative">
       <Nav />
-      <Hero />
+      <Hero id={'hero'} />
       <PartnersUpper />
       <Worlds />
       <How />

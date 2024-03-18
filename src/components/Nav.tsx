@@ -31,7 +31,7 @@ const Nav = () => {
     },
     {
       name: 'our product',
-      slug: 'our-product',
+      slug: 'our-products',
       type: 'internal',
     },
     {
@@ -70,7 +70,7 @@ const Nav = () => {
     },
     {
       name: 'our product',
-      slug: 'our-product',
+      slug: 'our-products',
       type: 'internal',
     },
     {

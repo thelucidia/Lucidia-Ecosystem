@@ -4,7 +4,46 @@ import { SiTwitter } from 'react-icons/si';
 import MainVideo from '../../../videos/hero.mp4';
 import { useState } from 'react';
 
-const Hero = () => {
+interface HeroProps {
+  id: string;
+}
+
+interface Data {
+  hero: {
+    image: string;
+    title: string;
+    desc: string;
+    buttons: boolean;
+  };
+  'our-products': {
+    image: string;
+    title: string;
+    desc: string;
+    buttons: boolean;
+  };
+  [key: string]: {
+    image: string;
+    title: string;
+    desc: string;
+    buttons: boolean;
+  };
+}
+const data: Data = {
+  hero: {
+    image: '/hero/hero.svg',
+    title: 'Elevating gaming through web3 solutions',
+    desc: 'Introducing the first comprehensive web3 gaming ecosystem in the Middle East',
+    buttons: true,
+  },
+  'our-products': {
+    image: '/coins.webp',
+    title: 'Welcome to lucidia`s ecosystem',
+    desc: 'Explore our suite of innovative products designed for the vibrant Middle Eastern gaming community. From unique marketplaces to advanced NFT tools, Lucidia is your gateway to the future of gaming.',
+    buttons: false,
+  },
+};
+
+const Hero = ({ id }: HeroProps) => {
   const community = [
     {
       link: 'https://t.me/Lucidia_io',
@@ -19,7 +58,8 @@ const Hero = () => {
       icon: <SiTwitter />,
     },
   ];
-
+  console.log(data[id]);
+  const item = data[id];
   //   const audited = [
   //     {
   //       name: 'inter',
@@ -67,13 +107,11 @@ const Hero = () => {
       <div className="container w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row">
         <div className="w-full flex flex-col gap-y-[10px]">
           <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[40rem] 2xl:leading-[5.5rem] font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]">
-            Elevating gaming through web3 solutions
+            {item.title}
           </h1>
-
           <div className=" max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm">
-            Introducing the first comprehensive web3 gaming ecosystem in the Middle East
+            {item.desc}
           </div>
-
           <div className="flex gap-x-3 mt-10 md:flex-row flex-col gap-y-5">
             <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
               <button className=" w-full md:w-[9rem] h-14 clipped2  relative  font-bold flex items-center justify-center scale-x-[-1]">
@@ -104,7 +142,6 @@ const Hero = () => {
               </button>
             </a>
           </div>
-
           <div className="mt-20 flex md:items-start gap-x-8 md:flex-row flex-col gap-y-9">
             <div className="">
               <h1 className="font-primary font-medium">Join community of 100k+ Lucidians</h1>
@@ -145,7 +182,7 @@ const Hero = () => {
             Elevating gaming through web3 solutions
           </h1>
           <img
-            src="/hero/hero.svg"
+            src={`${item.image}`}
             alt="Hero"
             className="object-cover top-0 md:w-auto h-[30vh] sm:h-[35vh] -mt-4 md:h-[70vh] mx-auto "
           />
