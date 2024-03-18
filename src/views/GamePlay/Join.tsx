@@ -14,7 +14,7 @@ const Join = () => {
                 Join community of <span className="text-[#fff]">100k+</span> Lucidians
                 <img
                   src="/assets/images/join_icon.png"
-                  className="absolute sm:bottom-[15px] sm:right-[30px] bottom-[]  sm:w-[36px] sm:y-[47px] w-[20px] y-[27px]"
+                  className="absolute sm:bottom-[15px] sm:right-[30px] bottom-[7px] right-[30px]  sm:w-[36px] sm:y-[47px] w-[20px] y-[27px]"
                 />
               </h2>
 
