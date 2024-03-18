@@ -103,7 +103,7 @@ const Hero = ({ id }: IHero) => {
 
       {/* <img src="/hero/herobg.webp" alt="Herobg" className="w-full h-full object-cover absolute top-0 left-0" /> */}
 
-      <div className="container w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row md:flex-grow">
+      <div className="container w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row">
         <div className="w-full flex flex-col gap-y-[10px]">
           <h1 className="font-primary text-3xl md:text-5xl 2xl:text-[72px] max-w-[800px] 2xl:leading-[5.5rem] font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]">
             {item.title}
@@ -115,8 +115,8 @@ const Hero = ({ id }: IHero) => {
             <>
               <div className="flex gap-x-3 mt-10 md:flex-row flex-col gap-y-5">
                 <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
-                  <button className=" w-full md:w-[9rem] h-14 clipped2  relative  font-bold flex items-center justify-center scale-x-[-1]">
-                    <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
+                  <button className=" w-full md:w-[9rem] h-14 clipped2  relative font-bold flex items-center justify-center scale-x-[-1] group">
+                    <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white"></div>
                     <h1 className="font-secondary relative z-10 text-black font-[700] text-[12px] scale-x-[-1]">
                       BUY $LUCID
                     </h1>
