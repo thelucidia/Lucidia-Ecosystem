@@ -1,4 +1,10 @@
-const Worlds = () => {
+interface IWorld {
+  id: string;
+}
+
+const Worlds = ({ id }: IWorld) => {
+  const flag = id === 'landing';
+
   const worldList = [
     {
       title: 'curse of the pharaoh',
@@ -71,15 +77,22 @@ const Worlds = () => {
   ];
 
   return (
-    <section className="w-full h-auto min-h-screen bg-bg relative">
+    <section className="w-full h-auto min-h-screen sm:bg-bg bg-transparent relative">
       <div className="px-5 py-5">
         <div className="container w-full mx-auto h-auto sm:mt-11">
-          <div className="w-fit">
-            <h1 className="font-medium text-transparent text-2xl sm:text-3xl md:text-4xl font-primary bg-clip-text bg-gradient-to-r from-[#e4d3fe] via-white to-lavender w-fit 2xl:text-left text-center mx-0 sm:mx-auto 2xl:mx-0">
-              Free2Play Open Worlds
-            </h1>
+          <div className="w-fit max-w-[1400px] mx-auto">
+            {flag && (
+              <h1 className="font-medium text-transparent text-2xl sm:text-3xl md:text-4xl font-primary bg-clip-text bg-gradient-to-r from-[#e4d3fe] via-white to-lavender w-fit 2xl:text-left text-center mx-0 sm:mx-auto 2xl:mx-0">
+                Free2Play Open Worlds
+              </h1>
+            )}
+            {!flag && (
+              <h1 className="font-medium text-transparent text-2xl sm:text-3xl md:text-4xl font-primary w-fit bg-clip-text bg-gradient-to-r from-[#A5FF16] via-[#0ED4FF] to-white text-left sm:block hidden">
+                All Games You Can Play!
+              </h1>
+            )}
 
-            <div className="flex flex-wrap gap-3 mt-12 items-center justify-center w-fit">
+            <div className="flex flex-wrap gap-3 mt-12 items-center justify-between w-fit">
               {worldList.map((items, i) => {
                 return (
                   <div
@@ -95,7 +108,9 @@ const Worlds = () => {
 
                       <div className=" shadow-world w-full h-full relative z-10"></div>
 
-                      <div className="transition-shadow ease-in-out duration-500 group-hover:shadow-worldHover w-full h-full top-0 left-0 absolute z-10"></div>
+                      <div
+                        className={`transition-shadow ease-in-out duration-500 ${flag ? `group-hover:shadow-worldHover` : `group-hover:shadow-gameHover`}  w-full h-full top-0 left-0 absolute z-10`}
+                      ></div>
 
                       <div className="absolute bottom-4 left-4 z-10 p-3 group-hover:text-black text-white ease-in-out duration-[0.1s]">
                         <h1 className="uppercase font-primary text-2xl tracking-wide group-hover:mb-2 transition-all">
@@ -140,19 +155,20 @@ const Worlds = () => {
           </div>
         </div>
       </div>
-
-      <div className="w-full h-auto bg-prpl py-14 mt-24 font-secondary">
-        <div className="flex mx-auto w-fit sm:gap-x-24 flex-wrap justify-between sm:justify-center px-3 gap-y-10 md:text-left text-center">
-          {stats.map((items, i) => {
-            return (
-              <div className="" key={i}>
-                <h1 className="text-5xl sm:text-[54px] font-bold text-center">{items.title}</h1>
-                <p className="font-semibold uppercase sm:text-base text-sm">{items.desc}</p>
-              </div>
-            );
-          })}
+      {flag && (
+        <div className="w-full h-auto bg-prpl py-14 mt-24 font-secondary">
+          <div className="flex mx-auto w-fit sm:gap-x-24 flex-wrap justify-between sm:justify-center px-3 gap-y-10 md:text-left text-center">
+            {stats.map((items, i) => {
+              return (
+                <div className="" key={i}>
+                  <h1 className="text-5xl sm:text-[54px] font-bold text-center">{items.title}</h1>
+                  <p className="font-semibold uppercase sm:text-base text-sm">{items.desc}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 };
