@@ -4,17 +4,26 @@ import PartnersLower from '../views/Hero/PartnersLower';
 import Banner from '../views/Career/Banner';
 import Culture from '../views/Career/Culture';
 import Journey from '../views/Career/Journey';
+import { motion } from 'framer-motion';
 
 const Landing = () => {
   return (
-    <section className="w-full h-auto bg-black relative">
-      <Nav />
-      <Banner />
-      <Culture />
-      <Journey />
-      <PartnersLower />
-      <Footer />
-    </section>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.2 }}
+      className="bg-black"
+    >
+      <section className="w-full h-auto bg-black relative">
+        <Nav />
+        <Banner />
+        <Culture />
+        <Journey />
+        <PartnersLower />
+        <Footer />
+      </section>
+    </motion.div>
   );
 };
 
