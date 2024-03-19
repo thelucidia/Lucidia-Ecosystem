@@ -1,12 +1,10 @@
 import Landing from './pages/Landing';
 import { Route, Routes } from 'react-router-dom';
 import Team from './pages/Team';
-import { lazy } from 'react';
 import Careers from './pages/Careers';
 import OurProducts from './pages/OurProducts';
 import GamePlay from './pages/GamePlay';
-// import RoadMap from './pages/RoadMap';
-const RoadMap = lazy(() => import('./pages/RoadMap'));
+import RoadMap from './pages/RoadMap';
 
 const App = () => {
   return (

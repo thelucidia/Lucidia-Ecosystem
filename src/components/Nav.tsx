@@ -5,6 +5,7 @@ import { RxDiscordLogo } from 'react-icons/rx';
 import { TfiTwitter } from 'react-icons/tfi';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const navList = [
@@ -21,27 +22,27 @@ const Nav = () => {
     },
     {
       name: 'gameplay',
-      slug: 'gameplay',
+      slug: '/gameplay',
       type: 'internal',
     },
     {
       name: 'roadmap',
-      slug: 'roadmap',
+      slug: '/roadmap',
       type: 'internal',
     },
     {
       name: 'our product',
-      slug: 'our-products',
+      slug: '/our-products',
       type: 'internal',
     },
     {
       name: 'careers',
-      slug: 'careers',
+      slug: '/careers',
       type: 'internal',
     },
     {
       name: 'our team',
-      slug: 'team',
+      slug: '/team',
       type: 'internal',
     },
   ];
@@ -60,27 +61,27 @@ const Nav = () => {
     },
     {
       name: 'gameplay',
-      slug: 'gameplay',
+      slug: '/gameplay',
       type: 'internal',
     },
     {
       name: 'roadmap',
-      slug: 'roadmap',
+      slug: '/roadmap',
       type: 'internal',
     },
     {
       name: 'our product',
-      slug: 'our-products',
+      slug: '/our-products',
       type: 'internal',
     },
     {
       name: 'careers',
-      slug: 'careers',
+      slug: '/careers',
       type: 'internal',
     },
     {
       name: 'our team',
-      slug: 'team',
+      slug: '/team',
       type: 'internal',
     },
     // {
@@ -196,7 +197,7 @@ const Nav = () => {
                   </motion.li>
                 </a>
               ) : items.type === 'internal' ? (
-                <a href={`${items.slug}`} className="w-full h-full" key={i}>
+                <Link to={`${items.slug}`} className="w-full h-full" key={i}>
                   <motion.li
                     initial={{ x: 100, opacity: 0 }}
                     animate={navActive ? { x: 0, opacity: 1 } : {}}
@@ -205,7 +206,7 @@ const Nav = () => {
                   >
                     {items.name}
                   </motion.li>
-                </a>
+                </Link>
               ) : items.name === 'audit' ? (
                 <motion.li
                   initial={{ x: 100, opacity: 0 }}
@@ -252,9 +253,9 @@ const Nav = () => {
             <div className="text-white flex mx-auto w-fit mt-5 gap-x-6 text-2xl">
               {icons.map((items, i) => {
                 return (
-                  <a href={items.link} target="_blank" rel="noopener noreferer" className="" key={i}>
+                  <Link to={items.link} target="_blank" rel="noopener noreferer" className="" key={i}>
                     {items.icon}
-                  </a>
+                  </Link>
                 );
               })}
             </div>
@@ -277,17 +278,17 @@ const Nav = () => {
           <ul className="font-secondary font-semibold text-sm uppercase items-center gap-x-12 text-white xl:flex hidden">
             {navList.map((items, i) => {
               return items.type === 'external' ? (
-                <a href={items.slug} target="_blank" rel="noopener noreferrer" className="" key={i}>
+                <Link to={items.slug} target="_blank" rel="noopener noreferrer" className="" key={i}>
                   <li className="cursor-pointer" key={i}>
                     {items.name}
                   </li>
-                </a>
+                </Link>
               ) : (
-                <a href={items.slug} className="" key={i}>
+                <Link to={items.slug} className="" key={i}>
                   <li className="cursor-pointer hover:text-[#0ED4FF]" key={i}>
                     {items.name}
                   </li>
-                </a>
+                </Link>
               );
             })}
           </ul>
@@ -318,8 +319,8 @@ const Nav = () => {
                   <ul className="font-secondary font-semibold uppercase p-4 px-7 w-full text-sm text-white">
                     {navMobile.slice(3, 9).map((items, i) => {
                       return items.type === 'external' ? (
-                        <a
-                          href={items.slug}
+                        <Link
+                          to={items.slug}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-full h-full"
@@ -333,9 +334,9 @@ const Nav = () => {
                           >
                             {items.name}
                           </motion.li>
-                        </a>
+                        </Link>
                       ) : items.type === 'internal' ? (
-                        <a href={`#${items.slug}`} className="w-full h-full" key={i} onClick={handleNav}>
+                        <Link to={`${items.slug}`} className="w-full h-full" key={i} onClick={handleNav}>
                           <motion.li
                             initial={{ x: 100, opacity: 0 }}
                             animate={navDesktopActive ? { x: 0, opacity: 1 } : {}}
@@ -344,7 +345,7 @@ const Nav = () => {
                           >
                             {items.name}
                           </motion.li>
-                        </a>
+                        </Link>
                       ) : items.name === 'audit' ? (
                         <motion.li
                           initial={{ x: 100, opacity: 0 }}
