@@ -400,7 +400,7 @@ const Nav = () => {
                 </h1>
               </button> */}
               <div className="w-full lg:w-[15rem] relative lg:block hidden">
-                <div className="py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF]">
+                <div className="hover:text-white py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF]">
                   Launch App
                 </div>
                 <img src="/assets/images/launch_app.svg" alt="LaunchApp" />
