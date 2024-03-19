@@ -271,9 +271,9 @@ const Nav = () => {
         />
 
         <div className="max-w-[1400px] w-full mx-auto flex justify-between items-center mt-5">
-          <a href="/" className="">
+          <Link to="/" className="">
             <img src="/hero/newlogo.png" alt="Logo" className="w-52" />
-          </a>
+          </Link>
 
           <ul className="font-secondary font-semibold text-sm uppercase items-center gap-x-12 text-white xl:flex hidden">
             {navList.map((items, i) => {

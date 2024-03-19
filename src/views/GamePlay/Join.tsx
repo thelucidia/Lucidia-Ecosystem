@@ -2,7 +2,7 @@ const Join = () => {
   // const partners = ['esports', 'play', 'goshen', 'unreal', 'sdcons', 'seman', 'rzm', 'sphereone', 'epic', 'arc'];
 
   return (
-    <section className="max-w-[1400px] mx-auto bg-bg-w-full h-auto py-10 sm:px-5 relative">
+    <section className="max-w-[1400px] mx-auto bg-bg-w-full h-auto py-10 sm:px-5 relative mt-10">
       <div className="w-full h-auto mx-auto">
         <img src="/assets/images/racer.png" className="absolute z-10 top-[100px] sm:left-5 -left-[200px]" width={721} />
         <div className="py-[20px] w-[17rem] h-auto clipped3 bg-[#B0EB10] z-10 items-center justify-center scale-x-[-1] text-white mt-2 sm:flex hidden"></div>
@@ -21,7 +21,7 @@ const Join = () => {
               {/* {partners.map((items, i) => {
                 return (
                   // <img src={`/partners/${items}.webp`} alt="Partners" className={`sm:w-auto w-20 ${items === 'epic' ? 'scale-[0.7] sm:scale-[1]' : toScale.includes(items) ? 'scale-[1.5] sm:scale-[1]' : ''}`} key={i} />
-                  
+
                   <img src={`/partners/${items}.webp`} alt="Partners" className={`sm:w-[10rem] w-32`} key={i} />
                   );
                 })} */}

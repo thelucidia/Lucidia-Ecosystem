@@ -17,15 +17,15 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="w-full h-full relative mt-[200px]">
+    <section className="max-w-[1400px] mx-auto w-full h-full relative mt-[200px]">
       <div className="w-full mx-auto flex justify-center lg:flex-row flex-col sm:items-center items-start">
-        <div className="">
+        <div className="w-[40%]">
           <h1 className="max-w-[380px] flex items-center font-primary leading-[58px] w-auto text-[32px] 2xl:text-[62px] 2xl:leading-[3.5rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-[#A5FF16] via-[#0ED4FF] to-white">
             Benefits for game developers
           </h1>
         </div>
         <div className="sm:w-[58.9%] flex flex-col gap-y-5 md:py-16 sm:py-7 py-5 lg:block hidden">
-          <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">
+          <div className="w-full h-auto clipped2 bg-gry relative  font-[400] flex items-center justify-center scale-x-[-1] rounded-md">
             <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-[#0ED4FF] rounded-md py-14 pl-7 pr-8 flex flex-col gap-y-10">
               {data.map((item, i) => {
                 return (
@@ -38,7 +38,7 @@ const Benefits = () => {
           </div>
         </div>
         <div className="sm:w-[58.9%] flex flex-col gap-y-5 md:py-16 sm:py-7 py-5 lg:hidden md:block">
-          <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">
+          <div className="w-full h-auto clipped2 bg-gry relative  font-[400] flex items-center justify-center scale-x-[-1] rounded-md">
             <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-[#0ED4FF] rounded-md py-14 pl-7 pr-8 flex flex-col gap-y-10">
               {data.map((item, i) => {
                 return (
