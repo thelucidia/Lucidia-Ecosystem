@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 const Partners = () => {
   const partners = ['esports', 'play', 'goshen', 'unreal', 'sdcons', 'seman', 'rzm', 'sphereone', 'epic', 'arc'];
 
@@ -20,8 +22,14 @@ const Partners = () => {
               {partners.map((items, i) => {
                 return (
                   // <img src={`/partners/${items}.webp`} alt="Partners" className={`sm:w-auto w-20 ${items === 'epic' ? 'scale-[0.7] sm:scale-[1]' : toScale.includes(items) ? 'scale-[1.5] sm:scale-[1]' : ''}`} key={i} />
-
-                  <img src={`/partners/${items}.webp`} alt="Partners" className={`sm:w-[10rem] w-32`} key={i} />
+                  <motion.div
+                    initial={{ x: 150 }}
+                    whileInView={{ x: 0 }}
+                    transition={{ type: 'spring', stiffness: 100 }}
+                    className=""
+                  >
+                    <img src={`/partners/${items}.webp`} alt="Partners" className={`sm:w-[10rem] w-32`} key={i} />
+                  </motion.div>
                 );
               })}
             </div>

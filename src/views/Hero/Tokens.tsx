@@ -92,7 +92,7 @@ const Tokens = ({ id }: IToken) => {
           </h1>
         )}
 
-        <div className="md:mt-20 mt-5 flex flex-wrap items-center justify-center gap-5">
+        <div className="md:mt-20 mt-5 flex flex-wrap items-center justify-center gap-5 overflow-hidden">
           {item.map((items, i) => {
             return <TokenBox key={i} title={items.title} slug={items.slug} desc={items.desc} img={items.img} />;
           })}

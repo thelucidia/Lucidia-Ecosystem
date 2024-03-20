@@ -58,6 +58,17 @@ const Hero = () => {
       ],
     },
     {
+      name: 'Malek Sharabi',
+      position: 'Head of Developers',
+      link: 'https://www.linkedin.com/in/malek-sharabi-016862118/',
+      desc: [
+        'Game Developer (6 years)',
+        'Smart Contracts Developer (1 year)',
+        'Front-end Developer (1 year)',
+        'SEO Specialist (2 years)',
+      ],
+    },
+    {
       name: 'Jahongir Erkinov',
       position: 'Head of Game Dev',
       link: 'https://www.linkedin.com/in/jakhongirerkinov/',
@@ -73,17 +84,6 @@ const Hero = () => {
         'Unreal Engine 5.3 Developer (2 years)',
         'Front-end Developer (4 years)',
         'Back-end Developer (4 years)',
-      ],
-    },
-    {
-      name: 'Malek Sharabi',
-      position: 'Head of Developers',
-      link: 'https://www.linkedin.com/in/malek-sharabi-016862118/',
-      desc: [
-        'Game Developer (6 years)',
-        'Smart Contracts Developer (1 year)',
-        'Front-end Developer (1 year)',
-        'SEO Specialist (2 years)',
       ],
     },
     {

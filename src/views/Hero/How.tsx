@@ -1,5 +1,6 @@
 import { MdOutlineOpenInNew } from 'react-icons/md';
 import { IoMdInformationCircleOutline } from 'react-icons/io';
+import { motion } from 'framer-motion';
 
 const How = () => {
   const data = [
@@ -51,17 +52,26 @@ const How = () => {
 
       <div className="w-full h-full overflow-hidden px-5">
         <div className="container w-full mx-auto flex lg:gap-x-32 justify-center lg:flex-row flex-col lg:items-start items-center">
-          <div className="md:w-[60%]  text-white relative z-10 text-center lg:text-left">
-            <h1 className="font-medium text-transparent text-2xl sm:text-3xl md:text-4xl font-primary bg-clip-text bg-gradient-to-r from-white via-[#cab8ff] to-white sm:max-w-[12rem] mx-auto lg:mx-0">
-              How to buy $LUCID?
-            </h1>
-            <p className="font-primary font-medium mt-5">
-              Have more questions? Send them to our{' '}
-              <a href="https://t.me/Lucidia_io" className="text-prpl underline underline-offset-4">
-                Telegram Chat
-              </a>{' '}
-              and the Community Managers will answer them in a matter of minutes!
-            </p>
+          <div className="md:w-[60%]  text-white relative z-10 text-center lg:text-left overflow-hidden">
+            <motion.div
+              initial={{ x: -150 }}
+              whileInView={{ x: 0 }}
+              transition={{ type: 'spring', stiffness: 100 }}
+              className=""
+            >
+              <div>
+                <h1 className="font-medium text-transparent text-2xl sm:text-3xl md:text-4xl font-primary bg-clip-text bg-gradient-to-r from-white via-[#cab8ff] to-white sm:max-w-[12rem] mx-auto lg:mx-0">
+                  How to buy $LUCID?
+                </h1>
+                <p className="font-primary font-medium mt-5">
+                  Have more questions? Send them to our{' '}
+                  <a href="https://t.me/Lucidia_io" className="text-prpl underline underline-offset-4">
+                    Telegram Chat
+                  </a>{' '}
+                  and the Community Managers will answer them in a matter of minutes!
+                </p>
+              </div>
+            </motion.div>
 
             <div className=" flex flex-col gap-y-4 mt-14 sm:mt-20 ">
               <a
@@ -110,7 +120,13 @@ const How = () => {
               className="w-[15.5rem] absolute -bottom-[15rem] -right-20 sm:hidden block"
             />
           </div>
-          <div className="sm:w-[58.9%] flex flex-col gap-y-5 sm:mt-0 mt-[10rem]">
+
+          <motion.div
+            initial={{ x: 150 }}
+            whileInView={{ x: 0 }}
+            transition={{ type: 'spring', stiffness: 100 }}
+            className="sm:w-[58.9%] flex flex-col gap-y-5 sm:mt-0 mt-[10rem] overflow-hidden"
+          >
             <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full p-5 md:md:border-l-[0.5rem] border-prpl rounded-md">
                 <h1 className="font-secondary font-bold text-prpl text-lg">STEP #01</h1>
@@ -204,7 +220,7 @@ const How = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ const RoadMap = () => {
       transition={{ duration: 1.2 }}
       className="bg-black"
     >
-      <section className="w-full h-auto overflow-hidden bg-bg">
+      <section className="w-full h-auto overflow-hidden">
         <img src="/team/bg.png" alt="Teambg" className="w-full h-screen object-cover absolute left-0 " />
         <img
           src="/assets/images/man.png"
