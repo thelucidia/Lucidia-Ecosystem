@@ -101,7 +101,7 @@ const Worlds = ({ id }: IWorld) => {
                     key={i}
                     initial={{ x: 150 }}
                     whileInView={{ x: 0 }}
-                    transition={{ type: 'spring', stiffness: 100 }}
+                    transition={{ type: 'spring', stiffness: 70 }}
                     className=""
                   >
                     <div
@@ -140,7 +140,7 @@ const Worlds = ({ id }: IWorld) => {
                     key={i}
                     initial={{ x: -150 }}
                     whileInView={{ x: 0 }}
-                    transition={{ type: 'spring', stiffness: 100 }}
+                    transition={{ type: 'spring', stiffness: 70 }}
                     className=""
                   >
                     <div

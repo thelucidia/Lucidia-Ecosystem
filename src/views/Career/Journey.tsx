@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 const Journey = () => {
   const data = [
     {
@@ -30,13 +32,25 @@ const Journey = () => {
   return (
     <section className="w-full h-full relative">
       <div className="container mx-auto w-full h-full overflow-hidden px-5">
-        <h2 className="text-[62px] font-primary text-prpl leading-normal font-medium">Be part of our journey</h2>
-        <h4 className="text-white font-primary text-[24px] font-semibold max-w-[1300px]">
-          We're on the lookout for dynamic individuals with a passion for gaming and a flair for the crypto world to
-          join our innovative team, no matter where you from.
-        </h4>
+        <motion.div
+          initial={{ y: -50 }}
+          whileInView={{ y: 0 }}
+          transition={{ type: 'spring', stiffness: 120 }}
+          className="overflow-hidden"
+        >
+          <h2 className="text-[62px] font-primary text-prpl leading-normal font-medium">Be part of our journey</h2>
+          <h4 className="text-white font-primary text-[24px] font-semibold max-w-[1300px]">
+            We're on the lookout for dynamic individuals with a passion for gaming and a flair for the crypto world to
+            join our innovative team, no matter where you from.
+          </h4>
+        </motion.div>
         <div className="w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start">
-          <div className="md:w-[60%] lg:block hidden">
+          <motion.div
+            initial={{ x: 100 }}
+            whileInView={{ x: 0 }}
+            transition={{ type: 'spring', stiffness: 100 }}
+            className="overflow-hidden md:w-[60%] lg:block hidden"
+          >
             <ul className="flex flex-col gap-y-11">
               {data.map((item, i) => {
                 return (
@@ -51,21 +65,33 @@ const Journey = () => {
                 );
               })}
             </ul>
-          </div>
+          </motion.div>
           <div className="sm:w-[58.9%] flex flex-col gap-y-5 md:py-16 sm:py-7 py-5 lg:block hidden">
-            <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">
-              <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-prpl rounded-md py-14 pl-7 pr-8 flex flex-col gap-y-10">
-                {data.map((item, i) => {
-                  return (
-                    <p key={`desc-${i}`} className="text-[20px] font-primary leading-[20px] tracking-[1px]">
-                      {item.desc}
-                    </p>
-                  );
-                })}
+            <motion.div
+              initial={{ x: -100 }}
+              whileInView={{ x: 0 }}
+              transition={{ type: 'spring', stiffness: 100 }}
+              className="overflow-hidden"
+            >
+              <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">
+                <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-prpl rounded-md py-14 pl-7 pr-8 flex flex-col gap-y-10">
+                  {data.map((item, i) => {
+                    return (
+                      <p key={`desc-${i}`} className="text-[20px] font-primary leading-[20px] tracking-[1px]">
+                        {item.desc}
+                      </p>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="sm:w-[58.9%] flex flex-col gap-y-5 md:py-16 sm:py-7 py-5 lg:hidden md:block">
+          <motion.div
+            initial={{ y: -100 }}
+            whileInView={{ y: 0 }}
+            transition={{ type: 'spring', stiffness: 100 }}
+            className="sm:w-[58.9%] flex flex-col gap-y-5 md:py-16 sm:py-7 py-5 lg:hidden md:block overflow-hidden"
+          >
             <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-prpl rounded-md py-14 pl-7 pr-8 flex flex-col gap-y-10">
                 {data.map((item, i) => {
@@ -85,7 +111,7 @@ const Journey = () => {
                 })}
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

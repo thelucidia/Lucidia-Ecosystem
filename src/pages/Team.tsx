@@ -1,7 +1,7 @@
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import PartnersLower from '../views/Hero/PartnersLower';
-import Hero from '../views/Team/Hero';
+import Members from '../views/Team/Members';
 import Join from '../views/Team/Join';
 import { motion } from 'framer-motion';
 
@@ -16,7 +16,7 @@ const Team = () => {
     >
       <section className="w-full h-auto overflow-hidden bg-bg">
         <Nav />
-        <Hero />
+        <Members />
         <Join />
         <PartnersLower />
         <Footer />

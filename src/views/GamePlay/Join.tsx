@@ -1,9 +1,25 @@
-const Join = () => {
+import React, { useRef } from 'react';
+// import { Canvas } from '@react-three/fiber';
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+// import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
+// import { Suspense } from 'react';
+// import { useLoader } from '@react-three/fiber';
+// import * as THREE from 'three';
+// import { useGLTF } from '@react-three/drei';
+
+const Join: React.FC = () => {
   // const partners = ['esports', 'play', 'goshen', 'unreal', 'sdcons', 'seman', 'rzm', 'sphereone', 'epic', 'arc'];
 
   return (
     <section className="max-w-[1400px] mx-auto bg-bg-w-full h-auto py-10 sm:px-5 relative mt-10">
       <div className="w-full h-auto mx-auto">
+        {/* <Canvas>
+          <ambientLight />
+          <pointLight position={[10, 10, 10]} />
+          <Suspense fallback={null}>
+            <Model />
+          </Suspense>
+        </Canvas> */}
         <img src="/assets/images/racer.png" className="absolute z-10 top-[100px] sm:left-5 -left-[200px]" width={721} />
         <div className="py-[20px] w-[17rem] h-auto clipped3 bg-[#B0EB10] z-10 items-center justify-center scale-x-[-1] text-white mt-2 sm:flex hidden"></div>
 
@@ -32,5 +48,10 @@ const Join = () => {
     </section>
   );
 };
+
+// const Model: React.FC = () => {
+//   const gltf = useLoader(OBJLoader, '/scene.gltf');
+//   return <primitive object={gltf.scene} />;
+// };
 
 export default Join;
