@@ -7,7 +7,7 @@ const Join = () => {
         <img src="/assets/images/racer.png" className="absolute z-10 top-[100px] sm:left-5 -left-[200px]" width={721} />
         <div className="py-[20px] w-[17rem] h-auto clipped3 bg-[#B0EB10] z-10 items-center justify-center scale-x-[-1] text-white mt-2 sm:flex hidden"></div>
 
-        <div className="h-[300px] w-full h-auto sm:clipped2 bg-[#B0EB10] flex items-center justify-center scale-x-[-1]">
+        <div className="h-[300px] w-full sm:clipped2 bg-[#B0EB10] flex items-center justify-center scale-x-[-1]">
           <div className="w-full h-full scale-x-[-1]">
             <div className="flex flex-wrap sm:gap-x-[8rem] gap-x-16 gap-y-[2.5rem] items-center justify-end px-5 py-9">
               <h2 className="relative text-primary sm:max-w-[430px] sm:text-[46px] text-[26px] sm:text-left max-w-[260px] font-[700] text-[#000000] ">
