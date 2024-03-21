@@ -26,6 +26,9 @@ export default {
         tokenHover: '-115px -4px 181px -34px rgba(255,255,255,0.75) inset',
         teamShadow: '0px -118px 161px -87px rgba(119,0,255,1) inset',
       },
+      screens: {
+        xs: '520px', // Example custom breakpoint at 400px
+      },
     },
   },
   plugins: [],

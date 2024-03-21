@@ -5,6 +5,7 @@ import Careers from './pages/Careers';
 import OurProducts from './pages/OurProducts';
 import GamePlay from './pages/GamePlay';
 import RoadMap from './pages/RoadMap';
+import Cryptocraft from './pages/Cryptocraft';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/roadmap" element={<RoadMap />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/gameplay" element={<GamePlay />} />
+        <Route path="/cryptocraft" element={<Cryptocraft />} />
       </Routes>
     </section>
   );
