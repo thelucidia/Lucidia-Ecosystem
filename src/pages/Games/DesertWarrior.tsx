@@ -6,7 +6,7 @@ import NewEra from '../../views/Games/DesertWarrior/NewEra';
 import GameOverview from '../../views/Games/DesertWarrior/GameOverview';
 import GameFeature from '../../views/Games/DesertWarrior/GameFeature';
 
-const Curse: React.FC = () => {
+const DesertWarrior: React.FC = () => {
   return (
     <section className="w-full h-auto overflow-hidden bg-bg">
       <Banner />
@@ -18,4 +18,4 @@ const Curse: React.FC = () => {
     </section>
   );
 };
-export default Curse;
+export default DesertWarrior;

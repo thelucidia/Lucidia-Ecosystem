@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/gameplay/cryptocraft" element={<Cryptocraft />} />
           <Route path="/gameplay/sandstorm" element={<Sandstorm />} />
           <Route path="/gameplay/curse-of-the" element={<Curse />} />
-          <Route path="/gameplay/desertwarrior" element={<DesertWarrior />} />
+          <Route path="/gameplay/desert" element={<DesertWarrior />} />
           {/* <Route path="/gameplay/curse-of-the" element={<Curse />} /> */}
         </Route>
       </Routes>
