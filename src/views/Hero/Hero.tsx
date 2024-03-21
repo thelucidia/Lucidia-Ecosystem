@@ -220,6 +220,11 @@ const Hero = ({ id }: IHero) => {
           <img
             src={`${item.image}`}
             alt="Hero"
+            className="object-cover top-0 md:w-auto h-[30vh] sm:h-[35vh] -mt-4 md:h-[70vh] mx-auto sm:block hidden"
+          />
+          <img
+            src={`${item.image}`}
+            alt="Hero"
             className="object-cover top-0 md:w-auto h-[30vh] sm:h-[35vh] -mt-4 md:h-[70vh] mx-auto "
           />
         </div>
