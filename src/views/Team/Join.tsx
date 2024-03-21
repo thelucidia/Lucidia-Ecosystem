@@ -1,7 +1,7 @@
 const Join = () => {
   return (
     <section className="w-full h-auto py-10 bg-bg px-7 pb-24">
-      <div className="container mx-auto w-full h-auto flex items-center justify-center gap-x-14 md:mt-10">
+      <div className="max-w-[1400px] mx-auto w-full h-auto flex items-center justify-center gap-x-14 md:mt-10">
         <img src="/team/token.webp" alt="Token" className="w-[15rem] lg:block hidden" />
 
         <div className="max-w-[60rem] w-full md:h-[27rem] h-auto overflow-hidden md:pb-2 clipped2 bg-gr relative flex items-center justify-center scale-x-[-1] text-white bg-gry">

@@ -4,7 +4,7 @@ const Join = () => {
   return (
     <section className="w-full h-full relative">
       <div className="w-full h-full overflow-hidden px-5">
-        <div className="container w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start">
+        <div className="max-w-[1400px] w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start">
           <motion.div
             initial={{ x: -150 }}
             whileInView={{ x: 0 }}

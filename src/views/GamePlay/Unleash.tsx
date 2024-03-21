@@ -2,7 +2,7 @@ const Unleash = () => {
   return (
     <section className="w-full h-full relative">
       <div className="w-full h-full overflow-hidden px-5">
-        <div className="container w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start">
+        <div className="max-w-[1400px] w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start">
           <div className="md:w-[60%]">
             <h2 className="font-medium text-right md:text-[62px] text-[32px] leading-normal font-primary text-cyan max-w-[320px]">
               UNLEASH YOUR CREATIVITY

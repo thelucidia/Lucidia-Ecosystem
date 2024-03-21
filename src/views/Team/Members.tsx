@@ -150,7 +150,7 @@ const Members = () => {
     <section className="w-full min-h-screen relative text-white overflow-hidden bg-bg">
       <img src="/team/bg.webp" alt="Teambg" className="w-full h-screen object-cover absolute left-0 " />
 
-      <div className="container w-full h-auto mx-auto relative z-10 font-primary md:mt-[12rem] mt-[6rem] flex items-center justify-center px-6">
+      <div className="max-w-[1400px] w-full h-auto mx-auto relative z-10 font-primary md:mt-[12rem] mt-[6rem] flex items-center justify-center px-6">
         <img src="/token.webp" alt="token" className="absolute top-16 -right-6 z-10 w-28 md:hidden block rotate-90" />
 
         <img src="/team/left.webp" alt="Left" className="-mb-20 xl:block hidden" />
@@ -166,7 +166,7 @@ const Members = () => {
 
       <img src="/hero/navline.webp" alt="NavLine" className="w-full relative z-10 mt-16 opacity-50 md:block hidden" />
 
-      <div className="container w-full mx-auto h-auto relative z-10 flex flex-wrap gap-3 px-6 mt-24 items-center justify-center">
+      <div className="max-w-[1400px] w-full mx-auto h-auto relative z-10 flex flex-wrap gap-3 px-6 mt-24 items-center justify-center">
         <img src="/token.webp" alt="token" className="absolute -top-6 -right-4 z-10 w-16 md:hidden block" />
 
         {members.map((items, i) => {

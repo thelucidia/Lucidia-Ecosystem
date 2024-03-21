@@ -105,7 +105,7 @@ const Hero = ({ id }: IHero) => {
 
       {/* <img src="/hero/herobg.webp" alt="Herobg" className="w-full h-full object-cover absolute top-0 left-0" /> */}
 
-      <div className="container w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row relative">
+      <div className="max-w-[1400px] w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row relative">
         {/* {!item.buttons && (
           <div className="flex flex-row justify-between min-w-[500px]">
             <img

@@ -8,6 +8,7 @@ import RoadMap from './pages/RoadMap';
 import Cryptocraft from './pages/Cryptocraft';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import Sandstorm from './pages/Games/Sandstorm';
 
 const App = () => {
   return (
@@ -19,8 +20,13 @@ const App = () => {
         <Route path="/our-products" element={<OurProducts />} />
         <Route path="/roadmap" element={<RoadMap />} />
         <Route path="/careers" element={<Careers />} />
-        <Route path="/gameplay" element={<GamePlay />} />
-        <Route path="/cryptocraft" element={<Cryptocraft />} />
+        <Route path="gameplay">
+          <Route index element={<GamePlay />} />
+          <Route path="/gameplay/cryptocraft" element={<Cryptocraft />} />
+          <Route path="/gameplay/sandstorm" element={<Sandstorm />} />
+          {/* <Route path="/gameplay/desert" element={<Dessert />} /> */}
+          {/* <Route path="/gameplay/curse-of-the" element={<Curse />} /> */}
+        </Route>
       </Routes>
       <Footer />
     </section>

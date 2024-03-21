@@ -14,7 +14,7 @@ const Banner = () => {
 
       {/* <img src="/hero/herobg.webp" alt="Herobg" className="w-full h-full object-cover absolute top-0 left-0" /> */}
 
-      <div className="container w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex flex-row relative ">
+      <div className="max-w-[1400px] w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex flex-row relative ">
         <motion.div
           initial={{ y: -150 }}
           whileInView={{ y: 0 }}
