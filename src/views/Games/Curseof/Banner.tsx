@@ -29,11 +29,13 @@ const Banner: React.FC = () => {
         preload={'auto'}
         onLoadedData={handleTrue}
         playsInline
-        className="w-full h-full object-cover absolute top-0 left-0"
+        className="w-full h-screen object-cover absolute top-0 left-0"
       />
 
-      <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/70 to-black/40 z-9 "></div>
-      <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-[#0ED4FF]/40 to-[#0ED4FF]/10% z-9 "></div>
+      {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/70 to-black/40 z-9 "></div> */}
+      <div className="w-full h-screen absolute top-0 left-0 bg-[#0ED4FF]/30 z-10"></div>
+      <div className="w-full h-screen absolute top-0 left-0 bg-black/70 z-10"></div>
+      {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-[#0ED4FF]/40 to-[#0ED4FF]/10% z-9 "></div> */}
 
       <div className="max-w-[1400px] w-full h-auto mx-auto z-10 flex mt-[7rem] md:mt-[10rem] flex flex-col ">
         <motion.div
@@ -42,21 +44,26 @@ const Banner: React.FC = () => {
           transition={{ type: 'spring', stiffness: 100 }}
           className="w-full overflow-hidden flex"
         >
-          <h1 className="flex items-center font-secondary 2xl:min-w-[750px] leading-normal w-auto uppercase text-3xl md:text-5xl 2xl:text-[72px] 2xl:leading-[5.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF] 2xl:mb-[18rem] lg:mb-[10rem] md:mb-[6rem] sm:mb-[4rem] mb-[2rem]">
+          {/* <h1 className="flex items-center font-secondary 2xl:min-w-[750px] leading-normal w-auto uppercase text-3xl md:text-5xl 2xl:text-[72px] 2xl:leading-[5.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF] 2xl:mb-[18rem] lg:mb-[10rem] md:mb-[6rem] sm:mb-[4rem] mb-[2rem]">
             sandstorm racers
-          </h1>
+          </h1> */}
+          <img
+            src="/assets/images/games/curseof/curseofthe.svg"
+            className="w-[55.8vw] pt-[180px] pb-[80px] mx-auto"
+            alt="curseofthe"
+          />
         </motion.div>
         <a
           href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
           target="_blank"
           rel="noopener noreferrer"
-          className=""
+          className="mx-auto pb-[250px]"
         >
           <div className="w-full lg:w-[15rem] relative">
             <div className="py-[20px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center hover:text-[#A5FF16] font-secondary z-10 text-white font-[700] text-[12px] group-hover:text-black  transition-colors ease-in-out duration-300">
               see details
             </div>
-            <img src="/assets/images/game_button.png" alt="LaunchApp" />
+            <img src="/assets/images/game_button.png" alt="see_details" />
           </div>
         </a>
       </div>

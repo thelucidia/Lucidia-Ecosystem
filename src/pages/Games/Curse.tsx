@@ -10,7 +10,6 @@ const Curse: React.FC = () => {
       <Banner />
       <Survive />
       <Details />
-      {/* <OtherGames /> */}
       <PartnersLower />
     </section>
   );

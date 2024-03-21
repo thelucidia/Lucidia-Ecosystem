@@ -43,7 +43,7 @@ const Details: React.FC = () => {
           return (
             <div
               key={i}
-              className="max-w-[1400px] w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start"
+              className="max-w-[1400px] mx-auto flex justify-between pb-10 lg:flex-row flex-col sm:items-center items-start"
             >
               <motion.div
                 initial={{ x: -150 }}
