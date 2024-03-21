@@ -1,6 +1,6 @@
 import { BsLinkedin } from 'react-icons/bs';
 
-const Hero = () => {
+const Members = () => {
   const members = [
     {
       name: 'Adel Khatib',
@@ -69,10 +69,22 @@ const Hero = () => {
       ],
     },
     {
+      name: 'Evdokia Bobrova',
+      position: 'Head of External Relations',
+      link: 'https://www.linkedin.com/in/evdokia-bobrova/',
+      desc: ['Sales & Marketing (5 years)', 'Client Advisory (3 years)'],
+    },
+    {
       name: 'Jahongir Erkinov',
       position: 'Head of Game Dev',
       link: 'https://www.linkedin.com/in/jakhongirerkinov/',
       desc: ['Game Developer (7 years)', 'Lead Game Designer (3 years)'],
+    },
+    {
+      name: 'Rula Madi',
+      position: 'HEAD OF LEGAL',
+      link: 'https://www.linkedin.com/in/rolamadi/',
+      desc: ['Corporate & tech/IP law (20 yrs)', 'Senior management Adviser', 'Legal associations Member'],
     },
     {
       name: 'Andrii Seliuk',
@@ -87,10 +99,15 @@ const Hero = () => {
       ],
     },
     {
-      name: 'Rula Madi',
-      position: 'HEAD OF LEGAL',
-      link: 'https://www.linkedin.com/in/rolamadi/',
-      desc: ['Corporate & tech/IP law (20 yrs)', 'Senior management Adviser', 'Legal associations Member'],
+      name: 'Sara Gómez',
+      position: 'Lead UI/UX Designer',
+      link: 'https://www.linkedin.com/in/sara-g-44a723b6/',
+      desc: [
+        'UI/UX Designer (5 years)',
+        'UX Research (3 years)',
+        'Marketing and Design (2 years)',
+        'Motion Graphics Designer (2 years)',
+      ],
     },
     {
       name: 'Aryan Ratu Langie',
@@ -126,23 +143,6 @@ const Hero = () => {
       position: 'Graphic Designer',
       link: 'https://www.linkedin.com/in/ola-h-bb5a7b218?trk=contact-info',
       desc: ['Graphic Designer (3 years)', 'Web Designer (1 years)'],
-    },
-    {
-      name: 'Evdokia Bobrova',
-      position: 'Head of External Relations',
-      link: 'https://www.linkedin.com/in/evdokia-bobrova/',
-      desc: ['Sales & Marketing (5 years)', 'Client Advisory (3 years)'],
-    },
-    {
-      name: 'Sara Gómez',
-      position: 'Lead UI/UX Designer',
-      link: 'https://www.linkedin.com/in/sara-g-44a723b6/',
-      desc: [
-        'UI/UX Designer (5 years)',
-        'UX Research (3 years)',
-        'Marketing and Design (2 years)',
-        'Motion Graphics Designer (2 years)',
-      ],
     },
   ];
 
@@ -229,4 +229,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Members;

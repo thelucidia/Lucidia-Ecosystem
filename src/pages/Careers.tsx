@@ -13,16 +13,14 @@ const Landing = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.2 }}
-      className="bg-black"
+      className="w-full h-auto bg-black relative"
     >
-      <section className="w-full h-auto bg-black relative">
-        <Nav />
-        <Banner />
-        <Culture />
-        <Journey />
-        <PartnersLower />
-        <Footer />
-      </section>
+      <Nav />
+      <Banner />
+      <Culture />
+      <Journey />
+      <PartnersLower />
+      <Footer />
     </motion.div>
   );
 };

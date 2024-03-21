@@ -386,28 +386,31 @@ const Nav = () => {
               </div>
             </div>
 
+            {/* <a
+              href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              <button className=" w-full lg:w-[15rem] relative lg:block hidden h-12 clipped2 bg-white  font-bold flex items-center justify-center scale-x-[-1] group">
+                <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300 ">
+                  <img
+                    src="/hero/trans.webp"
+                    alt="Herobg"
+                    className="w-full h-full object-cover absolute top-0 left-0 group-hover:opacity-0 transition-opacity ease-in-out duration-300"
+                  />
+                </div>
+                <h1 className="font-secondary relative z-10 font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300 text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF]">
+                  Launch App
+                </h1>
+              </button>
+            </a> */}
             <a href="https://t.me/Lucidia_io" target="_blank" rel="noopener noreferrer" className="">
-              {/* <button className="w-[13rem] h-9 clipped bg-bl relative font-bold items-center justify-center md:flex hidden group">
-                <div className="absolute bg-[#5e38b2] w-[98%] h-[91%] left-0 top-0 right-0 bottom-0 m-auto clipped group-hover:bg-bl transition-bg ease-in-out duration-300"></div>
-                <h1 className="font-secondary relative z-10 text-bl text-[12px] group-hover:text-black transition-color ease-in-out duration-300 text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF]">
-                  Launch App
-                </h1>
-              </button> */}
-              {/* <button className="w-full lg:w-[15rem] h-9 clipped2 bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF] relative group font-bold flex items-center justify-center scale-x-[-1] md:flex hidden group">
-                <div className="absolute bg-[#5e38b2] w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-bl"></div>
-                <h1 className="font-secondary relative z-10 font-[700] text-[14px] scale-x-[-1] text-transparent group-hover:text-black bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF]">
-                  Launch App
-                </h1>
-              </button> */}
               <div className="w-full lg:w-[15rem] relative lg:block hidden">
-                <div className="hover:text-white py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF]">
+                <div className="hover:text-white py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF] transition-colors ease-in-out duration-300">
                   Launch App
                 </div>
                 <img src="/assets/images/launch_app.svg" alt="LaunchApp" />
-                {/* <div className="absolute bg-[#5e38b2] w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-bl"></div>
-                <h1 className="font-secondary relative z-10 font-[700] text-[14px] scale-x-[-1] text-transparent group-hover:text-black bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF]">
-                  Launch App
-                </h1> */}
               </div>
             </a>
           </div>

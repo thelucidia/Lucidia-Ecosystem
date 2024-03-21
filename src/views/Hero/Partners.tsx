@@ -23,6 +23,7 @@ const Partners = () => {
                 return (
                   // <img src={`/partners/${items}.webp`} alt="Partners" className={`sm:w-auto w-20 ${items === 'epic' ? 'scale-[0.7] sm:scale-[1]' : toScale.includes(items) ? 'scale-[1.5] sm:scale-[1]' : ''}`} key={i} />
                   <motion.div
+                    key={i}
                     initial={{ x: 150 }}
                     whileInView={{ x: 0 }}
                     transition={{ type: 'spring', stiffness: 100 }}

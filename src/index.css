@@ -33,37 +33,33 @@
     font-style: normal;
   }
 
-
-
   .clipped {
     --edge-size: 1em;
-    clip-path: polygon(var(--edge-size) 0,
-        100% 0,
-        100% calc(100% - var(--edge-size)),
-        calc(100% - var(--edge-size)) 100%,
-        0 100%,
-        0 var(--edge-size));
+    clip-path: polygon(
+      var(--edge-size) 0,
+      100% 0,
+      100% calc(100% - var(--edge-size)),
+      calc(100% - var(--edge-size)) 100%,
+      0 100%,
+      0 var(--edge-size)
+    );
   }
 
   .clipped2 {
     --edge-size: 1em;
-    clip-path: polygon(var(--edge-size) 0,
-        100% 0,
-        100% calc(100% - var(--edge-size)),
-        calc(100% - var(--edge-size)) 100%,
-        0 100%,
-        0 var(--edge-size));
+    clip-path: polygon(
+      var(--edge-size) 0,
+      100% 0,
+      100% calc(100% - var(--edge-size)),
+      calc(100% - var(--edge-size)) 100%,
+      0 100%,
+      0 var(--edge-size)
+    );
   }
 
   .clipped3 {
     --edge-size: 3em;
-    clip-path: polygon(
-        var(--edge-size) 0,
-        100% 0,
-        100% calc(100% - var(--edge-size)),
-        100% 100%,
-        0 100%,
-        0 100%);
+    clip-path: polygon(var(--edge-size) 0, 100% 0, 100% calc(100% - var(--edge-size)), 100% 100%, 0 100%, 0 100%);
   }
 
   /* Hide the default scrollbar */
@@ -89,9 +85,8 @@
     background: #999;
   }
 
-  html, body {
+  html,
+  body {
     scroll-behavior: smooth;
   }
-
-
 }
