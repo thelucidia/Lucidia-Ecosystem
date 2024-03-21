@@ -25,7 +25,13 @@ const Nav = () => {
     {
       name: 'gameplay',
       slug: '/gameplay',
-      paths: ['/gameplay', '/gameplay/sandstorm', '/gameplay/curse-of-the'],
+      paths: [
+        '/gameplay',
+        '/gameplay/sandstorm',
+        '/gameplay/curse-of-the',
+        '/gameplay/cryptocraft',
+        '/gameplay/desert',
+      ],
       type: 'internal',
     },
     {
