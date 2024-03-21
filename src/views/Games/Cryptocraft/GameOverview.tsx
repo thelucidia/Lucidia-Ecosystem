@@ -32,7 +32,7 @@ const data = [
     image: '/assets/images/games/crypto/overview_2.png',
   },
 ];
-const Details: React.FC = () => {
+const GameOverview: React.FC = () => {
   return (
     <section className="w-full h-full relative">
       <div className="w-full h-full overflow-hidden px-5 py-10">
@@ -86,4 +86,4 @@ const Details: React.FC = () => {
   );
 };
 
-export default Details;
+export default GameOverview;

@@ -20,7 +20,7 @@ const Crypto = () => {
             <div className="py-[20px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center hover:text-[#A5FF16] font-secondary z-10 text-white font-[700] text-[12px] group-hover:text-black  transition-colors ease-in-out duration-300">
               see details
             </div>
-            <img src="/assets/images/game_button.png" alt="LaunchApp" />
+            <img src="/assets/images/game_button.png" alt="see_details" />
             {/* <div className="absolute bg-[#5e38b2] w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-bl"></div>
                 <h1 className="font-secondary relative z-10 font-[700] text-[14px] scale-x-[-1] text-transparent group-hover:text-black bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF]">
                   Launch App
