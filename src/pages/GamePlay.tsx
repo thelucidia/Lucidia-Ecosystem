@@ -1,6 +1,4 @@
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
-import GameContent from '../components/GameContent';
+import GameContent from '../views/GamePlay/GameContent';
 import Worlds from '../views/Hero/Worlds';
 import Join from '../views/GamePlay/Join';
 import Benefits from '../views/GamePlay/Benefits';
@@ -14,17 +12,13 @@ const GamePlay = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.2 }}
-      className="bg-black"
+      className="w-full h-full overflow-hidden bg-bg"
     >
-      <section className="w-full h-full overflow-hidden bg-bg">
-        <Nav />
-        <GameContent />
-        <Worlds id={'gameplay'} />
-        <Join />
-        <Benefits />
-        <PartnersLower />
-        <Footer />
-      </section>
+      <GameContent />
+      <Worlds id={'gameplay'} />
+      <Join />
+      <Benefits />
+      <PartnersLower />
     </motion.div>
   );
 };

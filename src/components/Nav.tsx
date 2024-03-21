@@ -5,7 +5,8 @@ import { RxDiscordLogo } from 'react-icons/rx';
 import { TfiTwitter } from 'react-icons/tfi';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { clsx } from 'clsx';
 
 const Nav = () => {
   const navList = [
@@ -18,31 +19,37 @@ const Nav = () => {
     {
       name: 'home',
       slug: '/',
+      paths: ['/'],
       type: 'internal',
     },
     {
       name: 'gameplay',
       slug: '/gameplay',
+      paths: ['/gameplay'],
       type: 'internal',
     },
     {
       name: 'roadmap',
       slug: '/roadmap',
+      paths: ['/roadmap'],
       type: 'internal',
     },
     {
       name: 'our product',
       slug: '/our-products',
+      paths: ['/our-products'],
       type: 'internal',
     },
     {
       name: 'careers',
       slug: '/careers',
+      paths: ['/careers'],
       type: 'internal',
     },
     {
       name: 'our team',
       slug: '/team',
+      paths: ['/team'],
       type: 'internal',
     },
   ];
@@ -57,31 +64,37 @@ const Nav = () => {
     {
       name: 'home',
       slug: '/',
+      paths: ['/'],
       type: 'internal',
     },
     {
       name: 'gameplay',
       slug: '/gameplay',
+      paths: ['/gameplay'],
       type: 'internal',
     },
     {
       name: 'roadmap',
       slug: '/roadmap',
+      paths: ['/roadmap'],
       type: 'internal',
     },
     {
       name: 'our product',
       slug: '/our-products',
+      paths: ['/our-products'],
       type: 'internal',
     },
     {
       name: 'careers',
       slug: '/careers',
+      paths: ['/careers'],
       type: 'internal',
     },
     {
       name: 'our team',
       slug: '/team',
+      paths: ['/team'],
       type: 'internal',
     },
     // {
@@ -130,6 +143,8 @@ const Nav = () => {
     },
   ];
 
+  const { pathname } = useLocation();
+
   const [audit, setAudit] = useState(false);
 
   const handleAudit = () => {
@@ -142,10 +157,6 @@ const Nav = () => {
   const handleNav = () => {
     setNav((curr) => !curr);
   };
-
-  // const handleNavDesktop = () => {
-  //   setNavDesktop((curr) => !curr);
-  // };
 
   const [screenSize, setScreenSize] = useState(getCurrentDimension());
 
@@ -285,7 +296,13 @@ const Nav = () => {
                 </Link>
               ) : (
                 <Link to={items.slug} className="" key={i}>
-                  <li className="cursor-pointer hover:text-[#0ED4FF]" key={i}>
+                  <li
+                    className={clsx(
+                      'cursor-pointer hover:text-[#0ED4FF]',
+                      items.paths?.includes(pathname) && 'text-[#0ED4FF]',
+                    )}
+                    key={i}
+                  >
                     {items.name}
                   </li>
                 </Link>

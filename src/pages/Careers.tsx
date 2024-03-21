@@ -1,5 +1,3 @@
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
 import PartnersLower from '../views/Hero/PartnersLower';
 import Banner from '../views/Career/Banner';
 import Culture from '../views/Career/Culture';
@@ -15,12 +13,10 @@ const Landing = () => {
       transition={{ duration: 1.2 }}
       className="w-full h-auto bg-black relative"
     >
-      <Nav />
       <Banner />
       <Culture />
       <Journey />
       <PartnersLower />
-      <Footer />
     </motion.div>
   );
 };

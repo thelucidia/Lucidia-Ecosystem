@@ -76,7 +76,7 @@ const Footer = () => {
       <div className="container mx-auto w-full text-white sm:mt-28 mt-10 px-5 text-left sm:text-center">
         <div className="mt-10">
           <h1 className="sm:text-[46px] text-[32px] font-bold leading-tight font-primary bg-clip-text bg-gradient-to-r w-fit sm:mx-auto  from-white via-white to-[#c4f4fe] text-transparent">
-            Join community of 100k+ Lucidians
+            Join the community of 100k+ Lucidians
           </h1>
           <p className="font-medium font-primary text-footergry text-[15px] sm:text-[22px] mt-2 sm:mt-0">
             For more details about our progress and workflow be sure to follow
@@ -99,7 +99,7 @@ const Footer = () => {
       <img
         src="/hero/navline.webp"
         alt="navline"
-        className="sm:mt-28 mx-auto w-full object-cover relative left-0 right-0 opacity-70 sm:block hidden"
+        className="sm:mt-20 mx-auto w-full object-cover relative left-0 right-0 opacity-70 sm:block hidden"
       />
 
       <div className="container mx-auto w-full text-white sm:mt-28 grid lg:grid-cols-2 md:grid-cols-1 gap-x-28 gap-y-10 sm:border-t-0 border-t-[1.5px] mt-10 border-white/20">
@@ -184,32 +184,6 @@ const Footer = () => {
           <button className="w-full clipped scale-x-[-1] rounded-[5px] bg-cyan hover:bg-white font-secondary font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black">
             <h4 className="scale-x-[-1]">subscribe</h4>
           </button>
-          {/* <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
-            <input
-              type="text"
-              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-10 outline-none"
-              placeholder="Full name"
-            />
-          </div>
-          <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
-            <input
-              type="text"
-              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-10 outline-none"
-              placeholder="E-mail"
-            />
-          </div>
-          <div className="bg-[url(/assets/images/footer/inputbox.svg)] w-full h-auto bg-contain bg-no-repeat">
-            <input
-              type="text"
-              className="w-full bg-transparent xl:pl-[58px] lg:pl-[48px] md:pl-[43px] sm:pl-[38] pl-[40px] sm:py-[12px] py-[8px] pr-10 outline-none"
-              placeholder="Discord"
-            />
-          </div> */}
-          {/* <input
-            type="button"
-            className="w-full bg-[url(/assets/images/footer/subscribe.svg)] font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black"
-            value="subscribe"
-          /> */}
         </div>
       </div>
 

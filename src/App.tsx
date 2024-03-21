@@ -6,10 +6,13 @@ import OurProducts from './pages/OurProducts';
 import GamePlay from './pages/GamePlay';
 import RoadMap from './pages/RoadMap';
 import Cryptocraft from './pages/Cryptocraft';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <section className="w-full h-auto bg-black relative">
+    <section className="w-full h-full overflow-hidden bg-bg">
+      <Nav />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/team" element={<Team />} />
@@ -19,6 +22,7 @@ const App = () => {
         <Route path="/gameplay" element={<GamePlay />} />
         <Route path="/cryptocraft" element={<Cryptocraft />} />
       </Routes>
+      <Footer />
     </section>
   );
 };

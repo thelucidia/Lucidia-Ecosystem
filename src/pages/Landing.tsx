@@ -1,5 +1,3 @@
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
 import Hero from '../views/Hero/Hero';
 import How from '../views/Hero/How';
 import Partners from '../views/Hero/Partners';
@@ -19,7 +17,6 @@ const Landing = () => {
       className="bg-black"
     >
       <section className="w-full h-auto bg-black relative">
-        <Nav />
         <Hero id={'landing'} />
         <PartnersUpper />
         <Worlds id={'landing'} />
@@ -27,7 +24,6 @@ const Landing = () => {
         <Partners />
         <Tokens id={'landing'} />
         <PartnersLower />
-        <Footer />
       </section>
     </motion.div>
   );

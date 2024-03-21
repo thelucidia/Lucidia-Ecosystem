@@ -1,5 +1,3 @@
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
 import PartnersLower from '../views/Hero/PartnersLower';
 import Members from '../views/Team/Members';
 import Join from '../views/Team/Join';
@@ -12,15 +10,11 @@ const Team = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.2 }}
-      className="bg-black"
+      className="w-full h-auto overflow-hidden bg-bg"
     >
-      <section className="w-full h-auto overflow-hidden bg-bg">
-        <Nav />
-        <Members />
-        <Join />
-        <PartnersLower />
-        <Footer />
-      </section>
+      <Members />
+      <Join />
+      <PartnersLower />
     </motion.div>
   );
 };
