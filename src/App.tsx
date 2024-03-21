@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Sandstorm from './pages/Games/Sandstorm';
 // import Desert from './pages/Games/Curse';
 import Curse from './pages/Games/Curse';
+import DesertWarrior from './pages/Games/DesertWarrior';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/gameplay/cryptocraft" element={<Cryptocraft />} />
           <Route path="/gameplay/sandstorm" element={<Sandstorm />} />
           <Route path="/gameplay/curse-of-the" element={<Curse />} />
+          <Route path="/gameplay/desertwarrior" element={<DesertWarrior />} />
           {/* <Route path="/gameplay/curse-of-the" element={<Curse />} /> */}
         </Route>
       </Routes>
