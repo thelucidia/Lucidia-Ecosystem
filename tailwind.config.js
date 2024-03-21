@@ -18,6 +18,7 @@ export default {
         prpl: '#7700FF',
         footergry: '#B3B4BC',
         neon: '#c0ff0e',
+        yelw: '#A5FF16',
       },
       boxShadow: {
         world: '0px -84px 147px -9px rgba(0,0,0,0.78) inset',

@@ -9,6 +9,8 @@ import Cryptocraft from './pages/Cryptocraft';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Sandstorm from './pages/Games/Sandstorm';
+// import Desert from './pages/Games/Curse';
+import Curse from './pages/Games/Curse';
 
 const App = () => {
   return (
@@ -24,7 +26,7 @@ const App = () => {
           <Route index element={<GamePlay />} />
           <Route path="/gameplay/cryptocraft" element={<Cryptocraft />} />
           <Route path="/gameplay/sandstorm" element={<Sandstorm />} />
-          {/* <Route path="/gameplay/desert" element={<Dessert />} /> */}
+          <Route path="/gameplay/curse-of-the" element={<Curse />} />
           {/* <Route path="/gameplay/curse-of-the" element={<Curse />} /> */}
         </Route>
       </Routes>
