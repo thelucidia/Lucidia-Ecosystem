@@ -5,7 +5,7 @@ import Careers from './pages/Careers';
 import OurProducts from './pages/OurProducts';
 import GamePlay from './pages/GamePlay';
 import RoadMap from './pages/RoadMap';
-import Cryptocraft from './pages/Cryptocraft';
+import Cryptocraft from './views/Games/Cryptocraft/Cryptocraft';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Sandstorm from './pages/Games/Sandstorm';
