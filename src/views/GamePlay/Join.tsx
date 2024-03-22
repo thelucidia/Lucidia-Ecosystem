@@ -26,7 +26,7 @@ const Join: React.FC = () => {
           <div className="w-full h-full scale-x-[-1]">
             <div className="flex flex-wrap sm:gap-x-[8rem] gap-x-16 gap-y-[2.5rem] items-center justify-end px-5 py-9">
               <h2 className="relative text-primary sm:max-w-[430px] sm:text-[46px] text-[26px] sm:text-left max-w-[260px] font-[700] text-[#000000] ">
-                Join the community of <span className="text-[#fff]">100k+</span> Lucidians
+                Join community of <span className="text-[#fff]">100k+</span> Lucidians
                 <img
                   src="/assets/images/join_icon.png"
                   className="absolute sm:bottom-[15px] sm:right-[30px] bottom-[7px] right-[30px]  sm:w-[36px] sm:y-[47px] w-[20px] y-[27px]"
