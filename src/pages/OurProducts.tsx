@@ -1,6 +1,6 @@
 import Hero from '../views/Hero/Hero';
 import PartnersLower from '../views/Hero/PartnersLower';
-import PartnersUpper from '../views/Hero/PartnersUpper';
+// import PartnersUpper from '../views/Hero/PartnersUpper';
 import Tokens from '../views/Hero/Tokens';
 import { motion } from 'framer-motion';
 import Join from '../views/OurPorducts/Join';
