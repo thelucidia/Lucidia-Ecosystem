@@ -18,7 +18,7 @@ const Landing = () => {
     >
       <section className="w-full h-auto bg-black relative">
         <Hero id={'landing'} />
-        <PartnersUpper />
+        {/* <PartnersUpper /> */}
         <Worlds id={'landing'} />
         <How />
         <Partners />

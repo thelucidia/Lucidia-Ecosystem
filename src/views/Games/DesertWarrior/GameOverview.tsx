@@ -31,7 +31,7 @@ const GameOverview: React.FC = () => {
               <motion.div
                 initial={{ x: -150 }}
                 whileInView={{ x: 0 }}
-                transition={{ type: 'spring', stiffness: 100 }}
+                transition={{ type: 'spring', stiffness: 60 }}
                 className="md:w-[80%] overflow-hidden"
               >
                 {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/70 to-black/10 z-10 "></div> */}
@@ -43,7 +43,7 @@ const GameOverview: React.FC = () => {
               <motion.div
                 initial={{ x: 150 }}
                 whileInView={{ x: 0 }}
-                transition={{ type: 'spring', stiffness: 100 }}
+                transition={{ type: 'spring', stiffness: 60 }}
                 className="sm:w-[58.9%] flex flex-col gap-y-5 lg:py-[80px] md:py-8 sm:py-6 py-4 overflow-hidden"
               >
                 <div className="w-full h-auto clipped2 bg-gry relative  font-[400] flex items-center justify-center scale-x-[-1] rounded-md">

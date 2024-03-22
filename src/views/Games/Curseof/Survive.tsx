@@ -9,7 +9,7 @@ const Survive: React.FC = () => {
           <motion.div
             initial={{ x: -150 }}
             whileInView={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className="md:w-[60%] overflow-hidden"
           >
             <h2 className="font-medium text-left md:text-[62px] text-[32px] leading-normal font-primary text-cyan max-w-[320px]">
@@ -19,7 +19,7 @@ const Survive: React.FC = () => {
           <motion.div
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className="sm:w-[58.9%] flex flex-col gap-y-5 lg:py-[134px] md:py-16 sm:py-7 py-5 overflow-hidden"
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-[500] flex items-center justify-center scale-x-[-1] rounded-md">

@@ -56,7 +56,7 @@ const How = () => {
             <motion.div
               initial={{ x: -150 }}
               whileInView={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 100 }}
+              transition={{ type: 'spring', stiffness: 60 }}
               className=""
             >
               <div>
@@ -124,7 +124,7 @@ const How = () => {
           <motion.div
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className="sm:w-[58.9%] flex flex-col gap-y-5 sm:mt-0 mt-[10rem] overflow-hidden"
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">

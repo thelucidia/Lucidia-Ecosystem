@@ -24,7 +24,7 @@ const Benefits = () => {
         <motion.div
           initial={{ x: 150 }}
           whileInView={{ x: 0 }}
-          transition={{ type: 'spring', stiffness: 100 }}
+          transition={{ type: 'spring', stiffness: 60 }}
           className=""
         >
           <div className="w-[40%]">
@@ -39,7 +39,7 @@ const Benefits = () => {
           <motion.div
             initial={{ x: -150 }}
             whileInView={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className=""
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-[400] flex items-center justify-center scale-x-[-1] rounded-md">

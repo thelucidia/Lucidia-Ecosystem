@@ -28,7 +28,7 @@ const Stats = () => {
               key={i}
               initial={{ y: -50 }}
               whileInView={{ y: 0 }}
-              transition={{ type: 'spring', stiffness: 100 }}
+              transition={{ type: 'spring', stiffness: 60 }}
               className="overflow-hidden"
             >
               <h1 className="text-5xl sm:text-[54px] font-bold text-center">{items.title}</h1>

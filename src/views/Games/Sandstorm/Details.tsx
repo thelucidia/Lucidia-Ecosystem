@@ -34,7 +34,7 @@ const Details: React.FC = () => {
               <motion.div
                 initial={{ x: -150 }}
                 whileInView={{ x: 0 }}
-                transition={{ type: 'spring', stiffness: 100 }}
+                transition={{ type: 'spring', stiffness: 60 }}
                 className="md:w-[80%] overflow-hidden"
               >
                 <div className="lg:w-[37vw] lg:h-[23.3vw] min-w-[340px] min-h-[300px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] ">
@@ -50,7 +50,7 @@ const Details: React.FC = () => {
               <motion.div
                 initial={{ x: 150 }}
                 whileInView={{ x: 0 }}
-                transition={{ type: 'spring', stiffness: 100 }}
+                transition={{ type: 'spring', stiffness: 60 }}
                 className="sm:w-[58.9%] flex flex-col gap-y-5 lg:py-[44px] md:py-8 sm:py-6 py-4 overflow-hidden"
               >
                 <div className="w-full h-auto clipped2 bg-gry relative  font-[500] flex items-center justify-center scale-x-[-1] rounded-md">

@@ -13,7 +13,7 @@ const TokenBox: FunctionComponent<TokenBox> = ({ title, slug, desc, img }) => {
     <motion.div
       initial={{ x: 150 }}
       whileInView={{ x: 0 }}
-      transition={{ type: 'spring', stiffness: 100 }}
+      transition={{ type: 'spring', stiffness: 60 }}
       className="max-w-[42rem] w-full h-[17.3rem] md:h-[20rem]"
     >
       <div className="max-w-[42rem] w-full h-[17.3rem] md:h-[20rem] clipped2 bg-gry hover:bg-[#76717b] transition-bg ease-in-out duration-300  group relative flex items-center justify-center scale-x-[-1] text-white ">
