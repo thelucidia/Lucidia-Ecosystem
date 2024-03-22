@@ -1,8 +1,9 @@
+import React from 'react';
 import RoadCard from '../components/RoadCard';
 import PartnersLower from '../views/Hero/PartnersLower';
 import { motion } from 'framer-motion';
 
-const RoadMap = () => {
+const RoadMap: React.FC = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

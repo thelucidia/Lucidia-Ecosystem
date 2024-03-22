@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
+import React from 'react';
 
-const Banner = () => {
+const Banner: React.FC = () => {
   return (
     <section className="w-full h-auto p-5 relative text-white flex md:items-center justify-center">
       <img

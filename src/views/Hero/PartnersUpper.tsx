@@ -1,4 +1,6 @@
-const PartnersUpper = () => {
+import React from 'react';
+
+const PartnersUpper: React.FC = () => {
   const partners = ['bloomberg', 'yahoo', 'benzinga', 'globe', 'digital', 'block', 'market'];
 
   return (

@@ -1,7 +1,8 @@
 import { BsLinkedin } from 'react-icons/bs';
+import React from 'react';
 import data from './members.mock.json';
 
-const Members = () => {
+const Members: React.FC = () => {
   const members = data.members;
   return (
     <section className="w-full min-h-screen relative text-white overflow-hidden bg-bg">

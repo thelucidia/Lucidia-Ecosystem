@@ -1,3 +1,4 @@
+import React from 'react';
 import Hero from '../views/Hero/Hero';
 import How from '../views/Hero/How';
 import Partners from '../views/Hero/Partners';
@@ -7,7 +8,7 @@ import Worlds from '../views/Hero/Worlds';
 import { motion } from 'framer-motion';
 import Stats from '../components/Stats';
 
-const Landing = () => {
+const Landing: React.FC = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

@@ -1,3 +1,4 @@
+import React from 'react';
 import { MdClose } from 'react-icons/md';
 import { useState, useEffect } from 'react';
 import { LiaTelegramPlane } from 'react-icons/lia';
@@ -8,7 +9,7 @@ import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { clsx } from 'clsx';
 
-const Nav = () => {
+const Nav: React.FC = () => {
   const navList = [
     // {
     //     name: 'pitchdeck',

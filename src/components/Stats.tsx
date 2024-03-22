@@ -1,39 +1,11 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-const Stats = () => {
-  const stats = [
-    {
-      prefix: '$',
-      suffix: 'k',
-      start: 400,
-      end: 420,
-      desc: 'TO BE UNLOCKED BY USERS',
-    },
-    {
-      prefix: '',
-      suffix: 'M',
-      start: 0,
-      end: 15,
-      desc: 'IN GAME ASSETS',
-    },
-    {
-      prefix: '',
-      suffix: '+',
-      start: 0,
-      end: 4,
-      desc: 'GAMES INSIDE METAVERSE',
-    },
-    {
-      title: '20',
-      suffix: '',
-      prefix: '',
-      start: 0,
-      end: 20,
-      desc: 'MAPS',
-    },
-  ];
+import data from './stats.mock.json';
+
+const Stats: React.FC = () => {
+  const stats = data.stats;
   const [hasAnimated, setHasAnimated] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
 

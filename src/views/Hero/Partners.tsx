@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
+import React from 'react';
 
-const Partners = () => {
+const Partners: React.FC = () => {
   const partners = ['esports', 'play', 'goshen', 'unreal', 'sdcons', 'seman', 'rzm', 'sphereone', 'epic', 'arc'];
 
   return (

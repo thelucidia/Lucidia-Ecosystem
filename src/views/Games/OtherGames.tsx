@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 interface IOtherGames {
   id: number;
 }
 
-const OtherGames = ({ id }: IOtherGames) => {
+const OtherGames: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
   const worldList = [
     {
       title: 'curse of the pharaoh',

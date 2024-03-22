@@ -1,3 +1,4 @@
+import React from 'react';
 import Hero from '../views/Hero/Hero';
 import PartnersLower from '../views/Hero/PartnersLower';
 // import PartnersUpper from '../views/Hero/PartnersUpper';
@@ -6,7 +7,7 @@ import { motion } from 'framer-motion';
 import Join from '../views/OurPorducts/Join';
 import Stats from '../components/Stats';
 
-const OurProduct = () => {
+const OurProduct: React.FC = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

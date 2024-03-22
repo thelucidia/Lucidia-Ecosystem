@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
+import React from 'react';
 
-const PartnersLower = () => {
+const PartnersLower: React.FC = () => {
   const partners = ['bloomberg', 'yahoo', 'benzinga', 'globe', 'digital', 'block', 'market'];
 
   return (

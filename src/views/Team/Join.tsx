@@ -1,4 +1,6 @@
-const Join = () => {
+import React from 'react';
+
+const Join: React.FC = () => {
   return (
     <section className="w-full h-auto py-10 bg-bg px-7 pb-24">
       <div className="max-w-[1400px] mx-auto w-full h-auto flex items-center justify-center gap-x-14 md:mt-10">

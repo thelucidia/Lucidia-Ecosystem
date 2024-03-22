@@ -45,7 +45,7 @@ const data: IData = {
   },
 };
 
-const Hero = ({ id }: IHero) => {
+const Hero: React.FC<IHero> = ({ id }: IHero) => {
   // const community = [
   //   {
   //     link: 'https://t.me/Lucidia_io',

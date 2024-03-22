@@ -1,4 +1,5 @@
 import TokenBox from '../../components/TokenBox';
+import React from 'react';
 
 interface IToken {
   id: string;
@@ -80,7 +81,7 @@ const data: IData = {
   ],
 };
 
-const Tokens = ({ id }: IToken) => {
+const Tokens: React.FC<IToken> = ({ id }: IToken) => {
   const item = data[id];
   return (
     <section className="w-full h-auto px-5 py-7 md:py-10 bg-bg relative pb-10 md:pb-28">

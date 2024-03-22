@@ -1,7 +1,8 @@
 import parse from 'html-react-parser';
 import { motion } from 'framer-motion';
+import React from 'react';
 
-const Benefits = () => {
+const Benefits: React.FC = () => {
   const data = [
     {
       desc: 'Wider Audience Reach: Highlight how joining Lucidia provides games with instant exposure to over <span classname="text-[#0ED4FF]">30,000</span> users, addressing the challenge of attracting players that many Web3 games face.',

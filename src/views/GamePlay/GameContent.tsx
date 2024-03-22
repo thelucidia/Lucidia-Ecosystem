@@ -1,4 +1,6 @@
-const GameContent = () => {
+import React from 'react';
+
+const GameContent: React.FC = () => {
   return (
     <section className="w-full h-auto p-5 relative text-white flex md:items-center justify-center">
       <img

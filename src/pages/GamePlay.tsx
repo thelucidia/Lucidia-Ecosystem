@@ -1,3 +1,4 @@
+import React from 'react';
 import GameContent from '../views/GamePlay/GameContent';
 import Worlds from '../views/Hero/Worlds';
 import Join from '../views/GamePlay/Join';
@@ -5,7 +6,7 @@ import Benefits from '../views/GamePlay/Benefits';
 import PartnersLower from '../views/Hero/PartnersLower';
 import { motion } from 'framer-motion';
 
-const GamePlay = () => {
+const GamePlay: React.FC = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

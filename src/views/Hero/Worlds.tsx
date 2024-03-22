@@ -1,58 +1,16 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import React from 'react';
+import data from './worlds.mock.json';
 
 interface IWorld {
   id: string;
 }
 
-const Worlds = ({ id }: IWorld) => {
+const Worlds: React.FC<IWorld> = ({ id }: IWorld) => {
   const flag = id === 'landing';
-
-  const worldList = [
-    {
-      title: 'curse of the pharaoh',
-      desc: 'Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.',
-      image: 'zombie',
-      path: '/gameplay/curse-of-the',
-    },
-    {
-      title: 'cryptocraft',
-      desc: 'Shape limitless worlds, earn $LUCID Tokens, unleash creativity, adventure awaits!',
-      image: 'minecraft',
-      path: '/gameplay/cryptocraft',
-    },
-    {
-      title: 'sandstorm racers',
-      desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
-      image: 'cyber',
-      path: '/gameplay/sandstorm',
-    },
-    {
-      title: 'desert warriors',
-      desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
-      image: 'fps',
-      path: '/gameplay/desert',
-    },
-  ];
-
-  const comingsoon = [
-    {
-      title: 'embryo lab',
-      image: 'lab',
-    },
-    {
-      title: 'Eco city',
-      image: 'eco',
-    },
-    {
-      title: 'tekcida',
-      image: 'tekcida',
-    },
-    {
-      title: 'nft racing',
-      image: 'nftracing',
-    },
-  ];
+  const worldList = data.worldList;
+  const comingsoon = data.comingsoon;
 
   return (
     <section className="w-full h-auto min-h-screen sm:bg-bg bg-transparent relative">

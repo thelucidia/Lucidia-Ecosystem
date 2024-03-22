@@ -1,10 +1,11 @@
+import React from 'react';
 import PartnersLower from '../views/Hero/PartnersLower';
 import Banner from '../views/Career/Banner';
 import Culture from '../views/Career/Culture';
 import Journey from '../views/Career/Journey';
 import { motion } from 'framer-motion';
 
-const Landing = () => {
+const Landing: React.FC = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

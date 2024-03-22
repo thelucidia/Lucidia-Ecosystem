@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
+import React from 'react';
 
-const Journey = () => {
+const Journey: React.FC = () => {
   const data = [
     {
       title: 'Community Manager',

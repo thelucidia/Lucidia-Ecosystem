@@ -1,8 +1,9 @@
 import { MdOutlineOpenInNew } from 'react-icons/md';
 import { IoMdInformationCircleOutline } from 'react-icons/io';
 import { motion } from 'framer-motion';
+import React from 'react';
 
-const How = () => {
+const How: React.FC = () => {
   const data = [
     {
       title: 'Option 1: Buy ETH or BNB with a Card',
