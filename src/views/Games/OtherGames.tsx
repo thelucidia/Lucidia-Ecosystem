@@ -51,9 +51,10 @@ const OtherGames = ({ id }: IOtherGames) => {
                   key={i}
                   className="sm:w-[450px] w-[330px] sm:h-[570px] h-[418px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
                 >
-                  <div className="scale-x-[-1] relative w-full h-full group overflow-hidden">
+                  <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#0ED4FF] bg-transparent">
+                    <div className="w-full h-screen absolute top-0 left-0 bg-black/40 z-10"></div>
                     <img
-                      src={`/worlds/${items.image}.webp`}
+                      src={`/worlds/${items.image}.png`}
                       alt={items.title}
                       className="object-cover absolute w-full h-full"
                     />

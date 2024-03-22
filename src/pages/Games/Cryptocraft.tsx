@@ -1,9 +1,9 @@
 import React from 'react';
 import PartnersLower from '../../views/Hero/PartnersLower';
 import Banner from '../../views/Games/Cryptocraft/Banner';
+import OtherGames from '../../views/Games/OtherGames';
 import Unleash from '../../views/Games/Cryptocraft/Unleash';
 import GameOverview from '../../views/Games/Cryptocraft/GameOverview';
-import OtherGames from '../../views/Games/OtherGames';
 
 const Cryptocraft: React.FC = () => {
   return (
