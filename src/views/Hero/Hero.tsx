@@ -128,12 +128,12 @@ const Hero = ({ id }: IHero) => {
           <motion.div
             initial={{ y: -50 }}
             whileInView={{ y: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className="overflow-hidden"
           >
             <h1
               className={clsx(
-                'text-3xl md:text-5xl 2xl:text-[72px] font-primary max-w-[800px] 2xl:leading-[5.5rem] font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]',
+                'text-3xl md:text-5xl 2xl:text-[60px]  font-primary max-w-[800px] 2xl:leading-[5.5rem] uppercase font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]',
                 // item.buttons ? 'text-3xl md:text-5xl 2xl:text-[72px]' : 'text-[62px]',
               )}
             >
@@ -143,7 +143,7 @@ const Hero = ({ id }: IHero) => {
           <motion.div
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className="max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm overflow-hidden"
           >
             {item.desc}
@@ -154,7 +154,7 @@ const Hero = ({ id }: IHero) => {
                 <motion.div
                   initial={{ x: 150 }}
                   whileInView={{ x: 0 }}
-                  transition={{ type: 'spring', stiffness: 100 }}
+                  transition={{ type: 'spring', stiffness: 60 }}
                   className="max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm overflow-hidden"
                 >
                   <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
@@ -169,7 +169,7 @@ const Hero = ({ id }: IHero) => {
                 <motion.div
                   initial={{ x: -150 }}
                   whileInView={{ x: 0 }}
-                  transition={{ type: 'spring', stiffness: 100 }}
+                  transition={{ type: 'spring', stiffness: 60 }}
                   className="max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm overflow-hidden"
                 >
                   <a
@@ -196,13 +196,13 @@ const Hero = ({ id }: IHero) => {
               <motion.div
                 initial={{ y: 50 }}
                 whileInView={{ y: 0 }}
-                transition={{ type: 'spring', stiffness: 100 }}
+                transition={{ type: 'spring', stiffness: 60 }}
                 className="max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm overflow-hidden"
               >
                 <div className="mt-20 flex md:items-start gap-x-8 md:flex-row flex-col gap-y-9">
                   <div className="">
                     <h1 className="font-primary font-medium">Join community of 100k+ Lucidians</h1>
-                    <ul className="flex items-center gap-x-4 text-2xl mt-4">
+                    {/* <ul className="flex items-center gap-x-4 text-2xl mt-4">
                       {community.map((items, i) => {
                         return (
                           <a
@@ -216,7 +216,7 @@ const Hero = ({ id }: IHero) => {
                           </a>
                         );
                       })}
-                    </ul>
+                    </ul> */}
                   </div>
                   {/* <div className="h-16 w-[1px] bg-white/10 md:block hidden"></div>
                           <div className="">

@@ -16,7 +16,7 @@ const OurProduct = () => {
       className="bg-bg overflow-hidden"
     >
       <Hero id={'our-products'} />
-      <PartnersUpper />
+      {/* <PartnersUpper /> */}
       <Tokens id={'our-products'} />
       <Stats />
 

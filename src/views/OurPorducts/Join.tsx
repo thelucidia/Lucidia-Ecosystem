@@ -8,7 +8,7 @@ const Join = () => {
           <motion.div
             initial={{ x: -150 }}
             whileInView={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className="md:w-[50%] lg:pt-[0px] md:pt-[20px] pt-[10px] overflow-hidden"
           >
             <h2 className="font-medium text-right md:text-[62px] text-[32px] leading-normal font-primary text-transparent max-w-[430px] bg-clip-text bg-gradient-to-r from-[#EEE0FF] via-[#cab8ff]  to-[#FFF]">
@@ -26,7 +26,7 @@ const Join = () => {
           <motion.div
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className="sm:w-[58.9%] flex flex-col gap-y-5 lg:py-[134px] md:py-16 sm:py-7 py-5 overflow-hidden"
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">

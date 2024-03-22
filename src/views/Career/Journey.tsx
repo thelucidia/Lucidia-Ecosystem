@@ -48,7 +48,7 @@ const Journey = () => {
           <motion.div
             initial={{ x: 100 }}
             whileInView={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className="overflow-hidden md:w-[60%] lg:block hidden"
           >
             <ul className="flex flex-col gap-y-11">
@@ -70,7 +70,7 @@ const Journey = () => {
             <motion.div
               initial={{ x: -100 }}
               whileInView={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 100 }}
+              transition={{ type: 'spring', stiffness: 60 }}
               className="overflow-hidden"
             >
               <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">
@@ -89,7 +89,7 @@ const Journey = () => {
           <motion.div
             initial={{ y: -100 }}
             whileInView={{ y: 0 }}
-            transition={{ type: 'spring', stiffness: 100 }}
+            transition={{ type: 'spring', stiffness: 60 }}
             className="sm:w-[58.9%] flex flex-col gap-y-5 md:py-16 sm:py-7 py-5 lg:hidden md:block overflow-hidden"
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">

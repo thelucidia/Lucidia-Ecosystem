@@ -18,14 +18,14 @@ const Banner = () => {
         <motion.div
           initial={{ y: -150 }}
           whileInView={{ y: 0 }}
-          transition={{ type: 'spring', stiffness: 100 }}
+          transition={{ type: 'spring', stiffness: 60 }}
           className="w-full overflow-hidden flex"
         >
-          <h1 className="flex items-center font-secondary 2xl:min-w-[750px] leading-normal w-auto uppercase text-3xl md:text-5xl 2xl:text-[72px] 2xl:leading-[5.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF] 2xl:mb-[18rem] lg:mb-[10rem] md:mb-[6rem] sm:mb-[4rem] mb-[2rem]">
+          <h1 className="flex items-center font-secondary 2xl:min-w-[750px] leading-normal w-auto uppercase text-3xl md:text-5xl 2xl:text-[72px] 2xl:leading-[5.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF] 2xl:mb-[18rem] lg:mb-[10rem] md:mb-[6rem] sm:mb-[4rem] mb-[2rem] ">
             join us as lucidian
           </h1>
         </motion.div>
-        <img src="/assets/images/careers/hero.png" alt="Hero" className="object-cover bottom-0 w-[43.3vw] mx-auto" />
+        <img src="/assets/images/careers/hero.png" alt="Hero" className="object-cover bottom-0 w-[38vw] mx-auto" />
 
         {/*
         <div className="w-full relative flex">

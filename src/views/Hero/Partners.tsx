@@ -26,7 +26,7 @@ const Partners = () => {
                     key={i}
                     initial={{ x: 150 }}
                     whileInView={{ x: 0 }}
-                    transition={{ type: 'spring', stiffness: 100 }}
+                    transition={{ type: 'spring', stiffness: 60 }}
                     className=""
                   >
                     <img src={`/partners/${items}.webp`} alt="Partners" className={`sm:w-[10rem] w-32`} key={i} />
