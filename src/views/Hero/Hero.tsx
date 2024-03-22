@@ -1,6 +1,6 @@
-import { BsDiscord } from 'react-icons/bs';
-import { PiTelegramLogoBold } from 'react-icons/pi';
-import { SiTwitter } from 'react-icons/si';
+// import { BsDiscord } from 'react-icons/bs';
+// import { PiTelegramLogoBold } from 'react-icons/pi';
+// import { SiTwitter } from 'react-icons/si';
 import MainVideo from '../../../videos/hero.mp4';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -46,20 +46,20 @@ const data: IData = {
 };
 
 const Hero = ({ id }: IHero) => {
-  const community = [
-    {
-      link: 'https://t.me/Lucidia_io',
-      icon: <PiTelegramLogoBold />,
-    },
-    {
-      link: 'https://discord.com/invite/lucidia',
-      icon: <BsDiscord />,
-    },
-    {
-      link: 'https://twitter.com/lucidia_io',
-      icon: <SiTwitter />,
-    },
-  ];
+  // const community = [
+  //   {
+  //     link: 'https://t.me/Lucidia_io',
+  //     icon: <PiTelegramLogoBold />,
+  //   },
+  //   {
+  //     link: 'https://discord.com/invite/lucidia',
+  //     icon: <BsDiscord />,
+  //   },
+  //   {
+  //     link: 'https://twitter.com/lucidia_io',
+  //     icon: <SiTwitter />,
+  //   },
+  // ];
   const item = data[id];
   //   const audited = [
   //     {

@@ -5,7 +5,6 @@ import { useInView } from 'react-intersection-observer';
 const Stats = () => {
   const stats = [
     {
-      title: '$420k',
       prefix: '$',
       suffix: 'k',
       start: 400,
@@ -13,15 +12,13 @@ const Stats = () => {
       desc: 'TO BE UNLOCKED BY USERS',
     },
     {
-      title: '15',
       prefix: '',
-      suffix: '',
+      suffix: 'M',
       start: 0,
       end: 15,
       desc: 'IN GAME ASSETS',
     },
     {
-      title: '4+',
       prefix: '',
       suffix: '+',
       start: 0,
