@@ -25,11 +25,11 @@ const GameContent: React.FC = () => {
           rel="noopener noreferrer"
           className=""
         >
-          <div className="w-full lg:w-[15rem] relative">
+          <div className="w-full lg:w-[15rem] pb-[100px] relative">
             <div className="py-[20px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center hover:text-[#A5FF16] font-secondary z-10 text-white font-[700] text-[12px] group-hover:text-black  transition-colors ease-in-out duration-300">
               see details
             </div>
-            <img src="/assets/images/game_button.png" alt="LaunchApp" />
+            <img src="/assets/images/game_button.png" alt="see_details" />
           </div>
         </a>
       </div>

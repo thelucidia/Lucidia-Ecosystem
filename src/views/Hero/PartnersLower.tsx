@@ -1,16 +1,24 @@
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const PartnersLower: React.FC = () => {
   const partners = ['bloomberg', 'yahoo', 'benzinga', 'globe', 'digital', 'block', 'market'];
 
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  if (inView && !hasAnimated) {
+    setHasAnimated(true);
+  }
+
   return (
     <section className="w-full h-auto p-5 bg-[#0ED4FF] relative">
       <motion.div
-        initial={{ y: -50 }}
-        whileInView={{ y: 0 }}
+        ref={ref}
+        animate={hasAnimated ? { y: 0 } : { y: -50 }}
         transition={{ type: 'spring', stiffness: 60 }}
-        className=""
+        className="overflow-hidden"
       >
         <div className="w-full max-w-[1400px] mx-auto flex flex-wrap items-center gap-x-9 md:gap-x-14 gap-y-7 justify-center h-auto">
           {partners.map((items, i) => {
