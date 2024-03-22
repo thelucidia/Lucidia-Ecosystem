@@ -49,7 +49,7 @@ const Banner: React.FC = () => {
           </h1> */}
           <img
             src="/assets/images/games/curseof/curseofthe.svg"
-            className="w-[55.8vw] pt-[180px] pb-[80px] mx-auto"
+            className="w-[55.8vw] pt-[180px] pb-[160px] mx-auto"
             alt="curseofthe"
           />
         </motion.div>

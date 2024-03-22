@@ -5,14 +5,14 @@ const NewEra: React.FC = () => {
   return (
     <section className="w-full h-full relative">
       <div className="w-full h-full overflow-hidden px-5">
-        <div className="max-w-[1400px] w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start">
+        <div className="max-w-[1400px] mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start">
           <motion.div
             initial={{ x: -150 }}
             whileInView={{ x: 0 }}
             transition={{ type: 'spring', stiffness: 100 }}
             className="md:w-[60%] overflow-hidden"
           >
-            <h2 className="font-medium text-left md:text-[62px] text-[32px] leading-normal font-primary text-[#70F] max-w-[320px]">
+            <h2 className="font-medium text-left md:text-[62px] text-[32px] leading-normal font-primary text-[#70F] max-w-[390px]">
               A new era of FPS gaming
             </h2>
           </motion.div>

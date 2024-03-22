@@ -5,7 +5,7 @@ import Careers from './pages/Careers';
 import OurProducts from './pages/OurProducts';
 import GamePlay from './pages/GamePlay';
 import RoadMap from './pages/RoadMap';
-import Cryptocraft from './views/Games/Cryptocraft/Cryptocraft';
+import Cryptocraft from './pages/Games/Cryptocraft';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Sandstorm from './pages/Games/Sandstorm';
@@ -29,7 +29,6 @@ const App = () => {
           <Route path="/gameplay/sandstorm" element={<Sandstorm />} />
           <Route path="/gameplay/curse-of-the" element={<Curse />} />
           <Route path="/gameplay/desert" element={<DesertWarrior />} />
-          {/* <Route path="/gameplay/curse-of-the" element={<Curse />} /> */}
         </Route>
       </Routes>
       <Footer />

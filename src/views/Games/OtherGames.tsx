@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-const OtherGames: React.FC = () => {
+interface IOtherGames {
+  id: number;
+}
+
+const OtherGames = ({ id }: IOtherGames) => {
+  console.log(id);
   const worldList = [
     {
       title: 'curse of the pharaoh',
@@ -16,12 +20,12 @@ const OtherGames: React.FC = () => {
       image: 'minecraft',
       path: '/gameplay/cryptocraft',
     },
-    // {
-    //   title: 'sandstorm racers',
-    //   desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
-    //   image: 'cyber',
-    //   path: '/gameplay/sandstorm',
-    // },
+    {
+      title: 'sandstorm racers',
+      desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
+      image: 'cyber',
+      path: '/gameplay/sandstorm',
+    },
     {
       title: 'desert warriors',
       desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
@@ -40,7 +44,7 @@ const OtherGames: React.FC = () => {
               initial={{ x: 150 }}
               whileInView={{ x: 0 }}
               transition={{ type: 'spring', stiffness: 70 }}
-              className=""
+              className={`${id == i ? 'hidden' : 'block'}`}
             >
               <Link to={items.path}>
                 <div

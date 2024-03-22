@@ -1,10 +1,9 @@
 // import React, { useRef, useEffect } from 'react';
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { Suspense } from 'react';
-import { useLoader } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+const LazyModel = React.lazy(() => import('./Model'));
 
 const Join: React.FC = () => {
   return (
@@ -15,7 +14,7 @@ const Join: React.FC = () => {
             <ambientLight intensity={0.8} />
             <directionalLight position={[3.3, 1.0, 4.4]} castShadow intensity={Math.PI} />
             <Suspense fallback={null}>
-              <Model />
+              <LazyModel />
             </Suspense>
             <OrbitControls target={[0, 1, 0]} />
           </Canvas>
@@ -38,11 +37,6 @@ const Join: React.FC = () => {
       </div>
     </section>
   );
-};
-
-const Model: React.FC = () => {
-  const gltf = useLoader(GLTFLoader, 'soldier/scene.gltf');
-  return <primitive object={gltf.scene} children-0-castShadow />;
 };
 
 export default Join;

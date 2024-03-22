@@ -13,7 +13,7 @@ const DesertWarrior: React.FC = () => {
       <NewEra />
       <GameOverview />
       <GameFeature />
-      <OtherGames />
+      <OtherGames id={3} />
       <PartnersLower />
     </section>
   );

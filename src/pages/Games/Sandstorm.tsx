@@ -9,7 +9,7 @@ const Sandstorm: React.FC = () => {
     <section className="w-full h-auto overflow-hidden bg-bg">
       <Banner />
       <Details />
-      <OtherGames />
+      <OtherGames id={2} />
       <PartnersLower />
     </section>
   );
