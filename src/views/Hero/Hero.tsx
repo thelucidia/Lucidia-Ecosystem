@@ -133,7 +133,7 @@ const Hero = ({ id }: IHero) => {
           >
             <h1
               className={clsx(
-                'text-3xl md:text-5xl 2xl:text-[72px] font-primary max-w-[800px] 2xl:leading-[5.5rem] font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]',
+                'text-3xl md:text-5xl 2xl:text-[60px]  font-primary max-w-[800px] 2xl:leading-[5.5rem] uppercase font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]',
                 // item.buttons ? 'text-3xl md:text-5xl 2xl:text-[72px]' : 'text-[62px]',
               )}
             >

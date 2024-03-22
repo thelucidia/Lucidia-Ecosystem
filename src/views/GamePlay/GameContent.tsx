@@ -10,13 +10,13 @@ const GameContent = () => {
       <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-9 "></div>
       <div className="max-w-[1400px] w-full  h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex flex-col relative gap-y-5 sm:pb-[200px] pb-0">
         <h1 className="max-w-[33rem] flex items-center font-primary leading-normal w-auto uppercase text-[62px] 2xl:text-[72px] 2xl:leading-[5.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#A5FF16] via-[#0ED4FF] to-white">
-          Curse of the pharAo`s
+          Curse of the pharaoh
         </h1>
-        <h4 className="flex items-center font-primary leading-normal w-auto uppercase text-[18px] font-semibold text-white">
+        <h4 className="flex items-center mb-[20px] font-primary leading-normal w-auto uppercase text-[18px] font-semibold text-white">
           Featured Games
         </h4>
 
-        <img src="/assets/images/gun.png" alt="gun" width={87} className="pb-20" />
+        {/* <img src="/assets/images/gun.png" alt="gun" width={87} className="pb-20" /> */}
         <a
           href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
           target="_blank"

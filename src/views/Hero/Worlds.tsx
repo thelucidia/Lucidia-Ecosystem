@@ -106,7 +106,7 @@ const Worlds = ({ id }: IWorld) => {
                     key={i}
                     initial={{ x: 150 }}
                     whileInView={{ x: 0 }}
-                    transition={{ type: 'spring', stiffness: 50 }}
+                    transition={{ type: 'spring', stiffness: 70 }}
                     className=""
                   >
                     <Link to={items.path}>
@@ -147,7 +147,7 @@ const Worlds = ({ id }: IWorld) => {
                     key={i}
                     initial={{ x: -150 }}
                     whileInView={{ x: 0 }}
-                    transition={{ type: 'spring', stiffness: 50 }}
+                    transition={{ type: 'spring', stiffness: 70 }}
                     className=""
                   >
                     <div
@@ -188,7 +188,7 @@ const Worlds = ({ id }: IWorld) => {
                   key={i}
                   initial={{ y: -50 }}
                   whileInView={{ y: 0 }}
-                  transition={{ type: 'spring', stiffness: 60 }}
+                  transition={{ type: 'spring', stiffness: 100 }}
                   className=""
                 >
                   <div className="" key={i}>
