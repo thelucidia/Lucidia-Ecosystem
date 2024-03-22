@@ -33,16 +33,6 @@ const Worlds = ({ id }: IWorld) => {
       image: 'fps',
       path: '/gameplay/desert',
     },
-    // {
-    //   title: 'embryo lab',
-    //   desc: 'Use the power of AI to grow your unique NFT Lucidia Embryo.',
-    //   image: 'lab',
-    // },
-    // {
-    //   title: 'Eco city',
-    //   desc: 'Roam through the city, go shopping for your avatar or just hang in your virtual property',
-    //   image: 'eco',
-    // },
   ];
 
   const comingsoon = [
@@ -61,25 +51,6 @@ const Worlds = ({ id }: IWorld) => {
     {
       title: 'nft racing',
       image: 'nftracing',
-    },
-  ];
-
-  const stats = [
-    {
-      title: '$420k',
-      desc: 'In Rewards No.1 MLN',
-    },
-    {
-      title: '15',
-      desc: 'MLN In Game Assets',
-    },
-    {
-      title: '4+',
-      desc: 'Game Inside Metaverse',
-    },
-    {
-      title: '20',
-      desc: 'maps',
     },
   ];
 
@@ -179,28 +150,6 @@ const Worlds = ({ id }: IWorld) => {
           </div>
         </div>
       </div>
-      {flag && (
-        <div className="w-full h-auto bg-prpl py-14 mt-24 font-secondary">
-          <div className="flex mx-auto w-fit sm:gap-x-24 flex-wrap justify-between sm:justify-center px-3 gap-y-10 md:text-left text-center">
-            {stats.map((items, i) => {
-              return (
-                <motion.div
-                  key={i}
-                  initial={{ y: -50 }}
-                  whileInView={{ y: 0 }}
-                  transition={{ type: 'spring', stiffness: 100 }}
-                  className=""
-                >
-                  <div className="" key={i}>
-                    <h1 className="text-5xl sm:text-[54px] font-bold text-center">{items.title}</h1>
-                    <p className="font-semibold uppercase sm:text-base text-sm">{items.desc}</p>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      )}
     </section>
   );
 };

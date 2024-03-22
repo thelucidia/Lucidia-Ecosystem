@@ -21,7 +21,6 @@ const Partners = () => {
             <div className="flex flex-wrap sm:gap-x-[8rem] gap-x-16 gap-y-[2.5rem] items-center justify-center px-5 py-9">
               {partners.map((items, i) => {
                 return (
-                  // <img src={`/partners/${items}.webp`} alt="Partners" className={`sm:w-auto w-20 ${items === 'epic' ? 'scale-[0.7] sm:scale-[1]' : toScale.includes(items) ? 'scale-[1.5] sm:scale-[1]' : ''}`} key={i} />
                   <motion.div
                     key={i}
                     initial={{ x: 150 }}

@@ -9,7 +9,6 @@ import Cryptocraft from './pages/Games/Cryptocraft';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Sandstorm from './pages/Games/Sandstorm';
-// import Desert from './pages/Games/Curse';
 import Curse from './pages/Games/Curse';
 import DesertWarrior from './pages/Games/DesertWarrior';
 

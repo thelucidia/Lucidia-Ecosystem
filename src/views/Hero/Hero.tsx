@@ -103,27 +103,7 @@ const Hero = ({ id }: IHero) => {
 
       <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-prpl/50 to-black z-10"></div>
 
-      {/* <img src="/hero/herobg.webp" alt="Herobg" className="w-full h-full object-cover absolute top-0 left-0" /> */}
-
       <div className="max-w-[1400px] w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row relative">
-        {/* {!item.buttons && (
-          <div className="flex flex-row justify-between min-w-[500px]">
-            <img
-              src="./assets/images/products/right-coin.svg"
-              alt="Hero"
-              className="object-cover top-0 sm:hidden block"
-              width={180}
-              height={180}
-            />
-            <img
-              src="./assets/images/products/left-coin.svg"
-              alt="Hero"
-              className="object-cover top-0 sm:hidden block"
-              width={240}
-              height={240}
-            />
-          </div>
-        )} */}
         <div className="w-full flex flex-col gap-y-[10px]">
           <h1
             className={clsx(
@@ -216,10 +196,7 @@ const Hero = ({ id }: IHero) => {
           <img
             src={`${item.image}`}
             alt="Hero"
-            className={clsx(
-              'object-cover top-0 md:w-auto h-[30vh] sm:h-[35vh] -mt-4 md:h-[70vh] mx-auto',
-              // !item.buttons && 'sm:block hidden',
-            )}
+            className={clsx('object-cover top-0 md:w-auto h-[30vh] sm:h-[35vh] -mt-4 md:h-[70vh] mx-auto')}
           />
         </div>
       </div>

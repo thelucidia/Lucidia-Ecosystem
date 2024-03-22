@@ -1,151 +1,8 @@
 import { BsLinkedin } from 'react-icons/bs';
+import data from './members.mock.json';
 
 const Members = () => {
-  const members = [
-    {
-      name: 'Adel Khatib',
-      position: 'COO',
-      link: 'https://www.linkedin.com/in/adel-khatib-b2b136180/',
-      desc: [
-        'Samsung Mena Partner (6 yrs)',
-        'Electric fleet partner with Uber (2 yrs)',
-        'Crypto/blockchain expert (10 yrs)',
-        'Serial entrepreneur & gamer (15 yrs)',
-      ],
-    },
-    {
-      name: 'Feras Nimer',
-      position: 'CFO',
-      link: 'https://www.linkedin.com/in/feras-nimer-691a3258/',
-      desc: [
-        'Business transformation at EY (5 yrs)',
-        'Project management (6 yrs)',
-        'Crypto investor (4 yrs)',
-        'Entrepreneur (5 yrs)',
-      ],
-    },
-    {
-      name: 'Ahmad Assaf',
-      position: 'CTO',
-      link: 'https://www.linkedin.com/in/ahmadassaf/',
-      desc: [
-        'AI & data expert (14 yrs)',
-        'Crypto/tech enthusiast (5 yrs)',
-        'Software engineer (18 yrs)',
-        'Entrepreneur (10 yrs)',
-      ],
-    },
-    {
-      name: 'Al Rizqi',
-      position: 'CMO',
-      link: 'https://www.linkedin.com/in/al-rizqi/',
-      desc: [
-        'Marketing and Business Development: 5 Years',
-        'Community Building: 3 Years',
-        'Recruiter: 3 Years',
-        'Teacher: 10+ Years',
-      ],
-    },
-    {
-      name: 'Oskar Krzak',
-      position: 'CPO',
-      link: 'https://www.linkedin.com/in/krzakoskar/',
-      desc: [
-        'Web3 Gaming Innovation (2+ years)',
-        'Strategic Market Expansion (3+ years)',
-        'Leadership in Operations (4+ years)',
-        'Strategic Product Management (3+ years)',
-      ],
-    },
-    {
-      name: 'Malek Sharabi',
-      position: 'Head of Developers',
-      link: 'https://www.linkedin.com/in/malek-sharabi-016862118/',
-      desc: [
-        'Game Developer (6 years)',
-        'Smart Contracts Developer (1 year)',
-        'Front-end Developer (1 year)',
-        'SEO Specialist (2 years)',
-      ],
-    },
-    {
-      name: 'Evdokia Bobrova',
-      position: 'Head of External Relations',
-      link: 'https://www.linkedin.com/in/evdokia-bobrova/',
-      desc: ['Sales & Marketing (5 years)', 'Client Advisory (3 years)'],
-    },
-    {
-      name: 'Jahongir Erkinov',
-      position: 'Head of Game Dev',
-      link: 'https://www.linkedin.com/in/jakhongirerkinov/',
-      desc: ['Game Developer (7 years)', 'Lead Game Designer (3 years)'],
-    },
-    {
-      name: 'Rula Madi',
-      position: 'HEAD OF LEGAL',
-      link: 'https://www.linkedin.com/in/rolamadi/',
-      desc: ['Corporate & tech/IP law (20 yrs)', 'Senior management Adviser', 'Legal associations Member'],
-    },
-    {
-      name: 'Andrii Seliuk',
-      position: 'Lead Web Developer',
-      link: 'https://www.linkedin.com/in/andrii-seliuk-ab6213284/',
-      desc: [
-        'Game Developer (4 years)',
-        'Flutter Engineer (1 year)',
-        'Unreal Engine 5.3 Developer (2 years)',
-        'Front-end Developer (4 years)',
-        'Back-end Developer (4 years)',
-      ],
-    },
-    {
-      name: 'Sara Gómez',
-      position: 'Lead UI/UX Designer',
-      link: 'https://www.linkedin.com/in/sara-g-44a723b6/',
-      desc: [
-        'UI/UX Designer (5 years)',
-        'UX Research (3 years)',
-        'Marketing and Design (2 years)',
-        'Motion Graphics Designer (2 years)',
-      ],
-    },
-    {
-      name: 'Aryan Ratu Langie',
-      position: 'Community Manager',
-      link: 'https://www.linkedin.com/in/aryanratulangie/',
-      desc: [
-        'Community Management (3 years)',
-        'Client Relations (5 years)',
-        'Teacher/Lecture (5 years)',
-        'E-Sports Project Manager (10+ years)',
-      ],
-    },
-    {
-      name: 'El Ardyan',
-      position: 'UI/UX Designer',
-      link: 'https://www.linkedin.com/in/ell-ardyan-7a1b7a192',
-      desc: ['UI/UX Designer (2 years)', 'Teacher (1+ years)'],
-    },
-    {
-      name: 'Sania Aliya',
-      position: 'UI/UX Designer',
-      link: 'https://www.linkedin.com/in/chacaliyaa/',
-      desc: ['Content Writer & Producer (2.5 years)', 'UI/UX Designer (2 years)'],
-    },
-    {
-      name: 'Miroslav Pesic',
-      position: 'Full Stack Developer',
-      link: 'https://www.linkedin.com/in/miroslav-pesic-b255a92a9/',
-      desc: ['Front-end Developer (5 years)', 'Back-end Developer (4 years)'],
-    },
-    {
-      name: 'Ola Hladka',
-      position: 'Graphic Designer',
-      link: 'https://www.linkedin.com/in/ola-h-bb5a7b218?trk=contact-info',
-      desc: ['Graphic Designer (3 years)', 'Web Designer (1 years)'],
-    },
-  ];
-
+  const members = data.members;
   return (
     <section className="w-full min-h-screen relative text-white overflow-hidden bg-bg">
       <img src="/team/bg.webp" alt="Teambg" className="w-full h-screen object-cover absolute left-0 " />
@@ -172,7 +29,7 @@ const Members = () => {
         {members.map((items, i) => {
           return (
             <div
-              className="w-[19rem] h-[30.9rem] hover:from-prpl hover:via-prpl hover:to-prpl bg-gradient-to-b from-gry via-gry to-prpl clipped2 scale-x-[-1] relative"
+              className="w-[19rem] h-[30.9rem] bg-gradient-to-b from-gry via-gry to-prpl clipped2 scale-x-[-1] relative group"
               key={i}
             >
               <div className=" w-[99.5%] bg-black h-[99.5%] absolute clipped2  m-auto top-0 bottom-0 left-0 right-0 shadow-teamShadow">
@@ -188,21 +45,20 @@ const Members = () => {
                   />
 
                   <div className="w-full h-28 bg-[#4a069c] bottom-0 left-0 absolute blur-[4rem] z-0"></div>
-
-                  <div className="absolute bottom-5 left-6 z-10">
+                  <div className="absolute bottom-0 left-6 z-10">
                     <h1 className="font-primary text-[25px] font-semibold">{items.name}</h1>
-
                     <h2 className="font-secondary font-semibold mt-[5px] text-neon">{items.position}</h2>
-
-                    <ul className="font-primary font-medium text-[15px] mt-5">
-                      {items.desc.map((items, i) => {
-                        return (
-                          <li className="" key={i}>
-                            {items}
-                          </li>
-                        );
-                      })}
-                    </ul>
+                    <div className="max-h-0 group-hover:max-h-[10rem] transition-all">
+                      <ul className="font-primary font-medium text-[15px] mt-5">
+                        {items.desc.map((items, i) => {
+                          return (
+                            <li className="" key={i}>
+                              {items}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

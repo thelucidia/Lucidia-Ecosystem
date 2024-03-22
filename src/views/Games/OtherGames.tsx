@@ -6,7 +6,6 @@ interface IOtherGames {
 }
 
 const OtherGames = ({ id }: IOtherGames) => {
-  console.log(id);
   const worldList = [
     {
       title: 'curse of the pharaoh',

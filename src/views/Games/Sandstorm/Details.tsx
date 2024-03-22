@@ -42,8 +42,6 @@ const Details: React.FC = () => {
                   <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-[#7700FF]/50 to-black/10 z-10 "></div>
                   <div className="scale-x-[-1] relative w-full h-full min-w-[340px] min-h-[300px] group overflow-hidden">
                     <img src={item.image} alt={item.title} className="object-cover absolute w-full h-full" />
-
-                    {/* <div className=" shadow-world w-full h-full relative z-10"></div> */}
                   </div>
                 </div>
               </motion.div>

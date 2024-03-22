@@ -33,8 +33,6 @@ const GameOverview: React.FC = () => {
                 transition={{ type: 'spring', stiffness: 60 }}
                 className="md:w-[80%] overflow-hidden"
               >
-                {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/70 to-black/10 z-10 "></div> */}
-                {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-[#0ED4FF]/60 to-black/10 z-10 "></div> */}
                 <h1 className="max-w-[370px] flex items-center font-primary leading-normal w-auto uppercase text-[62px] 2xl:text-[72px] 2xl:leading-[5.5rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9786FF] to-[#0ED4FFBD]">
                   {parse(item.title)}
                 </h1>
