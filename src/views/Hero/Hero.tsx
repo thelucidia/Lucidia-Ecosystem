@@ -105,72 +105,45 @@ const Hero = ({ id }: IHero) => {
 
       <div className="max-w-[1400px] w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row relative">
         <div className="w-full flex flex-col gap-y-[10px]">
-          <motion.div
-            initial={{ y: -50 }}
-            whileInView={{ y: 0 }}
-            transition={{ type: 'spring', stiffness: 60 }}
-            className="overflow-hidden"
+          <h1
+            className={clsx(
+              'text-3xl md:text-5xl 2xl:text-[60px]  font-primary max-w-[800px] 2xl:leading-[5.5rem] uppercase font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]',
+              // item.buttons ? 'text-3xl md:text-5xl 2xl:text-[72px]' : 'text-[62px]',
+            )}
           >
-            <h1
-              className={clsx(
-                'text-3xl md:text-5xl 2xl:text-[72px] font-primary max-w-[800px] 2xl:leading-[5.5rem] font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]',
-              )}
-            >
-              {item.title}
-            </h1>
-          </motion.div>
-          <motion.div
-            initial={{ x: 150 }}
-            whileInView={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 60 }}
-            className="max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm overflow-hidden"
-          >
-            {item.desc}
-          </motion.div>
+            {item.title}
+          </h1>
+          {item.desc}
           {item.buttons && (
             <>
-              <div className="flex gap-x-3 mt-10 md:flex-row flex-col gap-y-5">
-                <motion.div
-                  initial={{ x: 150 }}
-                  whileInView={{ x: 0 }}
-                  transition={{ type: 'spring', stiffness: 60 }}
-                  className="max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm overflow-hidden"
+              <div className="flex gap-x-3 mt-[80px] md:flex-row flex-col gap-y-10">
+                <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
+                  <button className=" w-full md:w-[9rem] h-14 clipped2  relative font-bold flex items-center justify-center scale-x-[-1] group">
+                    <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-colors ease-in-out duration-300"></div>
+                    <h1 className="font-secondary relative z-10 text-black font-[700] text-[12px] scale-x-[-1] ">
+                      BUY $LUCID
+                    </h1>
+                  </button>
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
                 >
-                  <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
-                    <button className=" w-full md:w-[9rem] h-14 clipped2  relative font-bold flex items-center justify-center scale-x-[-1] group">
-                      <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-colors ease-in-out duration-300"></div>
-                      <h1 className="font-secondary relative z-10 text-black font-[700] text-[12px] scale-x-[-1] ">
-                        BUY $LUCID
-                      </h1>
-                    </button>
-                  </a>
-                </motion.div>
-                <motion.div
-                  initial={{ x: -150 }}
-                  whileInView={{ x: 0 }}
-                  transition={{ type: 'spring', stiffness: 60 }}
-                  className="max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm overflow-hidden"
-                >
-                  <a
-                    href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=""
-                  >
-                    <button className=" w-full md:w-[13rem] h-14 clipped2 bg-white relative  font-bold flex items-center justify-center scale-x-[-1] group">
-                      <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300">
-                        <img
-                          src="/hero/trans.webp"
-                          alt="Herobg"
-                          className="w-full h-full object-cover absolute top-0 left-0 group-hover:opacity-0 transition-opacity ease-in-out duration-300"
-                        />
-                      </div>
-                      <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300">
-                        TOKEN ALLOCATION
-                      </h1>
-                    </button>
-                  </a>
-                </motion.div>
+                  <button className=" w-full md:w-[13rem] h-14 clipped2 bg-white relative  font-bold flex items-center justify-center scale-x-[-1] group">
+                    <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300">
+                      <img
+                        src="/hero/trans.webp"
+                        alt="Herobg"
+                        className="w-full h-full object-cover absolute top-0 left-0 group-hover:opacity-0 transition-opacity ease-in-out duration-300"
+                      />
+                    </div>
+                    <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300">
+                      TOKEN ALLOCATION
+                    </h1>
+                  </button>
+                </a>
               </div>
               <motion.div
                 initial={{ y: 50 }}
@@ -179,9 +152,9 @@ const Hero = ({ id }: IHero) => {
                 className="max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm overflow-hidden"
               >
                 <div className="mt-20 flex md:items-start gap-x-8 md:flex-row flex-col gap-y-9">
-                  <div className="">
+                  {/* <div className="">
                     <h1 className="font-primary font-medium">Join community of 100k+ Lucidians</h1>
-                    {/* <ul className="flex items-center gap-x-4 text-2xl mt-4">
+                     <ul className="flex items-center gap-x-4 text-2xl mt-4">
                       {community.map((items, i) => {
                         return (
                           <a
@@ -195,8 +168,8 @@ const Hero = ({ id }: IHero) => {
                           </a>
                         );
                       })}
-                    </ul> */}
-                  </div>
+                    </ul>
+                  </div> */}
                   {/* <div className="h-16 w-[1px] bg-white/10 md:block hidden"></div>
                           <div className="">
                           <h1 className="font-primary font-medium">Audited by:</h1>
