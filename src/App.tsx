@@ -1,3 +1,4 @@
+import React from 'react';
 import Landing from './pages/Landing';
 import { Route, Routes } from 'react-router-dom';
 import Team from './pages/Team';
@@ -12,7 +13,7 @@ import Sandstorm from './pages/Games/Sandstorm';
 import Curse from './pages/Games/Curse';
 import DesertWarrior from './pages/Games/DesertWarrior';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <section className="w-full h-full overflow-hidden bg-bg">
       <Nav />
