@@ -155,8 +155,8 @@ const Members = () => {
 
         <img src="/team/left.webp" alt="Left" className="-mb-20 xl:block hidden" />
         <div className="flex flex-col sm:gap-y-6 md:items-center justify-center w-fit md:mx-auto flex-shrink-0">
-          <h2 className="text-grn md:text-center text-lg font-medium uppercase text-left">lucidians</h2>
-          <h1 className="2xl:text-[72px] text-[54px] font-semibold leading-[3.5rem]">MEET OUR CRYPT EXPERTS</h1>
+          <h2 className="text-grn md:text-center text-lg font-medium uppercase text-left">The Lucidians</h2>
+          <h1 className="2xl:text-[72px] text-[54px] font-semibold leading-[3.5rem]">MEET OUR CRYPTO EXPERTS</h1>
           <p className="text-lg font-medium">
             At Lucidia we believe that the true, fully immersive metaverse is just around the corner.
           </p>
