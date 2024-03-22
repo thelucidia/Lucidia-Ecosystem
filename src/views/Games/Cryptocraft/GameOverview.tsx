@@ -79,7 +79,10 @@ const GameOverview: React.FC = () => {
           );
         })}
       </div>
-      <img src="/assets/images/games/crypto/coin_left.svg" className="absolute left-[75px] top-[350px] " />
+      <img
+        src="/assets/images/games/crypto/coin_left.svg"
+        className="absolute lg:block hidden lg:left-[75px] lg:top-[350px] "
+      />
     </section>
   );
 };

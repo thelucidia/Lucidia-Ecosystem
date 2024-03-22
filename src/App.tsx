@@ -13,6 +13,7 @@ import Sandstorm from './pages/Games/Sandstorm';
 import Curse from './pages/Games/Curse';
 import DesertWarrior from './pages/Games/DesertWarrior';
 import Game from './pages/Apps/Games/Game';
+import CryptoCraft from './pages/Apps/Games/Cryptocraft';
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,8 @@ const App: React.FC = () => {
         <Route path="/roadmap" element={<RoadMap />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/apps/game" element={<Game />} />
+        <Route path="/apps/cryptocraft" element={<CryptoCraft />} />
+
         <Route path="gameplay">
           <Route index element={<GamePlay />} />
           <Route path="/gameplay/cryptocraft" element={<Cryptocraft />} />
