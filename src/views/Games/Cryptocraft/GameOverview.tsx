@@ -49,8 +49,6 @@ const GameOverview: React.FC = () => {
                 className="md:w-[80%] overflow-hidden"
               >
                 <div className="lg:w-[37vw] lg:h-[23.3vw] max-w-[340px] max-h-[420px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] ">
-                  {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/70 to-black/10 z-10 "></div> */}
-                  {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-[#0ED4FF]/60 to-black/10 z-10 "></div> */}
                   <div className="scale-x-[-1] relative w-full h-full group overflow-hidden">
                     <img src={item.image} alt={item.title} className="object-cover absolute w-full h-full" />
                   </div>

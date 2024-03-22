@@ -6,6 +6,7 @@ import PartnersUpper from '../views/Hero/PartnersUpper';
 import Tokens from '../views/Hero/Tokens';
 import Worlds from '../views/Hero/Worlds';
 import { motion } from 'framer-motion';
+import Stats from '../components/Stats';
 
 const Landing = () => {
   return (
@@ -20,6 +21,7 @@ const Landing = () => {
         <Hero id={'landing'} />
         {/* <PartnersUpper /> */}
         <Worlds id={'landing'} />
+        <Stats />
         <How />
         <Partners />
         <Tokens id={'landing'} />

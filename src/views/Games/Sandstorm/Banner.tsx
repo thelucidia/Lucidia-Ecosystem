@@ -20,12 +20,9 @@ const Banner: React.FC = () => {
           transition={{ type: 'spring', stiffness: 60 }}
           className="w-full overflow-hidden flex"
         >
-          {/* <h1 className="flex items-center font-secondary 2xl:min-w-[750px] leading-normal w-auto uppercase text-3xl md:text-5xl 2xl:text-[72px] 2xl:leading-[5.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF] 2xl:mb-[18rem] lg:mb-[10rem] md:mb-[6rem] sm:mb-[4rem] mb-[2rem]">
-            sandstorm racers
-          </h1> */}
           <img
             src="/assets/images/games/sandstorm/sandstormracer.svg"
-            className="w-[55.8vw] pt-[250px] pb-[80px]"
+            className="w-[55.8vw] pt-[200px] pb-[160px]"
             alt="sandstorm"
           />
         </motion.div>
@@ -43,7 +40,6 @@ const Banner: React.FC = () => {
           </div>
         </a>
       </div>
-      {/* <img src="/hero/navline.webp" alt="Navline" className="absolute z-11 left-0 bottom-5 w-full xl:block hidden" /> */}
     </section>
   );
 };

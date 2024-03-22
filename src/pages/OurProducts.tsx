@@ -4,7 +4,7 @@ import PartnersLower from '../views/Hero/PartnersLower';
 import Tokens from '../views/Hero/Tokens';
 import { motion } from 'framer-motion';
 import Join from '../views/OurPorducts/Join';
-import Stats from '../views/OurPorducts/Stats';
+import Stats from '../components/Stats';
 
 const OurProduct = () => {
   return (
