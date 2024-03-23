@@ -1,8 +1,8 @@
 import React from 'react';
 import { LiaTelegramPlane } from 'react-icons/lia';
-import { TfiTwitter } from 'react-icons/tfi';
-import { AiOutlineYoutube } from 'react-icons/ai';
 import { RxDiscordLogo } from 'react-icons/rx';
+import { BsTwitterX } from 'react-icons/bs';
+import { TfiWorld } from 'react-icons/tfi';
 
 const Marketplace: React.FC = () => {
   const icons = [
@@ -16,11 +16,11 @@ const Marketplace: React.FC = () => {
     },
     {
       link: 'https://twitter.com/lucidia_io',
-      icon: <TfiTwitter />,
+      icon: <BsTwitterX />,
     },
     {
       link: 'https://youtube.com/@lucidia_official',
-      icon: <AiOutlineYoutube />,
+      icon: <TfiWorld />,
     },
   ];
 

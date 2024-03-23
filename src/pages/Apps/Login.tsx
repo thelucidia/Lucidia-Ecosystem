@@ -1,49 +1,37 @@
 import React from 'react';
 import { LiaTelegramPlane } from 'react-icons/lia';
-import { TfiTwitter } from 'react-icons/tfi';
-import { AiOutlineYoutube } from 'react-icons/ai';
+import { TfiWorld } from 'react-icons/tfi';
 import { RxDiscordLogo } from 'react-icons/rx';
+import { BsTwitterX } from 'react-icons/bs';
 
 const Login: React.FC = () => {
   const icons = [
     {
       link: 'https://t.me/Lucidia_io',
-      icon: <LiaTelegramPlane />,
+      icon: () => <LiaTelegramPlane />,
     },
     {
       link: 'https://discord.gg/lucidia',
-      icon: <RxDiscordLogo />,
+      icon: () => <RxDiscordLogo />,
     },
     {
       link: 'https://twitter.com/lucidia_io',
-      icon: <TfiTwitter />,
+      icon: () => <BsTwitterX />,
     },
     {
       link: 'https://youtube.com/@lucidia_official',
-      icon: <AiOutlineYoutube />,
+      icon: () => <TfiWorld />,
     },
-    // {
-    //   link: 'https://www.reddit.com/r/LucidiaMetaverse/',
-    //   icon: <FaRedditAlien />,
-    // },
-    // {
-    //   link: 'https://instagram.com/lucidia_official',
-    //   icon: <FaInstagram />,
-    // },
-    // {
-    //   link: 'https://www.tiktok.com/@lucidia.io',
-    //   icon: <RiTiktokLine />,
-    // },
   ];
 
   return (
     <section className="w-full h-screen p-5 relative text-white flex md:items-center justify-center relative">
       <ul className="flex flex-col w-fit  absolute lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5 left-[10%]">
-        {icons.map((items, i) => {
+        {icons.map(({ icon: Icon, link }, i) => {
           return (
             <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
-              <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
-                {items.icon}
+              <a href={link} target="_blank" rel="noopener noreferrer" className="">
+                <Icon />
               </a>
             </li>
           );

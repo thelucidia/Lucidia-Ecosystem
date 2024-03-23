@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import CurseofVideo from '../../../../videos/curseof.mp4';
 import { LiaTelegramPlane } from 'react-icons/lia';
-import { TfiTwitter } from 'react-icons/tfi';
-import { AiOutlineYoutube } from 'react-icons/ai';
 import { RxDiscordLogo } from 'react-icons/rx';
+import { BsTwitterX } from 'react-icons/bs';
+import { TfiWorld } from 'react-icons/tfi';
 
 const Banner: React.FC = () => {
   const [trueLoading, setTrueLoading] = useState(true);
@@ -19,24 +19,12 @@ const Banner: React.FC = () => {
     },
     {
       link: 'https://twitter.com/lucidia_io',
-      icon: <TfiTwitter />,
+      icon: <BsTwitterX />,
     },
     {
       link: 'https://youtube.com/@lucidia_official',
-      icon: <AiOutlineYoutube />,
+      icon: <TfiWorld />,
     },
-    // {
-    //   link: 'https://www.reddit.com/r/LucidiaMetaverse/',
-    //   icon: <FaRedditAlien />,
-    // },
-    // {
-    //   link: 'https://instagram.com/lucidia_official',
-    //   icon: <FaInstagram />,
-    // },
-    // {
-    //   link: 'https://www.tiktok.com/@lucidia.io',
-    //   icon: <RiTiktokLine />,
-    // },
   ];
 
   const handleTrue = () => {
@@ -66,7 +54,7 @@ const Banner: React.FC = () => {
         className="w-[68vw] h-[29vw] object-cover z-10 absolute xl:top-[25%] lg:top-[30%] md:top-[35%] sm:top-[40%] top-[45%] clipped"
       />
 
-      <ul className="flex flex-col w-fit  absolute lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5 left-[10%]">
+      <ul className="flex flex-col w-fit absolute lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-20 sm:gap-y-12 gap-y-5 left-[10%]">
         {icons.map((items, i) => {
           return (
             <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>

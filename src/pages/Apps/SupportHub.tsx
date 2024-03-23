@@ -1,8 +1,8 @@
 import React from 'react';
 import { LiaTelegramPlane } from 'react-icons/lia';
-import { TfiTwitter } from 'react-icons/tfi';
-import { AiOutlineYoutube } from 'react-icons/ai';
+import { TfiWorld } from 'react-icons/tfi';
 import { RxDiscordLogo } from 'react-icons/rx';
+import { BsTwitterX } from 'react-icons/bs';
 
 const SupportHub: React.FC = () => {
   const icons = [
@@ -16,24 +16,12 @@ const SupportHub: React.FC = () => {
     },
     {
       link: 'https://twitter.com/lucidia_io',
-      icon: <TfiTwitter />,
+      icon: <BsTwitterX />,
     },
     {
       link: 'https://youtube.com/@lucidia_official',
-      icon: <AiOutlineYoutube />,
+      icon: <TfiWorld />,
     },
-    // {
-    //   link: 'https://www.reddit.com/r/LucidiaMetaverse/',
-    //   icon: <FaRedditAlien />,
-    // },
-    // {
-    //   link: 'https://instagram.com/lucidia_official',
-    //   icon: <FaInstagram />,
-    // },
-    // {
-    //   link: 'https://www.tiktok.com/@lucidia.io',
-    //   icon: <RiTiktokLine />,
-    // },
   ];
 
   return (
