@@ -23,7 +23,6 @@ const OurProduct: React.FC = () => {
       {/* <PartnersUpper /> */}
       <Tokens id={'our-products'} />
       <Stats />
-
       <Join />
       <PartnersLower />
       <Footer />

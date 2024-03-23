@@ -31,7 +31,7 @@ const P2EGames: React.FC = () => {
   ];
 
   return (
-    <section className="w-full h-auto min-h-screen sm:bg-bg bg-transparent relative">
+    <section className="w-full h-auto sm:bg-bg bg-transparent relative">
       <div className="px-5 py-5">
         <div className="max-w-[1400px] w-full mx-auto h-auto sm:mt-11">
           <div className="w-fit max-w-[1400px] mx-auto">

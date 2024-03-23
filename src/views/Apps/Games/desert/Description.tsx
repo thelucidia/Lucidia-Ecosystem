@@ -41,7 +41,7 @@ const Description: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
                   key={i}
                   className="sm:w-[350px] w-[230px] sm:h-[470px] h-[318px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
                 >
-                  <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#A5FF16] bg-transparent">
+                  <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#0ED4FF] bg-transparent">
                     <img
                       src={`/public/assets/app/games/desert/${items.image}.png`}
                       alt={items.title}
@@ -51,7 +51,7 @@ const Description: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
                     {/* <div className=" shadow-world w-full h-full relative z-10"></div> */}
 
                     <div
-                      className={`transition-shadow ease-in-out duration-500 group-hover:shadow-worldHover  w-full h-full top-0 left-0 absolute z-10`}
+                      className={`transition-shadow ease-in-out duration-500 group-hover:shadow-tokenHover  w-full h-full top-0 left-0 absolute z-10`}
                     ></div>
 
                     {/* <div className="absolute bottom-4 left-4 z-10 p-3 group-hover:text-black text-white ease-in-out duration-[0.1s]">

@@ -1,9 +1,43 @@
-import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import CurseofVideo from '../../../../videos/curseof.mp4';
+import { LiaTelegramPlane } from 'react-icons/lia';
+import { TfiTwitter } from 'react-icons/tfi';
+import { AiOutlineYoutube } from 'react-icons/ai';
+import { RxDiscordLogo } from 'react-icons/rx';
 
 const Banner: React.FC = () => {
   const [trueLoading, setTrueLoading] = useState(true);
+
+  const icons = [
+    {
+      link: 'https://t.me/Lucidia_io',
+      icon: <LiaTelegramPlane />,
+    },
+    {
+      link: 'https://discord.gg/lucidia',
+      icon: <RxDiscordLogo />,
+    },
+    {
+      link: 'https://twitter.com/lucidia_io',
+      icon: <TfiTwitter />,
+    },
+    {
+      link: 'https://youtube.com/@lucidia_official',
+      icon: <AiOutlineYoutube />,
+    },
+    // {
+    //   link: 'https://www.reddit.com/r/LucidiaMetaverse/',
+    //   icon: <FaRedditAlien />,
+    // },
+    // {
+    //   link: 'https://instagram.com/lucidia_official',
+    //   icon: <FaInstagram />,
+    // },
+    // {
+    //   link: 'https://www.tiktok.com/@lucidia.io',
+    //   icon: <RiTiktokLine />,
+    // },
+  ];
 
   const handleTrue = () => {
     setTimeout(() => {
@@ -12,7 +46,7 @@ const Banner: React.FC = () => {
   };
 
   return (
-    <section className="w-full h-auto p-5 relative text-white flex md:items-center justify-center">
+    <section className="w-full h-screen p-5 relative text-white flex md:items-center justify-center relative">
       <div
         className={`w-full h-screen bg-black fixed z-30 top-0 left-0 flex flex-col items-center justify-center  transition-all ease-in-out duration-300 ${trueLoading ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} `}
       >
@@ -29,37 +63,45 @@ const Banner: React.FC = () => {
         preload={'auto'}
         onLoadedData={handleTrue}
         playsInline
-        className="w-[68vw] h-[29vw] object-cover z-20 absolute top-[30%] clipped"
+        className="w-[68vw] h-[29vw] object-cover z-10 absolute xl:top-[25%] lg:top-[30%] md:top-[35%] sm:top-[40%] top-[45%] clipped"
       />
 
-      <img src="/assets/app/games/game_bg.jpg" className="absolute top-0 z-9 w-full h-screen object-cover" />
-      <div className="w-full h-screen absolute top-0 left-0 bg-opacity-5 backdrop-filter backdrop-blur-lg z-10"></div>
-      <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/70 z-10"></div>
+      <ul className="flex flex-col w-fit  absolute lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5 left-[10%]">
+        {icons.map((items, i) => {
+          return (
+            <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
+              <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
+                {items.icon}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
 
-      <div className="max-w-[1400px] w-full h-auto mx-auto z-10 flex mt-[7rem] md:mt-[10rem] flex flex-col">
-        <motion.div
-          initial={{ y: -150 }}
-          whileInView={{ y: 0 }}
-          transition={{ type: 'spring', stiffness: 60 }}
-          className="w-full overflow-hidden flex"
-        >
-          <img
-            src="/assets/images/games/curseof/curseofthe.svg"
-            className="w-[55.8vw] pt-[180px] pb-[160px] mx-auto"
-            alt="curseofthe"
-          />
-        </motion.div>
+      <img src="/assets/app/games/game_bg.jpg" className="absolute top-0 z-1 w-full h-screen object-cover" />
+      <div className="w-full h-screen absolute top-0 left-0 bg-opacity-5 backdrop-filter backdrop-blur-lg z-1"></div>
+      <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/70 z-1"></div>
+
+      <div className="w-full h-auto m-auto z-10 flex flex flex-col">
+        <div className="m-auto px-4 py-2 w-[31vw] bg-opacity-25 backdrop-filter backdrop-blur-md">
+          <img src="/assets/images/games/curseof/curseofthe.svg" className="w-[29vw] mx-auto pb-4" alt="curseofthe" />
+          <h3 className="2xl:text-[16px] xl:text-[14px] lg:text-[12px] md:-[10px] sm:text-[8px] text-[6px] text-center font-primary font-semibold text-[#F0F0F0] md:block hidden">
+            Curse Of The Pharaoh is an action/adventure/survival game set in a post-apocalyptic world overrun by
+            zombies. Collect weapon, bullet, and fuel props. Travel through open-world environment with different
+            biomes.
+          </h3>
+        </div>
         <a
           href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
           target="_blank"
           rel="noopener noreferrer"
-          className="mx-auto pb-[250px]"
+          className="m-auto pt-[2.8vw]"
         >
-          <div className="w-full lg:w-[15rem] relative">
-            <div className="py-[20px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center hover:text-[#A5FF16] font-secondary z-10 text-white font-[700] text-[12px] group-hover:text-black  transition-colors ease-in-out duration-300">
-              see details
+          <div className="w-full w-[12.4vw] relative">
+            <div className="py-[1vw] w-[12.4vw] absolute font-secondary text-[1vw] uppercase leading-normal font-bold text-center hover:text-[#A5FF16] font-secondary z-10 text-white font-[700] text-[12px] group-hover:text-black  transition-colors ease-in-out duration-300">
+              play game
             </div>
-            <img src="/assets/images/game_button.png" alt="see_details" />
+            <img src="/assets/images/game_button.png" className="w-[12.4vw]" alt="see_details" />
           </div>
         </a>
       </div>

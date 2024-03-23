@@ -25,7 +25,7 @@ const GameDescription: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
     },
   ];
   return (
-    <div className="max-w-[1400px] mx-auto z-10 relative top-[-190px]">
+    <div className="max-w-[1400px] mx-auto z-10 relative top-[-250px]">
       <div className="flex flex-wrap gap-3 mt-12 overflow-hidden gap-x-[68px] items-center justify-center">
         {description.map((items, i) => {
           return (
@@ -51,7 +51,7 @@ const GameDescription: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
                     {/* <div className=" shadow-world w-full h-full relative z-10"></div> */}
 
                     <div
-                      className={`transition-shadow ease-in-out duration-500 group-hover:shadow-worldHover  w-full h-full top-0 left-0 absolute z-10`}
+                      className={`transition-shadow ease-in-out duration-500 group-hover:shadow-gameHover  w-full h-full top-0 left-0 absolute z-10`}
                     ></div>
 
                     {/* <div className="absolute bottom-4 left-4 z-10 p-3 group-hover:text-black text-white ease-in-out duration-[0.1s]">
