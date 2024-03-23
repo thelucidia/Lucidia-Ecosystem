@@ -14,10 +14,6 @@ const CryptoCraft: React.FC = () => {
       <Creativity />
       <Overview />
       <MainContent />
-<<<<<<< HEAD
-=======
-      {/* <OtherGames id={1} /> */}
->>>>>>> 88a5187d242d54943be6475a74d6a71d8a71c53f
     </section>
   );
 };
