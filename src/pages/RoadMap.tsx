@@ -2,6 +2,8 @@ import React from 'react';
 import RoadCard from '../components/RoadCard';
 import PartnersLower from '../views/Hero/PartnersLower';
 import { motion } from 'framer-motion';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 const RoadMap: React.FC = () => {
   return (
@@ -23,8 +25,10 @@ const RoadMap: React.FC = () => {
         alt="right_man"
         className="w-fit h-fit absolute right-0 mt-[331px] mr-[39px] hidden lg:block"
       />
+      <Nav />
       <RoadCard />
       <PartnersLower />
+      <Footer />
     </motion.div>
   );
 };

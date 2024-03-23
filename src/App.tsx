@@ -20,7 +20,6 @@ import SandStorm from './pages/Apps/Games/SandStorm';
 const App: React.FC = () => {
   return (
     <section className="w-full h-full overflow-hidden bg-bg">
-      <Nav />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/team" element={<Team />} />
@@ -40,7 +39,6 @@ const App: React.FC = () => {
           <Route path="/gameplay/desert" element={<DesertWarrior />} />
         </Route>
       </Routes>
-      <Footer />
     </section>
   );
 };
