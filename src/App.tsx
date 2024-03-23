@@ -27,7 +27,6 @@ const App: React.FC = () => {
   }
   return (
     <section className="w-full h-full overflow-hidden bg-bg">
-      <Nav />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/team" element={<Team />} />
