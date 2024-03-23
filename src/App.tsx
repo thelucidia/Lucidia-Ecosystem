@@ -17,16 +17,14 @@ import CryptoCraft from './pages/Apps/Games/CryptoCraft';
 import Desertwarrior from './pages/Apps/Games/Desertwarrior';
 import SandStorm from './pages/Apps/Games/SandStorm';
 import Login from './pages/Apps/Login';
-import Educational from './pages/Apps/SupportHub';
-import SupportHub from './pages/Apps/Marketplace';
+import SupportHub from './pages/Apps/SupportHub';
+import MarketPlace from './pages/Apps/Marketplace';
 
 const App: React.FC = () => {
   const { pathname } = useLocation();
-  if (pathname.includes('apps')) {
-    console.log('apps', pathname);
-  }
   return (
     <section className="w-full h-full overflow-hidden bg-bg">
+      <Nav />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/team" element={<Team />} />
@@ -41,7 +39,7 @@ const App: React.FC = () => {
         <Route path="/apps/game" element={<Game />} />
         <Route path="/apps/login" element={<Login />} />
         <Route path="/apps/support-hub" element={<SupportHub />} />
-        <Route path="/apps/educational" element={<Educational />} />
+        <Route path="/apps/marketplace" element={<MarketPlace />} />
         {/* </Route> */}
         <Route path="gameplay">
           <Route index element={<GamePlay />} />

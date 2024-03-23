@@ -1,4 +1,3 @@
-import PartnersLower from '../../../views/Hero/PartnersLower';
 import Creativity from '../../../views/Apps/Games/crypto/Creativity';
 import CryptoBanner from '../../../views/Apps/Games/crypto/CryptoBanner';
 import GameDescription from '../../../views/Apps/Games/crypto/GameDescription';

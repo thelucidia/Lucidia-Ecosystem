@@ -88,6 +88,45 @@ const Nav: React.FC = () => {
     {
       name: 'marketplace',
       slug: '/apps/marketplace',
+      paths: ['/apps/marketplace'],
+      type: 'internal',
+    },
+    {
+      name: 'support hub',
+      slug: '/apps/support-hub',
+      paths: ['/apps/support-hub'],
+      type: 'internal',
+    },
+  ];
+
+  const appNavMobile = [
+    {
+      name: 'home',
+      slug: '/apps',
+      paths: ['/apps'],
+      type: 'internal',
+    },
+    {
+      name: 'games',
+      slug: '/apps/game',
+      paths: [
+        '/apps/game',
+        '/apps/game/sandstorm',
+        '/apps/game/curse-of-the',
+        '/apps/game/cryptocraft',
+        '/apps/game/desert',
+      ],
+      type: 'internal',
+    },
+    {
+      name: 'tournaments',
+      slug: '/apps/tournaments',
+      paths: ['/apps/tournaments'],
+      type: 'internal',
+    },
+    {
+      name: 'marketplace',
+      slug: '/apps/marketplace',
       paths: ['/apps/support hub'],
       type: 'internal',
     },
@@ -240,45 +279,46 @@ const Nav: React.FC = () => {
 
         <div className="overflow-auto max-h-[90%] w-full pb-20 top-0 right-0">
           <ul className="text-white font-secondary font-semibold uppercase px-7 w-full py-12 text-sm">
-            {navMobile.map((items, i) => {
-              return items.type === 'external' ? (
-                <a href={items.slug} target="_blank" rel="noopener noreferrer" className="w-full h-full" key={i}>
-                  <motion.li
-                    initial={{ x: 100, opacity: 0 }}
-                    animate={navActive ? { x: 0, opacity: 1 } : {}}
-                    transition={{ duration: 0.7, delay: 0.5 * (i * 0.1), ease: [0.16, 0.77, 0.47, 0.97] }}
-                    className={`border-t-[1px] border-white/10 py-5 ${items.name === 'faq' ? 'border-b-[1px]' : ''} `}
-                  >
-                    {items.name}
-                  </motion.li>
-                </a>
-              ) : items.type === 'internal' ? (
-                <Link to={`${items.slug}`} className="w-full h-full" key={i}>
-                  <motion.li
-                    initial={{ x: 100, opacity: 0 }}
-                    animate={navActive ? { x: 0, opacity: 1 } : {}}
-                    transition={{ duration: 0.7, delay: 0.5 * (i * 0.1), ease: [0.16, 0.77, 0.47, 0.97] }}
-                    className={`border-t-[1px] border-white/10 py-5 ${items.name === 'faq' ? 'border-b-[1px]' : ''} `}
-                  >
-                    {items.name}
-                  </motion.li>
-                </Link>
-              ) : items.name === 'audit' ? (
-                <motion.li
-                  initial={{ x: 100, opacity: 0 }}
-                  animate={navActive ? { x: 0, opacity: 1 } : {}}
-                  transition={{ duration: 0.7, delay: 0.5 * (i * 0.1), ease: [0.16, 0.77, 0.47, 0.97] }}
-                  className={`border-t-[1px] border-white/10 py-5 group`}
-                  onClick={handleAudit}
-                  key={i}
-                >
-                  <div className="w-full flex justify-between items-center cursor-pointer group-hover:text-cyan">
-                    <p className="">{items.name}</p>
-                    <MdKeyboardArrowUp
-                      className={`text-2xl transition-all ease-in-out duration-300  ${audit ? 'rotate-0' : 'rotate-180'}`}
-                    />
-                  </div>
-                  {/* <div
+            {!pathname.includes('apps')
+              ? navMobile.map((items, i) => {
+                  return items.type === 'external' ? (
+                    <a href={items.slug} target="_blank" rel="noopener noreferrer" className="w-full h-full" key={i}>
+                      <motion.li
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={navActive ? { x: 0, opacity: 1 } : {}}
+                        transition={{ duration: 0.7, delay: 0.5 * (i * 0.1), ease: [0.16, 0.77, 0.47, 0.97] }}
+                        className={`border-t-[1px] border-white/10 py-5 ${items.name === 'faq' ? 'border-b-[1px]' : ''} `}
+                      >
+                        {items.name}
+                      </motion.li>
+                    </a>
+                  ) : items.type === 'internal' ? (
+                    <Link to={`${items.slug}`} className="w-full h-full" key={i}>
+                      <motion.li
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={navActive ? { x: 0, opacity: 1 } : {}}
+                        transition={{ duration: 0.7, delay: 0.5 * (i * 0.1), ease: [0.16, 0.77, 0.47, 0.97] }}
+                        className={`border-t-[1px] border-white/10 py-5 ${items.name === 'faq' ? 'border-b-[1px]' : ''} `}
+                      >
+                        {items.name}
+                      </motion.li>
+                    </Link>
+                  ) : items.name === 'audit' ? (
+                    <motion.li
+                      initial={{ x: 100, opacity: 0 }}
+                      animate={navActive ? { x: 0, opacity: 1 } : {}}
+                      transition={{ duration: 0.7, delay: 0.5 * (i * 0.1), ease: [0.16, 0.77, 0.47, 0.97] }}
+                      className={`border-t-[1px] border-white/10 py-5 group`}
+                      onClick={handleAudit}
+                      key={i}
+                    >
+                      <div className="w-full flex justify-between items-center cursor-pointer group-hover:text-cyan">
+                        <p className="">{items.name}</p>
+                        <MdKeyboardArrowUp
+                          className={`text-2xl transition-all ease-in-out duration-300  ${audit ? 'rotate-0' : 'rotate-180'}`}
+                        />
+                      </div>
+                      {/* <div
                     className={`text-footergry  flex flex-col gap-y-2  overflow-hidden transition-all ease-in-out duration-300 ${audit ? 'max-h-[5rem] mt-4' : 'max-h-0 mt-0'} `}
                   >
                     {items.sub?.map((items, i) => {
@@ -295,9 +335,67 @@ const Nav: React.FC = () => {
                       );
                     })}
                   </div> */}
-                </motion.li>
-              ) : null;
-            })}
+                    </motion.li>
+                  ) : null;
+                })
+              : appNavMobile.map((items, i) => {
+                  return items.type === 'external' ? (
+                    <a href={items.slug} target="_blank" rel="noopener noreferrer" className="w-full h-full" key={i}>
+                      <motion.li
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={navActive ? { x: 0, opacity: 1 } : {}}
+                        transition={{ duration: 0.7, delay: 0.5 * (i * 0.1), ease: [0.16, 0.77, 0.47, 0.97] }}
+                        className={`border-t-[1px] border-white/10 py-5 ${items.name === 'faq' ? 'border-b-[1px]' : ''} `}
+                      >
+                        {items.name}
+                      </motion.li>
+                    </a>
+                  ) : items.type === 'internal' ? (
+                    <Link to={`${items.slug}`} className="w-full h-full" key={i}>
+                      <motion.li
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={navActive ? { x: 0, opacity: 1 } : {}}
+                        transition={{ duration: 0.7, delay: 0.5 * (i * 0.1), ease: [0.16, 0.77, 0.47, 0.97] }}
+                        className={`border-t-[1px] border-white/10 py-5 ${items.name === 'faq' ? 'border-b-[1px]' : ''} `}
+                      >
+                        {items.name}
+                      </motion.li>
+                    </Link>
+                  ) : items.name === 'audit' ? (
+                    <motion.li
+                      initial={{ x: 100, opacity: 0 }}
+                      animate={navActive ? { x: 0, opacity: 1 } : {}}
+                      transition={{ duration: 0.7, delay: 0.5 * (i * 0.1), ease: [0.16, 0.77, 0.47, 0.97] }}
+                      className={`border-t-[1px] border-white/10 py-5 group`}
+                      onClick={handleAudit}
+                      key={i}
+                    >
+                      <div className="w-full flex justify-between items-center cursor-pointer group-hover:text-cyan">
+                        <p className="">{items.name}</p>
+                        <MdKeyboardArrowUp
+                          className={`text-2xl transition-all ease-in-out duration-300  ${audit ? 'rotate-0' : 'rotate-180'}`}
+                        />
+                      </div>
+                      {/* <div
+                    className={`text-footergry  flex flex-col gap-y-2  overflow-hidden transition-all ease-in-out duration-300 ${audit ? 'max-h-[5rem] mt-4' : 'max-h-0 mt-0'} `}
+                  >
+                    {items.sub?.map((items, i) => {
+                      return (
+                        <a
+                          href={items.link}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          className="hover:text-white"
+                          key={i}
+                        >
+                          {items.title}
+                        </a>
+                      );
+                    })}
+                  </div> */}
+                    </motion.li>
+                  ) : null;
+                })}
           </ul>
 
           <div className="font-primary text-center -mt-2 px-6">

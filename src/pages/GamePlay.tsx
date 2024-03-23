@@ -5,8 +5,6 @@ import Join from '../views/GamePlay/Join';
 import Benefits from '../views/GamePlay/Benefits';
 import PartnersLower from '../views/Hero/PartnersLower';
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
-import Nav from '../components/Nav';
 
 const GamePlay: React.FC = () => {
   return (
@@ -17,13 +15,11 @@ const GamePlay: React.FC = () => {
       transition={{ duration: 1.2 }}
       className="w-full h-full overflow-hidden bg-bg"
     >
-      <Nav />
       <GameContent />
       <Worlds id={'gameplay'} />
       <Join />
       <Benefits />
       <PartnersLower />
-      <Footer />
     </motion.div>
   );
 };
