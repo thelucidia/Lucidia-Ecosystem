@@ -88,13 +88,13 @@ const Nav: React.FC = () => {
     {
       name: 'marketplace',
       slug: '/apps/marketplace',
-      paths: ['/apps/support hub'],
+      paths: ['/apps/marketplace'],
       type: 'internal',
     },
     {
       name: 'support hub',
-      slug: '/apps/careers',
-      paths: ['/apps/careers'],
+      slug: '/apps/support-hub',
+      paths: ['/apps/support-hub'],
       type: 'internal',
     },
   ];

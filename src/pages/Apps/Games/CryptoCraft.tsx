@@ -1,4 +1,3 @@
-import PartnersLower from '../../../views/Hero/PartnersLower';
 import Creativity from '../../../views/Apps/Games/crypto/Creativity';
 import CryptoBanner from '../../../views/Apps/Games/crypto/CryptoBanner';
 import GameDescription from '../../../views/Apps/Games/crypto/GameDescription';
@@ -16,7 +15,6 @@ const CryptoCraft: React.FC = () => {
       <Overview />
       <MainContent />
       {/* <OtherGames id={1} /> */}
-      <PartnersLower />
     </section>
   );
 };

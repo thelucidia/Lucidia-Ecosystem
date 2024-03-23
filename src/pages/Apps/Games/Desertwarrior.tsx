@@ -1,4 +1,3 @@
-import PartnersLower from '../../../views/Hero/PartnersLower';
 import Description from '../../../views/Apps/Games/desert/Description';
 import DesertBanner from '../../../views/Apps/Games/desert/DesertBanner';
 import DesertContent from '../../../views/Apps/Games/desert/DesertContent';
@@ -16,7 +15,6 @@ const Desertwarrior: React.FC = () => {
       <DesertView />
       <DesertContent />
       {/* <OtherGames id={1} /> */}
-      <PartnersLower />
     </section>
   );
 };

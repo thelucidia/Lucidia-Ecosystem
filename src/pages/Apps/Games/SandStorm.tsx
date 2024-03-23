@@ -4,7 +4,6 @@ import SandContent from '../../../views/Apps/Games/SandStorm/SandContent';
 import SandDescription from '../../../views/Apps/Games/SandStorm/SandDescription';
 import SandView from '../../../views/Apps/Games/SandStorm/SandView';
 import Ultimate from '../../../views/Apps/Games/SandStorm/Ultimate';
-import PartnersLower from '../../../views/Hero/PartnersLower';
 
 const SandStorm: React.FC = () => {
   return (
@@ -16,7 +15,6 @@ const SandStorm: React.FC = () => {
       <SandView />
       <SandContent />
       {/* <OtherGames id={1} /> */}
-      <PartnersLower />
     </section>
   );
 };
