@@ -14,7 +14,6 @@ const CryptoCraft: React.FC = () => {
       <Creativity />
       <Overview />
       <MainContent />
-      {/* <OtherGames id={1} /> */}
     </section>
   );
 };
