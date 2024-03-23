@@ -19,6 +19,7 @@ import SandStorm from './pages/Apps/Games/SandStorm';
 import Login from './pages/Apps/Login';
 import SupportHub from './pages/Apps/SupportHub';
 import MarketPlace from './pages/Apps/Marketplace';
+import ComingSoon from './pages/Apps/ComingSoon';
 
 const App: React.FC = () => {
   const { pathname } = useLocation();
@@ -40,6 +41,8 @@ const App: React.FC = () => {
         <Route path="/apps/login" element={<Login />} />
         <Route path="/apps/support-hub" element={<SupportHub />} />
         <Route path="/apps/marketplace" element={<MarketPlace />} />
+        <Route path="/apps/tournaments" element={<ComingSoon />} />
+        <Route path="/apps" element={<ComingSoon />} />
         {/* </Route> */}
         <Route path="gameplay">
           <Route index element={<GamePlay />} />
