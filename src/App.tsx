@@ -1,6 +1,6 @@
 import React from 'react';
 import Landing from './pages/Landing';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Team from './pages/Team';
 import Careers from './pages/Careers';
 import OurProducts from './pages/OurProducts';
@@ -16,8 +16,15 @@ import Game from './pages/Apps/Games/Game';
 import CryptoCraft from './pages/Apps/Games/CryptoCraft';
 import Desertwarrior from './pages/Apps/Games/Desertwarrior';
 import SandStorm from './pages/Apps/Games/SandStorm';
+import Login from './pages/Apps/Login';
+import Educational from './pages/Apps/SupportHub';
+import SupportHub from './pages/Apps/Marketplace';
 
 const App: React.FC = () => {
+  const { pathname } = useLocation();
+  if (pathname.includes('apps')) {
+    console.log('apps', pathname);
+  }
   return (
     <section className="w-full h-full overflow-hidden bg-bg">
       <Nav />
@@ -27,11 +34,16 @@ const App: React.FC = () => {
         <Route path="/our-products" element={<OurProducts />} />
         <Route path="/roadmap" element={<RoadMap />} />
         <Route path="/careers" element={<Careers />} />
-        <Route path="/apps/game" element={<Game />} />
+
+        {/* <Route path="/apps"> */}
         <Route path="/apps/cryptocraft" element={<CryptoCraft />} />
         <Route path="/apps/desertwarrior" element={<Desertwarrior />} />
         <Route path="/apps/sandstorm" element={<SandStorm />} />
-
+        <Route path="/apps/game" element={<Game />} />
+        <Route path="/apps/login" element={<Login />} />
+        <Route path="/apps/support-hub" element={<SupportHub />} />
+        <Route path="/apps/educational" element={<Educational />} />
+        {/* </Route> */}
         <Route path="gameplay">
           <Route index element={<GamePlay />} />
           <Route path="/gameplay/cryptocraft" element={<Cryptocraft />} />
@@ -40,7 +52,7 @@ const App: React.FC = () => {
           <Route path="/gameplay/desert" element={<DesertWarrior />} />
         </Route>
       </Routes>
-      <Footer />
+      {!pathname.includes('apps') && <Footer />}
     </section>
   );
 };
