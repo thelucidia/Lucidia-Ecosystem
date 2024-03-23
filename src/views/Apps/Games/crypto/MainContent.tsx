@@ -1,5 +1,3 @@
-import { MdOutlineOpenInNew } from 'react-icons/md';
-import { IoMdInformationCircleOutline } from 'react-icons/io';
 import { motion } from 'framer-motion';
 import React from 'react';
 
@@ -82,10 +80,10 @@ const MainContent: React.FC = () => {
   ];
 
   return (
-    <section className="w-full min-h-screen relative py-10 sm:pt-28 pt-16">
+    <section className="w-full min-h-screen relative py-10">
       <div className="w-full h-full overflow-hidden px-5">
         <img src="/assets/images/games/crypto/coin.svg" className="absolute top-[150px] lg:block hidden w-fit y-fit" />
-        <div className="max-w-[1400px] w-full mx-auto flex lg:gap-x-32 justify-center lg:flex-row flex-col lg:items-start items-center">
+        <div className="max-w-[1400px] w-full mx-auto flex lg:gap-x-52 justify-center lg:flex-row flex-col lg:items-start items-center">
           <div className="md:w-[60%]  text-white relative top-[1000px] z-10 text-center lg:text-left overflow-hidden">
             <motion.div
               initial={{ x: -150 }}

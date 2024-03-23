@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-const NewEra: React.FC = () => {
+const FPS: React.FC = () => {
   return (
     <section className="w-full h-full relative">
       <div className="w-full h-full overflow-hidden px-5">
@@ -10,9 +10,9 @@ const NewEra: React.FC = () => {
             initial={{ x: -150 }}
             whileInView={{ x: 0 }}
             transition={{ type: 'spring', stiffness: 60 }}
-            className="md:w-[80%] overflow-hidden"
+            className="md:w-[60%] overflow-hidden"
           >
-            <h2 className="font-medium text-left md:text-[62px] text-[32px] leading-normal font-primary text-[#70F] max-w-[390px]">
+            <h2 className="font-medium text-transparent min-w-[360px] text-[32px] sm:text-[62px] font-primary bg-clip-text bg-gradient-to-r from-white via-[#91E6F8] to-white sm:max-w-[12rem] mx-auto lg:mx-0">
               A new era of FPS gaming
             </h2>
           </motion.div>
@@ -20,10 +20,10 @@ const NewEra: React.FC = () => {
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
             transition={{ type: 'spring', stiffness: 60 }}
-            className="sm:w-[58.9%] flex flex-col gap-y-5 lg:py-[134px] md:py-16 sm:py-7 py-5 overflow-hidden"
+            className="sm:w-[58.9%] flex flex-col gap-y-5 overflow-hidden"
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-[500] flex items-center justify-center scale-x-[-1] rounded-md">
-              <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-[#70F] rounded-md">
+              <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-[#0ED4FF] rounded-md">
                 <p className="py-16 pl-7 pr-1 text-[18px] font-primary leading-[28px]">
                   Welcome to "Desert Warriors," where the thrill of first-person shooters meets the groundbreaking
                   possibilities of Web3 and NFTs. Set against thebackdrop of vast and diverse desert landscapes, this
@@ -39,4 +39,4 @@ const NewEra: React.FC = () => {
   );
 };
 
-export default NewEra;
+export default FPS;
