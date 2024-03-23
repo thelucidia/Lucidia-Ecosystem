@@ -1,11 +1,10 @@
 import P2EGames from '../../../views/Apps/Games/P2EGames';
-import GameOverview from '../../../views/Games/Cryptocraft/GameOverview';
-import OtherGames from '../../../views/Games/OtherGames';
 import PartnersLower from '../../../views/Hero/PartnersLower';
-import Creativity from '../crypto/Creativity';
-import CryptoBanner from '../crypto/CryptoBanner';
-import GameDescription from '../crypto/GameDescription';
-import MainContent from '../crypto/MainContent';
+import Creativity from '../../../views/Apps/Games/crypto/Creativity';
+import CryptoBanner from '../../../views/Apps/Games/crypto/CryptoBanner';
+import GameDescription from '../../../views/Apps/Games/crypto/GameDescription';
+import MainContent from '../../../views/Apps/Games/crypto/MainContent';
+import Overview from '../../../views/Apps/Games/crypto/Overview';
 
 const CryptoCraft: React.FC = () => {
   return (
@@ -14,9 +13,9 @@ const CryptoCraft: React.FC = () => {
       <GameDescription id={3} />
       <P2EGames />
       <Creativity />
-      <GameOverview />
+      <Overview />
       <MainContent />
-      <OtherGames id={1} />
+      {/* <OtherGames id={1} /> */}
       <PartnersLower />
     </section>
   );

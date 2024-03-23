@@ -10,7 +10,7 @@ const Survive: React.FC = () => {
             initial={{ x: -150 }}
             whileInView={{ x: 0 }}
             transition={{ type: 'spring', stiffness: 60 }}
-            className="md:w-[60%] overflow-hidden"
+            className="md:w-[80%] overflow-hidden"
           >
             <img src="/assets/images/games/crypto/unleash.svg" />
           </motion.div>
