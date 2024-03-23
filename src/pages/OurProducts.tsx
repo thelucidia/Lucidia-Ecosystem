@@ -6,6 +6,8 @@ import Tokens from '../views/Hero/Tokens';
 import { motion } from 'framer-motion';
 import Join from '../views/OurPorducts/Join';
 import Stats from '../components/Stats';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 const OurProduct: React.FC = () => {
   return (
@@ -16,12 +18,14 @@ const OurProduct: React.FC = () => {
       transition={{ duration: 1.2 }}
       className="bg-bg overflow-hidden"
     >
+      <Nav />
       <Hero id={'our-products'} />
       {/* <PartnersUpper /> */}
       <Tokens id={'our-products'} />
       <Stats />
       <Join />
       <PartnersLower />
+      <Footer />
     </motion.div>
   );
 };

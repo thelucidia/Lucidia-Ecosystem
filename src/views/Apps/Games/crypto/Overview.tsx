@@ -35,7 +35,7 @@ const data = [
 const GameOverview: React.FC = () => {
   return (
     <section className="w-full h-full relative">
-      <div className="w-full h-full overflow-hidden px-5 py-10">
+      <div className="w-full h-full overflow-hidden px-5">
         {data.map((item, i) => {
           return (
             <div

@@ -80,10 +80,10 @@ const DesertContent: React.FC = () => {
   ];
 
   return (
-    <section className="w-full min-h-screen relative py-10">
+    <section className="w-full min-h-screen relative">
       <div className="w-full h-full overflow-hidden px-5">
         <img src="/assets/images/games/crypto/coin.svg" className="absolute top-[150px] lg:block hidden w-fit y-fit" />
-        <div className="max-w-[1400px] w-full mx-auto flex lg:gap-x-52 justify-center lg:flex-row flex-col lg:items-start items-center">
+        <div className="max-w-[1400px] w-full mx-auto flex lg:gap-x-52 justify-center lg:flex-row flex-col lg:items-start items-center pb-[70px]">
           <div className="md:w-[60%]  text-white relative top-[700px] z-10 text-center lg:text-left overflow-hidden">
             <motion.div
               initial={{ x: -150 }}

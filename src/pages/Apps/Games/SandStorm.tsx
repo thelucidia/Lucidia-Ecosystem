@@ -1,3 +1,4 @@
+import Featured from '../../../views/Apps/Games/Featured';
 import SandBanner from '../../../views/Apps/Games/SandStorm/SandBanner';
 import SandContent from '../../../views/Apps/Games/SandStorm/SandContent';
 import SandDescription from '../../../views/Apps/Games/SandStorm/SandDescription';
@@ -10,6 +11,7 @@ const SandStorm: React.FC = () => {
     <section className="w-full h-auto overflow-hidden bg-bg">
       <SandBanner />
       <SandDescription id={3} />
+      <Featured />
       <Ultimate />
       <SandView />
       <SandContent />
