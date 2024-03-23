@@ -86,7 +86,11 @@ const Featured: React.FC = ({ initialSlide }: { initialSlide?: number }) => {
   ];
 
   return (
+<<<<<<< HEAD
     <section className="w-full h-auto min-h-screen sm:bg-bg bg-transparent relative top-[-100px]">
+=======
+    <section className="w-full h-auto sm:bg-bg bg-transparent relative">
+>>>>>>> 3a66e4eb41a99a19d42f2f71d2ece6165e4e6a3e
       <div className="px-5 py-5">
         <div className="max-w-[1400px] w-full mx-auto h-auto sm:mt-11">
           <div className="w-fit max-w-[1400px] mx-auto">

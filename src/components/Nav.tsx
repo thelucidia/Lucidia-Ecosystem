@@ -60,6 +60,44 @@ const Nav: React.FC = () => {
       type: 'internal',
     },
   ];
+  const appNavList = [
+    {
+      name: 'home',
+      slug: '/apps',
+      paths: ['/apps'],
+      type: 'internal',
+    },
+    {
+      name: 'games',
+      slug: '/apps/game',
+      paths: [
+        '/apps/game',
+        '/apps/game/sandstorm',
+        '/apps/game/curse-of-the',
+        '/apps/game/cryptocraft',
+        '/apps/game/desert',
+      ],
+      type: 'internal',
+    },
+    {
+      name: 'tournaments',
+      slug: '/apps/tournaments',
+      paths: ['/apps/tournaments'],
+      type: 'internal',
+    },
+    {
+      name: 'marketplace',
+      slug: '/apps/marketplace',
+      paths: ['/apps/support hub'],
+      type: 'internal',
+    },
+    {
+      name: 'support hub',
+      slug: '/apps/careers',
+      paths: ['/apps/careers'],
+      type: 'internal',
+    },
+  ];
 
   const navMobile = [
     // {
@@ -294,27 +332,49 @@ const Nav: React.FC = () => {
           </Link>
 
           <ul className="font-secondary font-semibold text-sm uppercase items-center gap-x-12 text-white xl:flex hidden">
-            {navList.map((items, i) => {
-              return items.type === 'external' ? (
-                <Link to={items.slug} target="_blank" rel="noopener noreferrer" className="" key={i}>
-                  <li className="cursor-pointer" key={i}>
-                    {items.name}
-                  </li>
-                </Link>
-              ) : (
-                <Link to={items.slug} className="" key={i}>
-                  <li
-                    className={clsx(
-                      'cursor-pointer hover:text-[#0ED4FF]',
-                      items.paths?.includes(pathname) && 'text-[#0ED4FF]',
-                    )}
-                    key={i}
-                  >
-                    {items.name}
-                  </li>
-                </Link>
-              );
-            })}
+            {!pathname.includes('apps')
+              ? navList.map((items, i) => {
+                  return items.type === 'external' ? (
+                    <Link to={items.slug} target="_blank" rel="noopener noreferrer" className="" key={i}>
+                      <li className="cursor-pointer" key={i}>
+                        {items.name}
+                      </li>
+                    </Link>
+                  ) : (
+                    <Link to={items.slug} className="" key={i}>
+                      <li
+                        className={clsx(
+                          'cursor-pointer hover:text-[#0ED4FF]',
+                          items.paths?.includes(pathname) && 'text-[#0ED4FF]',
+                        )}
+                        key={i}
+                      >
+                        {items.name}
+                      </li>
+                    </Link>
+                  );
+                })
+              : appNavList.map((items, i) => {
+                  return items.type === 'external' ? (
+                    <Link to={items.slug} target="_blank" rel="noopener noreferrer" className="" key={i}>
+                      <li className="cursor-pointer" key={i}>
+                        {items.name}
+                      </li>
+                    </Link>
+                  ) : (
+                    <Link to={items.slug} className="" key={i}>
+                      <li
+                        className={clsx(
+                          'cursor-pointer hover:text-[#0ED4FF]',
+                          items.paths?.includes(pathname) && 'text-[#0ED4FF]',
+                        )}
+                        key={i}
+                      >
+                        {items.name}
+                      </li>
+                    </Link>
+                  );
+                })}
           </ul>
 
           <div className="flex items-center gap-x-8 relative">
@@ -429,14 +489,14 @@ const Nav: React.FC = () => {
                 </h1>
               </button>
             </a> */}
-            <a href="https://t.me/Lucidia_io" target="_blank" rel="noopener noreferrer" className="">
+            <Link to={!pathname.includes('apps') ? '/apps/game' : '/apps/login'}>
               <div className="w-full lg:w-[15rem] relative lg:block hidden">
                 <div className="hover:text-white py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF] transition-colors ease-in-out duration-300">
-                  Launch App
+                  {`${!pathname.includes('apps') ? 'Launch App' : 'Login'}`}
                 </div>
                 <img src="/assets/images/launch_app.svg" alt="LaunchApp" />
               </div>
-            </a>
+            </Link>
           </div>
         </div>
 
