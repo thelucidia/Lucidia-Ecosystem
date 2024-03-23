@@ -41,7 +41,7 @@ const SandDescription: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
                   key={i}
                   className="sm:w-[350px] w-[230px] sm:h-[470px] h-[318px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
                 >
-                  <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#A5FF16] bg-transparent">
+                  <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#7700FF] bg-transparent">
                     <img
                       src={`/public/assets/app/games/sandstorm/${items.image}.png`}
                       alt={items.title}

@@ -59,7 +59,7 @@ const DesertView: React.FC = () => {
                 initial={{ x: 150 }}
                 whileInView={{ x: 0 }}
                 transition={{ type: 'spring', stiffness: 60 }}
-                className="sm:w-[58.9%] flex flex-col gap-y-5 lg:py-[80px] md:py-8 sm:py-6 py-4 overflow-hidden"
+                className="sm:w-[58.9%] flex flex-col px-5 gap-y-5 lg:py-[30px] md:py-8 sm:py-6 py-4 overflow-hidden"
               >
                 <div className="w-full h-auto clipped2 bg-gry relative  font-[400] flex items-center justify-center scale-x-[-1] rounded-md">
                   <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-[#0ED4FF] rounded-md py-9 pl-9 pr-7">
