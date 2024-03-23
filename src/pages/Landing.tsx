@@ -7,6 +7,8 @@ import Tokens from '../views/Hero/Tokens';
 import Worlds from '../views/Hero/Worlds';
 import { motion } from 'framer-motion';
 import Stats from '../components/Stats';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 const Landing: React.FC = () => {
   return (
@@ -18,6 +20,7 @@ const Landing: React.FC = () => {
       className="bg-black"
     >
       <section className="w-full h-auto bg-black relative">
+        <Nav />
         <Hero id={'landing'} />
         {/* <PartnersUpper /> */}
         <Worlds id={'landing'} />
@@ -26,6 +29,7 @@ const Landing: React.FC = () => {
         <Partners />
         <Tokens id={'landing'} />
         <PartnersLower />
+        <Footer />
       </section>
     </motion.div>
   );
