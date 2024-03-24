@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Featured: React.FC = ({ initialSlide }: { initialSlide?: number }) => {
   const settings = {
@@ -103,7 +103,6 @@ const Featured: React.FC = ({ initialSlide }: { initialSlide?: number }) => {
             >
               {worldList.map((items, i) => (
                 <div
-                  // to={items.path}
                   className="relative group/main cursor-pointer "
                   style={{ width: 467 }}
                   key={i}
@@ -123,33 +122,35 @@ const Featured: React.FC = ({ initialSlide }: { initialSlide?: number }) => {
                     }
                   }}
                 >
-                  <div
-                    style={windowWidth < 460 ? { width: windowWidth } : {}}
-                    className="w-[450px] h-[560px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
-                  >
-                    <div className="scale-x-[-1] relative w-full h-full group overflow-hidden ">
-                      <img
-                        src={`/worlds/${items.image}.webp`}
-                        alt={items.title}
-                        className="absolute top-0 left-0 w-full h-full object-cover object-left"
-                      />
+                  <Link to={items.path}>
+                    <div
+                      style={windowWidth < 460 ? { width: windowWidth } : {}}
+                      className="w-[450px] h-[560px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
+                    >
+                      <div className="scale-x-[-1] relative w-full h-full group overflow-hidden ">
+                        <img
+                          src={`/worlds/${items.image}.webp`}
+                          alt={items.title}
+                          className="absolute top-0 left-0 w-full h-full object-cover object-left"
+                        />
 
-                      <div className=" shadow-world w-full h-full relative z-10"></div>
+                        <div className=" shadow-world w-full h-full relative z-10"></div>
 
-                      <div
-                        className={`transition-shadow ease-in-out duration-500 group-hover:shadow-worldHover  w-full h-full top-0 left-0 absolute z-10`}
-                      ></div>
+                        <div
+                          className={`transition-shadow ease-in-out duration-500 group-hover:shadow-worldHover  w-full h-full top-0 left-0 absolute z-10`}
+                        ></div>
 
-                      <div className="absolute bottom-4 left-4 z-10 p-3 group-hover:text-black text-white ease-in-out duration-[0.1s]">
-                        <h1 className="uppercase font-primary text-2xl tracking-wide group-hover:mb-2 transition-all">
-                          {items.title}
-                        </h1>
-                        <div className="overflow-hidden max-h-0 group-hover:max-h-[3rem] transition-all">
-                          <p className="font-medium font-primary">{items.desc}</p>
+                        <div className="absolute bottom-4 left-4 z-10 p-3 group-hover:text-black text-white ease-in-out duration-[0.1s]">
+                          <h1 className="uppercase font-primary text-2xl tracking-wide group-hover:mb-2 transition-all">
+                            {items.title}
+                          </h1>
+                          <div className="overflow-hidden max-h-0 group-hover:max-h-[3rem] transition-all">
+                            <p className="font-medium font-primary">{items.desc}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </Slider>
