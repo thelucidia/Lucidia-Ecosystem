@@ -54,7 +54,7 @@ const OtherGames: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
                   <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#0ED4FF] bg-transparent">
                     <div className="w-full h-screen absolute top-0 left-0 bg-black/40 z-10"></div>
                     <img
-                      src={`/worlds/${items.image}.png`}
+                      src={`/worlds/${items.image}.webp`}
                       alt={items.title}
                       className="object-cover absolute w-full h-full"
                     />
