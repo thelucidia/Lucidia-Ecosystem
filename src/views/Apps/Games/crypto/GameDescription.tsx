@@ -25,8 +25,8 @@ const GameDescription: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
     },
   ];
   return (
-    <div className="max-w-[1400px] mx-auto z-10 relative top-[-250px]">
-      <div className="flex flex-wrap gap-3 mt-12 overflow-hidden gap-x-[68px] items-center justify-center">
+    <div className="max-w-[1400px] mx-auto z-10">
+      <div className="flex flex-wrap gap-3 mt-12 overflow-hidden gap-x-[68px] items-center justify-center  mb-[100px]">
         {description.map((items, i) => {
           return (
             <motion.div
