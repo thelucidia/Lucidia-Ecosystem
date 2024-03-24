@@ -25,7 +25,7 @@ const SandDescription: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
     },
   ];
   return (
-    <div className="max-w-[1400px] mx-auto z-10 relative top-[-190px]">
+    <div className="max-w-[1400px] mx-auto z-10 relative top-[-140px]">
       <div className="flex flex-wrap gap-3 mt-12 overflow-hidden gap-x-[68px] items-center justify-center">
         {description.map((items, i) => {
           return (
