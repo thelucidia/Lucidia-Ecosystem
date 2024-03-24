@@ -3,7 +3,7 @@ import React from 'react';
 
 const Ultimate: React.FC = () => {
   return (
-    <section className="w-full h-full relative">
+    <section className="w-full h-full relative  mt-[50px]">
       <div className="w-full h-full overflow-hidden px-5">
         <div className="max-w-[1400px] mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start">
           <motion.div
