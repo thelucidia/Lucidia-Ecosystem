@@ -15,12 +15,12 @@ const Banner: React.FC = () => {
 
       {/* <img src="/hero/herobg.webp" alt="Herobg" className="w-full h-full object-cover absolute top-0 left-0" /> */}
 
-      <div className="max-w-[1400px] w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex flex-row relative ">
+      <div className="container w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex flex-row relative ">
         <motion.div
           initial={{ y: -150 }}
           whileInView={{ y: 0 }}
           transition={{ type: 'spring', stiffness: 60 }}
-          className="w-full overflow-hidden flex"
+          className="w-full flex"
         >
           <h1 className="flex items-center font-secondary 2xl:min-w-[750px] leading-normal w-auto uppercase text-3xl md:text-5xl 2xl:text-[72px] 2xl:leading-[5.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF] 2xl:mb-[18rem] lg:mb-[10rem] md:mb-[6rem] sm:mb-[4rem] mb-[2rem] ">
             join us as lucidian
