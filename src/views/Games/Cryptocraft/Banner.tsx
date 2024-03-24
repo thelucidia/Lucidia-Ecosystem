@@ -11,7 +11,7 @@ const Banner: React.FC = () => {
       <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#A5FF16D1]/20 z-10"></div>
       <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-9 "></div>
       <div className="mt-[331px] flex items-center justify-end xs:justify-center mb-[287px] mr-[20px] flex-col gap-y-[50px] ">
-        <img src="/assets/images/games/crypto/crypto.svg" className="relative pb-16" />
+        <img src="/assets/images/games/crypto/crypto.svg" className="relative pb-16 z-10" />
         <a
           href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
           target="_blank"

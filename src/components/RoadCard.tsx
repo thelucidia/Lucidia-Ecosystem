@@ -6,12 +6,17 @@ const RoadCard: React.FC = () => {
   return (
     <section>
       <div className="mt-[331px] flex items-center justify-end xs:justify-center mb-[287px] mr-[20px]">
-        <h1 className="text-blue-400 font-semibold font-['Bai Jamjuree'] text-[45px] md:text-[72px] uppercase relative font-secondary">
+        <h1 className="text-blue-400 font-semibold font-['Bai Jamjuree'] text-[45px] md:text-[72px] uppercase relative font-secondary z-10">
           RoadMap
         </h1>
       </div>
+      <img
+        src="/hero/navline.webp"
+        alt="NavLine"
+        className="w-full relative top-[-100px] z-10 opacity-50 md:block hidden"
+      />
       <div className="w-[80%] w-fit mx-auto flex flex-col relative pb-[151px]">
-        <div className="grid gap-x-5 2 gap-y-8 justify-items-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
+        <div className="grid gap-x-5 2 gap-y-8 justify-items-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 z-10">
           {mapcard.map((items, i) => {
             return (
               <div
