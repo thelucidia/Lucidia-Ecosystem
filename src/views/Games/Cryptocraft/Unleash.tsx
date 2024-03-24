@@ -18,7 +18,7 @@ const Survive: React.FC = () => {
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
             transition={{ type: 'spring', stiffness: 60 }}
-            className="sm:w-[58.9%] flex flex-col gap-y-5 lg:py-[134px] md:py-16 sm:py-7 py-5 overflow-hidden"
+            className="sm:w-[58.9%] flex flex-col gap-y-5 lg:py-[10px] md:py-16 sm:py-7 py-5 overflow-hidden"
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-[500] flex items-center justify-center scale-x-[-1] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-[#9AFC27] rounded-md">
