@@ -75,7 +75,7 @@ const How: React.FC = () => {
             </motion.div>
 
             <div className=" flex flex-col gap-y-4 mt-14 sm:mt-20 ">
-              <a
+              {/* <a
                 href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -111,7 +111,7 @@ const How: React.FC = () => {
                     BUY $LUCID
                   </h1>
                 </button>
-              </a>
+              </a> */}
             </div>
 
             <img src="/coins.webp" alt="Coins" className="mt-16 w-[40rem] sm:block hidden" />
@@ -202,7 +202,7 @@ const How: React.FC = () => {
               </div>
             </div>
 
-            <div className="w-full h-auto clipped2 bg-gry relative flex items-center justify-center scale-x-[-1] rounded-md">
+            {/* <div className="w-full h-auto clipped2 bg-gry relative flex items-center justify-center scale-x-[-1] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full p-5 pb-6 md:border-l-[0.5rem] border-prpl rounded-md font-primary font-medium">
                 <h1 className="font-secondary font-bold text-prpl text-lg">STEP #03</h1>
 
@@ -220,7 +220,7 @@ const How: React.FC = () => {
                   Copy your referral link from the bottom of the page, and you're all set!
                 </p>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

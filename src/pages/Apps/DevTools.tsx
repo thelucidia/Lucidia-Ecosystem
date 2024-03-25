@@ -4,7 +4,7 @@ import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
 import { TfiWorld } from 'react-icons/tfi';
 
-const Marketplace: React.FC = () => {
+const DevTools: React.FC = () => {
   const icons = [
     {
       link: 'https://t.me/Lucidia_io',
@@ -116,4 +116,4 @@ const Marketplace: React.FC = () => {
   );
 };
 
-export default Marketplace;
+export default DevTools;

@@ -19,7 +19,7 @@ import CurseofThePharaoh from './pages/Apps/Games/CurseofThePharaoh';
 import SandStorm from './pages/Apps/Games/SandStorm';
 import Login from './pages/Apps/Login';
 import SupportHub from './pages/Apps/SupportHub';
-import MarketPlace from './pages/Apps/Marketplace';
+import DevTools from './pages/Apps/DevTools';
 import ComingSoon from './pages/Apps/ComingSoon';
 
 const App: React.FC = () => {
@@ -42,16 +42,16 @@ const App: React.FC = () => {
         <Route path="/apps/game" element={<Game />} />
         <Route path="/apps/login" element={<Login />} />
         <Route path="/apps/support-hub" element={<SupportHub />} />
-        <Route path="/apps/marketplace" element={<MarketPlace />} />
+        <Route path="/apps/dev-tools" element={<DevTools />} />
         <Route path="/apps/tournaments" element={<ComingSoon />} />
         <Route path="/apps" element={<ComingSoon />} />
         {/* </Route> */}
-        <Route path="gameplay">
+        <Route path="game">
           <Route index element={<GamePlay />} />
-          <Route path="/gameplay/cryptocraft" element={<Cryptocraft />} />
-          <Route path="/gameplay/sandstorm" element={<Sandstorm />} />
-          <Route path="/gameplay/curse-of-the" element={<Curse />} />
-          <Route path="/gameplay/desert" element={<DesertWarrior />} />
+          <Route path="/game/cryptocraft" element={<Cryptocraft />} />
+          <Route path="/game/sandstorm" element={<Sandstorm />} />
+          <Route path="/game/curse-of-the" element={<Curse />} />
+          <Route path="/game/desert" element={<DesertWarrior />} />
         </Route>
       </Routes>
       {!pathname.includes('apps') && <Footer />}

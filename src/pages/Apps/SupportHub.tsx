@@ -25,27 +25,27 @@ const SupportHub: React.FC = () => {
   ];
 
   return (
-    <section className="w-full h-screen p-[1px] relative text-white relative overflow-scroll">
+    <section className="w-full h-screen p-0 relative text-white relative overflow-scroll">
       <img src="/assets/app/games/login_bg.jpg" className="absolute top-0 z-0 w-full h-screen object-cover" />
       {/* <div className="w-full h-screen absolute top-0 left-0 bg-opacity-5 backdrop-filter backdrop-blur-lg z-1"></div> */}
       <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/10 z-1"></div>
       <div className="w-full h-screen absolute top-0 left-0 bg-prpl/20 z-1"></div>
-      <ul className="flex flex-col w-fit fixed lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5 left-[10%] top-[30%]">
-        {icons.map((items, i) => {
-          return (
-            <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
-              <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
-                {items.icon}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-      <div className="container w-full h-auto m-auto mt-[178px] relative">
-        <div className="mx-auto flex flex-row justify-between">
+      <div className="flex flex-row mt-[178px]">
+        <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5">
+          {icons.map((items, i) => {
+            return (
+              <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
+                <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
+                  {items.icon}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+        <div className="container w-full h-auto m-auto relative mx-auto grid lg:grid-cols-2 grid-cols-1 gap-8 justify-between">
           <div className="flex flex-col justify-between gap-y-[18px]">
             <div
-              className="rounded-[10px] border-[2px] border-[#401675] max-w-[697px] relative"
+              className="rounded-[10px] border-[2px] border-[#401675] w-full relative"
               style={{
                 backgroundImage: 'linear-gradient(0deg, rgba(85, 17, 166, 0.79) 22.91%, rgba(0, 0, 0, 0.00) 78.01%)',
               }}
@@ -103,13 +103,18 @@ const SupportHub: React.FC = () => {
               </div>
             </div>
           </div>
-          <img src="/assets/app/games/edu/gamer.png" className=" z-10 absolute bottom-0 w-[744px] h-[752px] right-0" />
-          <div
-            className="relative w-[552px] h-auto rounded-[10px] border-[2px] border-[#401675]"
-            style={{
-              backgroundImage: 'linear-gradient(0deg, rgba(85, 17, 166, 0.79) 22.91%, rgba(0, 0, 0, 0.00) 78.01%)',
-            }}
-          ></div>
+          <div className="relative min-h-[700px]">
+            <div
+              className="w-[552px] h-full rounded-[10px] border-[2px] border-[#401675] absolute right-0"
+              style={{
+                backgroundImage: 'linear-gradient(0deg, rgba(85, 17, 166, 0.79) 22.91%, rgba(0, 0, 0, 0.00) 78.01%)',
+              }}
+            ></div>
+            <img
+              src="/assets/app/games/edu/gamer.png"
+              className=" z-10 absolute bottom-0 w-[744px] h-[752px] right-0"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -35,9 +35,9 @@ const Details: React.FC = () => {
                 initial={{ x: -150 }}
                 whileInView={{ x: 0 }}
                 transition={{ type: 'spring', stiffness: 60 }}
-                className="md:w-[80%] overflow-hidden"
+                className="md:w-[55%] overflow-hidden"
               >
-                <div className="lg:w-[37vw] lg:h-[23.3vw] min-w-[340px] min-h-[300px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] ">
+                <div className="lg:w-[37vw] lg:h-[23.3vw] min-w-[340px] min-h-[300px] max-h-[500px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] ">
                   <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/80 to-black/10 z-10 "></div>
                   <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-[#7700FF]/50 to-black/10 z-10 "></div>
                   <div className="scale-x-[-1] relative w-full h-full min-w-[340px] min-h-[300px] group overflow-hidden">
@@ -49,7 +49,7 @@ const Details: React.FC = () => {
                 initial={{ x: 150 }}
                 whileInView={{ x: 0 }}
                 transition={{ type: 'spring', stiffness: 60 }}
-                className="sm:w-[58.9%] flex flex-col gap-y-5 lg:py-[44px] md:py-8 sm:py-6 py-4 overflow-hidden"
+                className="sm:w-[40%] flex flex-col gap-y-5 lg:py-[44px] md:py-8 sm:py-6 py-4 overflow-hidden"
               >
                 <div className="w-full h-auto clipped2 bg-gry relative  font-[500] flex items-center justify-center scale-x-[-1] rounded-md">
                   <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-prpl rounded-md py-9 pl-9 pr-7">

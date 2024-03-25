@@ -18,7 +18,7 @@ const Banner: React.FC = () => {
           initial={{ y: -150 }}
           whileInView={{ y: 0 }}
           transition={{ type: 'spring', stiffness: 60 }}
-          className="w-full overflow-hidden flex"
+          className="w-full overflow-hidden flex justify-center"
         >
           <img
             src="/assets/images/games/sandstorm/sandstormracer.svg"

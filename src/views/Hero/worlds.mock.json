@@ -4,25 +4,25 @@
       "title": "curse of the pharaoh",
       "desc": "Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.",
       "image": "zombie",
-      "path": "/gameplay/curse-of-the"
+      "path": "/game/curse-of-the"
     },
     {
       "title": "cryptocraft",
       "desc": "Shape limitless worlds, earn $LUCID Tokens, unleash creativity, adventure awaits!",
       "image": "minecraft",
-      "path": "/gameplay/cryptocraft"
+      "path": "/game/cryptocraft"
     },
     {
       "title": "sandstorm racers",
       "desc": "Take a ride through the night skyline, race with your friends and attend virtual events",
       "image": "cyber",
-      "path": "/gameplay/sandstorm"
+      "path": "/game/sandstorm"
     },
     {
       "title": "desert warriors",
       "desc": "Engage in the battle and complete missions to earn $LUCID Tokens.",
       "image": "fps",
-      "path": "/gameplay/desert"
+      "path": "/game/desert"
     }
   ],
   "comingsoon": [

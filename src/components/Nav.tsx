@@ -24,15 +24,9 @@ const Nav: React.FC = () => {
       type: 'internal',
     },
     {
-      name: 'gameplay',
-      slug: '/gameplay',
-      paths: [
-        '/gameplay',
-        '/gameplay/sandstorm',
-        '/gameplay/curse-of-the',
-        '/gameplay/cryptocraft',
-        '/gameplay/desert',
-      ],
+      name: 'game',
+      slug: '/game',
+      paths: ['/game', '/game/sandstorm', '/game/curse-of-the', '/game/cryptocraft', '/game/desert'],
       type: 'internal',
     },
     {
@@ -152,9 +146,9 @@ const Nav: React.FC = () => {
       type: 'internal',
     },
     {
-      name: 'gameplay',
-      slug: '/gameplay',
-      paths: ['/gameplay'],
+      name: 'game',
+      slug: '/game',
+      paths: ['/game'],
       type: 'internal',
     },
     {
