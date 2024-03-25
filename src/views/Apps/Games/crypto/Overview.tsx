@@ -50,7 +50,11 @@ const GameOverview: React.FC = () => {
               >
                 <div className="lg:w-[37vw] lg:h-[23.3vw] max-w-[340px] max-h-[420px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] ">
                   <div className="scale-x-[-1] relative w-full h-full group overflow-hidden">
-                    <img src={item.image} alt={item.title} className="object-cover absolute w-full h-full" />
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="object-cover absolute w-full h-full group overflow-hidden border border-2 border-[#A5FF16] bg-transparent"
+                    />
                   </div>
                 </div>
               </motion.div>
