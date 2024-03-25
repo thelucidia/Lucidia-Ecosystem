@@ -15,6 +15,7 @@ import DesertWarrior from './pages/Games/DesertWarrior';
 import Game from './pages/Apps/Games/Game';
 import CryptoCraft from './pages/Apps/Games/CryptoCraft';
 import Desertwarrior from './pages/Apps/Games/Desertwarrior';
+import CurseofThePharaoh from './pages/Apps/Games/CurseofThePharaoh';
 import SandStorm from './pages/Apps/Games/SandStorm';
 import Login from './pages/Apps/Login';
 import SupportHub from './pages/Apps/SupportHub';
@@ -37,6 +38,7 @@ const App: React.FC = () => {
         <Route path="/apps/cryptocraft" element={<CryptoCraft />} />
         <Route path="/apps/desert" element={<Desertwarrior />} />
         <Route path="/apps/sandstorm" element={<SandStorm />} />
+        <Route path="/apps/curse-of-the" element={<CurseofThePharaoh />} />
         <Route path="/apps/game" element={<Game />} />
         <Route path="/apps/login" element={<Login />} />
         <Route path="/apps/support-hub" element={<SupportHub />} />

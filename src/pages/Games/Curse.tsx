@@ -4,7 +4,7 @@ import PartnersLower from '../../views/Hero/PartnersLower';
 import Details from '../../views/Games/Curseof/Details';
 import Survive from '../../views/Games/Curseof/Survive';
 
-const Curse: React.FC = () => {
+const CurseofThePharaoh: React.FC = () => {
   return (
     <section className="w-full h-auto overflow-hidden bg-bg">
       <Banner />
@@ -14,4 +14,4 @@ const Curse: React.FC = () => {
     </section>
   );
 };
-export default Curse;
+export default CurseofThePharaoh;
