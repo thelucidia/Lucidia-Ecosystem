@@ -88,8 +88,8 @@ const Featured: React.FC = ({ initialSlide }: { initialSlide?: number }) => {
   return (
     <section className="w-full h-auto sm:bg-bg bg-transparent">
       <div className="px-5 py-5">
-        <div className="max-w-[1400px] w-full mx-auto h-auto sm:mt-11">
-          <div className="w-fit max-w-[1400px] mx-auto">
+        <div className="max-[1400px] w-full mx-auto h-auto sm:mt-11">
+          <div className="max-w-[1400px] mx-auto">
             <h1 className="font-medium text-transparent text-2xl sm:text-3xl md:text-4xl font-primary bg-clip-text bg-gradient-to-r from-[#e4d3fe] via-white to-lavender w-fit 2xl:text-left text-center mx-0 sm:mx-auto 2xl:mx-0">
               Featured Game
             </h1>

@@ -40,7 +40,7 @@ const GameOverview: React.FC = () => {
           return (
             <div
               key={i}
-              className="max-w-[1400px] w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start"
+              className="container w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start"
             >
               <motion.div
                 initial={{ x: -150 }}

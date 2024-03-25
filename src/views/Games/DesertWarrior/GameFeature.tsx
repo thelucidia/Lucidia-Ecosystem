@@ -15,7 +15,7 @@ const data = [
 ];
 const GameFeature: React.FC = () => {
   return (
-    <section className="max-w-[1400px] mx-auto h-full relative">
+    <section className="container mx-auto h-full relative">
       <div className="w-full h-full overflow-hidden px-5 py-20">
         <h2 className="flex items-center font-primary leading-normal w-auto text-[62px] 2xl:text-[62px] 2xl:leading-[5.5rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9786FF] to-[#0ED4FFBD]">
           Game Features
@@ -24,7 +24,7 @@ const GameFeature: React.FC = () => {
           return (
             <div
               key={i}
-              className="max-w-[1400px] w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start"
+              className="container w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start"
             >
               <motion.div
                 initial={{ x: -150 }}

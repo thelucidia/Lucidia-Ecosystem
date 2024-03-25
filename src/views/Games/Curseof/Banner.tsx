@@ -29,20 +29,20 @@ const Banner: React.FC = () => {
         preload={'auto'}
         onLoadedData={handleTrue}
         playsInline
-        className="w-full h-screen object-cover absolute top-0 left-0"
+        className="w-full h-full object-cover absolute top-0 left-0"
       />
 
       {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/70 to-black/40 z-9 "></div> */}
-      <div className="w-full h-screen absolute top-0 left-0 bg-[#0ED4FF]/30 z-10"></div>
-      <div className="w-full h-screen absolute top-0 left-0 bg-black/70 z-10"></div>
+      <div className="w-full h-full absolute top-0 left-0 bg-[#0ED4FF]/30 z-10"></div>
+      <div className="w-full h-full absolute top-0 left-0 bg-black/70 z-10"></div>
       {/* <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-[#0ED4FF]/40 to-[#0ED4FF]/10% z-9 "></div> */}
 
-      <div className="max-w-[1400px] w-full h-auto mx-auto z-10 flex mt-[7rem] md:mt-[10rem] flex flex-col ">
+      <div className="container w-full h-auto mx-auto z-10 flex mt-[7rem] md:mt-[10rem] flex flex-col ">
         <motion.div
           initial={{ y: -150 }}
           whileInView={{ y: 0 }}
           transition={{ type: 'spring', stiffness: 60 }}
-          className="w-full overflow-hidden flex"
+          className="w-full overflow-hidden"
         >
           {/* <h1 className="flex items-center font-secondary 2xl:min-w-[750px] leading-normal w-auto uppercase text-3xl md:text-5xl 2xl:text-[72px] 2xl:leading-[5.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] via-[#9586FF] to-[#0ED4FF] 2xl:mb-[18rem] lg:mb-[10rem] md:mb-[6rem] sm:mb-[4rem] mb-[2rem]">
             sandstorm racers

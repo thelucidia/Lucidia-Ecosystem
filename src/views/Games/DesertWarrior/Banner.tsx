@@ -29,13 +29,13 @@ const Banner: React.FC = () => {
         preload={'auto'}
         onLoadedData={handleTrue}
         playsInline
-        className="w-full h-screen object-cover absolute top-0 left-0"
+        className="w-full h-full object-cover absolute top-0 left-0"
       />
 
-      <div className="w-full h-screen absolute top-0 left-0 bg-prpl/30 z-10"></div>
-      <div className="w-full h-screen absolute top-0 left-0 bg-black/70 z-10"></div>
+      <div className="w-full h-full absolute top-0 left-0 bg-prpl/30 z-10"></div>
+      <div className="w-full h-full absolute top-0 left-0 bg-black/70 z-10"></div>
 
-      <div className="max-w-[1400px] w-full h-auto mx-auto z-10 flex mt-[7rem] md:mt-[10rem] flex flex-col ">
+      <div className="container w-full h-auto mx-auto z-10 flex mt-[7rem] md:mt-[10rem] flex flex-col ">
         <motion.div
           initial={{ y: -150 }}
           whileInView={{ y: 0 }}

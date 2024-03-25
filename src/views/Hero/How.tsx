@@ -52,7 +52,7 @@ const How: React.FC = () => {
       <img src="/tokentr.webp" alt="Coin" className="w-[5rem] absolute -top-7 right-0 sm:hidden block" />
 
       <div className="w-full h-full overflow-hidden px-5">
-        <div className="max-w-[1400px] w-full mx-auto flex lg:gap-x-32 justify-center lg:flex-row flex-col lg:items-start items-center">
+        <div className="container w-full mx-auto flex lg:gap-x-32 justify-center lg:flex-row flex-col lg:items-start items-center">
           <div className="md:w-[60%]  text-white relative z-10 text-center lg:text-left overflow-hidden">
             <motion.div
               initial={{ x: -150 }}

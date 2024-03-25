@@ -34,7 +34,7 @@ const OtherGames: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
     },
   ];
   return (
-    <div className="max-w-[1400px] mx-auto">
+    <div className="container mx-auto">
       <h2 className="font-primary text-[62px] leading-normal text-white font-[700] pb-[65px]">Other Games</h2>
       <div className="flex flex-wrap gap-3 mt-12 items-center w-fit justify-between overflow-hidden pb-[134px]">
         {worldList.map((items, i) => {

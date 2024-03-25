@@ -103,7 +103,7 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
 
       <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-prpl/50 to-black z-10"></div>
 
-      <div className="max-w-[1400px] w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row relative">
+      <div className="container w-full h-auto mx-auto relative z-10 flex mt-[7rem] md:mt-[10rem] flex-col-reverse md:flex-row relative">
         <div className="w-full flex flex-col gap-y-[10px]">
           <h1
             className={clsx(

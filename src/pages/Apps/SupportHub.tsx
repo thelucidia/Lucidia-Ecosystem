@@ -41,7 +41,7 @@ const SupportHub: React.FC = () => {
           );
         })}
       </ul>
-      <div className="max-w-[1400px] w-full h-auto m-auto mt-[178px] relative">
+      <div className="container w-full h-auto m-auto mt-[178px] relative">
         <div className="mx-auto flex flex-row justify-between">
           <div className="flex flex-col justify-between gap-y-[18px]">
             <div

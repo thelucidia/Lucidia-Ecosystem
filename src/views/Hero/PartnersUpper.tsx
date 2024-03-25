@@ -11,7 +11,7 @@ const PartnersUpper: React.FC = () => {
         className="absolute left-0 right-0 bottom-0 w-full 2xl:block hidden"
       />
 
-      <div className="w-full max-w-[1400px] mx-auto flex flex-wrap items-center gap-x-9 md:gap-x-14 gap-y-7 justify-center h-auto">
+      <div className="w-full container mx-auto flex flex-wrap items-center gap-x-9 md:gap-x-14 gap-y-7 justify-center h-auto">
         {partners.map((items, i) => {
           return <img src={`/partners2/${items}.webp`} key={i} alt={items} className="md:w-auto w-20" />;
         })}

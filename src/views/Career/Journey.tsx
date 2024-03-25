@@ -32,7 +32,7 @@ const Journey: React.FC = () => {
 
   return (
     <section className="w-full h-full relative">
-      <div className="max-w-[1400px] mx-auto w-full h-full overflow-hidden px-5">
+      <div className="container mx-auto w-full h-full overflow-hidden px-5">
         <motion.div
           initial={{ y: -50 }}
           whileInView={{ y: 0 }}

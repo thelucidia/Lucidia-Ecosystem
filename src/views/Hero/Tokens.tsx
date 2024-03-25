@@ -85,7 +85,7 @@ const Tokens: React.FC<IToken> = ({ id }: IToken) => {
   const item = data[id];
   return (
     <section className="w-full h-auto px-5 py-7 md:py-10 bg-bg relative pb-10 md:pb-28">
-      <div className="max-w-[1400px] mx-auto w-full h-auto">
+      <div className="container mx-auto w-full h-auto">
         {id === 'hero' && (
           <h1 className="font-medium md:text-center text-transparent text-[32px] sm:text-3xl md:text-4xl font-primary  ">
             <span className="bg-clip-text bg-gradient-to-r from-white via-[#cab8ff] to-white">Earn $LUCID?</span>

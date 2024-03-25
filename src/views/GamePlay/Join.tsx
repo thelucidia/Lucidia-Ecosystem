@@ -7,7 +7,7 @@ const LazyModel = React.lazy(() => import('./Model'));
 
 const Join: React.FC = () => {
   return (
-    <section className="max-w-[1400px] mx-auto bg-bg-w-full h-auto py-10 sm:px-5 relative mt-10">
+    <section className="container mx-auto bg-bg-w-full h-auto py-10 sm:px-5 relative mt-10">
       <div className="w-full h-auto mx-auto relative">
         <div className="absolute h-[400px] z-10">
           <Canvas camera={{ position: [-0.5, 1, 2], zoom: 1.5 }} shadows>

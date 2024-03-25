@@ -13,7 +13,7 @@ const Banner: React.FC = () => {
       <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/80 to-black/10% z-9 "></div>
       <div className="w-full h-full absolute top-0 left-0 bg-[#7700FF33]/20 z-10"></div>
 
-      <div className="max-w-[1400px] h-auto mx-auto z-10 flex mt-[7rem] md:mt-[10rem] flex flex-col ">
+      <div className="container h-auto mx-auto z-10 flex mt-[7rem] md:mt-[10rem] flex flex-col ">
         <motion.div
           initial={{ y: -150 }}
           whileInView={{ y: 0 }}

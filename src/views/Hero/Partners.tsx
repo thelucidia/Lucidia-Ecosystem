@@ -6,7 +6,7 @@ const Partners: React.FC = () => {
 
   return (
     <section className="bg-bg-w-full h-auto py-10 sm:px-5 overflow-hidden">
-      <div className="max-w-[1400px] w-full h-auto mx-auto">
+      <div className="container w-full h-auto mx-auto">
         <div className="w-[17rem] h-auto clipped3 bg-prpl relative z-10 items-center justify-center scale-x-[-1] text-white mt-2 sm:flex hidden">
           <div className="w-full h-full scale-x-[-1]">
             <h1 className="font-semibold font-primary mt-3 ml-6 text-[22px]">OUR PARTNERS</h1>

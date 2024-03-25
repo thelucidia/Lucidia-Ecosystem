@@ -424,7 +424,7 @@ const Nav: React.FC = () => {
           className="w-full absolute left-0 2xl:block top-7 right-0 hidden pointer-events-none"
         />
 
-        <div className="max-w-[1400px] w-full mx-auto flex justify-between items-center mt-5">
+        <div className="container w-full mx-auto flex justify-between items-center mt-5">
           <Link to="/" className="">
             <img src="/hero/newlogo.png" alt="Logo" className="w-52" />
           </Link>

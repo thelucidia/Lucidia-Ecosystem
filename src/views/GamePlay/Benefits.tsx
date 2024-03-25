@@ -19,7 +19,7 @@ const Benefits: React.FC = () => {
   ];
 
   return (
-    <section className="max-w-[1400px] mx-auto w-full h-full relative mt-[200px]">
+    <section className="container mx-auto w-full h-full relative mt-[200px]">
       <div className="w-full mx-auto flex justify-center lg:flex-row flex-col sm:items-center items-start">
         <motion.div
           initial={{ x: 150 }}

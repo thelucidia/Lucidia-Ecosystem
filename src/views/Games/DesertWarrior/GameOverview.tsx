@@ -19,14 +19,11 @@ const data = [
 ];
 const GameOverview: React.FC = () => {
   return (
-    <section className="w-full h-full relative">
-      <div className="w-full h-full overflow-hidden px-5 py-10">
+    <section className="w-full h-full">
+      <div className="container w-full mx-auto h-full overflow-hidden px-5 py-10 relative">
         {data.map((item, i) => {
           return (
-            <div
-              key={i}
-              className="max-w-[1400px] w-full mx-auto flex justify-between lg:flex-row flex-col sm:items-center items-start"
-            >
+            <div key={i} className="w-full flex justify-between lg:flex-row flex-col sm:items-center items-start">
               <motion.div
                 initial={{ x: -150 }}
                 whileInView={{ x: 0 }}
@@ -61,8 +58,11 @@ const GameOverview: React.FC = () => {
             </div>
           );
         })}
+        <img
+          src="/assets/images/games/crypto/coin_right.svg"
+          className="absolute left-[20%] top-[95px] lg:block hidden"
+        />
       </div>
-      <img src="/assets/images/games/crypto/coin_right.svg" className="absolute left-[395px] top-[95px] " />
     </section>
   );
 };
