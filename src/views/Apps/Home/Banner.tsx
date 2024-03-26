@@ -27,7 +27,7 @@ const Banner: React.FC = () => {
   return (
     <section className="w-full min-h-screen relative text-white overflow-hidden bg-bg">
       <img
-        src="/assets/app/games/game_bg.jpg"
+        src="/assets/app/games/curse.jpg"
         alt="game_background"
         className="w-full h-screen object-cover absolute left-0"
       />
