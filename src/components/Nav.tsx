@@ -86,6 +86,12 @@ const Nav: React.FC = () => {
       type: 'internal',
     },
     {
+      name: 'dao',
+      slug: '/apps/dao',
+      paths: ['/apps/dao'],
+      type: 'internal',
+    },
+    {
       name: 'support hub',
       slug: '/apps/support-hub',
       paths: ['/apps/support-hub'],
@@ -264,7 +270,7 @@ const Nav: React.FC = () => {
   return (
     <>
       <nav
-        className={`-full sm:w-[25rem] h-screen right-0 top-0 bottom-0 bg-black z-30 fixed transition-all  ease-in-out duration-500 ${navActive ? 'translate-x-0 xl:translate-x-full' : 'translate-x-full'}`}
+        className={`w-full sm:w-[25rem] h-screen right-0 top-0 bottom-0 bg-black z-30 fixed transition-all  ease-in-out duration-500 ${navActive ? 'translate-x-0 xl:translate-x-full' : 'translate-x-full'}`}
       >
         <div className="w-full h-[5rem] bg-prpl flex items-center justify-between px-4">
           <img src="/hero/logo.png" alt="Logo" className="w-52 -ml-5" />

@@ -34,7 +34,7 @@ const Banner: React.FC = () => {
   };
 
   return (
-    <section className="w-full h-screen p-5 relative text-white flex md:items-center justify-center relative">
+    <section className="w-full h-screen p-5 relative text-white flex items-center justify-center relative">
       <div
         className={`w-full h-screen bg-black fixed z-30 top-0 left-0 flex flex-col items-center justify-center  transition-all ease-in-out duration-300 ${trueLoading ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} `}
       >
@@ -57,7 +57,10 @@ const Banner: React.FC = () => {
       <ul className="flex flex-col w-fit absolute lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-20 sm:gap-y-12 gap-y-5 left-[10%]">
         {icons.map((items, i) => {
           return (
-            <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
+            <li
+              className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan text-[32px]"
+              key={i}
+            >
               <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
                 {items.icon}
               </a>
@@ -66,7 +69,7 @@ const Banner: React.FC = () => {
         })}
       </ul>
 
-      <img src="/assets/app/games/game_bg.jpg" className="absolute top-0 z-1 w-full h-screen object-cover" />
+      <img src="/assets/app/games/curse.jpg" className="absolute top-0 z-1 w-full h-screen object-cover" />
       <div className="w-full h-screen absolute top-0 left-0 bg-opacity-5 backdrop-filter backdrop-blur-lg z-1"></div>
       <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/70 z-1"></div>
 

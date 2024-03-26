@@ -20,8 +20,9 @@ import SandStorm from './pages/Apps/Games/SandStorm';
 import Login from './pages/Apps/Login';
 import SupportHub from './pages/Apps/SupportHub';
 import DevTools from './pages/Apps/DevTools';
-import ComingSoon from './pages/Apps/ComingSoon';
+// import ComingSoon from './pages/Apps/ComingSoon';
 import Dao from './pages/Apps/Dao';
+import Tournaments from './pages/Apps/Tournaments';
 import AppHome from './pages/Apps/Home';
 
 const App: React.FC = () => {
@@ -46,7 +47,7 @@ const App: React.FC = () => {
         <Route path="/apps/support-hub" element={<SupportHub />} />
         <Route path="/apps/dev-tools" element={<DevTools />} />
         <Route path="/apps/dao" element={<Dao />} />
-        <Route path="/apps/tournaments" element={<ComingSoon />} />
+        <Route path="/apps/tournaments" element={<Tournaments />} />
         <Route path="/apps" element={<AppHome />} />
         {/* </Route> */}
         <Route path="game">
