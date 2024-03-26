@@ -82,6 +82,7 @@ const DesertView: React.FC = () => {
       </div>
       <img
         src="/assets/images/games/crypto/coin_left.svg"
+        alt="coins"
         className="absolute lg:block hidden lg:left-0 lg:top-[440px] "
       />
     </section>

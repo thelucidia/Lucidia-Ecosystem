@@ -26,7 +26,11 @@ const SupportHub: React.FC = () => {
 
   return (
     <section className="w-full h-screen p-0 relative text-white relative overflow-scroll">
-      <img src="/assets/app/games/login_bg.jpg" className="absolute top-0 z-0 w-full h-screen object-cover" />
+      <img
+        src="/assets/app/games/sandstorm.jpg"
+        alt="supporthub"
+        className="absolute top-0 z-0 w-full h-screen object-cover"
+      />
       {/* <div className="w-full h-screen absolute top-0 left-0 bg-opacity-5 backdrop-filter backdrop-blur-lg z-1"></div> */}
       <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/10 z-1"></div>
       <div className="w-full h-screen absolute top-0 left-0 bg-prpl/20 z-1"></div>
@@ -112,6 +116,7 @@ const SupportHub: React.FC = () => {
             ></div>
             <img
               src="/assets/app/games/edu/gamer.png"
+              alt="gamer"
               className=" z-10 absolute bottom-0 w-[744px] h-[752px] right-0"
             />
           </div>

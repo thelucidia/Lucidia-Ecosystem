@@ -11,10 +11,10 @@ const CryptoBanner: React.FC = () => {
       <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#A5FF16D1]/20 z-8"></div>
       <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-7 "></div>
       <div className="mt-[231px] flex items-center justify-end xs:justify-center mb-[87px] mr-[20px] flex-col gap-y-[20px] ">
-        <img src="/assets/images/games/crypto/crypto.svg" className="relative pb-16 z-10" />
+        <img src="/assets/images/games/crypto/crypto.svg" alt="crypto" className="relative pb-16 z-10" />
         <div className="md:mt-[19px] flex flex-row justify-center gap-[10px] z-10">
           <div className="mt-4 flex gap-[10px]  justify-center items-center">
-            <img src="/public/assets/app/games/server.png" className="w-fit h-fit" />
+            <img src="/public/assets/app/games/server.png" alt="server" className="w-fit h-fit" />
             <span className="items-center text-neutral-500 text-xs pr-[10px] border border-solid border-y-0 border-l-0 border-r-1 border-white font-medium font-['Turret Road'] font-second w-[60px]">
               1 Server
             </span>
@@ -23,7 +23,7 @@ const CryptoBanner: React.FC = () => {
             </span>
           </div>
           <div className="mt-4 flex gap-[10px] items-center justify-center">
-            <img src="/public/assets/app/games/member.png" />
+            <img src="/public/assets/app/games/member.png" alt="member" />
             <span className="items-center text-neutral-500 text-xs font-medium font-['Turret Road'] font-second">
               0 Player
             </span>
