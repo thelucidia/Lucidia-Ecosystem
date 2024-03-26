@@ -88,6 +88,7 @@ const CurseView: React.FC = () => {
       </div>
       <img
         src="/assets/images/games/crypto/coin_left.svg"
+        alt="coins"
         className="absolute lg:block hidden lg:left-[85px] lg:top-[485px] "
       />
     </section>
