@@ -1,0 +1,64 @@
+import React from 'react';
+import { BsTwitterX } from 'react-icons/bs';
+import { LiaTelegramPlane } from 'react-icons/lia';
+import { RxDiscordLogo } from 'react-icons/rx';
+import { TfiWorld } from 'react-icons/tfi';
+import Detail from './Detail';
+
+const Banner: React.FC = () => {
+  const icons = [
+    {
+      link: 'https://t.me/Lucidia_io',
+      icon: <LiaTelegramPlane />,
+    },
+    {
+      link: 'https://discord.gg/lucidia',
+      icon: <RxDiscordLogo />,
+    },
+    {
+      link: 'https://twitter.com/lucidia_io',
+      icon: <BsTwitterX />,
+    },
+    {
+      link: 'https://youtube.com/@lucidia_official',
+      icon: <TfiWorld />,
+    },
+  ];
+  return (
+    <section className="w-full min-h-screen relative text-white overflow-hidden bg-bg">
+      <img
+        src="/assets/app/games/game_bg.jpg"
+        alt="game_background"
+        className="w-full h-screen object-cover absolute left-0"
+      />
+      <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#0ED4FF33]/20 z-10"></div>
+      <div className="container mx-auto mt-[216px] flex flex-col gap-y-[180px]">
+        <div className="flex flex-row gap-x-[90px]">
+          <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5 left-[10%] top-[30%]">
+            {icons.map((items, i) => {
+              return (
+                <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan" key={i}>
+                  <a href={items.link} target="_blank" rel="noopener noreferrer" className="text-[32px]">
+                    {items.icon}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <div className="z-20">
+            <h1 className="uppercase xl:text-[62px] lg:text-[52px] md:text-[42px] sm:text-[32px] text-[22px] text-white font-primary max-w-[650px] pb-[30px] uppercase font-bold">
+              Welcome to Lucidia
+            </h1>
+            <h4 className="md:text-[18px] text-[14px] text-white text-secondary font-primary font-semibold max-w-[652px]">
+              The frontier of gaming innovation in the Middle East. We're redefining the gaming landscape by integrating
+              the thrilling world of traditional gaming with the boundless possibilities of blockchain technology.
+              Discover a new era of gaming with us.
+            </h4>
+          </div>
+        </div>
+        <Detail item={'explore'} />
+      </div>
+    </section>
+  );
+};
+export default Banner;

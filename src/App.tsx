@@ -22,6 +22,7 @@ import SupportHub from './pages/Apps/SupportHub';
 import DevTools from './pages/Apps/DevTools';
 import ComingSoon from './pages/Apps/ComingSoon';
 import Dao from './pages/Apps/Dao';
+import AppHome from './pages/Apps/Home';
 
 const App: React.FC = () => {
   const { pathname } = useLocation();
@@ -46,7 +47,7 @@ const App: React.FC = () => {
         <Route path="/apps/dev-tools" element={<DevTools />} />
         <Route path="/apps/dao" element={<Dao />} />
         <Route path="/apps/tournaments" element={<ComingSoon />} />
-        <Route path="/apps" element={<ComingSoon />} />
+        <Route path="/apps" element={<AppHome />} />
         {/* </Route> */}
         <Route path="game">
           <Route index element={<GamePlay />} />

@@ -5,7 +5,7 @@ const CurseBanner: React.FC = () => {
     <section className="w-full min-h-screen relative text-white overflow-hidden bg-bg">
       <img
         src="/assets/app/games/game_bg.jpg"
-        alt="desertwarrior"
+        alt="curseofthe"
         className="w-full h-screen object-cover absolute left-0 "
       />
       <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#6008C3]/20 z-10"></div>
