@@ -22,6 +22,7 @@ import SupportHub from './pages/Apps/SupportHub';
 import DevTools from './pages/Apps/DevTools';
 // import ComingSoon from './pages/Apps/ComingSoon';
 import Dao from './pages/Apps/Dao';
+import Marketplace from './pages/Apps/Marketplace';
 import Tournaments from './pages/Apps/Tournaments';
 import AppHome from './pages/Apps/Home';
 
@@ -47,6 +48,7 @@ const App: React.FC = () => {
         <Route path="/apps/support-hub" element={<SupportHub />} />
         <Route path="/apps/dev-tools" element={<DevTools />} />
         <Route path="/apps/dao" element={<Dao />} />
+        <Route path="/apps/marketplace" element={<Marketplace />} />
         <Route path="/apps/tournaments" element={<Tournaments />} />
         <Route path="/apps" element={<AppHome />} />
         {/* </Route> */}
