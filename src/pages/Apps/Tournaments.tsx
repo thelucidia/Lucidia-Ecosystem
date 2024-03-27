@@ -35,16 +35,20 @@ const Tournaments: React.FC = () => {
       <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/10 z-1"></div>
       <div className="w-full h-screen absolute top-0 left-0 bg-prpl/20 z-1"></div>
       {/* <div className="container h-screen relative"> */}
-      <img src="/assets/app/dao/character.png" alt="character" className="absolute right-[24%] -bottom-3 z-10" />
+      <img
+        src="/assets/app/dao/character.png"
+        alt="character"
+        className="absolute right-[24%] 2xl:-bottom-6 xl:-bottom-0 z-10 xl:block hidden"
+      />
       {/* </div> */}
       <div className="container w-full h-auto mx-auto mt-[178px] relative">
         <div className="mx-auto flex flex-col gap-y-[105px]">
           <div className="flex flex-row gap-x-[80px]">
-            <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5 left-[10%] top-[30%]">
+            <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 md:block hidden">
               {icons.map((items, i) => {
                 return (
                   <li
-                    className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan text-[32px]"
+                    className="hover:scale-[1.1] py-5 transition-all ease-in-out duration-300 hover:text-cyan text-[32px]"
                     key={i}
                   >
                     <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
@@ -54,12 +58,12 @@ const Tournaments: React.FC = () => {
                 );
               })}
             </ul>
-            <h1 className="xl:text-[62px] lg:text-[55px] md:text-[45px] sm:text-[35px] text-[25px] text-white font-primary max-w-[967px] pb-[30px] uppercase font-bold">
+            <h1 className="xl:text-[62px] lg:text-[55px] md:text-[50px] sm:text-[45px] text-[40px] text-white font-primary max-w-[967px] pb-[30px] uppercase md:font-bold font-normal">
               Welcome to the Arena!
             </h1>
           </div>
           <div>
-            <h3 className="text-[26px] font-primary font-semibold leading-normal pb-4 pl-[56px]">
+            <h3 className="text-[26px] font-primary sm:font-semibold font-normal leading-normal pb-4 pl-[56px]">
               Upcoming Tournaments
             </h3>
             <img src="/assets/app/dao/sub_banner.svg" alt="sub_banner" />

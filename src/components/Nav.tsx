@@ -587,7 +587,7 @@ const Nav: React.FC = () => {
                 </h1>
               </button>
             </a> */}
-            <Link to={!pathname.includes('apps') ? '/apps/game' : '/apps/login'}>
+            <Link to={!pathname.includes('apps') ? '/apps' : '/apps/login'}>
               <div className="w-full lg:w-[15rem] relative lg:block hidden">
                 <div className="hover:text-white py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF] transition-colors ease-in-out duration-300">
                   {`${!pathname.includes('apps') ? 'Launch App' : 'Login'}`}

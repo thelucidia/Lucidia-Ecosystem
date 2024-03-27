@@ -47,16 +47,19 @@ const Marketplace: React.FC = () => {
     <section className="w-full h-full p-[1px] text-white overflow-scroll">
       <img src="/assets/app/games/sandstorm.jpg" className="absolute top-0 z-0 w-full h-screen object-cover" />
       {/* <div className="w-full h-screen absolute top-0 left-0 bg-opacity-5 backdrop-filter backdrop-blur-lg z-1"></div> */}
-      <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#0ED4FF33]/20 z-7"></div>
-      <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-7 "></div>
+      <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0ED4FF33]/20 z-7"></div>
+      <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-7 "></div>
       <div className="container w-full h-auto mx-auto mt-[178px] relative">
         <div className="mx-auto flex flex-col gap-y-[125px]">
           <div className="flex flex-row gap-x-[100px]">
-            <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5 left-[10%] top-[30%]">
+            <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 md:block hidden">
               {icons.map((items, i) => {
                 return (
-                  <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
-                    <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
+                  <li
+                    className="hover:scale-[1.1] pb-10 transition-all ease-in-out duration-300 hover:text-cyan "
+                    key={i}
+                  >
+                    <a href={items.link} target="_blank" rel="noopener noreferrer" className="text-[32px]">
                       {items.icon}
                     </a>
                   </li>

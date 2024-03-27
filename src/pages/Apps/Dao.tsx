@@ -120,11 +120,14 @@ const Dao: React.FC = () => {
       <div className="container w-full h-auto mx-auto mt-[178px] relative">
         <div className="mx-auto flex flex-col gap-y-[125px]">
           <div className="flex flex-row gap-x-[100px]">
-            <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5 left-[10%] top-[30%]">
+            <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 md:block hidden">
               {icons.map((items, i) => {
                 return (
-                  <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
-                    <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
+                  <li
+                    className="hover:scale-[1.1] pb-10 transition-all ease-in-out duration-300 hover:text-cyan "
+                    key={i}
+                  >
+                    <a href={items.link} target="_blank" rel="noopener noreferrer" className="text-[32px]">
                       {items.icon}
                     </a>
                   </li>
@@ -132,7 +135,7 @@ const Dao: React.FC = () => {
               })}
             </ul>
             <div className="pb-[72px]">
-              <h1 className="lg:text-[62px] md:text-[35px] sm:text-[25px] text-[20px] text-white font-primary max-w-[800px] pb-[30px] font-bold">
+              <h1 className="lg:text-[62px] md:text-[40px] sm:text-[35px] text-[30px] text-white font-primary max-w-[800px] pb-[30px] sm:font-bold font-semibold">
                 Shape Game Decisions and Be Part of the Story!
               </h1>
             </div>
@@ -149,9 +152,9 @@ const Dao: React.FC = () => {
                   }}
                 >
                   <div className="pt-[50px] pb-[15px] flex flex-col">
-                    <div className="flex flex-row justify-between lg:gap-x-[90px] sm:gap-x-[100px] mx-auto">
+                    <div className="flex flex-row justify-between lg:gap-x-[90px] sm:gap-x-[100px] gap-x-[20px] mx-auto">
                       <div className="flex flex-row items-center">
-                        <img src="/assets/app/check.svg" className="w-fit y-fit" />
+                        <img src="/assets/app/check.svg" alt="check" className="w-fit y-fit" />
                         <span className="text-[16px] text-[#AAA] font-[500]">Approved</span>
                       </div>
                       <div className="">{item.date}</div>
@@ -171,9 +174,17 @@ const Dao: React.FC = () => {
                       <span>{item.No}</span>
                       <span>{item.Yes}</span>
                     </div>
-                    <div className="flex flex-row pl-[30px] mt-[10px]">
-                      <img src={`/assets/app/games/line/${item.line1}.png`} alt={'progress'} className="w-fit y-fit" />
-                      <img src={`/assets/app/games/line/${item.line2}.png`} alt={'progress'} className="w-fit y-fit" />
+                    <div className="flex flex-row px-[30px] mt-[10px] w-full">
+                      <img
+                        src={`/assets/app/games/line/${item.line1}.png`}
+                        alt={'progress'}
+                        className="w-fit y-fit overflow-hidden"
+                      />
+                      <img
+                        src={`/assets/app/games/line/${item.line2}.png`}
+                        alt={'progress'}
+                        className="w-fit y-fit overflow-hidden"
+                      />
                     </div>
                   </div>
                 </div>

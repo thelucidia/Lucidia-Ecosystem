@@ -64,11 +64,14 @@ const DevTools: React.FC = () => {
       <div className="container w-full h-auto mx-auto mt-[178px] relative">
         <div className="mx-auto flex flex-col gap-y-[125px]">
           <div className="flex flex-row gap-x-[60px] justify-between">
-            <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5 left-[10%] top-[30%]">
+            <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 md:block hidden">
               {icons.map((items, i) => {
                 return (
-                  <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
-                    <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
+                  <li
+                    className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan py-5"
+                    key={i}
+                  >
+                    <a href={items.link} target="_blank" rel="noopener noreferrer" className="text-[32px]">
                       {items.icon}
                     </a>
                   </li>
@@ -81,7 +84,7 @@ const DevTools: React.FC = () => {
                 backgroundImage: 'linear-gradient(0deg, rgba(85, 17, 166, 0.79) 22.91%, rgba(0, 0, 0, 0.00) 78.01%)',
               }}
             >
-              <div className="pl-[38px] py-[72px]">
+              <div className="pl-[38px] py-[72px] pr-2">
                 <h1 className="lg:text-[40px] md:text-[35px] sm:text-[25px] text-[20px] text-white font-secondary max-w-[967px] pb-[30px] uppercase font-bold">
                   Unlock Your Game Development Potential with Lucidia's Suite of Tools
                 </h1>

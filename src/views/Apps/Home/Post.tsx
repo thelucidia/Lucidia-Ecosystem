@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-const Detail: React.FC = () => {
+const Post: React.FC = () => {
   return (
     <section className={`w-full h-full relative bg-transparent z-20  my-[50px]`}>
       <div className="container w-full mx-auto h-full overflow-hidden px-5">
@@ -9,7 +9,7 @@ const Detail: React.FC = () => {
           initial={{ x: 150 }}
           whileInView={{ x: 0 }}
           transition={{ type: 'spring', stiffness: 60 }}
-          className="container mx-auto flex flex-row gap-[80px] h-[350px] justify-between overflow-hidden"
+          className="container mx-auto flex flex-row gap-[80px]  h-[350px] justify-between overflow-hidden"
         >
           <div className="w-[50%] h-auto bg-gry relative font-[500] scale-x-[-1]">
             <div className="w-full h-full bg-black/[97%] absolute top-0 left-0 z-10"></div>
@@ -33,4 +33,4 @@ const Detail: React.FC = () => {
   );
 };
 
-export default Detail;
+export default Post;

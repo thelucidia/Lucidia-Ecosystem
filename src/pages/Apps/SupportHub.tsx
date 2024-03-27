@@ -35,18 +35,18 @@ const SupportHub: React.FC = () => {
       <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/10 z-1"></div>
       <div className="w-full h-screen absolute top-0 left-0 bg-prpl/20 z-1"></div>
       <div className="flex flex-row mt-[178px]">
-        <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:gap-y-12 gap-y-5">
+        <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:block hidden">
           {icons.map((items, i) => {
             return (
-              <li className="hover:scale-[1.1] transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
-                <a href={items.link} target="_blank" rel="noopener noreferrer" className="">
+              <li className="hover:scale-[1.1] pb-10 transition-all ease-in-out duration-300 hover:text-cyan " key={i}>
+                <a href={items.link} target="_blank" rel="noopener noreferrer" className="text-[32px]">
                   {items.icon}
                 </a>
               </li>
             );
           })}
         </ul>
-        <div className="container w-full h-auto m-auto relative mx-auto grid lg:grid-cols-2 grid-cols-1 gap-8 justify-between">
+        <div className="container w-full h-auto m-auto relative mx-auto grid xl:grid-cols-2 grid-cols-1 gap-8 justify-between">
           <div className="flex flex-col justify-between gap-y-[18px]">
             <div
               className="rounded-[10px] border-[2px] border-[#401675] w-full relative"
@@ -54,11 +54,11 @@ const SupportHub: React.FC = () => {
                 backgroundImage: 'linear-gradient(0deg, rgba(85, 17, 166, 0.79) 22.91%, rgba(0, 0, 0, 0.00) 78.01%)',
               }}
             >
-              <div className="pl-[24px] pr-[160px] py-[48px]">
-                <h1 className=" text-[40px] text-white font-secondary max-w-[514px] font-bold">
+              <div className="pl-[24px] sm:pr-[160px] pr-[80px] py-[48px]">
+                <h1 className="sm:text-[40px] text-[30px] text-white font-secondary max-w-[514px] font-bold">
                   Welcome to the Web3 Gaming Education Portal
                 </h1>
-                <h4 className=" text-[18px] text-white text-secondary font-bold">
+                <h4 className=" text-[18px] text-white text-secondary font-bold sm:block hidden">
                   Your Gateway to the World of Web3 Gaming
                 </h4>
                 <a
@@ -83,7 +83,7 @@ const SupportHub: React.FC = () => {
                   backgroundImage: 'linear-gradient(0deg, rgba(85, 17, 166, 0.79) 22.91%, rgba(0, 0, 0, 0.00) 78.01%)',
                 }}
               >
-                <div className="pl-[24px] pt-[140px] pr-[105px] pb-[22px]">
+                <div className="pl-[24px] sm:pt-[140px] pt-[100px] pr-[105px] pb-[22px]">
                   <h3 className="text-[26px] text-white font-secondary max-w-[214px] font-bold">About Us</h3>
                   <h5 className="text-[16px] text-white text-secondary font-bold max-w-[206px]">
                     We are passionate about Web3 gaming and are committed to providing you with valuable resources to
@@ -97,7 +97,7 @@ const SupportHub: React.FC = () => {
                   backgroundImage: 'linear-gradient(0deg, rgba(85, 17, 166, 0.79) 22.91%, rgba(0, 0, 0, 0.00) 78.01%)',
                 }}
               >
-                <div className="pl-[24px] pt-[140px] pr-[105px] pb-[22px]">
+                <div className="pl-[24px] pt-[140px] pr-[105px] pb-[22px] sm:block hidden">
                   <h3 className="text-[26px] text-white font-secondary max-w-[214px] font-bold">Coming Soon!</h3>
                   <h5 className="text-[16px] text-white text-secondary font-bold max-w-[206px]">
                     Our team is working tirelessly to bring you tutorials, articles, videos, and much more to help you
