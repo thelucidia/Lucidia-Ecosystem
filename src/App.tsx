@@ -25,6 +25,7 @@ import Dao from './pages/Apps/Dao';
 import Marketplace from './pages/Apps/Marketplace';
 import Tournaments from './pages/Apps/Tournaments';
 import AppHome from './pages/Apps/Home';
+import Signup from './pages/Apps/Signup';
 
 const App: React.FC = () => {
   const { pathname } = useLocation();
@@ -45,6 +46,7 @@ const App: React.FC = () => {
         <Route path="/apps/curse-of-the" element={<CurseofThePharaoh />} />
         <Route path="/apps/game" element={<Game />} />
         <Route path="/apps/login" element={<Login />} />
+        <Route path="/apps/signup" element={<Signup />} />
         <Route path="/apps/support-hub" element={<SupportHub />} />
         <Route path="/apps/dev-tools" element={<DevTools />} />
         <Route path="/apps/dao" element={<Dao />} />

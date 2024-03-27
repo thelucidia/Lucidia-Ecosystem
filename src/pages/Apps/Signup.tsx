@@ -5,7 +5,7 @@ import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
-const Login: React.FC = () => {
+const Signup: React.FC = () => {
   const icons = [
     {
       link: 'https://t.me/Lucidia_io',
@@ -49,7 +49,7 @@ const Login: React.FC = () => {
         <div className="max-w-[700px] w-full h-auto rounded-[10px] border-[2px] border-[#401675] relative bg-opacity-5 backdrop-filter backdrop-blur-lg">
           <div className="py-10 flex flex-col gap-y-5">
             <div className="mx-auto text-transparent font-bold text-center text-[32px] uppercase font-secondary bg-clip-text bg-gradient-to-r from-white via-[#D5B0FF] to-white w-fit">
-              log in to your account
+              create your account
             </div>
             <a href="#">
               <img src="/assets/app/games/login/google.svg" alt="extra lucida" width={'343'} className="mx-auto" />
@@ -90,9 +90,9 @@ const Login: React.FC = () => {
               <h4 className="scale-x-[-1]">Login</h4>
             </button>
             <h4 className="text-[18px] text-white font-primary text-center">
-              Don't have an account yet?
-              <Link to="/apps/signup" className="text-cyan text-[18px] font-primary">
-                Sign Up
+              Already have an account?
+              <Link to="/apps/login" className="text-cyan text-[18px] font-primary">
+                Login
               </Link>
             </h4>
             <p className="text-white text-[16px] font-secondary text-center">Powered by</p>
@@ -104,4 +104,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default Signup;
