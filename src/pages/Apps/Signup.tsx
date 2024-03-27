@@ -34,7 +34,7 @@ const Signup: React.FC = () => {
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/10 z-1"></div>
       <div className="w-full h-screen absolute top-0 left-0 bg-prpl/20 z-1"></div>
-      <div className="container flex flex-row justify-around gap-x-5 pt-[200px]">
+      <div className="container mx-auto flex flex-row  gap-x-5 pt-[200px]">
         <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 md:block hidden">
           {icons.map(({ icon: Icon, link }, i) => {
             return (
@@ -46,7 +46,7 @@ const Signup: React.FC = () => {
             );
           })}
         </ul>
-        <div className="max-w-[700px] w-full h-auto rounded-[10px] border-[2px] border-[#401675] relative bg-opacity-5 backdrop-filter backdrop-blur-lg">
+        <div className="max-w-[700px] w-full h-auto rounded-[10px] border-[2px] ml-[23%] border-[#401675] relative bg-opacity-5 backdrop-filter backdrop-blur-lg">
           <div className="py-10 flex flex-col gap-y-5">
             <div className="mx-auto text-transparent font-bold text-center text-[32px] uppercase font-secondary bg-clip-text bg-gradient-to-r from-white via-[#D5B0FF] to-white w-fit">
               create your account
