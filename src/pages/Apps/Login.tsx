@@ -63,7 +63,7 @@ const Login: React.FC = () => {
               className="mx-auto w-full object-cover relative left-0 right-0 opacity-70 sm:block hidden"
             />
             <div
-              className="w-[343px] w-full m-auto h-11"
+              className="w-[343px] m-auto h-11"
               style={{
                 backgroundImage: 'url(/assets/app/games/login/input.svg)',
               }}
@@ -75,7 +75,7 @@ const Login: React.FC = () => {
               />
             </div>
             <div
-              className="w-[343px] w-full m-auto h-11"
+              className="w-[343px] m-auto h-11"
               style={{
                 backgroundImage: 'url(/assets/app/games/login/input.svg)',
               }}
@@ -91,7 +91,7 @@ const Login: React.FC = () => {
             </button>
             <h4 className="text-[18px] text-white font-primary text-center">
               Don't have an account yet?
-              <Link to="/apps/signup" className="text-cyan text-[18px] font-primary">
+              <Link to="/apps/signup" className="pl-1 text-cyan text-[18px] font-primary">
                 Sign Up
               </Link>
             </h4>
