@@ -6,23 +6,25 @@ import React from 'react';
 const How: React.FC = () => {
   const data = [
     {
-      title: 'Option 1: Buy ETH or BNB with a Card',
+      title: 'Option 1: Acquire Crypto via Card',
       value: [
         <p>
-          Go to{' '}
+          Go to&nbsp;&nbsp;{' '}
           <a href="https://moonpay.com/buy" target="-blank" rel="noopener noreferrer" className="text-prpl">
             https://moonpay.com/buy
           </a>{' '}
-          and purchase ETH or BNB using your card. The purchased ETH or BNB will be sent to your wallet. It is
-          recommended to buy a minimum of $20 worth of ETH or $5 worth of BNB to cover the minimum purchase of $LUCID
-          tokens.
+        </p>,
+        <p>
+          Visit https://moonpay.com/buy and acquire cryptocurrency &#40such as tokens&#41 using your card. The purchased
+          crypto will be transfered to your wallet. It's advisable to procure a minimum of 20$ worth of tokens to
+          accommodate the minimum purchase requirement.
         </p>,
         <p>Enter the amount you wish to invest</p>,
         <p>Choose your bonus option - it will be available one month after TGE</p>,
       ],
     },
     {
-      title: 'Option 2: Buy $LUCID with ETH or BNB',
+      title: 'Option 2: Purchase Tokens with Crypto',
       value: [
         <p>
           Ensure you have enough ETH or BNB in your wallet &#40;if not, refer to option 1&#41;. Enter the amount of
@@ -34,7 +36,7 @@ const How: React.FC = () => {
       ],
     },
     {
-      title: 'Option 3: Buy $LUCID with USDT',
+      title: 'Option 3: Buy Tokens with USDT',
       value: [
         <p>Make sure you have at least $20 worth of USDT in your wallet.</p>,
         <p>Enter the amount you wish to invest</p>,
@@ -129,8 +131,8 @@ const How: React.FC = () => {
             className="sm:w-[58.9%] flex flex-col gap-y-5 sm:mt-0 mt-[10rem] overflow-hidden"
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">
-              <div className="scale-x-[-1] text-white w-full h-full p-5 md:md:border-l-[0.5rem] border-prpl rounded-md">
-                <h1 className="font-secondary font-bold text-prpl text-lg">STEP #01</h1>
+              <div className="scale-x-[-1] text-white w-full h-full p-5 md:md:border-l-[0.5rem] border-[#70F] rounded-md">
+                <h1 className="font-secondary font-bold text-[#70F] text-lg">STEP #01</h1>
 
                 <h2 className="text-cyan font-primary font-medium text-lg w-fit mt-3">
                   <a
@@ -139,16 +141,16 @@ const How: React.FC = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-x-[5px]"
                   >
-                    Visit{' '}
+                    Launch{' '}
                     <span className="text-white">
                       <MdOutlineOpenInNew />
                     </span>{' '}
-                    finance.lucidia.io
+                    App
                   </a>
                 </h2>
 
                 <p className="mt-8">
-                  Click the "<span className="text-prpl text-lg">Connect Wallet</span>" button in the top right corner
+                  Click the "<span className="text-[#70F] text-lg">Connect Wallet</span>" button in the top right corner
                   and log in using your preferred wallet. Make sure you have a browser extension wallet like{' '}
                   <span className="inline-flex items-center relative w-5">
                     <img
@@ -166,20 +168,20 @@ const How: React.FC = () => {
 
                 <div className="flex items-center gap-x-[6px] text-sm font-primary font-medium mt-6">
                   <IoMdInformationCircleOutline className="text-3xl" />
-                  <p className="text-md">
+                  <p className="text-[16px]">
                     We recommend using MetaMask on desktop for a smoother experience, or Trust Wallet on mobile.
                   </p>
                 </div>
 
                 <h3 className="font-primary font-medium mt-8">
-                  Click the "<span className="text-grn">BUY $LUCID</span>" button.
+                  Click the "<span className="text-grn">Log in</span>" button.
                 </h3>
               </div>
             </div>
 
             <div className="w-full h-auto clipped2 bg-gry relative flex items-center justify-center scale-x-[-1] rounded-md">
-              <div className="scale-x-[-1] text-white w-full h-full p-5 pb-6 md:border-l-[0.5rem] border-prpl rounded-md">
-                <h1 className="font-secondary font-bold text-prpl text-lg">STEP #02</h1>
+              <div className="scale-x-[-1] text-white w-full h-full p-5 pb-6 md:border-l-[0.5rem] border-[#70F] rounded-md">
+                <h1 className="font-secondary font-bold text-[#70F] text-lg">STEP #02</h1>
 
                 <div className="flex flex-col gap-y-6">
                   {data.map((items, i) => {
