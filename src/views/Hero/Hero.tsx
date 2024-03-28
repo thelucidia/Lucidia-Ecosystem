@@ -2,6 +2,7 @@
 // import { PiTelegramLogoBold } from 'react-icons/pi';
 // import { SiTwitter } from 'react-icons/si';
 import MainVideo from '../../../videos/home_app.mp4';
+import ProductVideo from '../../../videos/hero.mp4';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
@@ -94,7 +95,7 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
         autoPlay
         muted
         loop
-        src={MainVideo}
+        src={id === 'hero' ? MainVideo : ProductVideo}
         preload={'auto'}
         onLoadedData={handleTrue}
         playsInline

@@ -1,11 +1,51 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { LiaTelegramPlane } from 'react-icons/lia';
 import { TfiWorld } from 'react-icons/tfi';
 import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import WebSDK, { LoginBehavior } from 'websdk';
+
+const redirectURI = 'http://localhost:5173';
+
+const client_id = import.meta.env.VITE_APP_CLIENT_ID;
+const api_key = import.meta.env.VITE_APP_API_KEY;
+
+console.log('client id: ', client_id);
+
+const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.REDIRECT);
 
 const Login: React.FC = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  console.log(isLoggedIn);
+  useEffect(() => {
+    try {
+      const handleAuth = async () => {
+        const authResult: any = await sphereoneSDK.handleCallback();
+        if (authResult?.access_token) {
+          const { access_token, profile } = authResult;
+          console.log('access_token: ', access_token, 'profile: ', profile);
+          setIsLoggedIn(true);
+        } else {
+          setIsLoggedIn(false);
+        }
+      };
+      handleAuth();
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
+
+  const login = async () => {
+    try {
+      console.log('logged in');
+
+      await sphereoneSDK.login();
+    } catch (e: any) {
+      console.error(e);
+    }
+  };
+
   const icons = [
     {
       link: 'https://t.me/Lucidia_io',
@@ -51,9 +91,9 @@ const Login: React.FC = () => {
             <div className="mx-auto text-transparent font-bold text-center text-[32px] uppercase font-secondary bg-clip-text bg-gradient-to-r from-white via-[#D5B0FF] to-white w-fit">
               log in to your account
             </div>
-            <a href="#">
+            <button onClick={login}>
               <img src="/assets/app/games/login/google.svg" alt="extra lucida" width={'343'} className="mx-auto" />
-            </a>
+            </button>
             <a href="#">
               <img src="/assets/app/games/login/apple.svg" alt="extra lucida" width={'343'} className="mx-auto" />
             </a>
