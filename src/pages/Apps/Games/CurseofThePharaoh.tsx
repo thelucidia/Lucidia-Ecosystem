@@ -10,7 +10,7 @@ const CurseofThePharaoh: React.FC = () => {
     <section className="w-full h-auto overflow-hidden bg-bg">
       <CurseBanner />
       <CurseDescription id={3} />
-      <Featured />
+      <Featured id={3} color={'#70F'} />
       <Myths />
       <CurseView />
       <CurseContent />

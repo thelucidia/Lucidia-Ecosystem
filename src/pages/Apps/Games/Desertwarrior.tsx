@@ -10,7 +10,7 @@ const Desertwarrior: React.FC = () => {
     <section className="w-full h-auto overflow-hidden bg-bg">
       <DesertBanner />
       <Description id={3} />
-      <Featured />
+      <Featured id={3} color={'#0ED4FF'} />
       <FPS />
       <DesertView />
       <DesertContent />

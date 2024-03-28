@@ -10,7 +10,7 @@ const SandStorm: React.FC = () => {
     <section className="w-full h-auto overflow-hidden bg-bg">
       <SandBanner />
       <SandDescription id={3} />
-      <Featured />
+      <Featured id={3} color={'#70F'} />
       <Ultimate />
       <SandView />
       <SandContent />

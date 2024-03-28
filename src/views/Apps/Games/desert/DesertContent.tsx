@@ -80,39 +80,39 @@ const DesertContent: React.FC = () => {
   ];
 
   return (
-    <section className="w-full min-h-screen relative">
+    <section className="w-full min-h-screen relative py-10">
       <div className="w-full h-full overflow-hidden px-5">
         <img
           src="/assets/images/games/crypto/coin.svg"
           alt="coin"
           className="absolute top-[150px] lg:block hidden w-fit y-fit"
         />
-        <div className="container w-full mx-auto flex lg:gap-x-52 justify-center lg:flex-row flex-col lg:items-start items-center pb-[70px]">
-          <div className="md:w-[60%]  text-white relative top-[700px] z-10 text-center lg:text-left overflow-hidden">
+        <div className="container w-full mx-auto flex flex-col justify-center items-start flex-col-reverse sm:flex-row sm:gap-x-52 sm:items-end">
+          <div className="md:w-[60%]  text-white relative  z-10 text-center lg:text-left overflow-hidden">
             <motion.div
               initial={{ x: -150 }}
               whileInView={{ x: 0 }}
               transition={{ type: 'spring', stiffness: 60 }}
               className=""
             >
-              <div>
-                <h1 className="font-medium text-transparent min-w-[360px] text-[62px] sm:text-[62px] font-primary bg-clip-text bg-gradient-to-r from-white via-[#8DEBFF] to-white sm:max-w-[12rem] mx-auto lg:mx-0">
+              <div className="pt-[50px]">
+                <h1 className="font-medium text-transparent min-w-[360px] text-[32px] text-left  sm:text-[62px] font-primary bg-clip-text bg-gradient-to-r from-white via-[#0ED4FF] to-white sm:max-w-[12rem] mx-auto lg:mx-0">
                   Start Your Adventure in Cryptocraft
                 </h1>
               </div>
             </motion.div>
 
-            <div className=" flex flex-col gap-y-4 mt-14 sm:mt-20 ">
+            <div className=" flex flex-col gap-y-4 mt-14 pr-[20px]">
               <a
                 href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
               >
-                <button className="w-full lg:w-[15rem] h-11 clipped2 bg-gradient-to-l from-white to-[#8DEBFF] relative group font-bold flex items-center justify-center scale-x-[-1]">
+                <button className="w-full lg:w-[15rem] h-11 clipped2 bg-gradient-to-l from-white to-[#0ED4FF] relative group font-bold flex items-center justify-center scale-x-[-1]">
                   <div className="absolute bg-black w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
 
-                  <div className="absolute bg-gradient-to-l from-white to-[#8DEBFF]  w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"></div>
+                  <div className="absolute bg-gradient-to-l from-white to-[#0ED4FF]  w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"></div>
                   <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black transition-colors ease-in-out duration-300">
                     Sign UP
                   </h1>
@@ -125,7 +125,7 @@ const DesertContent: React.FC = () => {
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
             transition={{ type: 'spring', stiffness: 60 }}
-            className="sm:w-[58.9%] flex flex-col gap-y-20 sm:mt-0 mt-[10rem] overflow-hidden"
+            className="sm:w-[58.9%] flex flex-col gap-y-20 overflow-hidden"
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">
               {/* <div className="scale-x-[-1] text-white w-full h-full p-5 md:md:border-l-[0.5rem] border-[#A5FF16] rounded-md">

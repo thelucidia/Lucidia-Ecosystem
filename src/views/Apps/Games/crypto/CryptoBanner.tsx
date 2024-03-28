@@ -8,8 +8,8 @@ const CryptoBanner: React.FC = () => {
         alt="crypto"
         className="w-full h-screen object-cover absolute left-0 "
       />
-      <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#A5FF16D1]/20 z-8"></div>
-      <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-7 "></div>
+      <div className="w-full h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#A5FF16D1]/20 z-8"></div>
+      <div className="w-full h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-7 "></div>
       <div className="mt-[231px] flex items-center justify-end xs:justify-center mb-[87px] mr-[20px] flex-col gap-y-[20px] ">
         <img src="/assets/images/games/crypto/crypto.svg" alt="crypto" className="relative pb-16 z-10" />
         <div className="md:mt-[19px] flex flex-row justify-center gap-[10px] z-10">

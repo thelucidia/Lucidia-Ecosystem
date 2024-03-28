@@ -87,22 +87,22 @@ const MainContent: React.FC = () => {
           alt="coin"
           className="absolute top-[150px] lg:block hidden w-fit y-fit"
         />
-        <div className="container w-full mx-auto flex lg:gap-x-52 justify-center lg:flex-row flex-col lg:items-start items-center">
-          <div className="md:w-[60%]  text-white relative top-[1000px] z-10 text-center lg:text-left overflow-hidden">
+        <div className="container w-full mx-auto flex flex-col justify-center items-start flex-col-reverse sm:flex-row sm:gap-x-52 sm:items-end">
+          <div className="md:w-[60%]  text-white relative  z-10 text-center lg:text-left overflow-hidden">
             <motion.div
               initial={{ x: -150 }}
               whileInView={{ x: 0 }}
               transition={{ type: 'spring', stiffness: 60 }}
               className=""
             >
-              <div>
-                <h1 className="font-medium text-transparent min-w-[360px] text-[62px] sm:text-[62px] font-primary bg-clip-text bg-gradient-to-r from-white via-[#D9FCA1] to-white sm:max-w-[12rem] mx-auto lg:mx-0">
+              <div className="pt-[50px]">
+                <h1 className="font-medium text-transparent min-w-[360px] text-[32px] text-left  sm:text-[62px] font-primary bg-clip-text bg-gradient-to-r from-white via-[#D9FCA1] to-white sm:max-w-[12rem] mx-auto lg:mx-0">
                   Start Your Adventure in Cryptocraft
                 </h1>
               </div>
             </motion.div>
 
-            <div className=" flex flex-col gap-y-4 mt-14 sm:mt-20 ">
+            <div className=" flex flex-col gap-y-4 mt-14 sm:mt-20 pr-[20px]">
               <a
                 href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
                 target="_blank"
@@ -125,7 +125,7 @@ const MainContent: React.FC = () => {
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
             transition={{ type: 'spring', stiffness: 60 }}
-            className="sm:w-[58.9%] flex flex-col gap-y-20 sm:mt-0 mt-[10rem] overflow-hidden"
+            className="sm:w-[58.9%] flex flex-col gap-y-20 mt-0 overflow-hidden"
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full p-5 md:md:border-l-[0.5rem] border-[#A5FF16] rounded-md">

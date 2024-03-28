@@ -8,8 +8,8 @@ const DesertBanner: React.FC = () => {
         alt="desertwarrior"
         className="w-full h-screen object-cover absolute left-0 "
       />
-      <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#0ED4FF33]/20 z-10"></div>
-      <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-9 "></div>
+      <div className="w-full h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#0ED4FF33]/20 z-10"></div>
+      <div className="w-full h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-9 "></div>
       <div className="mt-[231px] flex items-center justify-end xs:justify-center mb-[87px] mr-[20px] flex-col gap-y-[20px] ">
         <img src="/assets/app/games/desert/banner.svg" alt="banner" className="relative pb-16 z-10" />
         <div className="md:mt-[19px] flex flex-row justify-center gap-[10px] z-10">
