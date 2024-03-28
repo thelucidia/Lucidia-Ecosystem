@@ -12,7 +12,7 @@ const Myths: React.FC = () => {
             transition={{ type: 'spring', stiffness: 60 }}
             className="md:w-[80%] overflow-hidden"
           >
-            <h2 className="text-transparent ml-[100px] uppercase font-[700] min-w-[360px] text-[32px] sm:text-[40px] font-primary bg-clip-text bg-gradient-to-r from-[#F0F0F0] via-[#D9B8FF] to-white sm:max-w-[25rem] mx-auto">
+            <h2 className="text-transparent sm:ml-[100px] mb-[20px] uppercase font-[700] min-w-[360px] text-[32px] sm:text-[40px] font-primary bg-clip-text bg-gradient-to-r from-[#F0F0F0] via-[#D9B8FF] to-white sm:max-w-[25rem] mx-auto">
               Unleash The Myths
             </h2>
           </motion.div>

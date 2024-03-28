@@ -4,12 +4,12 @@ const CurseBanner: React.FC = () => {
   return (
     <section className="w-full min-h-screen relative text-white overflow-hidden bg-bg">
       <img
-        src="/assets/app/games/game_bg.jpg"
+        src="/assets/app/games/curse.jpg"
         alt="curseofthe"
         className="w-full h-screen object-cover absolute left-0 "
       />
-      <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#6008C3]/20 z-10"></div>
-      <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-9 "></div>
+      <div className="w-full h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-[#70F]/20 z-10"></div>
+      <div className="w-full h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-9 "></div>
       <div className="mt-[231px] flex items-center justify-end xs:justify-center mb-[87px] mr-[20px] flex-col gap-y-[20px] ">
         <img src="/assets/images/games/curseof/curseofthe.svg" alt="curse" className="relative pb-16 z-10" />
 

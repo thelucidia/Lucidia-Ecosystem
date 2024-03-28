@@ -10,7 +10,7 @@ const CryptoCraft: React.FC = () => {
     <section className="w-full h-auto overflow-hidden bg-bg">
       <CryptoBanner />
       <GameDescription id={3} />
-      <Featured />
+      <Featured id={3} color={'#C0FF0E'} />
       <Creativity />
       <Overview />
       <MainContent />
