@@ -91,12 +91,12 @@ const Login: React.FC = () => {
             <div className="mx-auto text-transparent font-bold text-center text-[32px] uppercase font-secondary bg-clip-text bg-gradient-to-r from-white via-[#D5B0FF] to-white w-fit">
               log in to your account
             </div>
-            <button onClick={login}>
+            {/* <button onClick={login}>
               <img src="/assets/app/games/login/google.svg" alt="extra lucida" width={'343'} className="mx-auto" />
             </button>
             <a href="#">
               <img src="/assets/app/games/login/apple.svg" alt="extra lucida" width={'343'} className="mx-auto" />
-            </a>
+            </a> */}
             <img
               src="/hero/navline.webp"
               alt="navline"
