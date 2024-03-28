@@ -4,6 +4,16 @@ import { TfiWorld } from 'react-icons/tfi';
 import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import WebSDK, { LoginBehavior } from 'websdk';
+
+const redirectURI = 'http://localhost:3000';
+
+export const sphereoneSDK = new WebSDK(
+  process.env.REACT_APP_CLIENT_ID as string,
+  redirectURI,
+  process.env.REACT_APP_API_KEY as string,
+  LoginBehavior.REDIRECT,
+);
 
 const Login: React.FC = () => {
   const icons = [

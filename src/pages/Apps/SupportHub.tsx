@@ -34,7 +34,7 @@ const SupportHub: React.FC = () => {
       {/* <div className="w-full h-screen absolute top-0 left-0 bg-opacity-5 backdrop-filter backdrop-blur-lg z-1"></div> */}
       <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/10 z-1"></div>
       <div className="w-full h-screen absolute top-0 left-0 bg-prpl/20 z-1"></div>
-      <div className="flex flex-row mt-[178px]">
+      <div className="container gap-x-5 mx-auto flex flex-row mt-[178px]">
         <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:block hidden">
           {icons.map((items, i) => {
             return (
@@ -46,7 +46,7 @@ const SupportHub: React.FC = () => {
             );
           })}
         </ul>
-        <div className="container w-full h-auto m-auto relative mx-auto grid xl:grid-cols-2 grid-cols-1 gap-8 justify-between">
+        <div className="w-full h-auto m-auto relative mx-auto grid xl:grid-cols-2 grid-cols-1 gap-8 justify-between">
           <div className="flex flex-col justify-between gap-y-[18px]">
             <div
               className="rounded-[10px] border-[2px] border-[#401675] w-full relative"
