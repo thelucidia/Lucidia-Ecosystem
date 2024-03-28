@@ -15,9 +15,9 @@ const How: React.FC = () => {
           </a>{' '}
         </p>,
         <p>
-          Visit https://moonpay.com/buy and acquire cryptocurrency &#40such as tokens&#41 using your card. The purchased
-          crypto will be transfered to your wallet. It's advisable to procure a minimum of 20$ worth of tokens to
-          accommodate the minimum purchase requirement.
+          Visit https://moonpay.com/buy and acquire cryptocurrency &#40;such as tokens&#41; using your card. The
+          purchased crypto will be transfered to your wallet. It's advisable to procure a minimum of 20$ worth of tokens
+          to accommodate the minimum purchase requirement.
         </p>,
         <p>Enter the amount you wish to invest</p>,
         <p>Choose your bonus option - it will be available one month after TGE</p>,
