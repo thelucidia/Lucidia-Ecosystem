@@ -7,7 +7,7 @@ const Game: React.FC = () => {
   return (
     <section className="w-full h-auto overflow-hidden bg-bg">
       <Banner />
-      <Featured />
+      <Featured id={0} color={''} />
       <P2EGames />
     </section>
   );
