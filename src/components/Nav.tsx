@@ -181,6 +181,12 @@ const Nav: React.FC = () => {
       paths: ['/team'],
       type: 'internal',
     },
+    {
+      name: 'launch app',
+      slug: '/apps',
+      paths: ['/apps'],
+      type: 'internal',
+    },
     // {
     //   name: 'whitepaper',
     //   slug: 'whitepaper',
