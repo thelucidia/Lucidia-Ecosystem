@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const PartnersLower: React.FC = () => {
-  const partners = ['bloomberg', 'yahoo', 'benzinga', 'globe', 'digital', 'block', 'market'];
+  const partners = ['skale', 'ZAWYA', '5J', 'BGA', 'EOR', 'Hatha', 'MenaFN'];
 
   const [hasAnimated, setHasAnimated] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -22,7 +22,7 @@ const PartnersLower: React.FC = () => {
       >
         <div className="w-full container mx-auto flex flex-wrap items-center gap-x-9 md:gap-x-14 gap-y-7 justify-center h-auto">
           {partners.map((items, i) => {
-            return <img src={`/partners2/${items}.webp`} key={i} alt={items} className="md:w-auto w-20 invert" />;
+            return <img src={`/partners2/${items}.png`} key={i} alt={items} className="md:w-auto w-20 invert" />;
           })}
         </div>
       </motion.div>

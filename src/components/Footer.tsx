@@ -76,9 +76,6 @@ const Footer: React.FC = () => {
     <footer className="w-full h-auto min-h-screen relative pb-16">
       <div className="container mx-auto w-full text-white sm:mt-28 mt-10 px-5 text-left sm:text-center">
         <div className="mt-10">
-          <h1 className="sm:text-[46px] text-[32px] font-bold leading-tight font-primary bg-clip-text bg-gradient-to-r w-fit sm:mx-auto  from-white via-white to-[#c4f4fe] text-transparent">
-            Join the community of 100k+ Lucidians
-          </h1>
           <p className="font-medium font-primary text-footergry text-[15px] sm:text-[22px] mt-2 sm:mt-0">
             For more details about our progress and workflow be sure to follow
           </p>
