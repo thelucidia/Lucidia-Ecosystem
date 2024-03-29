@@ -6,7 +6,7 @@ import { BsTwitterX } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import WebSDK, { LoginBehavior } from 'websdk';
 
-const redirectURI = 'http://localhost:5173';
+const redirectURI = 'http://localhost:3000';
 
 const client_id = import.meta.env.VITE_APP_CLIENT_ID;
 const api_key = import.meta.env.VITE_APP_API_KEY;
@@ -102,7 +102,7 @@ const Login: React.FC = () => {
               alt="navline"
               className="mx-auto w-full object-cover relative left-0 right-0 opacity-70 sm:block hidden"
             />
-            <div
+            {/* <div
               className="w-[343px] m-auto h-11"
               style={{
                 backgroundImage: 'url(/assets/app/games/login/input.svg)',
@@ -125,8 +125,11 @@ const Login: React.FC = () => {
                 className="px-10 font-primary h-full w-full relative z-10 text-[14px] bg-transparent outline-none"
                 placeholder="PASSWORD"
               />
-            </div>
-            <button className="min-w-[343px] mx-auto clipped scale-x-[-1] rounded-[5px] bg-prpl font-secondary font-semibold text-[15px] py-[12px] text-center uppercase text-white">
+            </div> */}
+            <button
+              className="min-w-[343px] mx-auto mt-10 clipped scale-x-[-1] rounded-[5px] bg-prpl font-secondary font-semibold text-[15px] py-[12px] text-center uppercase text-white"
+              onClick={login}
+            >
               <h4 className="scale-x-[-1]">Login</h4>
             </button>
             <h4 className="text-[18px] text-white font-primary text-center">

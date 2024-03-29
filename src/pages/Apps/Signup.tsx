@@ -1,11 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { LiaTelegramPlane } from 'react-icons/lia';
 import { TfiWorld } from 'react-icons/tfi';
 import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import WebSDK, { LoginBehavior } from 'websdk';
 
+const redirectURI = 'http://localhost:3000';
+
+const client_id = import.meta.env.VITE_APP_CLIENT_ID;
+const api_key = import.meta.env.VITE_APP_API_KEY;
+
+console.log('client id: ', client_id);
+
+const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.REDIRECT);
 const Signup: React.FC = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  console.log(isLoggedIn);
+  useEffect(() => {
+    try {
+      const handleAuth = async () => {
+        const authResult: any = await sphereoneSDK.handleCallback();
+        if (authResult?.access_token) {
+          const { access_token, profile } = authResult;
+          console.log('access_token: ', access_token, 'profile: ', profile);
+          setIsLoggedIn(true);
+        } else {
+          setIsLoggedIn(false);
+        }
+      };
+      handleAuth();
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
+
+  const login = async () => {
+    try {
+      console.log('logged in');
+
+      await sphereoneSDK.login();
+    } catch (e: any) {
+      console.error(e);
+    }
+  };
+
   const icons = [
     {
       link: 'https://t.me/Lucidia_io',
@@ -62,7 +101,7 @@ const Signup: React.FC = () => {
               alt="navline"
               className="mx-auto w-full object-cover relative left-0 right-0 opacity-70 sm:block hidden"
             />
-            <div
+            {/* <div
               className="w-[343px] m-auto h-11"
               style={{
                 backgroundImage: 'url(/assets/app/games/login/input.svg)',
@@ -85,8 +124,11 @@ const Signup: React.FC = () => {
                 className="px-10 font-primary h-full w-full relative z-10 text-[14px] bg-transparent outline-none"
                 placeholder="PASSWORD"
               />
-            </div>
-            <button className="min-w-[343px] mx-auto clipped scale-x-[-1] rounded-[5px] bg-prpl font-secondary font-semibold text-[15px] py-[12px] text-center uppercase text-white">
+            </div> */}
+            <button
+              className="min-w-[343px] mx-auto clipped scale-x-[-1] rounded-[5px] bg-prpl font-secondary font-semibold text-[15px] py-[12px] text-center uppercase text-white mt-10"
+              onClick={login}
+            >
               <h4 className="scale-x-[-1]">Login</h4>
             </button>
             <h4 className="text-[18px] text-white font-primary text-center">
