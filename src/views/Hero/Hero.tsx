@@ -1,7 +1,7 @@
 // import { BsDiscord } from 'react-icons/bs';
 // import { PiTelegramLogoBold } from 'react-icons/pi';
 // import { SiTwitter } from 'react-icons/si';
-import MainVideo from '../../../videos/home_app.mp4';
+import MainVideo from '../../../videos/home_overview.mp4';
 import ProductVideo from '../../../videos/hero.mp4';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -47,32 +47,7 @@ const data: IData = {
 };
 
 const Hero: React.FC<IHero> = ({ id }: IHero) => {
-  // const community = [
-  //   {
-  //     link: 'https://t.me/Lucidia_io',
-  //     icon: <PiTelegramLogoBold />,
-  //   },
-  //   {
-  //     link: 'https://discord.com/invite/lucidia',
-  //     icon: <BsDiscord />,
-  //   },
-  //   {
-  //     link: 'https://twitter.com/lucidia_io',
-  //     icon: <SiTwitter />,
-  //   },
-  // ];
   const item = data[id];
-  //   const audited = [
-  //     {
-  //       name: 'inter',
-  //       link: 'https://www.interfi.network/audits',
-  //     },
-  //     {
-  //       name: 'rev',
-  //       link: 'https://www.revoluzion.io/audit',
-  //     },
-  //   ];
-
   const [trueLoading, setTrueLoading] = useState(true);
 
   const handleTrue = () => {
@@ -95,7 +70,7 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
         autoPlay
         muted
         loop
-        src={id === 'hero' ? MainVideo : ProductVideo}
+        src={id === 'landing' ? MainVideo : ProductVideo}
         preload={'auto'}
         onLoadedData={handleTrue}
         playsInline

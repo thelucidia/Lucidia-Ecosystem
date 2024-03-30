@@ -17,7 +17,6 @@ const OurProduct: React.FC = () => {
       className="bg-bg overflow-hidden"
     >
       <Hero id={'our-products'} />
-      {/* <PartnersUpper /> */}
       <Tokens id={'our-products'} />
       <Stats />
       <Join />

@@ -130,8 +130,12 @@ const How: React.FC = () => {
             transition={{ type: 'spring', stiffness: 60 }}
             className="sm:w-[58.9%] flex flex-col gap-y-5 sm:mt-0 mt-[10rem] overflow-hidden"
           >
-            <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">
-              <div className="scale-x-[-1] text-white w-full h-full p-5 md:md:border-l-[0.5rem] border-[#70F] rounded-md">
+            {/* <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">
+
+            </div> */}
+
+            <div className="w-full h-auto clipped2 bg-gry relative scale-x-[-1] md:md:border-r-[0.5rem] border-[#70F] rounded-md">
+              <div className="scale-x-[-1] text-white w-full h-full p-5 ">
                 <h1 className="font-secondary font-bold text-[#70F] text-lg">STEP #01</h1>
 
                 <h2 className="text-cyan font-primary font-medium text-lg w-fit mt-3">
@@ -177,10 +181,7 @@ const How: React.FC = () => {
                   Click the "<span className="text-grn">Log in</span>" button.
                 </h3>
               </div>
-            </div>
-
-            <div className="w-full h-auto clipped2 bg-gry relative flex items-center justify-center scale-x-[-1] rounded-md">
-              <div className="scale-x-[-1] text-white w-full h-full p-5 pb-6 md:border-l-[0.5rem] border-[#70F] rounded-md">
+              <div className="scale-x-[-1] text-white w-full h-full p-5 pb-6">
                 <h1 className="font-secondary font-bold text-[#70F] text-lg">STEP #02</h1>
 
                 <div className="flex flex-col gap-y-6">
@@ -203,26 +204,6 @@ const How: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="w-full h-auto clipped2 bg-gry relative flex items-center justify-center scale-x-[-1] rounded-md">
-              <div className="scale-x-[-1] text-white w-full h-full p-5 pb-6 md:border-l-[0.5rem] border-prpl rounded-md font-primary font-medium">
-                <h1 className="font-secondary font-bold text-prpl text-lg">STEP #03</h1>
-
-                <p className="flex items-start gap-x-2">
-                  <span className="">•</span>
-                  <span className="">
-                    Enter your Telegram username to receive an additional{' '}
-                    <span className="underline text-prpl underline-offset-4">5% bonus</span> for each user you refer. A
-                    referral link will be generated after this step.
-                  </span>
-                </p>
-
-                <p className="flex items-start gap-x-2">
-                  <span className="">•</span>
-                  Copy your referral link from the bottom of the page, and you're all set!
-                </p>
-              </div>
-            </div> */}
           </motion.div>
         </div>
       </div>
