@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const PartnersLower: React.FC = () => {
-  const partners = ['skale', 'ZAWYA', '5J', 'BGA', 'EOR', 'Hatha', 'MenaFN'];
+  const partners = ['ZAWYA', '5J', 'EOR', 'Hatha', 'MenaFN'];
 
   const [hasAnimated, setHasAnimated] = useState(false);
   const { ref, inView } = useInView({ triggerOnce: true });
