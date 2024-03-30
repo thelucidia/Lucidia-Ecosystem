@@ -5,50 +5,50 @@ import React from 'react';
 import Overview from '../../../videos/home_overview.mp4';
 
 const How: React.FC = () => {
-  const data = [
-    {
-      title: 'Option 1: Acquire Crypto via Card',
-      value: [
-        <p>
-          Go to&nbsp;&nbsp;{' '}
-          <a href="https://moonpay.com/buy" target="-blank" rel="noopener noreferrer" className="text-prpl">
-            https://moonpay.com/buy
-          </a>{' '}
-        </p>,
-        <p>
-          Visit https://moonpay.com/buy and acquire cryptocurrency &#40;such as tokens&#41; using your card. The
-          purchased crypto will be transfered to your wallet. It's advisable to procure a minimum of 20$ worth of tokens
-          to accommodate the minimum purchase requirement.
-        </p>,
-        <p>Enter the amount you wish to invest</p>,
-        <p>Choose your bonus option - it will be available one month after TGE</p>,
-      ],
-    },
-    {
-      title: 'Option 2: Purchase Tokens with Crypto',
-      value: [
-        <p>
-          Ensure you have enough ETH or BNB in your wallet &#40;if not, refer to option 1&#41;. Enter the amount of
-          $LUCID you want to purchase &#40;minimum $15&#41; and click Buy with ETH or Buy with BNB. Confirm the
-          transaction in your wallet and review the gas cost
-        </p>,
-        <p>Enter the amount you wish to invest</p>,
-        <p>Choose your bonus option - it will be available one month after TGE</p>,
-      ],
-    },
-    {
-      title: 'Option 3: Buy Tokens with USDT',
-      value: [
-        <p>Make sure you have at least $20 worth of USDT in your wallet.</p>,
-        <p>Enter the amount you wish to invest</p>,
-        <p>Choose your bonus option - it will be available one month after TGE</p>,
-        <p>
-          You will need to approve the purchase twice. The first approval is for the USDT contract, and the second is
-          for the transaction amount. Complete both approval steps to finalize the transaction.
-        </p>,
-      ],
-    },
-  ];
+  // const data = [
+  //   {
+  //     title: 'Option 1: Acquire Crypto via Card',
+  //     value: [
+  //       <p>
+  //         Go to&nbsp;&nbsp;{' '}
+  //         <a href="https://moonpay.com/buy" target="-blank" rel="noopener noreferrer" className="text-prpl">
+  //           https://moonpay.com/buy
+  //         </a>{' '}
+  //       </p>,
+  //       <p>
+  //         Visit https://moonpay.com/buy and acquire cryptocurrency &#40;such as tokens&#41; using your card. The
+  //         purchased crypto will be transfered to your wallet. It's advisable to procure a minimum of 20$ worth of tokens
+  //         to accommodate the minimum purchase requirement.
+  //       </p>,
+  //       <p>Enter the amount you wish to invest</p>,
+  //       <p>Choose your bonus option - it will be available one month after TGE</p>,
+  //     ],
+  //   },
+  //   {
+  //     title: 'Option 2: Purchase Tokens with Crypto',
+  //     value: [
+  //       <p>
+  //         Ensure you have enough ETH or BNB in your wallet &#40;if not, refer to option 1&#41;. Enter the amount of
+  //         $LUCID you want to purchase &#40;minimum $15&#41; and click Buy with ETH or Buy with BNB. Confirm the
+  //         transaction in your wallet and review the gas cost
+  //       </p>,
+  //       <p>Enter the amount you wish to invest</p>,
+  //       <p>Choose your bonus option - it will be available one month after TGE</p>,
+  //     ],
+  //   },
+  //   {
+  //     title: 'Option 3: Buy Tokens with USDT',
+  //     value: [
+  //       <p>Make sure you have at least $20 worth of USDT in your wallet.</p>,
+  //       <p>Enter the amount you wish to invest</p>,
+  //       <p>Choose your bonus option - it will be available one month after TGE</p>,
+  //       <p>
+  //         You will need to approve the purchase twice. The first approval is for the USDT contract, and the second is
+  //         for the transaction amount. Complete both approval steps to finalize the transaction.
+  //       </p>,
+  //     ],
+  //   },
+  // ];
 
   return (
     <section className="w-full min-h-screen relative py-10 sm:pt-28 pt-16">
