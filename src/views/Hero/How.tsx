@@ -2,6 +2,7 @@ import { MdOutlineOpenInNew } from 'react-icons/md';
 import { IoMdInformationCircleOutline } from 'react-icons/io';
 import { motion } from 'framer-motion';
 import React from 'react';
+import Overview from '../../../videos/home_overview.mp4';
 
 const How: React.FC = () => {
   const data = [
@@ -51,9 +52,17 @@ const How: React.FC = () => {
 
   return (
     <section className="w-full min-h-screen relative py-10 sm:pt-28 pt-16">
-      <img src="/tokentr.webp" alt="Coin" className="w-[5rem] absolute -top-7 right-0 sm:hidden block" />
-
-      <div className="w-full h-full overflow-hidden px-5">
+      {/* <img src="/tokentr.webp" alt="Coin" className="w-[5rem] absolute -top-7 right-0 sm:hidden block" /> */}
+      <video
+        autoPlay
+        muted
+        loop
+        src={Overview}
+        preload={'auto'}
+        playsInline
+        className="w-full h-screen object-cover absolute top-0 left-0"
+      />
+      {/* <div className="w-full h-full overflow-hidden px-5">
         <div className="container w-full mx-auto flex lg:gap-x-32 justify-center lg:flex-row flex-col lg:items-start items-center">
           <div className="md:w-[60%]  text-white relative z-10 text-center lg:text-left overflow-hidden">
             <motion.div
@@ -76,45 +85,7 @@ const How: React.FC = () => {
               </div>
             </motion.div>
 
-            <div className=" flex flex-col gap-y-4 mt-14 sm:mt-20 ">
-              {/* <a
-                href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=""
-              >
-                <button className="w-full lg:w-[15rem] h-11 clipped2 bg-gradient-to-l from-white to-[#0ED4FF] relative group font-bold flex items-center justify-center scale-x-[-1]">
-                  <div className="absolute bg-black w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
-
-                  <div className="absolute bg-gradient-to-l from-white to-[#0ED4FF]  w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"></div>
-                  <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black transition-colors ease-in-out duration-300">
-                    TOKEN ALLOCATION
-                  </h1>
-                </button>
-              </a>
-
-              <a href="" target="_blank" rel="noopener noreferrer" className="">
-                <button className="w-full lg:w-[15rem] h-11 clipped2 bg-gradient-to-l from-white to-[#0ED4FF] relative group font-bold flex items-center justify-center scale-x-[-1]">
-                  <div className="absolute bg-black w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
-
-                  <div className="absolute bg-gradient-to-l from-white to-[#0ED4FF]  w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"></div>
-                  <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black transition-colors ease-in-out duration-300">
-                    VIDEO INSTRUCTIONS
-                  </h1>
-                </button>
-              </a>
-
-              <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
-                <button className="w-full lg:w-[15rem] h-11 clipped2 bg-gradient-to-l from-white to-[#0ED4FF] relative group font-bold flex items-center justify-center scale-x-[-1]">
-                  <div className="absolute bg-black w-[98%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
-
-                  <div className="absolute bg-gradient-to-l from-white to-[#0ED4FF]  w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300"></div>
-                  <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black transition-colors ease-in-out duration-300">
-                    BUY $LUCID
-                  </h1>
-                </button>
-              </a> */}
-            </div>
+            <div className=" flex flex-col gap-y-4 mt-14 sm:mt-20 "></div>
 
             <img src="/coins.webp" alt="Coins" className="mt-16 w-[40rem] sm:block hidden" />
             <img
@@ -130,10 +101,6 @@ const How: React.FC = () => {
             transition={{ type: 'spring', stiffness: 60 }}
             className="sm:w-[58.9%] flex flex-col gap-y-5 sm:mt-0 mt-[10rem] overflow-hidden"
           >
-            {/* <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">
-
-            </div> */}
-
             <div className="w-full h-auto clipped2 bg-gry relative scale-x-[-1] md:md:border-r-[0.5rem] border-[#70F] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full p-5 ">
                 <h1 className="font-secondary font-bold text-[#70F] text-lg">STEP #01</h1>
@@ -206,7 +173,7 @@ const How: React.FC = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
