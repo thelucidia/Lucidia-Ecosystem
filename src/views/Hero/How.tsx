@@ -1,6 +1,6 @@
-import { MdOutlineOpenInNew } from 'react-icons/md';
-import { IoMdInformationCircleOutline } from 'react-icons/io';
-import { motion } from 'framer-motion';
+// import { MdOutlineOpenInNew } from 'react-icons/md';
+// import { IoMdInformationCircleOutline } from 'react-icons/io';
+// import { motion } from 'framer-motion';
 import React from 'react';
 import Overview from '../../../videos/home_overview.mp4';
 
