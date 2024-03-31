@@ -98,12 +98,7 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
                     </h1>
                   </button>
                 </a>
-                <a
-                  href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=""
-                >
+                <a href="https://t.me/Lucidia_io" target="_blank" rel="noopener noreferrer" className="">
                   <button className=" w-full md:w-[13rem] h-14 clipped2 bg-white relative  font-bold flex items-center justify-center scale-x-[-1] group">
                     <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300">
                       <img
