@@ -1,9 +1,7 @@
-// import { BsDiscord } from 'react-icons/bs';
-// import { PiTelegramLogoBold } from 'react-icons/pi';
-// import { SiTwitter } from 'react-icons/si';
 import MainVideo from '../../../videos/home_app.mp4';
 import ProductVideo from '../../../videos/hero.mp4';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import clsx from 'clsx';
 
 interface IHero {
@@ -89,6 +87,39 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
             {item.title}
           </h1>
           {item.desc}
+          {item.buttons && (
+            <>
+              <div className="flex gap-x-3 mt-[80px] md:flex-row flex-col gap-y-10">
+                <a href="https://discord.gg/lucidia" target="_blank" rel="noopener noreferrer" className="">
+                  <button className=" w-full md:w-[9rem] h-14 clipped2  relative font-bold flex items-center justify-center scale-x-[-1] group">
+                    <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-colors ease-in-out duration-300"></div>
+                    <h1 className="font-secondary relative z-10 text-black font-[700] text-[12px] scale-x-[-1] ">
+                      Join Discord
+                    </h1>
+                  </button>
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <button className=" w-full md:w-[13rem] h-14 clipped2 bg-white relative  font-bold flex items-center justify-center scale-x-[-1] group">
+                    <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300">
+                      <img
+                        src="/hero/trans.webp"
+                        alt="Herobg"
+                        className="w-full h-full object-cover absolute top-0 left-0 group-hover:opacity-0 transition-opacity ease-in-out duration-300"
+                      />
+                    </div>
+                    <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300">
+                      Join Telegram
+                    </h1>
+                  </button>
+                </a>
+              </div>
+            </>
+          )}
         </div>
 
         <div className="w-full relative flex">
