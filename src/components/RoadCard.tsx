@@ -6,7 +6,7 @@ const RoadCard: React.FC = () => {
   return (
     <section>
       <div className="mt-[331px] flex items-center justify-end xs:justify-center mb-[287px] mr-[20px]">
-        <h1 className="text-blue-400 font-semibold font-['Bai Jamjuree'] text-[45px] md:text-[72px] uppercase relative font-secondary z-10">
+        <h1 className="text-blue-400 font-semibold font-secondary text-[45px] md:text-[72px] uppercase relative font-secondary z-10">
           RoadMap
         </h1>
       </div>
