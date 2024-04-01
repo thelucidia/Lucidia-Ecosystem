@@ -28,7 +28,7 @@ const Worlds: React.FC<IWorld> = ({ id }: IWorld) => {
               </h1>
             )}
 
-            <div className="flex flex-wrap gap-3 mt-12 items-center justify-between w-fit overflow-hidden">
+            <div className="flex flex-wrap gap-x-4 gap-y-5 mt-12 items-center justify-center w-fit overflow-hidden">
               {worldList.map((items, i) => {
                 return (
                   // <motion.div
