@@ -54,12 +54,12 @@ const App: React.FC = () => {
         <Route path="/apps/tournaments" element={<Tournaments />} />
         <Route path="/apps" element={<AppHome />} />
         {/* </Route> */}
-        <Route path="game">
+        <Route path="games">
           <Route index element={<GamePlay />} />
-          <Route path="/game/cryptocraft" element={<Cryptocraft />} />
-          <Route path="/game/sandstorm" element={<Sandstorm />} />
-          <Route path="/game/curse-of-the" element={<Curse />} />
-          <Route path="/game/desert" element={<DesertWarrior />} />
+          <Route path="/games/cryptocraft" element={<Cryptocraft />} />
+          <Route path="/games/sandstorm" element={<Sandstorm />} />
+          <Route path="/games/curse-of-the" element={<Curse />} />
+          <Route path="/games/desert" element={<DesertWarrior />} />
         </Route>
       </Routes>
       {!pathname.includes('apps') && <Footer />}
