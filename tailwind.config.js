@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         primary: ['Clash'],
         secondary: ['Bai Jamjuree'],
+        thrid: ['Ghost Clan Italic'],
+        forth: ['Call of Ops Duty II'],
       },
       colors: {
         bl: '#0ED4FF',

@@ -75,13 +75,13 @@ const Post: React.FC = ({ initialSlide }: { initialSlide?: number }) => {
             ></div>
 
             <div className="w-full h-full bg-black/[97%] absolute top-0 left-0s"></div>
-            <div className="absolute left-[40px] top-[50px] max-w-[300px] text-left max-w-[200px]">
+            <div className="absolute left-[40px] top-[50px] max-w-[200px] text-left">
               <span className="text-[32px] font-[400] uppercase italic text-third text-[#f0f0f0]">
                 Sandstorm Racers
               </span>
               <br />
               <br />
-              <span className="text-[10px] font-[400] text-third text-[#AAA]">
+              <span className="text-[10px] font-[400] font-third text-[#AAA]">
                 Pick your car and heat up the engine! Race through the canyons
               </span>
             </div>
@@ -97,7 +97,7 @@ const Post: React.FC = ({ initialSlide }: { initialSlide?: number }) => {
             ></div>
             <div className="w-full h-[350px] bg-black/95 absolute top-0 left-0"></div>
             <div className="absolute left-[40px] top-[50px] max-w-[300px] text-left">
-              <span className="text-[36px] font-[400] uppercase text-forth text-[#f0f0f0]">Curse of the pharaoh</span>
+              <span className="text-[36px] font-[400] uppercase font-forth text-[#f0f0f0]">Curse of the pharaoh</span>
               <br />
               <br />
               <span className="text-[10px] font-[400] text-third text-[#AAA]">
@@ -149,12 +149,12 @@ const Post: React.FC = ({ initialSlide }: { initialSlide?: number }) => {
 
                   <div className="w-full h-full bg-black/[97%] absolute top-0 left-0"></div>
                   <div className="absolute left-[40px] top-[50px] max-w-[300px] text-left ">
-                    <span className="text-[32px] font-[400] uppercase italic text-third text-[#f0f0f0]">
+                    <span className="text-[32px] font-[400] uppercase italic font-third text-[#f0f0f0]">
                       {items.title}
                     </span>
                     <br />
                     <div className="max-w-[150px]">
-                      <span className="text-[10px] font-[400] text-third text-[#AAA]">{items.desc}</span>
+                      <span className="text-[10px] font-[400] font-third text-[#AAA]">{items.desc}</span>
                     </div>
                   </div>
                   <div className="absolute bottom-0 right-0">
