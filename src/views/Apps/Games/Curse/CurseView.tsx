@@ -8,8 +8,7 @@ const data = [
     desc: [
       "<span class='text-[#70F]'>Title: </span>  Curse Of The Pharaoh",
       "<span class='text-[#70F]'>Genre: </span>  Hybrid FPS with Co-op, PvP, and PvE Elements",
-      "<span class='text-[#70F]'>Setting: </span>  A post-apocalyptic Dubai, where ancient Middle Eastern myth shave taken root in the modern world.",
-      'Embark on a quest through a cityscape that marries the iconic skyline ofDubai with the haunting beauty of mythological chaos, where every corner turned is a step deeper into a narrative that spans ages.',
+      "<span class='text-[#70F]'>Setting: </span>  A post-apocalyptic Dubai, where ancient Middle Eastern myth shave taken root in the modern world. Embark on a quest through a cityscape that marries the iconic skyline ofDubai with the haunting beauty of mythological chaos, where every corner turned is a step deeper into a narrative that spans ages.",
       "<p class='text-white pt-[12px] pb-[12px] uppercase font-[700]'>Unique Selling Points</p>",
       "<span class='text-[#A5FF16]'>•  Dubai Reimagined:  </span> Traverse the sands of time in a Dubai overtaken by mythological forces, where every landmark tells a story of ancient power and modern resilience.",
       "<span class='text-[#A5FF16]'>•  Mythological Warfare: </span>  Engage in combat against legendary beasts and deities from Middle Eastern lore, utilising a mix of futuristic firepower and ancient magic.",

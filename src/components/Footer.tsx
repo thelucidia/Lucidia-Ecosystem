@@ -20,22 +20,22 @@ const Footer: React.FC = () => {
       link: 'https://twitter.com/lucidia_io',
       icon: <TfiTwitter />,
     },
-    {
-      link: 'https://youtube.com/@lucidia_official',
-      icon: <AiOutlineYoutube />,
-    },
-    {
-      link: 'https://www.reddit.com/r/LucidiaMetaverse/',
-      icon: <FaRedditAlien />,
-    },
+    // {
+    //   link: 'https://lucidia.io',
+    //   icon: <AiOutlineYoutube />,
+    // },
+    // {
+    //   link: 'https://www.reddit.com/r/LucidiaMetaverse/',
+    //   icon: <FaRedditAlien />,
+    // },
     {
       link: 'https://instagram.com/lucidia_official',
       icon: <FaInstagram />,
     },
-    {
-      link: 'https://www.tiktok.com/@lucidia.io',
-      icon: <RiTiktokLine />,
-    },
+    // {
+    //   link: 'https://www.tiktok.com/@lucidia.io',
+    //   icon: <RiTiktokLine />,
+    // },
   ];
 
   const general = [
@@ -153,8 +153,10 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col gap-y-5 max-w-[540px] font-primary sm:pt-0 pt-20">
-          <h3 className="uppercase text-[22px] font-semibold pb-5">join the community</h3>
+        <div className="flex flex-col gap-y-3 max-w-[540px] font-primary sm:pt-0 pt-20">
+          <h3 className="text-[22px] font-semibold pb-5">
+            Register to get the opportunity to win an interesting reward in the community!
+          </h3>
           <div className="w-full h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] to-[#FFFFFF] relative flex items-center scale-x-[-1]">
             <div className="absolute bg-black w-[99%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
             <input
@@ -177,6 +179,14 @@ const Footer: React.FC = () => {
               type="text"
               className="px-10 font-primary w-full relative z-10 text-[14px] scale-x-[-1] bg-transparent outline-none"
               placeholder="Discord"
+            />
+          </div>
+          <div className="w-full h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] to-[#FFFFFF] relative flex items-center scale-x-[-1]">
+            <div className="absolute bg-black w-[99%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
+            <input
+              type="text"
+              className="px-10 font-primary w-full relative z-10 text-[14px] scale-x-[-1] bg-transparent outline-none"
+              placeholder="Telegram"
             />
           </div>
           <button className="w-full clipped scale-x-[-1] rounded-[5px] bg-cyan hover:bg-white font-secondary font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black">

@@ -41,9 +41,9 @@ const App: React.FC = () => {
 
         {/* <Route path="/apps"> */}
         <Route path="/apps/cryptocraft" element={<CryptoCraft />} />
-        <Route path="/apps/desert" element={<Desertwarrior />} />
-        <Route path="/apps/sandstorm" element={<SandStorm />} />
-        <Route path="/apps/curse-of-the" element={<CurseofThePharaoh />} />
+        <Route path="/apps/desert-warriors" element={<Desertwarrior />} />
+        <Route path="/apps/sandstorm-racers" element={<SandStorm />} />
+        <Route path="/apps/curse-of-the-pharaoh" element={<CurseofThePharaoh />} />
         <Route path="/apps/game" element={<Game />} />
         <Route path="/apps/login" element={<Login />} />
         <Route path="/apps/signup" element={<Signup />} />
@@ -57,9 +57,9 @@ const App: React.FC = () => {
         <Route path="games">
           <Route index element={<GamePlay />} />
           <Route path="/games/cryptocraft" element={<Cryptocraft />} />
-          <Route path="/games/sandstorm" element={<Sandstorm />} />
-          <Route path="/games/curse-of-the" element={<Curse />} />
-          <Route path="/games/desert" element={<DesertWarrior />} />
+          <Route path="/games/sandstorm-racers" element={<Sandstorm />} />
+          <Route path="/games/curse-of-the-pharaoh" element={<Curse />} />
+          <Route path="/games/desert-warriors" element={<DesertWarrior />} />
         </Route>
       </Routes>
       {!pathname.includes('apps') && <Footer />}

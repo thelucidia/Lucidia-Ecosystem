@@ -1,17 +1,18 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Journey: React.FC = () => {
   const data = [
     {
       title: 'Community Manager',
       position: 'Open Position: 1',
-      desc: 'The Community Manager at Lucidia will engage and nurture the community on platforms like Discord and Telegram, developing strategies to foster a supportive and active user base. They will be responsible for content creation, maintaining positive interactions, and…',
+      desc: 'The Community Manager at Lucidia will engage and nurture the community on platforms like Discord and Telegram, developing strategies to foster a supportive and active user base.',
     },
     {
       title: 'Blockchain Developer',
       position: 'Open Position: 1',
-      desc: "Lucidia is in search of a Blockchain Developer with expertise in smart contracts and distributed ledger technology to fortify and advance the company's blockchain initiatives.  The role is central to maintaining the integrity and efficiency of Lucidia's blockchain…",
+      desc: "Lucidia is in search of a Blockchain Developer with expertise in smart contracts and distributed ledger technology to fortify and advance the company's blockchain initiatives.",
     },
     {
       title: 'UI/UX Developer',
@@ -21,12 +22,12 @@ const Journey: React.FC = () => {
     {
       title: 'Game Developer',
       position: 'Open Position: 1',
-      desc: "Lucidia's Game Developer will utilize their deep knowledge of game design and programming to create captivating gaming experiences within Lucidia’s innovative ecosystem. Collaboration with various teams is essential to align game content with the…",
+      desc: "Lucidia's Game Developer will utilize their deep knowledge of game design and programming to create captivating gaming experiences within Lucidia’s innovative ecosystem.",
     },
     {
       title: 'Marketing Manager',
       position: 'Open Position: 1',
-      desc: "The Marketing Manager at Lucidia will spearhead the development and execution of marketing campaigns to broaden the brand's reach and attract a diverse audience. This role requires a savvy blend of creativity and analysis to manage campaigns, conduct…",
+      desc: "The Marketing Manager at Lucidia will spearhead the development and execution of marketing campaigns to broaden the brand's reach and attract a diverse audience.",
     },
   ];
 
@@ -56,9 +57,11 @@ const Journey: React.FC = () => {
               {data.map((item, i) => {
                 return (
                   <li key={`item-${i}`} className="text-white">
-                    <h4 className="text-[30px] font-primary font-bold leading-[30px] text-transparent bg-clip-text bg-gradient-to-r from-white to-prpl max-w-[350px] pb-6">
-                      {item.title}
-                    </h4>
+                    <Link to="/team">
+                      <h4 className="text-[30px] font-primary font-bold leading-[30px] text-transparent bg-clip-text bg-gradient-to-r from-white to-prpl max-w-[350px] pb-6">
+                        {item.title}
+                      </h4>
+                    </Link>
                     <h5 className="text-[20px] font-primary font-[600] leading-[20px] tracking-[1px]">
                       {item.position}
                     </h5>

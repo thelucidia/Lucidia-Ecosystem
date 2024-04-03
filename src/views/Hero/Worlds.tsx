@@ -19,7 +19,7 @@ const Worlds: React.FC<IWorld> = ({ id }: IWorld) => {
           <div className="w-fit container mx-auto">
             {flag && (
               <h1 className="font-medium text-transparent text-2xl sm:text-3xl md:text-4xl font-primary bg-clip-text bg-gradient-to-r from-[#e4d3fe] via-white to-lavender w-fit 2xl:text-left text-center mx-0 sm:mx-auto 2xl:mx-0">
-                Free2Play Open Worlds
+                Available Games
               </h1>
             )}
             {!flag && (

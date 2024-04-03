@@ -22,7 +22,7 @@ const Banner: React.FC = () => {
       icon: <BsTwitterX />,
     },
     {
-      link: 'https://youtube.com/@lucidia_official',
+      link: 'https://lucidia.io',
       icon: <TfiWorld />,
     },
   ];
@@ -82,7 +82,7 @@ const Banner: React.FC = () => {
             biomes.
           </h3>
         </div>
-        <a
+        {/* <a
           href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
           target="_blank"
           rel="noopener noreferrer"
@@ -94,7 +94,7 @@ const Banner: React.FC = () => {
             </div>
             <img src="/assets/images/game_button.png" className="w-[12.4vw]" alt="see_details" />
           </div>
-        </a>
+        </a> */}
       </div>
     </section>
   );

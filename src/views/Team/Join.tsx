@@ -17,8 +17,8 @@ const Join: React.FC = () => {
                 <img src={`/token.webp`} alt="Token" className="mb-5 w-14 md:block hidden" />
                 <h1 className="font-primary font-[700] uppercase text-[2.2rem]">Join us today!</h1>
                 <p className="text-[#B4B6BF] font-[500] font-primary leading-[145%] md:text-[20px]">
-                  Be the first to experience the future of the internet.Meet our crypto experts to start your Lucidia
-                  adventure now!
+                  Be part of our community as soon as possible and meet our web3 experts to start your Lucidia adventure
+                  now!
                 </p>
               </div>
 

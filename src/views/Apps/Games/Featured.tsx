@@ -69,7 +69,7 @@ const Featured: React.FC<IOtherGames> = ({ id, color }: IOtherGames, { initialSl
       title: 'curse of the pharaoh',
       desc: 'Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.',
       image: 'zombie',
-      path: '/apps/curse-of-the',
+      path: '/apps/curse-of-the-pharaoh',
       // color: '#70F',
     },
     {

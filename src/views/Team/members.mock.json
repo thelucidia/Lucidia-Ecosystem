@@ -97,17 +97,6 @@
       ]
     },
     {
-      "name": "Sara Gómez",
-      "position": "Lead UI/UX Designer",
-      "link": "https://www.linkedin.com/in/sara-g-44a723b6/",
-      "desc": [
-        "UI/UX Designer (5 years)",
-        "UX Research (3 years)",
-        "Marketing and Design (2 years)",
-        "Motion Graphics Designer (2 years)"
-      ]
-    },
-    {
       "name": "Aryan Ratu Langie",
       "position": "Community Manager",
       "link": "https://www.linkedin.com/in/aryanratulangie/",
@@ -123,12 +112,6 @@
       "position": "UI/UX Designer",
       "link": "https://www.linkedin.com/in/ell-ardyan-7a1b7a192",
       "desc": ["UI/UX Designer (2 years)", "Teacher (1+ years)"]
-    },
-    {
-      "name": "Sania Aliya",
-      "position": "UI/UX Designer",
-      "link": "https://www.linkedin.com/in/chacaliyaa/",
-      "desc": ["Content Writer & Producer (2.5 years)", "UI/UX Designer (2 years)"]
     },
     {
       "name": "Miroslav Pesic",
@@ -149,7 +132,7 @@
       "desc": ["Business Development Manager (3 Years)", "Administrator and Educator (8 Years)"]
     },
     {
-      "name": "Prime aka Wisdom",
+      "name": "Wisdom David",
       "position": "Business Development Executive",
       "link": "https://www.linkedin.com/in/wisdom-david-8a447a184",
       "desc": ["Business Development Manager (1 Year)", "Community Moderator (2 Years)", "Graphic Designers (1 Year)"]
@@ -159,12 +142,6 @@
       "position": "General Manager",
       "link": "https://www.linkedin.com/in/tareq-shehadeh-245442a/",
       "desc": ["Sales & Relationship Manager (20+ Years)", "Hardware Sales (3 Years)", "Managing Partner (7 Years)"]
-    },
-    {
-      "name": "Refat Sherfedinov",
-      "position": "Full Stack Developer",
-      "link": "https://www.linkedin.com/in/refat-sherfedinov/",
-      "desc": ["Frontend Development 5+ years", "Backend Development 5+ years"]
     },
     {
       "name": "Denis Smolonski",
@@ -177,6 +154,12 @@
       "position": "Business Development Executive",
       "link": "https://www.linkedin.com/in/nkereuwem-ukpong/",
       "desc": ["Business Development Manager (3 Years)", "Partnership Manager (3 Years)", "Content Writer (3 Years)"]
+    },
+    {
+      "name": "Leonard",
+      "position": "Community Manager",
+      "link": "/",
+      "desc": [""]
     }
   ]
 }

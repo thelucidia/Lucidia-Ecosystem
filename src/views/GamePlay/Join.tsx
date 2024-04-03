@@ -3,9 +3,17 @@ import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import { OrbitControls } from '@react-three/drei';
+import { Link } from 'react-router-dom';
 const LazyModel = React.lazy(() => import('./Model'));
 
 const Join: React.FC = () => {
+  const navScroll = () => {
+    window.scrollTo({
+      top: 2500,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <section className="container mx-auto bg-bg-w-full h-auto py-10 sm:px-5 relative mt-10">
       <div className="w-full h-auto mx-auto relative">
@@ -26,11 +34,13 @@ const Join: React.FC = () => {
             <div className="flex flex-wrap sm:gap-x-[8rem] gap-x-16 gap-y-[2.5rem] items-center justify-end px-5 py-9">
               <h2 className="relative text-primary sm:max-w-[430px] sm:text-[46px] text-[26px] sm:text-left max-w-[260px] font-[700] text-[#000000] ">
                 Join community of <span className="text-[#fff]">40k+</span> Lucidians
-                <img
-                  src="/assets/images/join_icon.png"
-                  alt="join"
-                  className="absolute sm:bottom-[15px] sm:right-[30px] bottom-[7px] right-[30px]  sm:w-[36px] sm:y-[47px] w-[20px] y-[27px]"
-                />
+                <Link to="" onClick={navScroll}>
+                  <img
+                    src="/assets/images/join_icon.png"
+                    alt="join"
+                    className="absolute sm:bottom-[15px] sm:right-[30px] bottom-[7px] right-[30px]  sm:w-[36px] sm:y-[47px] w-[20px] y-[27px]"
+                  />
+                </Link>
               </h2>
             </div>
           </div>

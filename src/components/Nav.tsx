@@ -26,7 +26,13 @@ const Nav: React.FC = () => {
     {
       name: 'games',
       slug: '/games',
-      paths: ['/games', '/games/sandstorm', '/games/curse-of-the', '/games/cryptocraft', '/games/desert'],
+      paths: [
+        '/games',
+        '/games/sandstorm-racers',
+        '/games/curse-of-the-pharaoh',
+        '/games/cryptocraft',
+        '/games/desert-warriors',
+      ],
       type: 'internal',
     },
     {
@@ -66,10 +72,10 @@ const Nav: React.FC = () => {
       slug: '/apps/game',
       paths: [
         '/apps/game',
-        '/apps/game/sandstorm',
-        '/apps/game/curse-of-the',
+        '/apps/game/sandstorm-racers',
+        '/apps/game/curse-of-the-pharaoh',
         '/apps/game/cryptocraft',
-        '/apps/game/desert',
+        '/apps/game/desert-warriors',
       ],
       type: 'internal',
     },
@@ -111,10 +117,10 @@ const Nav: React.FC = () => {
       slug: '/apps/game',
       paths: [
         '/apps/game',
-        '/apps/game/sandstorm',
-        '/apps/game/curse-of-the',
+        '/apps/game/sandstorm-racers',
+        '/apps/game/curse-of-the-pharaoh',
         '/apps/game/cryptocraft',
-        '/apps/game/desert',
+        '/apps/game/desert-warriors',
       ],
       type: 'internal',
     },

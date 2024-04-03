@@ -31,7 +31,7 @@ interface IData {
 const data: IData = {
   landing: {
     image: '/hero/hero.svg',
-    title: 'Elevating gaming through web3 solutions',
+    title: 'Pioneering Web3 Gaming in the Middle East',
     desc: 'Introducing the first comprehensive web3 gaming ecosystem in the Middle East',
     buttons: true,
   },
