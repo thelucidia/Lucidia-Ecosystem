@@ -24,7 +24,7 @@ const Members: React.FC = () => {
 
       <img src="/hero/navline.webp" alt="NavLine" className="w-full relative z-10 mt-16 opacity-50 md:block hidden" />
 
-      <div className="container w-full mx-auto h-auto relative z-10 flex flex-wrap gap-3 px-6 mt-24 items-center">
+      <div className="container w-full mx-auto h-auto relative z-10 flex flex-wrap gap-3 px-6 mt-24 justify-center items-center">
         <img src="/token.webp" alt="token" className="absolute -top-6 -right-4 z-10 w-16 md:hidden block" />
 
         {members.map((items, i) => {
