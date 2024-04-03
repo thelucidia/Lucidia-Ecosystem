@@ -16,7 +16,7 @@ const data = [
       'Realistic physics engine for authentic vehicle handling',
       'Dynamic weather effects, including signature sandstorms',
       'Competitive races and challenges',
-      "Blockchain Integration: Compete in races, earn unique <span class='text-prpl'>NFT</span> rewards, and customize your vehicles with tradable assets that showcase your achievements.Feel the thrill of Sandstorm Racer, where high-octane racing meets the challenge of navigating through treacherous sandstorms. Drawing inspiration from titles like Forza Horizon, this game offers a perfect blend of realistic racing dynamics and accessible, fun gameplay.",
+      "Blockchain Integration: Compete in races, earn unique <span class='text-prpl'>NFT</span> rewards, and customize your vehicles with tradable assets that showcase your achievements. Feel the thrill of Sandstorm Racer, where high-octane racing meets the challenge of navigating through treacherous sandstorms. Drawing inspiration from titles like Forza Horizon, this game offers a perfect blend of realistic racing dynamics and accessible, fun gameplay.",
     ],
     image: '/assets/images/games/sandstorm/feature.jpg',
   },

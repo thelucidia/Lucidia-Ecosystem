@@ -26,9 +26,9 @@ const FPS: React.FC = () => {
               <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-[#0ED4FF] rounded-md">
                 <p className="py-16 pl-7 pr-1 text-[18px] font-primary leading-[28px]">
                   Welcome to "Desert Warriors," where the thrill of first-person shooters meets the groundbreaking
-                  possibilities of Web3 and NFTs. Set against thebackdrop of vast and diverse desert landscapes, this
-                  game invites you into aworld of strategic combat, team-based challenges, and a vibrant player-driven
-                  economy. Here, every decision, every battle, and every alliance holds the weight of your legacy.
+                  possibilities of Web3 and NFTs. Set against the backdrop of vast and diverse desert landscapes, this
+                  game invites you into a world strategic combat, team-based challenges, and a vibrant player-driven
+                  economy. Here, every decision, every battle, and every alliance hold the weight of your legacy.
                 </p>
               </div>
             </div>

@@ -6,9 +6,9 @@ const data = [
   {
     title: 'Game Overview',
     desc: [
-      "'Desert Warrios' is more than an FPS; it's a test of tactics andteamwork. Navigate through challenging terrains, leverage cover, andsynchronize with your squad to dominate the battlefield.",
+      "'Desert Warrios' is more than an FPS; it's a test of tactics and teamwork. Navigate through challenging terrains, leverage cover, and synchronize with your squad to dominate the battlefield.",
       "<span class='text-[#70F] mt-[24px]'>Core Mechanics: </span> Immerse yourself in a variety of actions including sprinting for cover, precision aiming, and deploying strategic equipment, all designed to encourage thoughtful, tactical gameplay.",
-      "<span class='text-[#70F]'>Game Modes:</span>  Whether you prefer theintensity of 1v1 duels, the strategic depth of 2v2 skirmishes, or the classicteamwork of 5v5 battles, 'Desert Warriors' has a mode for every warrior.",
+      "<span class='text-[#70F]'>Game Modes:</span>  Whether you prefer the intensity of 1v1 duels, the strategic depth of 2v2 skirmishes, or the classic teamwork of 5v5 battles, 'Desert Warriors' has a mode for every warrior.",
     ],
     image: '/assets/images/games/desert/feature.jpg',
   },

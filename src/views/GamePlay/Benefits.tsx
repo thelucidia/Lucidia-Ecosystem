@@ -8,13 +8,13 @@ const Benefits: React.FC = () => {
       desc: "Wider Audience Reach: Highlight how joining Lucidia provides games with instant exposure to over <span classname='text-[#0ED4FF]'>30,000</span> users. This helps tackle the common struggle faced by many Web3 games in attracting players. Lucidia's platform offers developers a supportive community right from the start, making it easier to engage players and get their games noticed by a wider audience.",
     },
     {
-      desc: "Enhanced Player Experience: Lucidia makes gaming simpler and more connected. With just one login for all games. you can easily explore different titles withoutjuggling multiple accounts. Plus. whether you're on your PC. console. or phone. the experience stays smooth and consistent. This means you can dive into new adventures wherever you are. feeling right at home in the <span classname='text-[#0ED4FF]'>Lucidia</span> community.",
+      desc: "Enhanced Player Experience: Lucidia makes gaming simpler and more connected. With just one login for all games. you can easily explore different titles without juggling multiple accounts. Plus. whether you're on your PC, console, or phone, the experience stays smooth and consistent. This means you can dive into new adventures wherever you are feeling right at home in the <span classname='text-[#0ED4FF]'>Lucidia</span> community.",
     },
     {
-      desc: "Community Engagement: At Lucidia. our community is alive and buzzing. growing by the day. it's notiust a place to play games: it's a tight-knit group where developers get. support. <span classname='text-[#0ED4FF]'>real-time feedback</span>, and engagement from passionate players like you.",
+      desc: "Community Engagement: At Lucidia. our community is alive and buzzing. growing by the day. it's not iust a place to play games: it's a tight-knit group where developers get, support, <span classname='text-[#0ED4FF]'>real-time feedback</span>, and engagement from passionate players like you.",
     },
     {
-      desc: "Innovative Features: At Lucidia. we offer developers more than just a gaming platform. With our , <span classname='text-[#0ED4FF]'>NFT Integration Toolkit,</span> marketplaces, and community-driven platforms. we provide the tools you need to take your games to the next level. These resources aren't just about business—they're about enriching the player experience and forging deeper connections with your audience.",
+      desc: "Innovative Features: At Lucidia, we offer developers more than just a gaming platform. With our <span classname='text-[#0ED4FF]'>NFT Integration Toolkit,</span> marketplaces, and community-driven platforms. we provide the tools you need to take your games to the next level. These resources aren't just about business—they're about enriching the player experience and forging deeper connections with your audience.",
     },
   ];
 
