@@ -51,7 +51,7 @@ const How: React.FC = () => {
   // ];
 
   return (
-    <section className="w-full min-h-screen relative py-10 sm:pt-28 pt-16">
+    <section className="container w-full mx-auto min-h-screen relative py-10 sm:pt-28 pt-16">
       {/* <img src="/tokentr.webp" alt="Coin" className="w-[5rem] absolute -top-7 right-0 sm:hidden block" /> */}
       <video
         autoPlay

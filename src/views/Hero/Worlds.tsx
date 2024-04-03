@@ -38,7 +38,7 @@ const Worlds: React.FC<IWorld> = ({ id }: IWorld) => {
                   //   transition={{ type: 'spring', stiffness: 70 }}
                   //   className=""
                   // >
-                  <Link to={items.path}>
+                  <Link to={items.path} key={i}>
                     <div
                       key={i}
                       className="w-[21rem] h-[26rem] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
