@@ -63,44 +63,44 @@ const Nav: React.FC = () => {
   const appNavList = [
     {
       name: 'home',
-      slug: '/',
-      paths: ['/'],
+      slug: '/apps',
+      paths: ['/apps'],
       type: 'internal',
     },
     {
       name: 'games',
-      slug: '/game',
+      slug: '/apps/game',
       paths: [
-        '/game',
-        '/game/sandstorm-racers',
-        '/game/curse-of-the-pharaoh',
-        '/game/cryptocraft',
-        '/game/desert-warriors',
+        '/apps/game',
+        '/apps/game/sandstorm-racers',
+        '/apps/game/curse-of-the-pharaoh',
+        '/apps/game/cryptocraft',
+        '/apps/game/desert-warriors',
       ],
       type: 'internal',
     },
     {
       name: 'tournaments',
-      slug: '/tournaments',
-      paths: ['/tournaments'],
+      slug: '/apps/tournaments',
+      paths: ['/apps/tournaments'],
       type: 'internal',
     },
     {
       name: 'marketplace',
-      slug: '/marketplace',
-      paths: ['/marketplace'],
+      slug: '/apps/marketplace',
+      paths: ['/apps/marketplace'],
       type: 'internal',
     },
     {
       name: 'dao',
-      slug: '/dao',
-      paths: ['/dao'],
+      slug: '/apps/dao',
+      paths: ['/apps/dao'],
       type: 'internal',
     },
     {
       name: 'support hub',
-      slug: '/support-hub',
-      paths: ['/support-hub'],
+      slug: '/apps/support-hub',
+      paths: ['/apps/support-hub'],
       type: 'internal',
     },
   ];
@@ -108,38 +108,38 @@ const Nav: React.FC = () => {
   const appNavMobile = [
     {
       name: 'home',
-      slug: '/',
-      paths: ['/'],
+      slug: '/apps',
+      paths: ['/apps'],
       type: 'internal',
     },
     {
       name: 'games',
-      slug: '/game',
+      slug: '/apps/game',
       paths: [
-        '/game',
-        '/game/sandstorm-racers',
-        '/game/curse-of-the-pharaoh',
-        '/game/cryptocraft',
-        '/game/desert-warriors',
+        '/apps/game',
+        '/apps/game/sandstorm-racers',
+        '/apps/game/curse-of-the-pharaoh',
+        '/apps/game/cryptocraft',
+        '/apps/game/desert-warriors',
       ],
       type: 'internal',
     },
     {
       name: 'tournaments',
-      slug: '/tournaments',
-      paths: ['/tournaments'],
+      slug: '/apps/tournaments',
+      paths: ['/apps/tournaments'],
       type: 'internal',
     },
     {
       name: 'marketplace',
-      slug: '/marketplace',
-      paths: ['/support-hub'],
+      slug: '/apps/marketplace',
+      paths: ['/apps/support hub'],
       type: 'internal',
     },
     {
       name: 'support hub',
-      slug: '/careers',
-      paths: ['/careers'],
+      slug: '/apps/careers',
+      paths: ['/apps/careers'],
       type: 'internal',
     },
   ];
@@ -278,7 +278,7 @@ const Nav: React.FC = () => {
       window.removeEventListener('resize', updateDimension);
     };
   }, [screenSize]);
-  const [subdomain] = window.location.hostname.split('.');
+
   return (
     <>
       <nav
@@ -291,7 +291,7 @@ const Nav: React.FC = () => {
 
         <div className="overflow-auto max-h-[90%] w-full pb-20 top-0 right-0">
           <ul className="text-white font-secondary font-semibold uppercase px-7 w-full py-12 text-sm">
-            {subdomain !== 'app'
+            {!pathname.includes('apps')
               ? navMobile.map((items, i) => {
                   return items.type === 'external' ? (
                     <a
@@ -449,7 +449,7 @@ const Nav: React.FC = () => {
           </Link>
 
           <ul className="font-secondary font-semibold text-sm uppercase items-center gap-x-12 text-white xl:flex hidden">
-            {subdomain !== 'app'
+            {!pathname.includes('apps')
               ? navList.map((items, i) => {
                   return items.type === 'external' ? (
                     <Link to={items.slug} target="_blank" rel="noopener noreferrer" className="" key={i}>
@@ -595,7 +595,7 @@ const Nav: React.FC = () => {
             >
               <div className="w-full lg:w-[15rem] relative lg:block hidden">
                 <div className="hover:text-white py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF] transition-colors ease-in-out duration-300">
-                  {`${subdomain !== 'app' ? 'Launch App' : 'Login'}`}
+                  {`${!pathname.includes('apps') ? 'Launch App' : 'Login'}`}
                 </div>
                 <img src="/assets/images/launch_app.svg" alt="LaunchApp" />
               </div>
