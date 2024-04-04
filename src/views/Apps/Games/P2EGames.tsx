@@ -9,28 +9,28 @@ const P2EGames: React.FC = () => {
       genre: 'FPS, CO-OP',
       desc: 'Fighting mummies in post-apocalyptic Dubai landscape by leveraging advanced mechanics and cooperative alliances.',
       image: 'zombie',
-      path: '/games/curse-of-the-pharaoh',
+      path: '/curse-of-the-pharaoh',
     },
     {
       title: 'CryptoCraft',
       genre: 'SandBox, Open World',
       desc: 'Experience an infinite world shaped by your creations. Earning rewards as you build',
       image: 'minecraft',
-      path: '/games/cryptocraft',
+      path: '/cryptocraft',
     },
     {
       title: 'Sandstorm Racers',
       genre: 'Racing, Multiplayer',
       desc: 'Navigate through unpredictable weather conditions, race through an environment that pays homage to Middle Eastern culture.',
       image: 'fps',
-      path: '/games/desert',
+      path: '/desert',
     },
     {
       title: 'Desert Warriors',
       genre: 'FPS, Royal Battle',
       desc: 'The game where the thrill of shooter games intertwines with the groundbreaking possibilities of Web3 and NFTs.',
       image: 'cyber',
-      path: '/games/sandstorm',
+      path: '/sandstorm',
     },
   ];
 
