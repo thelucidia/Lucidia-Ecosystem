@@ -135,7 +135,7 @@ const Login: React.FC = () => {
             </button>
             <h4 className="text-[18px] text-white font-primary text-center">
               Don't have an account yet?
-              <Link to="/signup" className="pl-1 text-cyan text-[18px] font-primary">
+              <Link to="/apps/signup" className="pl-1 text-cyan text-[18px] font-primary">
                 Sign Up
               </Link>
             </h4>
