@@ -10,7 +10,7 @@ const ComingSoon: React.FC = () => {
         <div className={`animate-pulse flex justify-center items-center flex-col`}>
           <img src="/loading.svg" alt="Logo" className="w-24" />
           <h1 className="font-primary font-semibold text-white text-2xl mt-10 tracking-widest">Coming Soon!</h1>
-          <Link to="/apps/game">
+          <Link to="http://app.localhost:3000/game">
             <h2 className="font-primary font-semibold text-3xl mt-10 text-prpl tracking-widest">Go To Game Page</h2>
           </Link>
         </div>

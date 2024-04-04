@@ -27,20 +27,65 @@ import Tournaments from './pages/Apps/Tournaments';
 import AppHome from './pages/Apps/Home';
 import Signup from './pages/Apps/Signup';
 
+export const AppRoutes = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<AppHome />} />
+      <Route path="/cryptocraft" element={<CryptoCraft />} />
+      <Route path="/desert" element={<Desertwarrior />} />
+      <Route path="/sandstorm" element={<SandStorm />} />
+      <Route path="/curse-of-the" element={<CurseofThePharaoh />} />
+      <Route path="/game" element={<Game />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/support-hub" element={<SupportHub />} />
+      <Route path="/dev-tools" element={<DevTools />} />
+      <Route path="/dao" element={<Dao />} />
+      <Route path="/marketplace" element={<Marketplace />} />
+      <Route path="/tournaments" element={<Tournaments />} />
+      <Route path="" element={<AppHome />} />
+    </Routes>
+  );
+};
+
+export const BaseRoutes = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/team" element={<Team />} />
+      <Route path="/our-products" element={<OurProducts />} />
+      <Route path="/roadmap" element={<RoadMap />} />
+      <Route path="/careers" element={<Careers />} />
+
+      <Route path="game">
+        <Route index element={<GamePlay />} />
+        <Route path="/game/cryptocraft" element={<Cryptocraft />} />
+        <Route path="/game/sandstorm" element={<Sandstorm />} />
+        <Route path="/game/curse-of-the" element={<Curse />} />
+        <Route path="/game/desert" element={<DesertWarrior />} />
+      </Route>
+    </Routes>
+  );
+};
+
 const App: React.FC = () => {
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
+
+  const [subdomain] = window.location.hostname.split('.');
+
   return (
     <section className="w-full h-full overflow-hidden bg-bg">
       <Nav />
-      <Routes>
-        <Route path="/" element={<Landing />} />
+      {subdomain === 'app' ? <AppRoutes /> : <BaseRoutes />}
+
+      {/* <Route path="/" element={<Landing />} />
         <Route path="/team" element={<Team />} />
         <Route path="/our-products" element={<OurProducts />} />
         <Route path="/roadmap" element={<RoadMap />} />
-        <Route path="/careers" element={<Careers />} />
+        <Route path="/careers" element={<Careers />} /> */}
 
-        {/* <Route path="/apps"> */}
-        <Route path="/apps/cryptocraft" element={<CryptoCraft />} />
+      {/* <Route path="/apps"> */}
+      {/* <Route path="/apps/cryptocraft" element={<CryptoCraft />} />
         <Route path="/apps/desert" element={<Desertwarrior />} />
         <Route path="/apps/sandstorm" element={<SandStorm />} />
         <Route path="/apps/curse-of-the" element={<CurseofThePharaoh />} />
@@ -52,17 +97,10 @@ const App: React.FC = () => {
         <Route path="/apps/dao" element={<Dao />} />
         <Route path="/apps/marketplace" element={<Marketplace />} />
         <Route path="/apps/tournaments" element={<Tournaments />} />
-        <Route path="/apps" element={<AppHome />} />
-        {/* </Route> */}
-        <Route path="game">
-          <Route index element={<GamePlay />} />
-          <Route path="/game/cryptocraft" element={<Cryptocraft />} />
-          <Route path="/game/sandstorm" element={<Sandstorm />} />
-          <Route path="/game/curse-of-the" element={<Curse />} />
-          <Route path="/game/desert" element={<DesertWarrior />} />
-        </Route>
-      </Routes>
-      {!pathname.includes('apps') && <Footer />}
+        <Route path="/apps" element={<AppHome />} /> */}
+
+      {/* </Route> */}
+      {subdomain !== 'app' && <Footer />}
     </section>
   );
 };

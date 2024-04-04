@@ -133,7 +133,7 @@ const Signup: React.FC = () => {
             </button>
             <h4 className="text-[18px] text-white font-primary text-center">
               Already have an account?
-              <Link to="/apps/login" className="text-cyan text-[18px] font-primary pl-1">
+              <Link to="http://app.localhost:3000/login" className="text-cyan text-[18px] font-primary pl-1">
                 Login
               </Link>
             </h4>
