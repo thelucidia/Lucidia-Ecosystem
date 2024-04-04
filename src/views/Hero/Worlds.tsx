@@ -60,6 +60,9 @@ const Worlds: React.FC<IWorld> = ({ id }: IWorld) => {
                           <h1 className="uppercase font-primary text-2xl tracking-wide group-hover:mb-2 transition-all">
                             {items.title}
                           </h1>
+                          <h3 className="uppercase font-primary text-xl tracking-wide group-hover:mb-2 transition-all">
+                            {items.genre}
+                          </h3>
                           <div className="overflow-hidden max-h-0 group-hover:max-h-[3rem] transition-all">
                             <p className="font-medium font-primary">{items.desc}</p>
                           </div>

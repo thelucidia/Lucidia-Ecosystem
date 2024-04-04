@@ -29,25 +29,25 @@ interface IData {
 const data: IData = {
   landing: [
     {
-      title: 'play2earn',
+      title: 'nft marketplace',
       slug: 'play',
       desc: 'Earn $LUCID by participating in Lucidia games and achieving high scores',
       img: 'play.webp',
     },
     {
-      title: 'compete',
+      title: 'login system',
       slug: 'compete',
       desc: 'Compete with others in the e-tournaments and win big rewards in the of $LUCID tokens',
       img: 'learn.webp',
     },
     {
-      title: 'train & practice',
+      title: 'nft tool kit',
       slug: 'train',
       desc: 'Play the games and sharpen your skills in order to be victorious in the e-tournaments',
       img: 'train.webp',
     },
     {
-      title: 'unleash your creativitiy',
+      title: 'digital twin(1:1 in web3)',
       slug: 'fit',
       desc: 'Make the most out of Lucidia by utilizing our Dev Tools to build and develop your projects',
       img: 'fit.webp',
@@ -55,25 +55,25 @@ const data: IData = {
   ],
   'our-products': [
     {
-      title: 'play2earn',
+      title: 'nft marketplace',
       slug: 'play',
       desc: 'Earn $LUCID by participating in Lucidia games and achieving high scores',
       img: 'play.svg',
     },
     {
-      title: 'nft integration',
+      title: 'login system',
       slug: 'nft',
       desc: 'NFT integration for seamless interoperability between games and the blockchain',
       img: 'nft.svg',
     },
     {
-      title: 'web 3 entry',
+      title: 'nft tool kit',
       slug: 'web3',
       desc: 'Providing cost effective solutions for an affordable transition to a Web3 model',
       img: 'web3.svg',
     },
     {
-      title: 'dev tools hub',
+      title: 'digital twin(1:1 in web3)',
       slug: 'fit',
       desc: 'Lucidia is committed to champion growth and innovation within the gaming and blockchain spaces',
       img: 'fit.svg',

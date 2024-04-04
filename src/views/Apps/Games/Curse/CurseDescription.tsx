@@ -47,17 +47,17 @@ const CurseDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialS
     {
       title: 'curseofthepharaoh',
       image: '1',
-      path: '/public/assets/app/games/curse',
+      path: '/assets/app/games/curse',
     },
     {
       title: 'curseofthepharaoh',
       image: '2',
-      path: '/public/assets/app/games/curse',
+      path: '/assets/app/games/curse',
     },
     {
       title: 'curseofthepharaoh',
       image: '3',
-      path: '/public/assets/app/games/curse',
+      path: '/assets/app/games/curse',
     },
   ];
   return (
@@ -80,7 +80,7 @@ const CurseDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialS
                   >
                     <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#70F] bg-transparent">
                       <img
-                        src={`/public/assets/app/games/curse/${items.image}.png`}
+                        src={`/assets/app/games/curse/${items.image}.png`}
                         alt={items.title}
                         className="object-cover absolute w-full h-full"
                       />
@@ -143,7 +143,7 @@ const CurseDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialS
                 >
                   <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#70F] bg-transparent">
                     <img
-                      src={`/public/assets/app/games/curse/${items.image}.png`}
+                      src={`/assets/app/games/curse/${items.image}.png`}
                       alt={items.title}
                       className="object-cover absolute w-full h-full"
                     />

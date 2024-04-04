@@ -47,17 +47,17 @@ const SandDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
     {
       title: 'sandstorm',
       image: 'bg_1',
-      path: '/public/assets/app/games/sandstorm',
+      path: '/assets/app/games/sandstorm',
     },
     {
       title: 'sandstorm',
       image: 'bg_2',
-      path: '/public/assets/app/games/sandstorm',
+      path: '/assets/app/games/sandstorm',
     },
     {
       title: 'sandstorm',
       image: 'bg_3',
-      path: '/public/assets/app/games/sandstorm',
+      path: '/assets/app/games/sandstorm',
     },
   ];
   return (
@@ -80,7 +80,7 @@ const SandDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
                   >
                     <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#70F] bg-transparent">
                       <img
-                        src={`/public/assets/app/games/sandstorm/${items.image}.png`}
+                        src={`/assets/app/games/sandstorm/${items.image}.png`}
                         alt={items.title}
                         className="object-cover absolute w-full h-full"
                       />
@@ -143,7 +143,7 @@ const SandDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
                 >
                   <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#70F] bg-transparent">
                     <img
-                      src={`/public/assets/app/games/sandstorm/${items.image}.png`}
+                      src={`/assets/app/games/sandstorm/${items.image}.png`}
                       alt={items.title}
                       className="object-cover absolute w-full h-full"
                     />
