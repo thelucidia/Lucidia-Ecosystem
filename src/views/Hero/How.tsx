@@ -51,7 +51,7 @@ const How: React.FC = () => {
   // ];
 
   return (
-    <section className="container w-full mx-auto min-h-screen relative py-10 sm:pt-28 pt-16">
+    <section className="container w-full mx-auto h-full relative py-10 sm:pt-28 pt-16">
       {/* <img src="/tokentr.webp" alt="Coin" className="w-[5rem] absolute -top-7 right-0 sm:hidden block" /> */}
       <video
         autoPlay
@@ -60,7 +60,7 @@ const How: React.FC = () => {
         src={Overview}
         preload={'auto'}
         playsInline
-        className="w-full h-screen object-cover absolute top-0 left-0"
+        className="w-full h-full object-cover top-0 left-0"
       />
       {/* <div className="w-full h-full overflow-hidden px-5">
         <div className="container w-full mx-auto flex lg:gap-x-32 justify-center lg:flex-row flex-col lg:items-start items-center">
