@@ -24,7 +24,7 @@ const Creativity: React.FC = () => {
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-[500] flex items-center justify-center scale-x-[-1] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-[#9AFC27] rounded-md">
-                <p className="py-16 pl-7 pr-1 text-[18px] font-primary leading-[28px]">
+                <p className="py-16 pl-7 pr-4 text-[18px] font-primary leading-[28px]">
                   Welcome to "Cryptocraft", a boundless universe where your imagination is the only limit. Dive into an
                   open-world sandbox experience that combines the joy of building and survival with the innovative
                   features of Web3 and NFTs. In Cryptocraft, every creation, every exploration, and every interaction

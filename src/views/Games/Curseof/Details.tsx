@@ -17,10 +17,10 @@ const data = [
   {
     title: 'Unique Selling Points',
     desc: [
-      "<span class='text-cyan'>Dubai Reimagined:</span> Traverse the sands of time in a Dubai overtaken by mythological forces, where every landmark tells a story of ancient power and modern resilience.",
-      "<span class='text-cyan'>Mythological Warfare:</span> Engage in combat against legendary beasts and deities from Middle Eastern lore, utilizing a mix of futuristic firepower and ancient magic.",
-      "<span class='text-cyan'>Narrative Depth:</span> Delve into a story that weaves the rich cultural tapestry of the Middle East with thrilling mythological tales, setting the stage for an epic saga of heroism and betrayal.",
-      "<span class='text-cyan'>Web3 Integration:</span> Step into the future of gaming with Web3 technologies, where your achievements and treasures become NFTs, adding a layer of strategy and value to every action.",
+      "<span class='text-cyan'>•  Dubai Reimagined:</span> Traverse the sands of time in a Dubai overtaken by mythological forces, where every landmark tells a story of ancient power and modern resilience.",
+      "<span class='text-cyan'>•  Mythological Warfare:</span> Engage in combat against legendary beasts and deities from Middle Eastern lore, utilizing a mix of futuristic firepower and ancient magic.",
+      "<span class='text-cyan'>•  Narrative Depth:</span> Delve into a story that weaves the rich cultural tapestry of the Middle East with thrilling mythological tales, setting the stage for an epic saga of heroism and betrayal.",
+      "<span class='text-cyan'>•  Web3 Integration:</span> Step into the future of gaming with Web3 technologies, where your achievements and treasures become NFTs, adding a layer of strategy and value to every action.",
     ],
     image: '/assets/images/games/curseof/post_2.jpg',
   },
@@ -28,9 +28,9 @@ const data = [
     title: 'Gameplay Mechanics',
     desc: [
       "Curse Of The Pharaoh' offers a rich blend of FPS action, strategy,and cooperative gameplay, set against the backdrop of an open-world Dubai afflicted by ancient curses.",
-      "<span class='text-prpl'>Advanced Movement:</span> Master the art of urban navigation with parkour mechanics, allowing for fluid movement across Dubai's transformed skyline.",
-      "<span class='text-prpl'>Strategic Combat:</span> Balance your arsenal of high-tech weapons with enchanted artifacts, each offering unique advantages against the mythological menaces you'll face.",
-      "<span class='text-prpl'>Cooperative Missions:</span> Band together with allies to undertake quests that dive deep into the heart of the plagues, with dynamic scenarios that adapt based on your team's decisions and achievements.",
+      "<span class='text-prpl'>•  Advanced Movement:</span> Master the art of urban navigation with parkour mechanics, allowing for fluid movement across Dubai's transformed skyline.",
+      "<span class='text-prpl'>•  Strategic Combat:</span> Balance your arsenal of high-tech weapons with enchanted artifacts, each offering unique advantages against the mythological menaces you'll face.",
+      "<span class='text-prpl'>•  Cooperative Missions:</span> Band together with allies to undertake quests that dive deep into the heart of the plagues, with dynamic scenarios that adapt based on your team's decisions and achievements.",
     ],
     image: '/assets/images/games/curseof/post_3.jpg',
   },

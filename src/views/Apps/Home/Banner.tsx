@@ -21,7 +21,7 @@ const Banner: React.FC = () => {
       icon: <BsTwitterX />,
     },
     {
-      link: 'https://youtube.com/@lucidia_official',
+      link: 'https://lucidia.io',
       icon: <TfiWorld />,
     },
   ];

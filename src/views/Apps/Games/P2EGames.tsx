@@ -5,28 +5,32 @@ import { Link } from 'react-router-dom';
 const P2EGames: React.FC = () => {
   const worldList = [
     {
-      title: 'curse of the pharaoh',
-      desc: 'Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.',
+      title: 'Curse of the Pharaoh',
+      genre: 'FPS, CO-OP',
+      desc: 'Fighting mummies in post-apocalyptic Dubai landscape by leveraging advanced mechanics and cooperative alliances.',
       image: 'zombie',
-      path: '/curse-of-the',
+      path: '/games/curse-of-the-pharaoh',
     },
     {
-      title: 'cryptocraft',
-      desc: 'Shape limitless worlds, earn $LUCID Tokens, unleash creativity, adventure awaits!',
+      title: 'CryptoCraft',
+      genre: 'SandBox, Open World',
+      desc: 'Experience an infinite world shaped by your creations. Earning rewards as you build',
       image: 'minecraft',
-      path: '/cryptocraft',
+      path: '/games/cryptocraft',
     },
     {
-      title: 'sandstorm racers',
-      desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
-      image: 'cyber',
-      path: '/sandstorm',
-    },
-    {
-      title: 'desert warriors',
-      desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
+      title: 'Sandstorm Racers',
+      genre: 'Racing, Multiplayer',
+      desc: 'Navigate through unpredictable weather conditions, race through an environment that pays homage to Middle Eastern culture.',
       image: 'fps',
-      path: '/desert',
+      path: '/games/desert',
+    },
+    {
+      title: 'Desert Warriors',
+      genre: 'FPS, Royal Battle',
+      desc: 'The game where the thrill of shooter games intertwines with the groundbreaking possibilities of Web3 and NFTs.',
+      image: 'cyber',
+      path: '/games/sandstorm',
     },
   ];
 
@@ -68,7 +72,7 @@ const P2EGames: React.FC = () => {
                           ></div>
 
                           <div className="absolute bottom-4 left-4 z-10 p-3 group-hover:text-black text-white ease-in-out duration-[0.1s]">
-                            <h1 className="uppercase font-primary text-2xl tracking-wide group-hover:mb-2 transition-all">
+                            <h1 className="font-primary text-2xl tracking-wide group-hover:mb-2 transition-all">
                               {items.title}
                             </h1>
                             <div className="overflow-hidden max-h-0 group-hover:max-h-[3rem] transition-all">

@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         primary: ['Clash'],
         secondary: ['Bai Jamjuree'],
+        thrid: ['Ghost Clan Italic'],
+        forth: ['Call of Ops Duty II'],
       },
       colors: {
         bl: '#0ED4FF',
@@ -29,6 +31,7 @@ export default {
       },
       screens: {
         xs: '520px', // Example custom breakpoint at 400px
+        customXl: '1420px',
       },
     },
   },

@@ -1,28 +1,32 @@
 {
   "worldList": [
     {
-      "title": "curse of the pharaoh",
-      "desc": "Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.",
+      "title": "Curse of the Pharaoh",
+      "genre": "FPS, CO-OP",
+      "desc": "Fighting mummies in post-apocalyptic Dubai landscape by leveraging advanced mechanics and cooperative alliances.",
       "image": "zombie",
-      "path": "/game/curse-of-the"
+      "path": "/games/curse-of-the-pharaoh"
     },
     {
-      "title": "cryptocraft",
-      "desc": "Shape limitless worlds, earn $LUCID Tokens, unleash creativity, adventure awaits!",
+      "title": "CryptoCraft",
+      "genre": "SandBox, Open World",
+      "desc": "Experience an infinite world shaped by your creations. Earning rewards as you build",
       "image": "minecraft",
-      "path": "/game/cryptocraft"
+      "path": "/games/cryptocraft"
     },
     {
-      "title": "sandstorm racers",
-      "desc": "Take a ride through the night skyline, race with your friends and attend virtual events",
+      "title": "Sandstorm Racers",
+      "genre": "Racing, Multiplayer",
+      "desc": "Navigate through unpredictable weather conditions, race through an environment that pays homage to Middle Eastern culture.",
       "image": "cyber",
-      "path": "/game/sandstorm"
+      "path": "/games/sandstorm-racers"
     },
     {
-      "title": "desert warriors",
-      "desc": "Engage in the battle and complete missions to earn $LUCID Tokens.",
+      "title": "Desert Warriors",
+      "genre": "FPS, Royal Battle",
+      "desc": "The game where the thrill of shooter games intertwines with the groundbreaking possibilities of Web3 and NFTs.",
       "image": "fps",
-      "path": "/game/desert"
+      "path": "/games/desert-warriors"
     }
   ],
   "comingsoon": [

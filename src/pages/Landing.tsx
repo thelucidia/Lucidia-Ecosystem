@@ -19,7 +19,6 @@ const Landing: React.FC = () => {
     >
       <section className="w-full h-auto bg-black relative">
         <Hero id={'landing'} />
-        {/* <PartnersUpper /> */}
         <Worlds id={'landing'} />
         <Stats />
         <How />

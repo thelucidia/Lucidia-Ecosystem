@@ -97,17 +97,6 @@
       ]
     },
     {
-      "name": "Sara Gómez",
-      "position": "Lead UI/UX Designer",
-      "link": "https://www.linkedin.com/in/sara-g-44a723b6/",
-      "desc": [
-        "UI/UX Designer (5 years)",
-        "UX Research (3 years)",
-        "Marketing and Design (2 years)",
-        "Motion Graphics Designer (2 years)"
-      ]
-    },
-    {
       "name": "Aryan Ratu Langie",
       "position": "Community Manager",
       "link": "https://www.linkedin.com/in/aryanratulangie/",
@@ -125,12 +114,6 @@
       "desc": ["UI/UX Designer (2 years)", "Teacher (1+ years)"]
     },
     {
-      "name": "Sania Aliya",
-      "position": "UI/UX Designer",
-      "link": "https://www.linkedin.com/in/chacaliyaa/",
-      "desc": ["Content Writer & Producer (2.5 years)", "UI/UX Designer (2 years)"]
-    },
-    {
       "name": "Miroslav Pesic",
       "position": "Full Stack Developer",
       "link": "https://www.linkedin.com/in/miroslav-pesic-b255a92a9/",
@@ -141,6 +124,49 @@
       "position": "Graphic Designer",
       "link": "https://www.linkedin.com/in/ola-h-bb5a7b218?trk=contact-info",
       "desc": ["Graphic Designer (3 years)", "Web Designer (1 years)"]
+    },
+    {
+      "name": "Polina Morozova",
+      "position": "Business Development Manager",
+      "link": "https://www.linkedin.com/in/morozovapolina/",
+      "desc": ["Business Development Manager (3 Years)", "Administrator and Educator (8 Years)"]
+    },
+    {
+      "name": "Wisdom David",
+      "position": "Business Development Executive",
+      "link": "https://www.linkedin.com/in/wisdom-david-8a447a184",
+      "desc": ["Business Development Manager (1 Year)", "Community Moderator (2 Years)", "Graphic Designers (1 Year)"]
+    },
+    {
+      "name": "Tareq Shahadeh",
+      "position": "General Manager",
+      "link": "https://www.linkedin.com/in/tareq-shehadeh-245442a/",
+      "desc": ["Sales & Relationship Manager (20+ Years)", "Hardware Sales (3 Years)", "Managing Partner (7 Years)"]
+    },
+    {
+      "name": "Denis Smolonski",
+      "position": "Senior Blockchain Developer",
+      "link": "https://www.linkedin.com/in/dzianis-smalonski-648051100/",
+      "desc": ["Frontend Development 5+ years", "Backend Development 5+ years"]
+    },
+    {
+      "name": "Nkereuwem Ukpong",
+      "position": "Business Development Executive",
+      "link": "https://www.linkedin.com/in/nkereuwem-ukpong/",
+      "desc": ["Business Development Manager (3 Years)", "Partnership Manager (3 Years)", "Content Writer (3 Years)"]
+    },
+    {
+      "name": "Leonard Wee",
+      "position": "Business Development Lead",
+      "link": "https://www.linkedin.com/in/1stleonardwee/",
+      "desc": [
+        "Blockchain Ecosystem Development (1 year)",
+        "Strategic Partnerships Specialist (1 year)",
+        "Quantitative Business Strategy Manager (1 year)",
+        "Co-Founder & Blockchain Project Lead (1.5 years)",
+        "Business Development Expert in Tech Consulting (1 year)",
+        "Investor Relations and Community Engagement Lead (1 year)"
+      ]
     }
   ]
 }

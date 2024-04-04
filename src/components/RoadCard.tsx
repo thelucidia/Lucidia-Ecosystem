@@ -6,7 +6,7 @@ const RoadCard: React.FC = () => {
   return (
     <section>
       <div className="mt-[331px] flex items-center justify-end xs:justify-center mb-[287px] mr-[20px]">
-        <h1 className="text-blue-400 font-semibold font-['Bai Jamjuree'] text-[45px] md:text-[72px] uppercase relative font-secondary z-10">
+        <h1 className="text-blue-400 font-semibold font-secondary text-[45px] md:text-[72px] uppercase relative font-secondary z-10">
           RoadMap
         </h1>
       </div>
@@ -15,13 +15,14 @@ const RoadCard: React.FC = () => {
         alt="NavLine"
         className="w-full relative top-[-100px] z-10 opacity-50 md:block hidden"
       />
-      <div className="w-[80%] w-fit mx-auto flex flex-col relative pb-[151px]">
-        <div className="grid gap-x-5 2 gap-y-8 justify-items-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 z-10">
+      <div className="container w-fit mx-auto flex flex-col relative pb-[151px]">
+        {/* <div className="grid gap-x-5 2 gap-y-8 justify-items-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 z-10"> */}
+        <div className="flex flex-wrap gap-x-5 2 gap-y-8 justify-center z-10">
           {mapcard.map((items, i) => {
             return (
               <div
                 key={`card-${i}`}
-                className="max-w-[459px] rounded-[10px] border-[2px] border-[#401675] relative"
+                className="w-[459px] rounded-[10px] border-[2px] border-[#401675] relative"
                 style={{
                   backgroundImage: 'linear-gradient(0deg, rgba(85, 17, 166, 0.79) 22.91%, rgba(0, 0, 0, 0.00) 78.01%)',
                 }}

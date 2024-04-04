@@ -25,7 +25,7 @@ const Stats: React.FC = () => {
               className="overflow-hidden "
             >
               <CountUp
-                className="text-5xl sm:text-[54px] font-bold"
+                className="text-4xl sm:text-[54px] font-bold"
                 start={items.start}
                 end={items.end}
                 duration={0.5 * (i + 1)}

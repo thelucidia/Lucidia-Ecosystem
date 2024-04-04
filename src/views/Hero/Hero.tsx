@@ -1,10 +1,7 @@
-// import { BsDiscord } from 'react-icons/bs';
-// import { PiTelegramLogoBold } from 'react-icons/pi';
-// import { SiTwitter } from 'react-icons/si';
 import MainVideo from '../../../videos/home_app.mp4';
 import ProductVideo from '../../../videos/hero.mp4';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import clsx from 'clsx';
 
 interface IHero {
@@ -34,7 +31,7 @@ interface IData {
 const data: IData = {
   landing: {
     image: '/hero/hero.svg',
-    title: 'Elevating gaming through web3 solutions',
+    title: 'Pioneering Web3 Gaming in the Middle East',
     desc: 'Introducing the first comprehensive web3 gaming ecosystem in the Middle East',
     buttons: true,
   },
@@ -47,32 +44,7 @@ const data: IData = {
 };
 
 const Hero: React.FC<IHero> = ({ id }: IHero) => {
-  // const community = [
-  //   {
-  //     link: 'https://t.me/Lucidia_io',
-  //     icon: <PiTelegramLogoBold />,
-  //   },
-  //   {
-  //     link: 'https://discord.com/invite/lucidia',
-  //     icon: <BsDiscord />,
-  //   },
-  //   {
-  //     link: 'https://twitter.com/lucidia_io',
-  //     icon: <SiTwitter />,
-  //   },
-  // ];
   const item = data[id];
-  //   const audited = [
-  //     {
-  //       name: 'inter',
-  //       link: 'https://www.interfi.network/audits',
-  //     },
-  //     {
-  //       name: 'rev',
-  //       link: 'https://www.revoluzion.io/audit',
-  //     },
-  //   ];
-
   const [trueLoading, setTrueLoading] = useState(true);
 
   const handleTrue = () => {
@@ -95,7 +67,7 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
         autoPlay
         muted
         loop
-        src={id === 'hero' ? MainVideo : ProductVideo}
+        src={id === 'landing' ? MainVideo : ProductVideo}
         preload={'auto'}
         onLoadedData={handleTrue}
         playsInline
@@ -118,20 +90,15 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
           {item.buttons && (
             <>
               <div className="flex gap-x-3 mt-[80px] md:flex-row flex-col gap-y-10">
-                <a href="https://finance.lucidia.io/" target="_blank" rel="noopener noreferrer" className="">
+                <a href="https://discord.gg/lucidia" target="_blank" rel="noopener noreferrer" className="">
                   <button className=" w-full md:w-[9rem] h-14 clipped2  relative font-bold flex items-center justify-center scale-x-[-1] group">
                     <div className="absolute bg-cyan w-full h-full left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-colors ease-in-out duration-300"></div>
                     <h1 className="font-secondary relative z-10 text-black font-[700] text-[12px] scale-x-[-1] ">
-                      BUY $LUCID
+                      Join Discord
                     </h1>
                   </button>
                 </a>
-                <a
-                  href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=""
-                >
+                <a href="https://t.me/Lucidia_io" target="_blank" rel="noopener noreferrer" className="">
                   <button className=" w-full md:w-[13rem] h-14 clipped2 bg-white relative  font-bold flex items-center justify-center scale-x-[-1] group">
                     <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300">
                       <img
@@ -141,51 +108,11 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
                       />
                     </div>
                     <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300">
-                      TOKEN ALLOCATION
+                      Join Telegram
                     </h1>
                   </button>
                 </a>
               </div>
-              <motion.div
-                initial={{ y: 50 }}
-                whileInView={{ y: 0 }}
-                transition={{ type: 'spring', stiffness: 60 }}
-                className="max-w-[37rem] font-primary font-medium flex flex-col gap-y-5 md:flex md:text-base text-sm overflow-hidden"
-              >
-                <div className="mt-20 flex md:items-start gap-x-8 md:flex-row flex-col gap-y-9">
-                  {/* <div className="">
-                    <h1 className="font-primary font-medium">Join community of 100k+ Lucidians</h1>
-                     <ul className="flex items-center gap-x-4 text-2xl mt-4">
-                      {community.map((items, i) => {
-                        return (
-                          <a
-                            href={items.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="sm:opacity-40 hover:opacity-100"
-                            key={i}
-                          >
-                            {items.icon}
-                          </a>
-                        );
-                      })}
-                    </ul>
-                  </div> */}
-                  {/* <div className="h-16 w-[1px] bg-white/10 md:block hidden"></div>
-                          <div className="">
-                          <h1 className="font-primary font-medium">Audited by:</h1>
-                          <ul className="flex items-center gap-x-7 text-2xl mt-4">
-                            {audited.map((items, i) => {
-                              return (
-                                <a href={items.link} target="_blank" rel="noopener noreferrer" className="" key={i}>
-                                  <img src={`/hero/${items.name}.webp`} alt={items.name} className="" key={i} />
-                                </a>
-                              );
-                            })}
-                          </ul>
-                        </div> */}
-                </div>
-              </motion.div>
             </>
           )}
         </div>

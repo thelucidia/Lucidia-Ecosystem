@@ -12,7 +12,7 @@ const OtherGames: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
       title: 'curse of the pharaoh',
       desc: 'Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.',
       image: 'zombie',
-      path: '/gameplay/curse-of-the',
+      path: '/gameplay/curse-of-the-pharaoh',
     },
     {
       title: 'cryptocraft',

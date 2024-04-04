@@ -2,16 +2,16 @@
   "stats": [
     {
       "prefix": "$",
-      "suffix": "k",
-      "start": 400,
-      "end": 420,
+      "suffix": "K",
+      "start": 250,
+      "end": 300,
       "desc": "TO BE UNLOCKED BY USERS"
     },
     {
       "prefix": "",
-      "suffix": "M",
+      "suffix": "K",
       "start": 0,
-      "end": 15,
+      "end": 5,
       "desc": "IN GAME ASSETS"
     },
     {
@@ -19,7 +19,7 @@
       "suffix": "+",
       "start": 0,
       "end": 4,
-      "desc": "GAMES INSIDE METAVERSE"
+      "desc": "GAME INSIDE THE ECOSYSTEM"
     },
     {
       "suffix": "",

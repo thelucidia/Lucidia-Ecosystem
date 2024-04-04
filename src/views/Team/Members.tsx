@@ -14,7 +14,7 @@ const Members: React.FC = () => {
         <img src="/team/left.webp" alt="Left" className="-mb-20 xl:block hidden" />
         <div className="flex flex-col sm:gap-y-6 md:items-center justify-center w-fit md:mx-auto flex-shrink-0">
           <h2 className="text-grn md:text-center text-lg font-medium uppercase text-left">The Lucidians</h2>
-          <h1 className="2xl:text-[72px] text-[54px] font-semibold leading-[3.5rem]">MEET OUR CRYPTO EXPERTS</h1>
+          <h1 className="2xl:text-[72px] text-[54px] font-semibold leading-[3.5rem]">Meet our Web3 Experts</h1>
           <p className="text-lg font-medium">
             At Lucidia we believe that the true, fully immersive metaverse is just around the corner.
           </p>
@@ -24,7 +24,7 @@ const Members: React.FC = () => {
 
       <img src="/hero/navline.webp" alt="NavLine" className="w-full relative z-10 mt-16 opacity-50 md:block hidden" />
 
-      <div className="container w-full mx-auto h-auto relative z-10 flex flex-wrap gap-3 px-6 mt-24 items-center justify-center">
+      <div className="container w-full mx-auto h-auto relative z-10 flex flex-wrap gap-3 px-6 mt-24 justify-center items-center">
         <img src="/token.webp" alt="token" className="absolute -top-6 -right-4 z-10 w-16 md:hidden block" />
 
         {members.map((items, i) => {
@@ -40,7 +40,7 @@ const Members: React.FC = () => {
                   </a>
 
                   <img
-                    src={`/team/${i}.png`}
+                    src={`/team/${i}.jpg`}
                     alt={items.name}
                     className="absolute w-full h-full top-0 left-0 object-cover"
                   />

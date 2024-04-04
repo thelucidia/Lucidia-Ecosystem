@@ -6,7 +6,7 @@ const data = [
   {
     title: 'Experience Sandstorm Racers',
     desc: [
-      'Feel the thrill of Sandstorm Racer, where high-octane racing meets the challenge of navigating through treacherous sandstorms. Drawing inspiration from titles like Forza Horizon, this game offers a perfect blend of realistic racing dynamics and accessible, fun gameplay.',
+      '"Sandstorm Racers" invites players into an exhilarating Middle Eastern racing adventure, where mastering the art of drifting and navigating dynamic sandstorms are key to victory. Its realistic physics engine ensures a balance between simulation and accessible gameplay, appealing to a wide range of racing enthusiasts. The game`s diverse race formats and narrative-driven journey across stunning open-world landscapes, from cityscapes to deserts, offer endless exploration and racing challenges.',
     ],
     image: '/assets/images/games/sandstorm/experience.jpg',
   },
@@ -16,7 +16,7 @@ const data = [
       'Realistic physics engine for authentic vehicle handling',
       'Dynamic weather effects, including signature sandstorms',
       'Competitive races and challenges',
-      "Blockchain Integration: Compete in races, earn unique <span class='text-prpl'>NFT</span> rewards, and customize your vehicles with tradable assets that showcase your achievements.Feel the thrill of Sandstorm Racer, where high-octane racing meets the challenge of navigating through treacherous sandstorms. Drawing inspiration from titles like Forza Horizon, this game offers a perfect blend of realistic racing dynamics and accessible, fun gameplay.",
+      "Blockchain Integration: Compete in races, earn unique <span class='text-prpl'>NFT</span> rewards, and customize your vehicles with tradable assets that showcase your achievements. Feel the thrill of Sandstorm Racers, where high-octane racing meets the challenge of navigating through treacherous sandstorms. Drawing inspiration from titles like Forza Horizon, this game offers a perfect blend of realistic racing dynamics and accessible, fun gameplay.",
     ],
     image: '/assets/images/games/sandstorm/feature.jpg',
   },
@@ -51,7 +51,7 @@ const Details: React.FC = () => {
                 transition={{ type: 'spring', stiffness: 60 }}
                 className="sm:w-[40%] flex flex-col gap-y-5 lg:py-[44px] md:py-8 sm:py-6 py-4 overflow-hidden"
               >
-                <div className="w-full h-auto clipped2 bg-gry relative  font-[500] flex items-center justify-center scale-x-[-1] rounded-md">
+                <div className="w-full h-auto clipped2 bg-gry relative  font-[400] flex items-center justify-center scale-x-[-1] rounded-md">
                   <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-prpl rounded-md py-9 pl-9 pr-7">
                     <h4 className="pb-6 font-secondary text-[18px] font-bold leading-normal text-prpl">{item.title}</h4>
                     {item.desc.map((desc, d) => {

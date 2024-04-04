@@ -1,9 +1,7 @@
 import React from 'react';
 import { LiaTelegramPlane } from 'react-icons/lia';
 import { TfiTwitter } from 'react-icons/tfi';
-import { AiOutlineYoutube } from 'react-icons/ai';
-import { FaRedditAlien, FaInstagram } from 'react-icons/fa';
-import { RiTiktokLine } from 'react-icons/ri';
+import { FaInstagram } from 'react-icons/fa';
 import { RxDiscordLogo } from 'react-icons/rx';
 
 const Footer: React.FC = () => {
@@ -20,22 +18,22 @@ const Footer: React.FC = () => {
       link: 'https://twitter.com/lucidia_io',
       icon: <TfiTwitter />,
     },
-    {
-      link: 'https://youtube.com/@lucidia_official',
-      icon: <AiOutlineYoutube />,
-    },
-    {
-      link: 'https://www.reddit.com/r/LucidiaMetaverse/',
-      icon: <FaRedditAlien />,
-    },
+    // {
+    //   link: 'https://lucidia.io',
+    //   icon: <AiOutlineYoutube />,
+    // },
+    // {
+    //   link: 'https://www.reddit.com/r/LucidiaMetaverse/',
+    //   icon: <FaRedditAlien />,
+    // },
     {
       link: 'https://instagram.com/lucidia_official',
       icon: <FaInstagram />,
     },
-    {
-      link: 'https://www.tiktok.com/@lucidia.io',
-      icon: <RiTiktokLine />,
-    },
+    // {
+    //   link: 'https://www.tiktok.com/@lucidia.io',
+    //   icon: <RiTiktokLine />,
+    // },
   ];
 
   const general = [
@@ -76,9 +74,6 @@ const Footer: React.FC = () => {
     <footer className="w-full h-auto min-h-screen relative pb-16">
       <div className="container mx-auto w-full text-white sm:mt-28 mt-10 px-5 text-left sm:text-center">
         <div className="mt-10">
-          <h1 className="sm:text-[46px] text-[32px] font-bold leading-tight font-primary bg-clip-text bg-gradient-to-r w-fit sm:mx-auto  from-white via-white to-[#c4f4fe] text-transparent">
-            Join the community of 100k+ Lucidians
-          </h1>
           <p className="font-medium font-primary text-footergry text-[15px] sm:text-[22px] mt-2 sm:mt-0">
             For more details about our progress and workflow be sure to follow
           </p>
@@ -156,8 +151,10 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col gap-y-5 max-w-[540px] font-primary sm:pt-0 pt-20">
-          <h3 className="uppercase text-[22px] font-semibold pb-5">join the community</h3>
+        <div className="flex flex-col gap-y-3 max-w-[540px] font-primary sm:pt-0 pt-20">
+          <h3 className="text-[22px] font-semibold pb-5">
+            Register to get the opportunity to win an interesting reward in the community!
+          </h3>
           <div className="w-full h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] to-[#FFFFFF] relative flex items-center scale-x-[-1]">
             <div className="absolute bg-black w-[99%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
             <input
@@ -180,6 +177,14 @@ const Footer: React.FC = () => {
               type="text"
               className="px-10 font-primary w-full relative z-10 text-[14px] scale-x-[-1] bg-transparent outline-none"
               placeholder="Discord"
+            />
+          </div>
+          <div className="w-full h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] to-[#FFFFFF] relative flex items-center scale-x-[-1]">
+            <div className="absolute bg-black w-[99%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
+            <input
+              type="text"
+              className="px-10 font-primary w-full relative z-10 text-[14px] scale-x-[-1] bg-transparent outline-none"
+              placeholder="Telegram"
             />
           </div>
           <button className="w-full clipped scale-x-[-1] rounded-[5px] bg-cyan hover:bg-white font-secondary font-semibold py-[23px] text-center bg-no-repeat bg-contain uppercase text-black">

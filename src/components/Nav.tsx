@@ -24,9 +24,15 @@ const Nav: React.FC = () => {
       type: 'internal',
     },
     {
-      name: 'game',
-      slug: '/game',
-      paths: ['/game', '/game/sandstorm', '/game/curse-of-the', '/game/cryptocraft', '/game/desert'],
+      name: 'games',
+      slug: '/games',
+      paths: [
+        '/games',
+        '/games/sandstorm-racers',
+        '/games/curse-of-the-pharaoh',
+        '/games/cryptocraft',
+        '/games/desert-warriors',
+      ],
       type: 'internal',
     },
     {
@@ -140,9 +146,9 @@ const Nav: React.FC = () => {
       type: 'internal',
     },
     {
-      name: 'game',
-      slug: '/game',
-      paths: ['/game'],
+      name: 'games',
+      slug: '/games',
+      paths: ['/games'],
       type: 'internal',
     },
     {
@@ -167,6 +173,12 @@ const Nav: React.FC = () => {
       name: 'our team',
       slug: '/team',
       paths: ['/team'],
+      type: 'internal',
+    },
+    {
+      name: 'launch app',
+      slug: '/apps',
+      paths: ['/apps'],
       type: 'internal',
     },
     // {
@@ -270,7 +282,14 @@ const Nav: React.FC = () => {
             {subdomain !== 'app'
               ? navMobile.map((items, i) => {
                   return items.type === 'external' ? (
-                    <a href={items.slug} target="_blank" rel="noopener noreferrer" className="w-full h-full" key={i}>
+                    <a
+                      href={items.slug}
+                      onClick={handleNav}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full h-full"
+                      key={i}
+                    >
                       <motion.li
                         initial={{ x: 100, opacity: 0 }}
                         animate={navActive ? { x: 0, opacity: 1 } : {}}
@@ -281,7 +300,7 @@ const Nav: React.FC = () => {
                       </motion.li>
                     </a>
                   ) : items.type === 'internal' ? (
-                    <Link to={`${items.slug}`} className="w-full h-full" key={i}>
+                    <Link to={`${items.slug}`} className="w-full h-full" key={i} onClick={handleNav}>
                       <motion.li
                         initial={{ x: 100, opacity: 0 }}
                         animate={navActive ? { x: 0, opacity: 1 } : {}}
@@ -339,7 +358,7 @@ const Nav: React.FC = () => {
                       </motion.li>
                     </a>
                   ) : items.type === 'internal' ? (
-                    <Link to={`${items.slug}`} className="w-full h-full" key={i}>
+                    <Link to={`${items.slug}`} className="w-full h-full" key={i} onClick={handleNav}>
                       <motion.li
                         initial={{ x: 100, opacity: 0 }}
                         animate={navActive ? { x: 0, opacity: 1 } : {}}
@@ -531,23 +550,6 @@ const Nav: React.FC = () => {
                               className={`text-2xl transition-all ease-in-out duration-300  ${audit ? 'rotate-0' : 'rotate-180'}`}
                             />
                           </div>
-                          {/* <div
-                            className={`text-footergry  flex flex-col gap-y-2  overflow-hidden transition-all ease-in-out duration-300 ${audit ? 'max-h-[5rem] mt-4' : 'max-h-0 mt-0'} `}
-                          >
-                            {items.sub?.map((items, i) => {
-                              return (
-                                <a
-                                  href={items.link}
-                                  target="_blank"
-                                  rel="noreferrer noopener"
-                                  className="hover:text-white"
-                                  key={i}
-                                >
-                                  {items.title}
-                                </a>
-                              );
-                            })}
-                          </div> */}
                         </motion.li>
                       ) : null;
                     })}

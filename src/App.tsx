@@ -31,10 +31,10 @@ export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<AppHome />} />
-      <Route path="/cryptocraft" element={<CryptoCraft />} />
-      <Route path="/desert" element={<Desertwarrior />} />
-      <Route path="/sandstorm" element={<SandStorm />} />
-      <Route path="/curse-of-the" element={<CurseofThePharaoh />} />
+      <Route path="/game/cryptocraft" element={<Cryptocraft />} />
+      <Route path="/game/sandstorm-racers" element={<Sandstorm />} />
+      <Route path="/game/curse-of-the-pharaoh" element={<Curse />} />
+      <Route path="/game/desert-warriors" element={<DesertWarrior />} />
       <Route path="/game" element={<Game />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
@@ -60,9 +60,9 @@ export const BaseRoutes = () => {
       <Route path="game">
         <Route index element={<GamePlay />} />
         <Route path="/game/cryptocraft" element={<Cryptocraft />} />
-        <Route path="/game/sandstorm" element={<Sandstorm />} />
-        <Route path="/game/curse-of-the" element={<Curse />} />
-        <Route path="/game/desert" element={<DesertWarrior />} />
+        <Route path="/game/sandstorm-racers" element={<Sandstorm />} />
+        <Route path="/game/curse-of-the-pharaoh" element={<Curse />} />
+        <Route path="/game/desert-warriors" element={<DesertWarrior />} />
       </Route>
     </Routes>
   );

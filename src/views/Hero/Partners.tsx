@@ -2,7 +2,20 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 const Partners: React.FC = () => {
-  const partners = ['esports', 'play', 'goshen', 'unreal', 'sdcons', 'seman', 'rzm', 'sphereone', 'epic', 'arc'];
+  const partners = [
+    'esports',
+    'play',
+    'goshen',
+    'skale',
+    'BGA',
+    'unreal',
+    'sdcons',
+    'seman',
+    'rzm',
+    'sphereone',
+    'epic',
+    'arc',
+  ];
 
   return (
     <section className="bg-bg-w-full h-auto py-10 sm:px-5 overflow-hidden">
@@ -19,7 +32,7 @@ const Partners: React.FC = () => {
               OUR PARTNERS
             </h1>
 
-            <div className="flex flex-wrap sm:gap-x-[8rem] gap-x-16 gap-y-[2.5rem] items-center justify-center px-5 py-9">
+            <div className="flex flex-wrap sm:gap-x-[6rem] gap-x-16 gap-y-[2.5rem] items-center justify-center px-5 py-9">
               {partners.map((items, i) => {
                 return (
                   <motion.div
