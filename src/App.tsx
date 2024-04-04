@@ -7,11 +7,11 @@ import OurProducts from './pages/OurProducts';
 import GamePlay from './pages/GamePlay';
 import RoadMap from './pages/RoadMap';
 import Cryptocraft from './pages/Games/Cryptocraft';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 import Sandstorm from './pages/Games/Sandstorm';
 import Curse from './pages/Games/Curse';
 import DesertWarrior from './pages/Games/DesertWarrior';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
 import Game from './pages/Apps/Games/Game';
 import CryptoCraft from './pages/Apps/Games/CryptoCraft';
 import Desertwarrior from './pages/Apps/Games/Desertwarrior';
@@ -31,10 +31,10 @@ export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<AppHome />} />
-      <Route path="/game/cryptocraft" element={<CryptoCraft />} />
-      <Route path="/game/sandstorm-racers" element={<SandStorm />} />
-      <Route path="/game/curse-of-the-pharaoh" element={<CurseofThePharaoh />} />
-      <Route path="/game/desert-warriors" element={<Desertwarrior />} />
+      <Route path="/cryptocraft" element={<CryptoCraft />} />
+      <Route path="/sandstorm" element={<SandStorm />} />
+      <Route path="/curse-of-the-pharaoh" element={<CurseofThePharaoh />} />
+      <Route path="/desert-warriors" element={<Desertwarrior />} />
       <Route path="/game" element={<Game />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
