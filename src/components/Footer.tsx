@@ -1,9 +1,7 @@
 import React from 'react';
 import { LiaTelegramPlane } from 'react-icons/lia';
 import { TfiTwitter } from 'react-icons/tfi';
-import { AiOutlineYoutube } from 'react-icons/ai';
-import { FaRedditAlien, FaInstagram } from 'react-icons/fa';
-import { RiTiktokLine } from 'react-icons/ri';
+import { FaInstagram } from 'react-icons/fa';
 import { RxDiscordLogo } from 'react-icons/rx';
 
 const Footer: React.FC = () => {
