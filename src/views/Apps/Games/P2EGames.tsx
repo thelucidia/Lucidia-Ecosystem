@@ -23,14 +23,14 @@ const P2EGames: React.FC = () => {
       genre: 'Racing, Multiplayer',
       desc: 'Navigate through unpredictable weather conditions, race through an environment that pays homage to Middle Eastern culture.',
       image: 'fps',
-      path: '/games/desert-warriors',
+      path: '/games/desert',
     },
     {
       title: 'Desert Warriors',
       genre: 'FPS, Royal Battle',
       desc: 'The game where the thrill of shooter games intertwines with the groundbreaking possibilities of Web3 and NFTs.',
       image: 'cyber',
-      path: '/games/sandstorm-racers',
+      path: '/games/sandstorm',
     },
   ];
 
