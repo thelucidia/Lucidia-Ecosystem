@@ -24,13 +24,13 @@ const OtherGames: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
       title: 'sandstorm racers',
       desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
       image: 'cyber',
-      path: '/gameplay/sandstorm-racers',
+      path: '/gameplay/sandstorm',
     },
     {
       title: 'desert warriors',
       desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
       image: 'fps',
-      path: '/gameplay/desert-warriors',
+      path: '/gameplay/desert',
     },
   ];
   return (
