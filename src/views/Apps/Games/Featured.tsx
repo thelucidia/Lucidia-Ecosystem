@@ -83,14 +83,14 @@ const Featured: React.FC<IOtherGames> = ({ id, color }: IOtherGames, { initialSl
       title: 'sandstorm racers',
       desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
       image: 'cyber',
-      path: '/sandstorm',
+      path: '/sandstorm-racers',
       // color: '#70F',
     },
     {
       title: 'desert warriors',
       desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
       image: 'fps',
-      path: '/desert',
+      path: '/desert-warriors',
       // color: '#0ED4FF',
     },
   ];
