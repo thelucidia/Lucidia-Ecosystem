@@ -5,7 +5,7 @@ import React from 'react';
 const Benefits: React.FC = () => {
   const data = [
     {
-      desc: "<span classname='font-semibold'>Wider Audience Reach:</span> Highlight how joining Lucidia provides games with instant exposure to over <span classname='text-[#0ED4FF]'>30,000</span> users. This helps tackle the common struggle faced by many Web3 games in attracting players: <span classname='font-semibold'>Active Users</span>",
+      desc: "<span classname='font-semibold'>Wider Audience Reach:</span> Joining Lucidia provides games with instant exposure to over <span classname='text-[#0ED4FF]'>40,000</span> users. This helps tackle the common struggle faced by many Web3 games in attracting players: <span classname='font-semibold'>Active Users</span>",
     },
     {
       desc: "<span classname='font-semibold'>Enhanced Player Experience:</span> Lucidia makes gaming simpler and more connected. With just <span classname='font-semibold'>one login for all games</span>. you can easily explore different titles without juggling multiple accounts. As an addition, whether you're on your PC, console, or phone, the experience stays smooth and consistent.",
