@@ -97,7 +97,7 @@ const Worlds: React.FC<IWorld> = ({ id }: IWorld) => {
                         className="absolute top-0 left-0 right-0 bottom-10 m-auto w-[8rem] z-10"
                       />
                       <div className="absolute bottom-4 left-4 z-10 p-3 text-white/40">
-                        <h1 className="uppercase font-primary text-2xl tracking-wide">{items.title}</h1>
+                        {/* <h1 className="uppercase font-primary text-2xl tracking-wide">{items.title}</h1> */}
                       </div>
                     </div>
                   </div>
