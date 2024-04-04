@@ -57,12 +57,12 @@ export const BaseRoutes = () => {
       <Route path="/roadmap" element={<RoadMap />} />
       <Route path="/careers" element={<Careers />} />
 
-      <Route path="game">
+      <Route path="games">
         <Route index element={<GamePlay />} />
-        <Route path="/game/cryptocraft" element={<Cryptocraft />} />
-        <Route path="/game/sandstorm-racers" element={<Sandstorm />} />
-        <Route path="/game/curse-of-the-pharaoh" element={<Curse />} />
-        <Route path="/game/desert-warriors" element={<DesertWarrior />} />
+        <Route path="/games/cryptocraft" element={<Cryptocraft />} />
+        <Route path="/games/sandstorm-racers" element={<Sandstorm />} />
+        <Route path="/games/curse-of-the-pharaoh" element={<Curse />} />
+        <Route path="/games/desert-warriors" element={<DesertWarrior />} />
       </Route>
     </Routes>
   );
