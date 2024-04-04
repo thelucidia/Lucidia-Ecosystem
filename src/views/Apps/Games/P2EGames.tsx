@@ -8,25 +8,25 @@ const P2EGames: React.FC = () => {
       title: 'curse of the pharaoh',
       desc: 'Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.',
       image: 'zombie',
-      path: 'http://app.localhost:3000/curse-of-the',
+      path: '/curse-of-the',
     },
     {
       title: 'cryptocraft',
       desc: 'Shape limitless worlds, earn $LUCID Tokens, unleash creativity, adventure awaits!',
       image: 'minecraft',
-      path: 'http://app.localhost:3000/cryptocraft',
+      path: '/cryptocraft',
     },
     {
       title: 'sandstorm racers',
       desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
       image: 'cyber',
-      path: 'http://app.localhost:3000/sandstorm',
+      path: '/sandstorm',
     },
     {
       title: 'desert warriors',
       desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
       image: 'fps',
-      path: 'http://app.localhost:3000/desert',
+      path: '/desert',
     },
   ];
 
