@@ -57,44 +57,38 @@ const Nav: React.FC = () => {
   const appNavList = [
     {
       name: 'home',
-      slug: 'http://app.localhost:3000/',
-      paths: ['http://app.localhost:3000/'],
+      slug: '/',
+      paths: ['/'],
       type: 'internal',
     },
     {
       name: 'games',
-      slug: 'http://app.localhost:3000/game',
-      paths: [
-        'http://app.localhost:3000/game',
-        'http://app.localhost:3000/game/sandstorm',
-        'http://app.localhost:3000/game/curse-of-the',
-        'http://app.localhost:3000/game/cryptocraft',
-        'http://app.localhost:3000/game/desert',
-      ],
+      slug: '/game',
+      paths: ['/game', '/game/sandstorm', '/game/curse-of-the', '/game/cryptocraft', '/game/desert'],
       type: 'internal',
     },
     {
       name: 'tournaments',
-      slug: 'http://app.localhost:3000/tournaments',
-      paths: ['http://app.localhost:3000/tournaments'],
+      slug: '/tournaments',
+      paths: ['/tournaments'],
       type: 'internal',
     },
     {
       name: 'marketplace',
-      slug: 'http://app.localhost:3000/marketplace',
-      paths: ['http://app.localhost:3000/marketplace'],
+      slug: '/marketplace',
+      paths: ['/marketplace'],
       type: 'internal',
     },
     {
       name: 'dao',
-      slug: 'http://app.localhost:3000/dao',
-      paths: ['http://app.localhost:3000/dao'],
+      slug: '/dao',
+      paths: ['/dao'],
       type: 'internal',
     },
     {
       name: 'support hub',
-      slug: 'http://app.localhost:3000/support-hub',
-      paths: ['http://app.localhost:3000/support-hub'],
+      slug: '/support-hub',
+      paths: ['/support-hub'],
       type: 'internal',
     },
   ];
@@ -102,38 +96,32 @@ const Nav: React.FC = () => {
   const appNavMobile = [
     {
       name: 'home',
-      slug: 'http://app.localhost:3000/',
-      paths: ['http://app.localhost:3000/'],
+      slug: '/',
+      paths: ['/'],
       type: 'internal',
     },
     {
       name: 'games',
-      slug: 'http://app.localhost:3000/game',
-      paths: [
-        'http:/app.localhost:3000/game',
-        'http://app.localhost:3000/game/sandstorm',
-        'http://app.localhost:3000/game/curse-of-the',
-        'http://app.localhost:3000/game/cryptocraft',
-        'http://app.localhost:3000/game/desert',
-      ],
+      slug: '/game',
+      paths: ['/game', '/game/sandstorm', '/game/curse-of-the', '/game/cryptocraft', '/game/desert'],
       type: 'internal',
     },
     {
       name: 'tournaments',
-      slug: 'http://app.localhost:3000/tournaments',
-      paths: ['http://app.localhost:3000/tournaments'],
+      slug: '/tournaments',
+      paths: ['/tournaments'],
       type: 'internal',
     },
     {
       name: 'marketplace',
-      slug: 'http://app.localhost:3000/marketplace',
-      paths: ['http://app.localhost:3000/support-hub'],
+      slug: '/marketplace',
+      paths: ['/support-hub'],
       type: 'internal',
     },
     {
       name: 'support hub',
-      slug: 'http://app.localhost:3000/careers',
-      paths: ['http://app.localhost:3000/careers'],
+      slug: '/careers',
+      paths: ['/careers'],
       type: 'internal',
     },
   ];
@@ -587,7 +575,7 @@ const Nav: React.FC = () => {
                 </h1>
               </button>
             </a> */}
-            <Link to={subdomain !== 'app' ? 'http://app.localhost:3000/' : '/login'}>
+            <Link to={subdomain !== 'app' ? 'http://app.localhost:3000/' : '/login'} target="_blank">
               <div className="w-full lg:w-[15rem] relative lg:block hidden">
                 <div className="hover:text-white py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF] transition-colors ease-in-out duration-300">
                   {`${subdomain !== 'app' ? 'Launch App' : 'Login'}`}
