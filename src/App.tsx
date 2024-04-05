@@ -76,7 +76,7 @@ const App: React.FC = () => {
   return (
     <section className="w-full h-full overflow-hidden bg-bg">
       <Nav />
-      {subdomain === 'app' ? <AppRoutes /> : <BaseRoutes />}
+      {subdomain === 'app' || subdomain === 'test' ? <AppRoutes /> : <BaseRoutes />}
 
       {/* <Route path="/" element={<Landing />} />
         <Route path="/team" element={<Team />} />
@@ -100,7 +100,7 @@ const App: React.FC = () => {
         <Route path="/apps" element={<AppHome />} /> */}
 
       {/* </Route> */}
-      {subdomain !== 'app' && <Footer />}
+      {subdomain !== 'app' && subdomain !== 'test' && <Footer />}
     </section>
   );
 };
