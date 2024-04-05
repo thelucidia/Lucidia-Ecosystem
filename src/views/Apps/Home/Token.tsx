@@ -3,27 +3,27 @@ import React from 'react';
 const Token: React.FC = () => {
   const our_products = [
     {
-      title: 'play2earn',
+      title: 'NFT MARKETPLACE',
       slug: 'play',
-      desc: 'Earn $LUCID by participating in Lucidia games and achieving high scores',
+      desc: 'A cloud-based solution enabling game studios to seamlessly incorporate NFT marketplaces both within their games and on their websites.',
       img: 'play.svg',
     },
     {
-      title: 'nft integration',
+      title: 'Login System',
       slug: 'nft',
-      desc: 'NFT integration for seamless interoperability between games and the blockchain',
+      desc: 'An advanced login system that simplifies user access via social media credentials and automatically generates custodial wallets for users.',
       img: 'nft.svg',
     },
     {
-      title: 'web 3 entry',
+      title: 'NFT Tool Kit',
       slug: 'web3',
-      desc: 'Providing cost effective solutions for an affordable transition to a Web3 model',
+      desc: 'A robust toolkit offering game developers the necessary tools to integrate, manage, and monetize NFTs within their games.',
       img: 'web3.svg',
     },
     {
-      title: 'dev tools hub',
+      title: 'Digital Twin (1:1 in Web3)',
       slug: 'fit',
-      desc: 'Lucidia is committed to champion growth and innovation within the gaming and blockchain spaces',
+      desc: 'A framework enabling the creation of digital twins for real-world items or locations within games and virtual environments.',
       img: 'fit.svg',
     },
   ];
