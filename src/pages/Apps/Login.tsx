@@ -15,6 +15,13 @@ const api_key = import.meta.env.VITE_APP_API_KEY;
 console.log('client id: ', client_id);
 
 const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.REDIRECT);
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+const apiUrl = 'https://auth.sphereone.xyz/.well-known/openid-configuration';
+
+fetch(proxyUrl + apiUrl)
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));
 
 const Login: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
