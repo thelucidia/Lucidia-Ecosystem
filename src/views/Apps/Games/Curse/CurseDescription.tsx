@@ -48,16 +48,19 @@ const CurseDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialS
       title: 'curseofthepharaoh',
       image: '1',
       path: '/public/assets/app/games/curse',
+      url: '/curse-of-the-pharaoh',
     },
     {
       title: 'curseofthepharaoh',
       image: '2',
       path: '/public/assets/app/games/curse',
+      url: '/curse-of-the-pharaoh',
     },
     {
       title: 'curseofthepharaoh',
       image: '3',
       path: '/public/assets/app/games/curse',
+      url: '/curse-of-the-pharaoh',
     },
   ];
   return (
@@ -73,7 +76,7 @@ const CurseDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialS
                 transition={{ type: 'spring', stiffness: 70 }}
                 className={`${id == i ? 'hidden' : 'block'}`}
               >
-                <Link to={items.path}>
+                <Link to={items.url}>
                   <div
                     key={i}
                     className="sm:w-[350px] w-[230px] sm:h-[470px] h-[318px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
@@ -136,7 +139,7 @@ const CurseDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialS
                 }
               }}
             >
-              <Link to={items.path}>
+              <Link to={items.url}>
                 <div
                   key={i}
                   className="sm:w-[350px] w-[230px] sm:h-[470px] h-[318px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
