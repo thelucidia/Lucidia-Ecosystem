@@ -3,7 +3,6 @@ import { LiaTelegramPlane } from 'react-icons/lia';
 import { TfiWorld } from 'react-icons/tfi';
 import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
 import WebSDK, { LoginBehavior } from 'websdk';
 
 const redirectURI = 'https://app.lucidia.io/';
@@ -143,12 +142,12 @@ const Login: React.FC = () => {
             >
               <h4 className="scale-x-[-1]">Login</h4>
             </button>
-            <h4 className="text-[18px] text-white font-primary text-center">
+            {/* <h4 className="text-[18px] text-white font-primary text-center">
               Don't have an account yet?
               <Link to="/signup" className="pl-1 text-cyan text-[18px] font-primary">
                 Sign Up
               </Link>
-            </h4>
+            </h4> */}
             <p className="text-white text-[16px] font-secondary text-center">Powered by</p>
             <img src="/partners/sphereone.webp" className="mx-auto" width={188} />
           </div>

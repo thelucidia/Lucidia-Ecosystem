@@ -26,7 +26,7 @@ const Banner: React.FC = () => {
             alt="sandstorm"
           />
         </motion.div>
-        <a
+        {/* <a
           href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
           target="_blank"
           rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const Banner: React.FC = () => {
             </div>
             <img src="/assets/images/game_button.png" alt="see_details" />
           </div>
-        </a>
+        </a> */}
       </div>
     </section>
   );

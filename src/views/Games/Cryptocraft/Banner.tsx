@@ -12,7 +12,7 @@ const Banner: React.FC = () => {
       <div className="w-full sm:h-screen h-auto absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-9 "></div>
       <div className="mt-[331px] flex items-center justify-end xs:justify-center mb-[287px] mr-[20px] flex-col gap-y-[50px] ">
         <img src="/assets/images/games/crypto/crypto.svg" alt="crypto" className="relative pb-16 z-10" />
-        <a
+        {/* <a
           href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
           target="_blank"
           rel="noopener noreferrer"
@@ -24,7 +24,7 @@ const Banner: React.FC = () => {
             </div>
             <img src="/assets/images/game_button.png" alt="see_details" />
           </div>
-        </a>
+        </a> */}
       </div>
     </section>
   );
