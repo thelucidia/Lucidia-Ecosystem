@@ -83,7 +83,7 @@ const SandDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
                   >
                     <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#70F] bg-transparent">
                       <img
-                        src={`/public/assets/app/games/sandstorm/${items.image}.png`}
+                        src={`/assets/app/games/sandstorm/${items.image}.png`}
                         alt={items.title}
                         className="object-cover absolute w-full h-full"
                       />
@@ -146,7 +146,7 @@ const SandDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
                 >
                   <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#70F] bg-transparent">
                     <img
-                      src={`/public/assets/app/games/sandstorm/${items.image}.png`}
+                      src={`/assets/app/games/sandstorm/${items.image}.png`}
                       alt={items.title}
                       className="object-cover absolute w-full h-full"
                     />

@@ -6,7 +6,7 @@ import { BsTwitterX } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import WebSDK, { LoginBehavior } from 'websdk';
 
-const redirectURI = 'https://clinquant-kitsune-7ccb46.netlify.app/';
+const redirectURI = 'https://app.lucidia.io/';
 // const redirectURI = 'http://localhost:3000';
 
 const client_id = import.meta.env.VITE_APP_CLIENT_ID;

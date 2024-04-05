@@ -47,17 +47,17 @@ const Description: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSlide 
     {
       title: 'desertwarrior',
       image: 'bg_1',
-      path: '/public/assets/app/games/desert',
+      path: '/assets/app/games/desert',
     },
     {
       title: 'desertwarrior',
       image: 'bg_2',
-      path: '/public/assets/app/games/desert',
+      path: '/assets/app/games/desert',
     },
     {
       title: 'desertwarrior',
       image: 'bg_3',
-      path: '/public/assets/app/games/desert',
+      path: '/assets/app/games/desert',
     },
   ];
   return (
@@ -80,7 +80,7 @@ const Description: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSlide 
                   >
                     <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#0ED4FF] bg-transparent">
                       <img
-                        src={`/public/assets/app/games/desert/${items.image}.png`}
+                        src={`/assets/app/games/desert/${items.image}.png`}
                         alt={items.title}
                         className="object-cover absolute w-full h-full"
                       />
@@ -143,7 +143,7 @@ const Description: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSlide 
                 >
                   <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#0ED4FF] bg-transparent">
                     <img
-                      src={`/public/assets/app/games/desert/${items.image}.png`}
+                      src={`/assets/app/games/desert/${items.image}.png`}
                       alt={items.title}
                       className="object-cover absolute w-full h-full"
                     />

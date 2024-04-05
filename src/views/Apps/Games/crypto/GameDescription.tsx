@@ -53,12 +53,14 @@ const GameDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
     {
       title: 'cryptocraft',
       image: 'bg_2',
-      path: '/public/assets/app/games/crypto',
+      path: '/assets/app/games/crypto',
+      url: '/cryptocraft',
     },
     {
       title: 'cryptocraft',
       image: 'bg_3',
-      path: '/public/assets/app/games/crypto',
+      path: '/assets/app/games/crypto',
+      url: '/cryptocraft',
     },
   ];
   return (
@@ -81,7 +83,7 @@ const GameDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
                   >
                     <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#A5FF16] bg-transparent">
                       <img
-                        src={`/public/assets/app/games/crypto/${items.image}.png`}
+                        src={`/assets/app/games/crypto/${items.image}.png`}
                         alt={items.title}
                         className="object-cover absolute w-full h-full"
                       />
@@ -144,7 +146,7 @@ const GameDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
                 >
                   <div className="scale-x-[-1] relative w-full h-full group overflow-hidden border border-2 border-[#A5FF16] bg-transparent">
                     <img
-                      src={`/public/assets/app/games/crypto/${items.image}.png`}
+                      src={`/assets/app/games/crypto/${items.image}.png`}
                       alt={items.title}
                       className="object-cover absolute w-full h-full"
                     />

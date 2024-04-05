@@ -14,7 +14,7 @@ const SandBanner: React.FC = () => {
         <img src="/assets/app/games/sandstorm/banner.svg" alt="server" className="relative pb-16 z-10" />
         <div className="md:mt-[19px] flex flex-row justify-center gap-[10px] z-10">
           <div className="mt-4 flex gap-[10px]  justify-center items-center">
-            <img src="/public/assets/app/games/server.png" alt="server" className="w-fit h-fit" />
+            <img src="/assets/app/games/server.png" alt="server" className="w-fit h-fit" />
             <span className="items-center text-neutral-500 text-xs pr-[10px] border border-solid border-y-0 border-l-0 border-r-1 border-white font-medium font-['Turret Road'] font-second w-[60px]">
               1 Server
             </span>
@@ -23,7 +23,7 @@ const SandBanner: React.FC = () => {
             </span>
           </div>
           <div className="mt-4 flex gap-[10px] items-center justify-center">
-            <img src="/public/assets/app/games/member.png" alt="member" />
+            <img src="/assets/app/games/member.png" alt="member" />
             <span className="items-center text-neutral-500 text-xs font-medium font-['Turret Road'] font-second">
               0 Player
             </span>
