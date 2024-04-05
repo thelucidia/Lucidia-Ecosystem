@@ -25,7 +25,7 @@ const SandContent: React.FC = () => {
               </div>
             </motion.div>
 
-            <div className=" flex flex-col gap-y-4 mt-14 sm:mt-20 pr-[20px]">
+            {/* <div className=" flex flex-col gap-y-4 mt-14 sm:mt-20 pr-[20px]">
               <a
                 href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
                 target="_blank"
@@ -41,7 +41,7 @@ const SandContent: React.FC = () => {
                   </h1>
                 </button>
               </a>
-            </div>
+            </div> */}
           </div>
 
           <motion.div
