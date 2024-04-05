@@ -13,24 +13,28 @@ const OtherGames: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
       desc: 'Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.',
       image: 'zombie',
       path: '/gameplay/curse-of-the-pharaoh',
+      url: '/curse-of-the-pharaoh',
     },
     {
       title: 'cryptocraft',
       desc: 'Shape limitless worlds, earn $LUCID Tokens, unleash creativity, adventure awaits!',
       image: 'minecraft',
       path: '/gameplay/cryptocraft',
+      url: '/cryptocraft',
     },
     {
       title: 'sandstorm racers',
       desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
       image: 'cyber',
       path: '/gameplay/sandstorm',
+      url: '/sandstorm',
     },
     {
       title: 'desert warriors',
       desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
       image: 'fps',
       path: '/gameplay/desert',
+      url: '/desert-warriors',
     },
   ];
   return (
@@ -46,7 +50,7 @@ const OtherGames: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
               transition={{ type: 'spring', stiffness: 70 }}
               className={`${id == i ? 'hidden' : 'block'}`}
             >
-              <Link to={items.path}>
+              <Link to={items.url}>
                 <div
                   key={i}
                   className="sm:w-[450px] w-[330px] sm:h-[570px] h-[418px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
