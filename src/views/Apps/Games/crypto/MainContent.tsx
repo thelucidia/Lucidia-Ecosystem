@@ -129,7 +129,7 @@ const MainContent: React.FC = () => {
           >
             <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full p-5 md:md:border-l-[0.5rem] border-[#A5FF16] rounded-md">
-                <h1 className="font-secondary font-bold text-prpl text-lg">Gameplay Mechanics</h1>
+                <h1 className="font-secondary font-bold text-prpl text-lg">Game Features</h1>
 
                 {/* <h2 className="text-cyan font-primary font-medium text-lg w-fit mt-3">
                   <a
@@ -145,30 +145,35 @@ const MainContent: React.FC = () => {
                     finance.lucidia.io
                   </a>
                 </h2> */}
-
-                <p className="mt-8">
-                  Lucidcraft is an amalgamation of creativity, survival, and exploration, setin a richly diverse and
-                  responsive world.
-                </p>
                 <ul>
                   <li>
-                    <span className="text-[#7700FF]">• Building and Crafting: </span> From humble shelters to grandiose
-                    constructions, Lucidcraft's intuitive crafting system invites endless innovation.
+                    <span className="text-[#7700FF]">• Dynamic, User-Generated Environments: </span> Infinite landscapes
+                    evolve through player contributions, creating a world of boundless creativity and exploration.
                   </li>
                   <li>
-                    <span className="text-[#7700FF]">• Exploration: </span>Traverse sprawling biomes, each brimming with
-                    unique resources and mysteries. Discover, adapt, and survive in a world that's as vast as your
-                    imagination.
+                    <span className="text-[#7700FF]">• Blockchain Integration: </span>Embraces Web3, enabling true
+                    ownership, trading, and monetization of in-game assets and real estate via NFTs, transforming
+                    gameplay into potential real-world value.
                   </li>
                   <li>
-                    <span className="text-[#7700FF]">• Survival Elements: </span>Challenge yourself against the
-                    elements, manage resources, and fend off hostile creatures to carve out your place in Lucidcraft.
+                    <span className="text-[#7700FF]">• Adaptive Ecosystems: </span>The game's environments adapt to
+                    player interactions, fostering a living world where actions resonate, influencing the ecosystem and
+                    player strategy.
                   </li>
                   <li>
-                    <span className="text-[#7700FF]">• Economy and Trading:</span>Engage in a dynamic, player-driven
-                    economy, trading crafted items, resources, and land, with blockchain ensuring secure and transparent
-                    transactions.
+                    <span className="text-[#7700FF]">• Customizable Gameplay Experience:</span>Offers modding
+                    capabilities and in-game programming tools, allowing players to craft unique game modes, rules, and
+                    experiences, tailoring the world to their vision.
                   </li>
+                  <li>
+                    <span className="text-[#7700FF]">• Community Governance:</span> Incorporates a decentralized
+                    autonomous organization (DAO) model, granting players a stake in decision-making processes, shaping
+                    the game's development, and marketplace rules.
+                  </li>
+                  <p className="mt-8">
+                    With "CryptoCraft," players not only delve into a realm of boundless possibility but also contribute
+                    to the fabric of a digital universe where gaming meets the future of decentralized economies.
+                  </p>
                 </ul>
               </div>
             </div>
