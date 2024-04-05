@@ -18,15 +18,25 @@ const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.R
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 const apiUrl = 'https://auth.sphereone.xyz/.well-known/openid-configuration';
 
-fetch(proxyUrl + apiUrl)
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.error(error));
-
 const Login: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   console.log(isLoggedIn);
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(proxyUrl + apiUrl);
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
     try {
       const handleAuth = async () => {
         const authResult: any = await sphereoneSDK.handleCallback();
