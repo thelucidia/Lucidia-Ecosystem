@@ -20,14 +20,7 @@ const data = [
   {
     title: 'Game Overview',
     desc: [
-      "<span class='text-[#C0FF0E]'>Title:</span> Cryptocraft",
-      "<span class='text-[#C0FF0E]'>Genre:</span>  Sandbox, Open-World, Survival",
-      "<span class='text-[#C0FF0E]'>Setting:</span> Creative builders, explorers, Web3 enthusiasts, and community-driven players",
-      'Embark on an adventure in ever-expanding worlds, craft your destiny, and become part of a vibrant community where collaboration and creativity reign supreme.',
-      "<span class='text-[#7700FF] mt-[24px]'>Gameplay Mechanics</span>",
-      'Cryptocraft is an amalgamation of creativity, survival, and exploration, set in a richly diverse and responsive world.',
-      "<span class='text-[#C0FF0E]'>Building and Crafting:</span>  From humble shelters to grandiose constructions. Cryptocraft's intuitive crafting system invites endless innovation",
-      "<span class='text-[#C0FF0E]'>Exploration:</span> Traverse sprawling biomes, each brimming with unique resources and mysteries. Discover, adapt, and survive in a world that's as vast as your imagination",
+      "'CryptoCraft' immerses players in a sandbox world where creativity, survival, and blockchain merge to forge a novel gaming frontier. Leveraging a realistic physics engine, the game balances intricate crafting and building mechanics with accessible gameplay for a diverse audience. Players are thrust into an expansive, user-generated universe, encouraged to explore, survive, and thrive in ecosystems that dynamically respond to their actions. From crafting basic tools to constructing elaborate structures and engaging in a player-driven economy, 'CryptoCraft' offers a canvas for limitless creativity underpinned by Web3 technology.",
     ],
     image: '/assets/app/games/crypto/bg_2.png',
   },
