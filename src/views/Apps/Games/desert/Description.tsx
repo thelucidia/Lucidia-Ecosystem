@@ -48,16 +48,19 @@ const Description: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSlide 
       title: 'desertwarrior',
       image: 'bg_1',
       path: '/assets/app/games/desert',
+      url: '/desert-warriors',
     },
     {
       title: 'desertwarrior',
       image: 'bg_2',
       path: '/assets/app/games/desert',
+      url: '/desert-warriors',
     },
     {
       title: 'desertwarrior',
       image: 'bg_3',
       path: '/assets/app/games/desert',
+      url: '/desert-warriors',
     },
   ];
   return (
@@ -73,7 +76,7 @@ const Description: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSlide 
                 transition={{ type: 'spring', stiffness: 70 }}
                 className={`${id == i ? 'hidden' : 'block'}`}
               >
-                <Link to={items.path}>
+                <Link to={items.url}>
                   <div
                     key={i}
                     className="sm:w-[350px] w-[230px] sm:h-[470px] h-[318px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "
@@ -136,7 +139,7 @@ const Description: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSlide 
                 }
               }}
             >
-              <Link to={items.path}>
+              <Link to={items.url}>
                 <div
                   key={i}
                   className="sm:w-[350px] w-[230px] sm:h-[470px] h-[318px] rounded-md clipped2 bg-white relative font-bold flex items-center justify-center scale-x-[-1] "

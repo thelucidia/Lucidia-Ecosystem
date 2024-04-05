@@ -32,7 +32,8 @@ const SupportHub: React.FC = () => {
         className="absolute top-0 z-0 w-full h-screen object-cover"
       />
       {/* <div className="w-full h-screen absolute top-0 left-0 bg-opacity-5 backdrop-filter backdrop-blur-lg z-1"></div> */}
-      <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/10 z-1"></div>
+      <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-[#0d0d0d]/10 z-7"></div>
+      <div className="w-full h-screen absolute top-0 left-0 bg-gradient-to-t from-black to-black/51% z-7 "></div>
       <div className="w-full h-screen absolute top-0 left-0 bg-prpl/20 z-1"></div>
       <div className="container gap-x-5 mx-auto flex flex-row mt-[178px]">
         <ul className="flex flex-col w-fit lg:text-5xl md:text-4xl sm:text-3xl text-2xl z-10 sm:block hidden">
@@ -117,7 +118,7 @@ const SupportHub: React.FC = () => {
             <img
               src="/assets/app/games/edu/gamer.png"
               alt="gamer"
-              className=" z-10 absolute bottom-0 w-[744px] h-[752px] right-0"
+              className=" z-10 absolute bottom-0 w-[744px] md:h-[752px] h-[660px] right-0"
             />
           </div>
         </div>
