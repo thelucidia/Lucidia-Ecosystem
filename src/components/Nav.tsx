@@ -291,7 +291,7 @@ const Nav: React.FC = () => {
 
         <div className="overflow-auto max-h-[90%] w-full pb-20 top-0 right-0">
           <ul className="text-white font-secondary font-semibold uppercase px-7 w-full py-12 text-sm">
-            {subdomain !== 'app'
+            {subdomain !== 'app' && subdomain !== 'test'
               ? navMobile.map((items, i) => {
                   return items.type === 'external' ? (
                     <a
@@ -449,7 +449,7 @@ const Nav: React.FC = () => {
           </Link>
 
           <ul className="font-secondary font-semibold text-sm uppercase items-center gap-x-12 text-white xl:flex hidden">
-            {subdomain !== 'app'
+            {subdomain !== 'app' && subdomain !== 'test'
               ? navList.map((items, i) => {
                   return items.type === 'external' ? (
                     <Link to={items.slug} target="_blank" rel="noopener noreferrer" className="" key={i}>
@@ -590,12 +590,12 @@ const Nav: React.FC = () => {
               </button>
             </a> */}
             <Link
-              to={subdomain !== 'app' ? 'https://app.lucidia.io' : '/login'}
+              to={subdomain !== 'app' && subdomain !== 'test' ? 'https://test.lucidia.io' : '/login'}
               target={subdomain !== 'app' ? `_blank` : ''}
             >
               <div className="w-full lg:w-[15rem] relative lg:block hidden">
                 <div className="hover:text-white py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF] transition-colors ease-in-out duration-300">
-                  {`${subdomain !== 'app' ? 'Launch App' : 'Login'}`}
+                  {`${subdomain !== 'app' && subdomain !== 'test' ? 'Launch App' : 'Login'}`}
                 </div>
                 <img src="/assets/images/launch_app.svg" alt="LaunchApp" />
               </div>
