@@ -47,19 +47,19 @@ const CurseDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialS
     {
       title: 'curseofthepharaoh',
       image: '1',
-      path: '/public/assets/app/games/curse',
+      path: '/assets/app/games/curse',
       url: '/curse-of-the-pharaoh',
     },
     {
       title: 'curseofthepharaoh',
       image: '2',
-      path: '/public/assets/app/games/curse',
+      path: '/assets/app/games/curse',
       url: '/curse-of-the-pharaoh',
     },
     {
       title: 'curseofthepharaoh',
       image: '3',
-      path: '/public/assets/app/games/curse',
+      path: '/assets/app/games/curse',
       url: '/curse-of-the-pharaoh',
     },
   ];

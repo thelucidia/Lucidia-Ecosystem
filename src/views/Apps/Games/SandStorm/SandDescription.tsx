@@ -47,19 +47,19 @@ const SandDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
     {
       title: 'sandstorm',
       image: 'bg_1',
-      path: '/public/assets/app/games/sandstorm',
+      path: '/assets/app/games/sandstorm',
       url: '/sandstorm',
     },
     {
       title: 'sandstorm',
       image: 'bg_2',
-      path: '/public/assets/app/games/sandstorm',
+      path: '/assets/app/games/sandstorm',
       url: '/sandstorm',
     },
     {
       title: 'sandstorm',
       image: 'bg_3',
-      path: '/public/assets/app/games/sandstorm',
+      path: '/assets/app/games/sandstorm',
       url: '/sandstorm',
     },
   ];

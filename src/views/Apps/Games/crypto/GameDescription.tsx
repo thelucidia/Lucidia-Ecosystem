@@ -47,7 +47,7 @@ const GameDescription: React.FC<IOtherGames> = ({ id }: IOtherGames, { initialSl
     {
       title: 'cryptocraft',
       image: 'bg_1',
-      path: '/public/assets/app/games/crypto',
+      path: '/assets/app/games/crypto',
       url: '/cryptocraft',
     },
     {
