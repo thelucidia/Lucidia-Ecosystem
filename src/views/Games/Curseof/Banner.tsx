@@ -53,7 +53,7 @@ const Banner: React.FC = () => {
             alt="curseofthe"
           />
         </motion.div>
-        <a
+        {/* <a
           href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
           target="_blank"
           rel="noopener noreferrer"
@@ -65,7 +65,7 @@ const Banner: React.FC = () => {
             </div>
             <img src="/assets/images/game_button.png" alt="see_details" />
           </div>
-        </a>
+        </a> */}
       </div>
       {/* <img src="/hero/navline.webp" alt="Navline" className="absolute z-11 left-0 bottom-5 w-full xl:block hidden" /> */}
     </section>
