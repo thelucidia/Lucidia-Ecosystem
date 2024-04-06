@@ -4,18 +4,16 @@ import { TfiWorld } from 'react-icons/tfi';
 import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
 import WebSDK, { LoginBehavior } from 'websdk';
+import Config from '../../config';
 
-const redirectURI = 'https://app.lucidia.io/';
-// const redirectURI = 'http://localhost:3000';
+const redirectURI = Config.production ? Config.appHost : Config.appLocalHost;
 
-const client_id = import.meta.env.VITE_APP_CLIENT_ID;
-const api_key = import.meta.env.VITE_APP_API_KEY;
+const client_id = Config.clientID;
+const api_key = Config.apiKey;
 
 console.log('client id: ', client_id);
 
 const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.REDIRECT);
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-const apiUrl = 'https://auth.sphereone.xyz/.well-known/openid-configuration';
 
 const Login: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -40,14 +38,6 @@ const Login: React.FC = () => {
 
   const login = async () => {
     try {
-      const response = await fetch(proxyUrl + apiUrl);
-      if (!response.ok) {
-        throw new Error('Failed to fetch data');
-      }
-
-      const data = await response.json();
-      console.log(data);
-
       console.log('logged in');
 
       await sphereoneSDK.login();

@@ -8,6 +8,7 @@ import { MdKeyboardArrowUp } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { clsx } from 'clsx';
+import Config from '../config';
 
 const Nav: React.FC = () => {
   const navList = [
@@ -145,12 +146,6 @@ const Nav: React.FC = () => {
   ];
 
   const navMobile = [
-    // {
-    //   name: 'pitchdeck',
-    //   slug: 'pitchdeck',
-    //   type: 'external',
-    //   link: 'https://drive.google.com/file/d/1n1ddGOA5tTXVhK6zu7962QLSJBUev0aA/view',
-    // },
     {
       name: 'home',
       slug: '/',
@@ -193,35 +188,6 @@ const Nav: React.FC = () => {
       paths: ['/apps'],
       type: 'internal',
     },
-    // {
-    //   name: 'whitepaper',
-    //   slug: 'whitepaper',
-    //   type: 'external',
-    // },
-    // {
-    //   name: 'audit',
-    //   slug: 'audit',
-    //   sub: [
-    //     {
-    //       title: 'interfi',
-    //       link: 'https://github.com/interfinetwork/project-delivery-data/blob/main/Lucidia/Lucidia_AuditReport_InterFi.pdf',
-    //     },
-    //     {
-    //       title: 'revoluzion eth',
-    //       link: 'https://revoluzion.app/audits/presaleeth',
-    //     },
-    //     {
-    //       title: 'revoluzion bsc',
-    //       link: 'https://revoluzion.app/audits/presalebsc',
-    //     },
-    //   ],
-    // },
-    // {
-    // {
-    //   name: 'faq',
-    //   slug: 'faq',
-    //   type: 'internal',
-    // },
   ];
 
   const icons = [
@@ -279,6 +245,7 @@ const Nav: React.FC = () => {
     };
   }, [screenSize]);
   const [subdomain] = window.location.hostname.split('.');
+  const isApp = subdomain === 'app';
   return (
     <>
       <nav
@@ -569,33 +536,13 @@ const Nav: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* <a
-              href="https://drive.google.com/file/d/1pT08KRpvPwnQcxwyGktETCeH8HtZi08v/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=""
-            >
-              <button className=" w-full lg:w-[15rem] relative lg:block hidden h-12 clipped2 bg-white  font-bold flex items-center justify-center scale-x-[-1] group">
-                <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300 ">
-                  <img
-                    src="/hero/trans.webp"
-                    alt="Herobg"
-                    className="w-full h-full object-cover absolute top-0 left-0 group-hover:opacity-0 transition-opacity ease-in-out duration-300"
-                  />
-                </div>
-                <h1 className="font-secondary relative z-10 font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300 text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF]">
-                  Launch App
-                </h1>
-              </button>
-            </a> */}
             <Link
-              to={subdomain !== 'app' && subdomain !== 'test' ? 'https://test.lucidia.io' : '/login'}
-              target={subdomain !== 'app' ? `_blank` : ''}
+              to={!isApp ? `${Config.production ? Config.appHost : Config.appLocalHost}` : '/login'}
+              target={!isApp ? `_blank` : ''}
             >
               <div className="w-full lg:w-[15rem] relative lg:block hidden">
                 <div className="hover:text-white py-[13px] w-[237px] absolute font-secondary text-[14px] uppercase leading-normal font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-[#9586FF] to-[#0ED4FF] transition-colors ease-in-out duration-300">
-                  {`${subdomain !== 'app' && subdomain !== 'test' ? 'Launch App' : 'Login'}`}
+                  {`${!isApp ? 'Launch App' : 'Login'}`}
                 </div>
                 <img src="/assets/images/launch_app.svg" alt="LaunchApp" />
               </div>

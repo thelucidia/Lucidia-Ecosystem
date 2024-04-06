@@ -72,35 +72,13 @@ const App: React.FC = () => {
   // const { pathname } = useLocation();
 
   const [subdomain] = window.location.hostname.split('.');
-
+  const isApp = subdomain === 'app';
   return (
     <section className="w-full h-full overflow-hidden bg-bg">
       <Nav />
-      {subdomain === 'app' || subdomain === 'test' ? <AppRoutes /> : <BaseRoutes />}
+      {isApp ? <AppRoutes /> : <BaseRoutes />}
 
-      {/* <Route path="/" element={<Landing />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/our-products" element={<OurProducts />} />
-        <Route path="/roadmap" element={<RoadMap />} />
-        <Route path="/careers" element={<Careers />} /> */}
-
-      {/* <Route path="/apps"> */}
-      {/* <Route path="/apps/cryptocraft" element={<CryptoCraft />} />
-        <Route path="/apps/desert" element={<Desertwarrior />} />
-        <Route path="/apps/sandstorm" element={<SandStorm />} />
-        <Route path="/apps/curse-of-the" element={<CurseofThePharaoh />} />
-        <Route path="/apps/game" element={<Game />} />
-        <Route path="/apps/login" element={<Login />} />
-        <Route path="/apps/signup" element={<Signup />} />
-        <Route path="/apps/support-hub" element={<SupportHub />} />
-        <Route path="/apps/dev-tools" element={<DevTools />} />
-        <Route path="/apps/dao" element={<Dao />} />
-        <Route path="/apps/marketplace" element={<Marketplace />} />
-        <Route path="/apps/tournaments" element={<Tournaments />} />
-        <Route path="/apps" element={<AppHome />} /> */}
-
-      {/* </Route> */}
-      {subdomain !== 'app' && subdomain !== 'test' && <Footer />}
+      {!isApp && <Footer />}
     </section>
   );
 };
