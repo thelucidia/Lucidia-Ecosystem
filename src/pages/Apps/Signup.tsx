@@ -11,8 +11,6 @@ const redirectURI = 'http://localhost:3000';
 const client_id = import.meta.env.VITE_APP_CLIENT_ID;
 const api_key = import.meta.env.VITE_APP_API_KEY;
 
-console.log('client id: ', client_id);
-
 const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.REDIRECT);
 const Signup: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -37,8 +35,6 @@ const Signup: React.FC = () => {
 
   const login = async () => {
     try {
-      console.log('logged in');
-
       await sphereoneSDK.login();
     } catch (e: any) {
       console.error(e);

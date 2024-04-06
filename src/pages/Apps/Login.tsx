@@ -11,8 +11,6 @@ const redirectURI = Config.production ? Config.appHost : Config.appLocalHost;
 const client_id = Config.clientID;
 const api_key = Config.apiKey;
 
-console.log('client id: ', client_id);
-
 const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.REDIRECT);
 
 const Login: React.FC = () => {
@@ -38,8 +36,6 @@ const Login: React.FC = () => {
 
   const login = async () => {
     try {
-      console.log('logged in');
-
       await sphereoneSDK.login();
     } catch (e: any) {
       console.error(e);
