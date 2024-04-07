@@ -12,7 +12,6 @@ const client_id = Config.clientID;
 const api_key = Config.apiKey;
 
 const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.REDIRECT);
-
 const Login: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   console.log(isLoggedIn);
@@ -36,7 +35,7 @@ const Login: React.FC = () => {
 
   const login = async () => {
     try {
-      await sphereoneSDK.login();
+      await sphereoneSDK.login().catch();
     } catch (e: any) {
       console.error(e);
     }
@@ -82,7 +81,7 @@ const Login: React.FC = () => {
             );
           })}
         </ul>
-        <div className="max-w-[700px] w-full h-auto rounded-[10px] ml-[23%] border-[2px] border-[#401675] relative bg-opacity-5 backdrop-filter backdrop-blur-lg">
+        <div className="max-w-[700px] w-full h-auto rounded-[10px] sm:ml-[23%] mx-6 border-[2px] border-[#401675] relative bg-opacity-5 backdrop-filter backdrop-blur-lg">
           <div className="py-10 flex flex-col gap-y-5">
             <div className="mx-auto text-transparent font-bold text-center text-[32px] uppercase font-secondary bg-clip-text bg-gradient-to-r from-white via-[#D5B0FF] to-white w-fit">
               log in to your account
