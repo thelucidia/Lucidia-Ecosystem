@@ -48,9 +48,9 @@ const SandContent: React.FC = () => {
             initial={{ x: 150 }}
             whileInView={{ x: 0 }}
             transition={{ type: 'spring', stiffness: 60 }}
-            className="sm:w-[58.9%] flex flex-col gap-y-20 overflow-hidden"
+            className="sm:w-[58.9%] flex flex-col overflow-hidden"
           >
-            <div className="w-full h-auto clipped2 bg-gry relative  font-bold flex items-center justify-center scale-x-[-1] rounded-md">
+            <div className="w-full h-auto clipped2 bg-gry relative font-primary flex items-center justify-center scale-x-[-1] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full p-5 md:md:border-l-[0.5rem] border-[#70F] rounded-md">
                 <h1 className="font-secondary font-bold text-prpl text-lg uppercase">Characters and Progression</h1>
                 <ul>
