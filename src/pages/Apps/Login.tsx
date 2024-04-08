@@ -34,6 +34,7 @@ const Login: React.FC = () => {
     getRedirectResult(auth)
       .then(async (result) => {
         try {
+          console.log('signin: ', isSignedIn);
           // The result can sometimes come back as 'null'. Thus, this check is necessary.
           if (!result) return new Error('No results');
 
@@ -151,7 +152,6 @@ const Login: React.FC = () => {
                 placeholder="PASSWORD"
               />
             </div> */}
-            {isSignedIn ? 'You are signed in!' : 'You are not signed in!'}
             <button
               className="min-w-[343px] mx-auto mt-10 clipped scale-x-[-1] rounded-[5px] bg-prpl font-secondary font-semibold text-[15px] py-[12px] text-center uppercase text-white"
               onClick={login}
