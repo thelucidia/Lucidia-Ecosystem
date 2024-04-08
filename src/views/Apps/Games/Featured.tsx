@@ -90,7 +90,7 @@ const Featured: React.FC<IOtherGames> = ({ id, color }: IOtherGames, { initialSl
       title: 'desert warriors',
       desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
       image: 'fps',
-      path: '/desert',
+      path: '/desert-warriors',
       // color: '#0ED4FF',
     },
   ];
