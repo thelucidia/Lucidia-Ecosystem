@@ -13,28 +13,28 @@ const OtherGames: React.FC<IOtherGames> = ({ id }: IOtherGames) => {
       desc: 'Pulse-pounding action, earn $LUCID Tokens, crush undead hordes, ultimate survival.',
       image: 'zombie',
       path: '/gameplay/curse-of-the-pharaoh',
-      url: '/curse-of-the-pharaoh',
+      url: '/games/curse-of-the-pharaoh',
     },
     {
       title: 'cryptocraft',
       desc: 'Shape limitless worlds, earn $LUCID Tokens, unleash creativity, adventure awaits!',
       image: 'minecraft',
       path: '/gameplay/cryptocraft',
-      url: '/cryptocraft',
+      url: '/games/cryptocraft',
     },
     {
       title: 'sandstorm racers',
       desc: 'Take a ride through the night skyline, race with your friends and attend virtual events',
       image: 'cyber',
       path: '/gameplay/sandstorm',
-      url: '/sandstorm',
+      url: '/games/sandstorm-racers',
     },
     {
       title: 'desert warriors',
       desc: 'Engage in the battle and complete missions to earn $LUCID Tokens.',
       image: 'fps',
       path: '/gameplay/desert',
-      url: '/desert-warriors',
+      url: '/games/desert-warriors',
     },
   ];
   return (
