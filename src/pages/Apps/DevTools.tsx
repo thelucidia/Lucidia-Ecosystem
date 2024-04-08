@@ -29,25 +29,25 @@ const DevTools: React.FC = () => {
       title: 'NFT MARKETPLACE',
       slug: 'play',
       desc: 'A cloud-based solution enabling game studios to seamlessly incorporate NFT marketplaces both within their games and on their websites.',
-      img: 'play.svg',
+      img: 'market.svg',
     },
     {
       title: 'LOGIN SYSTEM',
       slug: 'nft',
       desc: 'An advanced login system that simplifies user access via social media credentials and automatically generates custodial wallets for users.',
-      img: 'nft.svg',
+      img: 'login.svg',
     },
     {
       title: 'NFT TOOL KIT',
       slug: 'web3',
       desc: 'A robust toolkit offering game developers the necessary tools to integrate, manage, and monetize NFTs within their games.',
-      img: 'web3.svg',
+      img: 'toolkit.svg',
     },
     {
       title: 'DIGITAL TWIN (1:1 IN WEB3',
       slug: 'fit',
       desc: 'A framework enabling the creation of digital twins for real-world items or locations within games and virtual environments.',
-      img: 'fit.svg',
+      img: 'digital.svg',
     },
   ];
 
