@@ -3,39 +3,69 @@ import { LiaTelegramPlane } from 'react-icons/lia';
 import { TfiWorld } from 'react-icons/tfi';
 import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
-import WebSDK, { LoginBehavior } from 'websdk';
-import Config from '../../config';
+// import { sphereoneSDK } from '../../config';
+import { OAuthProvider, signInWithRedirect, getRedirectResult } from 'firebase/auth';
+import { auth } from '../../config';
 
-const redirectURI = Config.production ? Config.appHost : Config.appLocalHost;
-
-const client_id = Config.clientID;
-const api_key = Config.apiKey;
-
-const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.REDIRECT);
 const Login: React.FC = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  console.log(isLoggedIn);
+  const provider = new OAuthProvider('oidc.sphereone');
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // console.log(isLoggedIn);
+  // useEffect(() => {
+  //   try {
+  //     const handleAuth = async () => {
+  //       const authResult: any = await sphereoneSDK.handleCallback();
+  //       if (authResult?.access_token) {
+  //         const { access_token, profile } = authResult;
+  //         console.log('access_token: ', access_token, 'profile: ', profile);
+  //         setIsLoggedIn(true);
+  //       } else {
+  //         setIsLoggedIn(false);
+  //       }
+  //     };
+  //     handleAuth();
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }, []);
+
   useEffect(() => {
-    try {
-      const handleAuth = async () => {
-        const authResult: any = await sphereoneSDK.handleCallback();
-        if (authResult?.access_token) {
-          const { access_token, profile } = authResult;
-          console.log('access_token: ', access_token, 'profile: ', profile);
-          setIsLoggedIn(true);
-        } else {
-          setIsLoggedIn(false);
+    getRedirectResult(auth)
+      .then(async (result) => {
+        try {
+          // The result can sometimes come back as 'null'. Thus, this check is necessary.
+          if (!result) return new Error('No results');
+
+          // We create the 'Credential' object based on the results we received from login.
+          // And from there, we simply extract the `idToken` and `accessToken`.
+          const credential = OAuthProvider.credentialFromResult(result);
+
+          const accessToken = credential!.accessToken;
+          const idToken = credential!.idToken;
+          // For this example, we're preventing them out to the Console.
+          // But we would want to save this somewhere, so we can reuse it later.
+          console.log(`accessToken: ${accessToken}`);
+          console.log(`idToken: ${idToken}`);
+          // Once we get the idToken and accessTokens, we say that we're officially signed in.
+          setIsSignedIn(true);
+        } catch (e: any) {
+          console.log('Credential Error: ', e);
+          // Or, else, we are not officially signed in.
+          setIsSignedIn(false);
         }
-      };
-      handleAuth();
-    } catch (e) {
-      console.log(e);
-    }
+      })
+      .catch((error) => {
+        console.log('Redirect Result Error: ', error);
+        // Any issues during the login process will not enable us to sign in.
+        setIsSignedIn(false);
+      });
   }, []);
 
   const login = async () => {
     try {
-      await sphereoneSDK.login().catch();
+      // await sphereoneSDK.login();
+      signInWithRedirect(auth, provider);
     } catch (e: any) {
       console.error(e);
     }
@@ -121,6 +151,7 @@ const Login: React.FC = () => {
                 placeholder="PASSWORD"
               />
             </div> */}
+            {isSignedIn ? 'You are signed in!' : 'You are not signed in!'}
             <button
               className="min-w-[343px] mx-auto mt-10 clipped scale-x-[-1] rounded-[5px] bg-prpl font-secondary font-semibold text-[15px] py-[12px] text-center uppercase text-white"
               onClick={login}
