@@ -42,3 +42,5 @@ const firebaseConfig = {
 
 const firebase = initializeApp(firebaseConfig);
 export const auth = getAuth(firebase);
+
+export const LAZY_LOAD_TIME = 1000;

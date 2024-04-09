@@ -1,12 +1,13 @@
 import React from 'react';
-import Hero from '../views/Hero/Hero';
-import How from '../views/Hero/How';
-import Partners from '../views/Hero/Partners';
-import PartnersLower from '../views/Hero/PartnersLower';
-import Tokens from '../views/Hero/Tokens';
-import Worlds from '../views/Hero/Worlds';
 import { motion } from 'framer-motion';
-import Stats from '../components/Stats';
+import lazyDelayedImport from '../config/lazyDelayedImport';
+const Hero = lazyDelayedImport(() => import('../views/Hero/Hero'));
+const How = lazyDelayedImport(() => import('../views/Hero/How'));
+const Partners = lazyDelayedImport(() => import('../views/Hero/Partners'));
+const PartnersLower = lazyDelayedImport(() => import('../views/Hero/PartnersLower'));
+const Tokens = lazyDelayedImport(() => import('../views/Hero/Tokens'));
+const Worlds = lazyDelayedImport(() => import('../views/Hero/Worlds'));
+const Stats = lazyDelayedImport(() => import('../components/Stats'));
 
 const Landing: React.FC = () => {
   return (

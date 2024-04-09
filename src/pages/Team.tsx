@@ -1,8 +1,9 @@
 import React from 'react';
-import PartnersLower from '../views/Hero/PartnersLower';
-import Members from '../views/Team/Members';
-import Join from '../views/Team/Join';
 import { motion } from 'framer-motion';
+import lazyDelayedImport from '../config/lazyDelayedImport';
+const PartnersLower = lazyDelayedImport(() => import('../views/Hero/PartnersLower'));
+const Members = lazyDelayedImport(() => import('../views/Team/Members'));
+const Join = lazyDelayedImport(() => import('../views/Team/Join'));
 
 const Team: React.FC = () => {
   return (

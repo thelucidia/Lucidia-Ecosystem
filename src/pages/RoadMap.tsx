@@ -1,7 +1,8 @@
 import React from 'react';
-import RoadCard from '../components/RoadCard';
-import PartnersLower from '../views/Hero/PartnersLower';
 import { motion } from 'framer-motion';
+import lazyDelayedImport from '../config/lazyDelayedImport';
+const RoadCard = lazyDelayedImport(() => import('../components/RoadCard'));
+const PartnersLower = lazyDelayedImport(() => import('../views/Hero/PartnersLower'));
 
 const RoadMap: React.FC = () => {
   return (

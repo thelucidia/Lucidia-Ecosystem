@@ -1,10 +1,11 @@
 import React from 'react';
-import GameContent from '../views/GamePlay/GameContent';
-import Worlds from '../views/Hero/Worlds';
-import Join from '../views/GamePlay/Join';
-import Benefits from '../views/GamePlay/Benefits';
-import PartnersLower from '../views/Hero/PartnersLower';
 import { motion } from 'framer-motion';
+import lazyDelayedImport from '../config/lazyDelayedImport';
+const GameContent = lazyDelayedImport(() => import('../views/GamePlay/GameContent'));
+const Worlds = lazyDelayedImport(() => import('../views/Hero/Worlds'));
+const Join = lazyDelayedImport(() => import('../views/GamePlay/Join'));
+const Benefits = lazyDelayedImport(() => import('../views/GamePlay/Benefits'));
+const PartnersLower = lazyDelayedImport(() => import('../views/Hero/PartnersLower'));
 
 const GamePlay: React.FC = () => {
   return (
