@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import lazyDelayedImport from './config/lazyDelayedImport';
 
-const Nav = lazyDelayedImport(() => import('./components/Nav'));
-const Footer = lazyDelayedImport(() => import('./components/Footer'));
+const Nav = lazy(() => import('./components/Nav'));
+const Footer = lazy(() => import('./components/Footer'));
 
 import Landing from './pages/Landing';
 import Team from './pages/Team';
