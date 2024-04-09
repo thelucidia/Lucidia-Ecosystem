@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import lazyDelayedImport from '../config/lazyDelayedImport';
-const GameContent = lazyDelayedImport(() => import('../views/GamePlay/GameContent'));
+import GameContent from '../views/GamePlay/GameContent';
 const Worlds = lazyDelayedImport(() => import('../views/Hero/Worlds'));
 const Join = lazyDelayedImport(() => import('../views/GamePlay/Join'));
 const Benefits = lazyDelayedImport(() => import('../views/GamePlay/Benefits'));

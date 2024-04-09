@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import lazyDelayedImport from '../config/lazyDelayedImport';
-const Hero = lazyDelayedImport(() => import('../views/Hero/Hero'));
+import Hero from '../views/Hero/Hero';
 const How = lazyDelayedImport(() => import('../views/Hero/How'));
 const Partners = lazyDelayedImport(() => import('../views/Hero/Partners'));
 const PartnersLower = lazyDelayedImport(() => import('../views/Hero/PartnersLower'));

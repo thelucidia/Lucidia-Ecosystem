@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import lazyDelayedImport from '../config/lazyDelayedImport';
-const Hero = lazyDelayedImport(() => import('../views/Hero/Hero'));
+import Hero from '../views/Hero/Hero';
 const PartnersLower = lazyDelayedImport(() => import('../views/Hero/PartnersLower'));
 const Tokens = lazyDelayedImport(() => import('../views/Hero/Tokens'));
 const Join = lazyDelayedImport(() => import('../views/OurPorducts/Join'));

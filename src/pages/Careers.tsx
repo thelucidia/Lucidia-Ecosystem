@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import lazyDelayedImport from '../config/lazyDelayedImport';
+import Banner from '../views/Career/Banner';
 const PartnersLower = lazyDelayedImport(() => import('../views/Hero/PartnersLower'));
-const Banner = lazyDelayedImport(() => import('../views/Career/Banner'));
 const Culture = lazyDelayedImport(() => import('../views/Career/Culture'));
 const Journey = lazyDelayedImport(() => import('../views/Career/Journey'));
 
