@@ -27,7 +27,7 @@ const redirectURI = Config.production ? Config.appHost : Config.appLocalHost;
 
 const client_id = Config.clientID;
 const api_key = Config.apiKey;
-export const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.REDIRECT);
+export const sphereoneSDK = new WebSDK(client_id, redirectURI, api_key, LoginBehavior.POPUP);
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
