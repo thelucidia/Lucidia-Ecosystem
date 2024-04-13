@@ -1,7 +1,6 @@
 import MainVideo from '../../../videos/home_app.mp4';
 import ProductVideo from '../../../videos/hero.mp4';
 import { useState } from 'react';
-// import { motion } from 'framer-motion';
 import clsx from 'clsx';
 
 interface IHero {
