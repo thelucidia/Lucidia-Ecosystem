@@ -4,12 +4,17 @@ import { TfiWorld } from 'react-icons/tfi';
 import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
 import { sphereoneSDK } from '../../config';
+import { useSDK } from '@metamask/sdk-react';
 
 const Login: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
   console.log(isLoggedIn);
+  const { sdk, connected} = useSDK();
+  const [failed, setFailed] = useState(false);
+  const [fetched, setFetched] = useState(false);
   useEffect(() => {
+    setFetched(true);
     try {
       const handleAuth = async () => {
         const authResult: any = await sphereoneSDK.handleCallback();
@@ -26,6 +31,14 @@ const Login: React.FC = () => {
       console.log(e);
     }
   }, []);
+  useEffect(() => {
+    if (!fetched) {
+      return;
+    }
+    if (connected) {
+      window.location.href = `/`;
+    }
+  }, [connected]);
 
   const login = async () => {
     try {
@@ -33,6 +46,27 @@ const Login: React.FC = () => {
     } catch (e: any) {
       console.error(e);
     }
+  };
+
+  const connectMetaMask = async (evt: { preventDefault: () => void; stopPropagation: () => void }) => {
+    evt.preventDefault();
+    evt.stopPropagation();
+    try {
+      if (connected) {
+        await sdk?.terminate();
+      } else {
+        await window.ethereum?.request({ method: 'eth_requestAccounts' });
+        await sdk?.connect();
+      }
+    } catch (err) {
+      console.error(err);
+      setFailed(true);
+    }
+  };
+
+
+  const connectWallet =  async () => {
+
   };
 
   const icons = [
@@ -121,14 +155,33 @@ const Login: React.FC = () => {
             >
               <h4 className="scale-x-[-1]">Login</h4>
             </button>
+            <button
+              className="min-w-[343px] mx-auto mt-10 clipped scale-x-[-1] rounded-[5px] bg-prpl font-secondary font-semibold text-[15px] py-[12px] text-center uppercase text-white"
+              onClick={connectMetaMask}
+            >
+              <div className='flex flex-row scale-x-[-1] justify-center item-center sm:gap-x-5 gap-x-2'>
+                <img src='/assets/images/wallet/metamask_icon.svg'/>
+                <h4 className='text-black'>Metamask Connect</h4>
+              </div>
+            </button>
+            {failed && (<h5 className="mx-auto text-bl">Metamask connect faild</h5>)}
+            <button
+              className="min-w-[343px] mx-auto mt-2 clipped scale-x-[-1] rounded-[5px] bg-prpl font-secondary font-semibold text-[15px] py-[12px] text-center uppercase text-white mb-12"
+              onClick={connectWallet}
+            >
+              <div className='flex flex-row scale-x-[-1] justify-center item-center sm:gap-x-5 gap-x-2'>
+                <img src='/assets/images/wallet/walletconnect_icon.svg'/>
+                <h4  className='text-bl'>Wallet Connect</h4>
+              </div>
+            </button>
             {/* <h4 className="text-[18px] text-white font-primary text-center">
               Don't have an account yet?
               <Link to="/signup" className="pl-1 text-cyan text-[18px] font-primary">
                 Sign Up
               </Link>
             </h4> */}
-            <p className="text-white text-[16px] font-secondary text-center">Powered by</p>
-            <img src="/partners/sphereone.webp" className="mx-auto" width={188} />
+            {/* <p className="text-white text-[16px] font-secondary text-center">Powered by</p>
+            <img src="/partners/sphereone.webp" className="mx-auto" width={188} /> */}
           </div>
         </div>
       </div>
