@@ -5,14 +5,33 @@ import { RxDiscordLogo } from 'react-icons/rx';
 import { BsTwitterX } from 'react-icons/bs';
 import { sphereoneSDK } from '../../config';
 import { useSDK } from '@metamask/sdk-react';
-
+import {
+  WalletConnectModalSign,
+  useConnect,
+  useRequest
+ } from '@walletconnect/modal-sign-react'
+ 
 const Login: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
   console.log(isLoggedIn);
-  const { sdk, connected} = useSDK();
+  const { sdk, connected } = useSDK();
   const [failed, setFailed] = useState(false);
   const [fetched, setFetched] = useState(false);
+
+  const [session, setSession] = useState({});  
+  const [disabled, setDisabled] = useState(false);
+  const { connect } = useConnect({
+    requiredNamespaces: {
+      eip155: {
+      methods: ['eth_sendTransaction', 'personal_sign'],
+      chains: ['eip155:1'],
+      events: ['chainChanged', 'accountsChanged']
+      }
+    }
+  });
+  const projectId = '6a2e9030474264df3b50c650c2b521b5';
+
   useEffect(() => {
     setFetched(true);
     try {
@@ -52,6 +71,7 @@ const Login: React.FC = () => {
     evt.preventDefault();
     evt.stopPropagation();
     try {
+      console.log('connected: ', connected);
       if (connected) {
         await sdk?.terminate();
       } else {
@@ -66,8 +86,17 @@ const Login: React.FC = () => {
 
 
   const connectWallet =  async () => {
-
-  };
+    try {
+      setDisabled(true)
+      const session = await connect()
+      console.info(session)
+      setSession(session)
+    } catch (err) {
+      console.error(err)
+    } finally {
+      setDisabled(false)
+    }
+  }
 
   const icons = [
     {
@@ -174,6 +203,15 @@ const Login: React.FC = () => {
                 <h4  className='text-bl'>Wallet Connect</h4>
               </div>
             </button>
+            <WalletConnectModalSign
+              projectId={projectId}
+              metadata={{
+              name: 'My Dapp',
+              description: 'My Dapp description',
+              url: 'https://my-dapp.com',
+              icons: ['https://my-dapp.com/logo.png']
+              }}
+            />
             {/* <h4 className="text-[18px] text-white font-primary text-center">
               Don't have an account yet?
               <Link to="/signup" className="pl-1 text-cyan text-[18px] font-primary">
