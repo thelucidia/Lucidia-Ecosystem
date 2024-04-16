@@ -184,9 +184,9 @@ const Nav: React.FC = () => {
     },
     {
       name: 'launch app',
-      slug: '/apps',
+      slug: 'app.lucidia.io',
       paths: ['/apps'],
-      type: 'internal',
+      type: 'external',
     },
   ];
 
@@ -262,7 +262,8 @@ const Nav: React.FC = () => {
               ? navMobile.map((items, i) => {
                   return items.type === 'external' ? (
                     <a
-                      href={items.slug}
+                      // href={items.slug}
+                      href={!isApp ? `${Config.production ? Config.appHost : Config.appLocalHost}` : '/login'}
                       onClick={handleNav}
                       target="_blank"
                       rel="noopener noreferrer"
