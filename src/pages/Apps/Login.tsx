@@ -19,8 +19,9 @@ const Login: React.FC = () => {
   const [failed, setFailed] = useState(false);
   const [fetched, setFetched] = useState(false);
 
-  // const [session, setSession] = useState({});  
-  // const [disabled, setDisabled] = useState(false);
+  const [session, setSession] = useState({});  
+  const [disabled, setDisabled] = useState(false);
+  console.log(session, disabled);
   const { connect } = useConnect({
     requiredNamespaces: {
       eip155: {
