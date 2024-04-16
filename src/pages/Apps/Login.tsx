@@ -8,7 +8,7 @@ import { useSDK } from '@metamask/sdk-react';
 import {
   WalletConnectModalSign,
   useConnect,
-  useRequest
+  // useRequest
  } from '@walletconnect/modal-sign-react'
  
 const Login: React.FC = () => {
@@ -19,8 +19,8 @@ const Login: React.FC = () => {
   const [failed, setFailed] = useState(false);
   const [fetched, setFetched] = useState(false);
 
-  const [session, setSession] = useState({});  
-  const [disabled, setDisabled] = useState(false);
+  // const [session, setSession] = useState({});  
+  // const [disabled, setDisabled] = useState(false);
   const { connect } = useConnect({
     requiredNamespaces: {
       eip155: {
