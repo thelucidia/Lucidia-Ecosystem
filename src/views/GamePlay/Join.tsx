@@ -1,9 +1,11 @@
-// import React, { useRef, useEffect } from 'react';
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import { OrbitControls } from '@react-three/drei';
 import { Link } from 'react-router-dom';
+import { LiaTelegramPlane } from 'react-icons/lia';
+import { BsTwitterX } from 'react-icons/bs';
+import { RxDiscordLogo } from 'react-icons/rx';
 const LazyModel = React.lazy(() => import('./Model'));
 
 const Join: React.FC = () => {
@@ -31,7 +33,7 @@ const Join: React.FC = () => {
 
         <div className="h-[300px] w-full sm:clipped2 bg-[#B0EB10] flex items-center justify-center scale-x-[-1]">
           <div className="w-full h-full scale-x-[-1]">
-            <div className="flex flex-wrap sm:gap-x-[8rem] gap-x-16 gap-y-[2.5rem] items-center justify-end px-5 py-9">
+            <div className="flex flex-col sm:gap-x-[8rem] gap-x-16 gap-y-[2.5rem] items-end justify-end px-5 py-9">
               <h2 className="relative text-primary sm:max-w-[430px] sm:text-[46px] text-[26px] sm:text-left max-w-[260px] font-[700] text-[#000000] ">
                 Join community of <span className="text-[#fff]">40k+</span> Lucidians
                 <Link to="" onClick={navScroll}>
@@ -42,6 +44,17 @@ const Join: React.FC = () => {
                   />
                 </Link>
               </h2>
+              <div className="flex gap-8 text-4xl pr-6">
+                <Link to="https://t.me/Lucidia_io" target="_blank">
+                  <LiaTelegramPlane />
+                </Link>
+                <Link to="https://twitter.com/lucidia_io" target="_blank">
+                  <BsTwitterX />
+                </Link>
+                <Link to="https://discord.gg/lucidia" target="_blank">
+                  <RxDiscordLogo />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

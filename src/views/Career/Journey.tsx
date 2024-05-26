@@ -53,7 +53,7 @@ const Journey: React.FC = () => {
             transition={{ type: 'spring', stiffness: 60 }}
             className="overflow-hidden md:w-[60%] lg:block hidden"
           >
-            <ul className="flex flex-col gap-y-11">
+            <ul className="flex flex-col gap-y-14">
               {data.map((item, i) => {
                 return (
                   <li key={`item-${i}`} className="text-white">
@@ -71,24 +71,21 @@ const Journey: React.FC = () => {
             </ul>
           </motion.div>
           <div className="sm:w-[58.9%] flex flex-col gap-y-5 md:py-16 sm:py-7 py-5 lg:block hidden">
-            <motion.div
-              initial={{ x: -100 }}
-              whileInView={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 60 }}
-              className="overflow-hidden"
-            >
-              <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">
-                <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-prpl rounded-md py-14 pl-7 pr-8 flex flex-col gap-y-10">
-                  {data.map((item, i) => {
-                    return (
-                      <p key={`desc-${i}`} className="text-[20px] font-primary leading-[20px] tracking-[1px]">
-                        {item.desc}
-                      </p>
-                    );
-                  })}
+            {data.map((item, i) => (
+              <motion.div
+                key={`desc-${i}`}
+                initial={{ x: -100 }}
+                whileInView={{ x: 0 }}
+                transition={{ type: 'spring', stiffness: 60 }}
+                className="overflow-hidden"
+              >
+                <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md mt-4">
+                  <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-prpl rounded-md py-6 pl-6 pr-8 flex flex-col gap-y-10">
+                    <p className="text-[20px] font-primary leading-[20px] tracking-[1px]">{item.desc}</p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
           </div>
           <motion.div
             initial={{ y: -100 }}

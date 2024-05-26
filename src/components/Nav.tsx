@@ -388,7 +388,7 @@ const Nav: React.FC = () => {
           <div className="font-primary text-center -mt-2 px-6">
             <h2 className="text-neon font-semibold">Join the community</h2>
             <p className="font-medium text-white mt-6">
-              For more details about our progress and workflow be sure to follow
+              Follow along and stay connected for fun, games, and giveaways!
             </p>
 
             <div className="text-white flex mx-auto w-fit mt-5 gap-x-6 text-2xl">

@@ -3,28 +3,28 @@
     {
       "title": "Curse of the Pharaoh",
       "genre": "FPS, CO-OP",
-      "desc": "Fighting mummies in post-apocalyptic Dubai landscape by leveraging advanced mechanics and cooperative alliances.",
+      "desc": "Hybrid FPS fuses ancient myths and futuristic warfare in Dubai.",
       "image": "zombie",
       "path": "/games/curse-of-the-pharaoh"
     },
     {
       "title": "CryptoCraft",
       "genre": "SandBox, Open World",
-      "desc": "Experience an infinite world shaped by your creations. Earning rewards as you build",
+      "desc": "Open-world sandbox game with dynamic building and survival elements.",
       "image": "minecraft",
       "path": "/games/cryptocraft"
     },
     {
       "title": "Sandstorm Racers",
       "genre": "Racing, Multiplayer",
-      "desc": "Navigate through unpredictable weather conditions, race through an environment that pays homage to Middle Eastern culture.",
+      "desc": "Race in the Middle East, master drifting and navigate sandstorms.",
       "image": "cyber",
       "path": "/games/sandstorm-racers"
     },
     {
       "title": "Desert Warriors",
       "genre": "FPS, Royal Battle",
-      "desc": "The game where the thrill of shooter games intertwines with the groundbreaking possibilities of Web3 and NFTs.",
+      "desc": "FPS in vast deserts with strategic combat and team-based challenges.",
       "image": "fps",
       "path": "/games/desert-warriors"
     }

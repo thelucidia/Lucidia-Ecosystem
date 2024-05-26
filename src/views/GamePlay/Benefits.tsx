@@ -8,10 +8,10 @@ const Benefits: React.FC = () => {
       desc: "<span classname='font-semibold'>Wider Audience Reach:</span> Joining Lucidia provides games with instant exposure to over <span classname='text-[#0ED4FF]'>40,000</span> users. This helps tackle the common struggle faced by many Web3 games in attracting players: <span classname='font-semibold'>Active Users</span>",
     },
     {
-      desc: "<span classname='font-semibold'>Enhanced Player Experience:</span> Lucidia makes gaming simpler and more connected. With just <span classname='font-semibold'>one login for all games</span>. you can easily explore different titles without juggling multiple accounts. As an addition, whether you're on your PC, console, or phone, the experience stays smooth and consistent.",
+      desc: "<span classname='font-semibold'>Enhanced Player Experience:</span> Lucidia makes gaming simpler and more accessible. With just <span classname='font-semibold'>one login for all games</span>. you can easily explore different titles without juggling multiple accounts. As an addition, whether you're on your PC, console, or phone, the experience stays smooth and consistent.",
     },
     {
-      desc: "<span classname='font-semibold'>Community Engagement:</span> At Lucidia, our <span classname='font-semibold'>community is alive and buzzing</span>. growing by the day. it's not iust a place to play games: it's a tight-knit group where developers get, support, <span classname='text-[#0ED4FF]'>real-time feedback</span>, and engagement from passionate players like you.",
+      desc: "<span classname='font-semibold'>Community Engagement:</span> At Lucidia, our <span classname='font-semibold'>community is alive and buzzing</span>, growing by the day. it's not iust a place to play games: it's a tight-knit group where developers get, support, <span classname='text-[#0ED4FF]'>real-time feedback</span>, and engagement from passionate players like you.",
     },
     {
       desc: "<span classname='font-semibold'>Innovative Features:</span> At Lucidia, we offer developers more than just a gaming platform. With our <span classname='text-[#0ED4FF]'>NFT Integration Toolkit,</span> marketplaces, and community-driven platforms. we provide the tools you need to <span classname='font-semibold'>take your games to the next level</span>.",

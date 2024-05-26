@@ -1,7 +1,7 @@
-import MainVideo from '../../../videos/home_app.mp4';
-import ProductVideo from '../../../videos/hero.mp4';
 import { useState } from 'react';
 import clsx from 'clsx';
+import MainVideo from '../../../videos/home_app.mp4';
+import ProductVideo from '../../../videos/hero.mp4';
 
 interface IHero {
   id: string;
@@ -80,7 +80,6 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
           <h1
             className={clsx(
               'text-3xl md:text-5xl 2xl:text-[60px]  font-primary max-w-[800px] 2xl:leading-[5.5rem] uppercase font-semibold md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-[#0ED4FF] via-[#9586FF] to-[#FFFFFF]',
-              // item.buttons ? 'text-3xl md:text-5xl 2xl:text-[72px]' : 'text-[62px]',
             )}
           >
             {item.title}
@@ -108,6 +107,20 @@ const Hero: React.FC<IHero> = ({ id }: IHero) => {
                     </div>
                     <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300">
                       Join Telegram
+                    </h1>
+                  </button>
+                </a>
+                <a href="https://x.com/lucidia_io" target="_blank" rel="noopener noreferrer" className="">
+                  <button className=" w-full md:w-[13rem] h-14 clipped2 bg-white relative  font-bold flex items-center justify-center scale-x-[-1] group">
+                    <div className="absolute bg-[#2e194c] w-[98%] h-[96%] left-0 top-0 right-0 bottom-0 m-auto clipped2 group-hover:bg-white transition-bg ease-in-out duration-300">
+                      <img
+                        src="/hero/trans.webp"
+                        alt="Herobg"
+                        className="w-full h-full object-cover absolute top-0 left-0 group-hover:opacity-0 transition-opacity ease-in-out duration-300"
+                      />
+                    </div>
+                    <h1 className="font-secondary relative z-10 text-white font-[700] text-[12px] scale-x-[-1] group-hover:text-black  transition-colors ease-in-out duration-300">
+                      Join Twitter
                     </h1>
                   </button>
                 </a>

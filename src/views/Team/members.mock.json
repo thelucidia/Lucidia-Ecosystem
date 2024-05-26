@@ -1,6 +1,17 @@
 {
   "members": [
     {
+      "name": "Feras Nimer",
+      "position": "CEO",
+      "link": "https://www.linkedin.com/in/feras-nimer-691a3258/",
+      "desc": [
+        "Business transformation at EY (5 yrs)",
+        "Project management (6 yrs)",
+        "Crypto investor (4 yrs)",
+        "Entrepreneur (5 yrs)"
+      ]
+    },
+    {
       "name": "Adel Khatib",
       "position": "COO",
       "link": "https://www.linkedin.com/in/adel-khatib-b2b136180/",
@@ -9,17 +20,6 @@
         "Electric fleet partner with Uber (2 yrs)",
         "Crypto/blockchain expert (10 yrs)",
         "Serial entrepreneur & gamer (15 yrs)"
-      ]
-    },
-    {
-      "name": "Feras Nimer",
-      "position": "CFO",
-      "link": "https://www.linkedin.com/in/feras-nimer-691a3258/",
-      "desc": [
-        "Business transformation at EY (5 yrs)",
-        "Project management (6 yrs)",
-        "Crypto investor (4 yrs)",
-        "Entrepreneur (5 yrs)"
       ]
     },
     {

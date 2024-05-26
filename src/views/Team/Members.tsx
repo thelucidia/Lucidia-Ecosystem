@@ -1,5 +1,5 @@
-import { BsLinkedin } from 'react-icons/bs';
 import React from 'react';
+import { BsLinkedin } from 'react-icons/bs';
 import data from './members.mock.json';
 
 const Members: React.FC = () => {

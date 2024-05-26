@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto w-full text-white sm:mt-28 mt-10 px-5 text-left sm:text-center">
         <div className="mt-10">
           <p className="font-medium font-primary text-footergry text-[15px] sm:text-[22px] mt-2 sm:mt-0">
-            For more details about our progress and workflow be sure to follow
+            Follow along and stay connected for fun, games, and giveaways!
           </p>
         </div>
 
@@ -152,9 +152,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col gap-y-3 max-w-[540px] font-primary sm:pt-0 pt-20">
-          <h3 className="text-[22px] font-semibold pb-5">
-            Register to get the opportunity to win an interesting reward in the community!
-          </h3>
+          <h3 className="text-[22px] font-semibold pb-5">Register for a chance to win exciting prizes!</h3>
           <div className="w-full h-11 clipped2 bg-gradient-to-r from-[#0ED4FF] to-[#FFFFFF] relative flex items-center scale-x-[-1]">
             <div className="absolute bg-black w-[99%] h-[93%] left-0 top-0 right-0 bottom-0 m-auto clipped2"></div>
             <input

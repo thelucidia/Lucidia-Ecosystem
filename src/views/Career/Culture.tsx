@@ -25,8 +25,9 @@ const Culture: React.FC = () => {
             <div className="w-full h-auto clipped2 bg-gry relative  font-[600] flex items-center justify-center scale-x-[-1] rounded-md">
               <div className="scale-x-[-1] text-white w-full h-full md:md:border-l-[0.5rem] border-cyan rounded-md">
                 <p className="py-16 pl-7 pr-1 text-[24px] font-primary leading-[36px]">
-                  Lucidia team has a collaborative culture, a commitment to innovation! This gives the benefits like
-                  remote work options, continuous learning opportunities, and participation in groundbreaking projects.
+                  Lucidia Team promotes a collaborative culture, encourages peer engagement, and commits to innovation.
+                  Benefits such as remote work options, continuous learning opportunities, and participation in
+                  groundbreaking projects are some of the things we offer.
                 </p>
               </div>
             </div>
