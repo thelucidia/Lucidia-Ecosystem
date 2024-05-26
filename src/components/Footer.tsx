@@ -1,6 +1,6 @@
 import React from 'react';
 import { LiaTelegramPlane } from 'react-icons/lia';
-import { TfiTwitter } from 'react-icons/tfi';
+import { BsTwitterX } from 'react-icons/bs';
 import { FaInstagram } from 'react-icons/fa';
 import { RxDiscordLogo } from 'react-icons/rx';
 
@@ -16,24 +16,12 @@ const Footer: React.FC = () => {
     },
     {
       link: 'https://twitter.com/lucidia_io',
-      icon: <TfiTwitter />,
+      icon: <BsTwitterX />,
     },
-    // {
-    //   link: 'https://lucidia.io',
-    //   icon: <AiOutlineYoutube />,
-    // },
-    // {
-    //   link: 'https://www.reddit.com/r/LucidiaMetaverse/',
-    //   icon: <FaRedditAlien />,
-    // },
     {
       link: 'https://instagram.com/lucidia_official',
       icon: <FaInstagram />,
     },
-    // {
-    //   link: 'https://www.tiktok.com/@lucidia.io',
-    //   icon: <RiTiktokLine />,
-    // },
   ];
 
   const general = [
