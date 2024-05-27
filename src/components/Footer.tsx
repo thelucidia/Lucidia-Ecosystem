@@ -86,8 +86,8 @@ const Footer: React.FC = () => {
         className="sm:mt-20 mx-auto w-full object-cover relative left-0 right-0 opacity-70 sm:block hidden"
       />
 
-      <div className="container mx-auto w-full text-white sm:mt-28 grid lg:grid-cols-2 md:grid-cols-1 gap-x-28 gap-y-10 sm:border-t-0 border-t-[1.5px] mt-10 border-white/20">
-        <div className="font-primary flex gap-x-20 sm:flex-row flex-col gap-y-8 mt-11 lg:mt-0 sm:items-center items-start lg:order-first md:order-last order-last">
+      <div className="container mx-auto w-full text-white sm:mt-28 grid lg:grid-cols-2 md:grid-cols-1 gap-x-28 gap-y-10 sm:border-t-0 border-t-[1.5px] mt-10 border-white/20 px-8">
+        <div className="font-primary flex gap-x-16 xl:gap-x-20 sm:flex-row flex-col gap-y-8 mt-11 lg:mt-0 sm:items-center items-start lg:order-first md:order-last order-last">
           <div className="">
             <h2 className="font-semibold text-[22px]">GENERAL</h2>
             <ul className="flex flex-col gap-y-2 mt-8">
