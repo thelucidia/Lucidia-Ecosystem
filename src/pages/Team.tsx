@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Members from '../views/Team/Members';
 import PartnersLower from '../views/Hero/PartnersLower';
-import Join from '../views/Team/Join';
 
 const Team: React.FC = () => {
   return (
@@ -14,7 +13,6 @@ const Team: React.FC = () => {
       className="w-full h-auto overflow-hidden bg-bg"
     >
       <Members />
-      <Join />
       <PartnersLower />
     </motion.div>
   );
